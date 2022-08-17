@@ -1,4 +1,7 @@
-import { KaKaoLogin } from "./KaKaoLogin";
+// splash img + login page
+import { GoogleLogin } from "./Login/GoogleLogin";
+import { KaKaoLogin } from "./Login/KaKaoLogin";
+import { NaverLogin } from "./Login/NaverLogin";
 
 export default function Login() {
   return (
@@ -12,8 +15,8 @@ export default function Login() {
           </section>
           <section className="h-full pb-[3.5rem] flex flex-col justify-end">
             <KaKaoLogin />
-            <KaKaoLogin />
-            <KaKaoLogin />
+            <NaverLogin />
+            <GoogleLogin />
             <div>
               <p className="Font12 text-center mt-2">
                 로그인하시면 스푼타임의 이용약관 및 개인정보처리방침에
