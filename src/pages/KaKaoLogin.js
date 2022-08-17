@@ -1,16 +1,14 @@
 export function KaKaoLogin() {
   return (
     <>
-      <div className="h-12 flex justify-center items-center mb-2 bg-[#FEE500]">
-        <div className="">
-          <a href="#">
-            <div className="flex">
-              <div></div>
-              <div className="Font16sb">카카오로시작하기</div>
-            </div>
-          </a>
+      <button className="flex justify-center items-center w-full h-12 mb-2 bg-[#FEE500] rounded-xl border-0 box-border cursor-pointer overflow-hidden relative text-center">
+        <div className="absolute flex left-0 ml-[1.125rem]">
+          <img src="images/Kakao_Talk.svg" alt="Kakao_Talk" />
         </div>
-      </div>
+        <span className="Font16sb absolute flex justify-center items-center overflow-hidden whitespace-nowrap text-ellipsis">
+          카카오로 시작하기
+        </span>
+      </button>
     </>
   );
 }
