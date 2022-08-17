@@ -1,4 +1,7 @@
 @tailwind base;
+html {
+  @apply text-[#2A2A2A];
+}
 
 @layer base {
 }
