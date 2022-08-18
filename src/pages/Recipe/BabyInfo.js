@@ -22,11 +22,11 @@ export function BabyInfo() {
             </div>
           </div>
         </article>
-        <article className="h-8 bg-GreyScale-grey05 rounded">
-          <p className="Font12 px-2.5 leading-8">
+        <article className="bg-GreyScale-grey05 rounded">
+          <div className="Font12 flex px-2.5 leading-8">
             <span className="mr-1.5">💡</span>
-            <span>중기는 6배죽을 기준으로 합니다.</span>
-          </p>
+            <p>중기는 6배죽을 기준으로 합니다.</p>
+          </div>
         </article>
       </section>
     </>
