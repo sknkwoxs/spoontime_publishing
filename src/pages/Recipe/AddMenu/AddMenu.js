@@ -57,17 +57,21 @@ export default function AddMenu() {
           </article>
           <article className="border-b">
             <div className="flex px-4 justify-between py-6">
-              <div className="w-8 h-8 bg-red-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-orange-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-yellow-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-green-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-blue-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-purple-300 rounded-full"></div>
-              <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+              <div className="w-8 h-8 bg-[#FCD6DD] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#FEDAC9] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#F9EEAB] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#CCF3D4] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#CCE2FE] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#E3D0FB] rounded-full"></div>
+              <div className="w-8 h-8 bg-[#D9DADC] rounded-full"></div>
             </div>
           </article>
           <article className="border-b">
-            <div className="px-4">기간 선택</div>
+            <div className="flex p-4">
+              <img src="/images/svgIcons/diet.svg" alt="diet" />
+              <p className="Font14sb px-2">7월 13일 - 7월 14일</p>
+              <img src="/images/svgIcons/down2.svg" alt="down2" />
+            </div>
           </article>
           <article className="Font16sb w-full fixed bottom-0 pb-8 text-center bg-BrandColor-green01 text-GreyScale-White">
             <p className="py-6">식단 추가하기</p>

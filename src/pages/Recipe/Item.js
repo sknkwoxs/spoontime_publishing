@@ -21,7 +21,7 @@ export default function BabyInfo() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col my-auto gap-y-2">
             <img src="/images/svgicons/heart.svg" alt="heart" />
             <img src="/images/svgicons/calendar.svg" alt="calendar" />
           </div>
