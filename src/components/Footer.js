@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="fixed w-full bottom-0 bg-GreyScale-White pb-8">
+      <section className="fixed w-full bottom-0 left-0 right-0 bg-GreyScale-White pb-8">
         <div className="flex pt-2 justify-between font-semibold text-[0.625rem] leading-3">
           <div className="flex flex-col mx-auto gap-1 text-center">
             <div className="mx-auto">
@@ -22,7 +22,7 @@ export default function Footer() {
             <p>꼬물이</p>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

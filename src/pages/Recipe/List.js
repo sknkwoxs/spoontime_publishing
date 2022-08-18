@@ -3,7 +3,7 @@ import Item from "./Item.js";
 export function List() {
   return (
     <>
-      <div>
+      <section>
         <article className="Font14sb h-10 flex justify-evenly border-b text-GreyScale-grey03">
           <div className="w-full text-center">
             <p className="leading-10">메인요리</p>
@@ -40,9 +40,7 @@ export function List() {
         <Item />
         <Item />
         <Item />
-        <Item />
-        <Item />
-      </div>
+      </section>
     </>
   );
 }

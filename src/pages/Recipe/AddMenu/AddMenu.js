@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function AddMenu() {
   return (
     <>
-      <div>
+      <section>
         <div>
           <Link to="/Recipe">
             <div className="absolute px-4 pt-8">
@@ -77,7 +77,7 @@ export default function AddMenu() {
             <p className="py-6">식단 추가하기</p>
           </article>
         </div>
-      </div>
+      </section>
     </>
   );
 }
