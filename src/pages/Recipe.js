@@ -7,7 +7,7 @@ export default function Recipe() {
   return (
     <>
       <div className="w-full min-h-full pb-[76px]">
-        <div className="px-4 pt-8">
+        <div className="pb-4 px-4">
           <Navigation />
           <BabyInfo />
           <List />

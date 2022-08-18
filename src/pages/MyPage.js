@@ -5,7 +5,7 @@ export default function MyPage() {
     <>
       <div className="w-full min-h-screen pb-[76px]">
         <div>
-          <section className="p-4 mt-8">
+          <section className="p-4">
             <article className="flex justify-between">
               <div className="flex">
                 <p className="Font16sb pr-1">꼬물이</p>

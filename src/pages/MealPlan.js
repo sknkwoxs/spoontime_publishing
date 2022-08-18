@@ -3,18 +3,18 @@ import Footer from "../components/Footer";
 export default function MealPlan() {
   return (
     <>
-      <div className="w-full min-h-screen pb-[76px] pt-8">
+      <div className="w-full h-screen pb-[76px]">
         <div>
           <section className="p-4">
             <article className="flex justify-between">
-              <div className="flex">
-                <p className="Font16sb">2022년 6월</p>
+              <div className="Font16sb flex">
+                <p className="mr-2">2022년 6월</p>
                 <img src="/images/svgIcons/down2.svg" alt="down2" />
               </div>
-              <div classNabme="flex">
-                <div className="px-2 py-1 bg-BrandColor-green04 mr-4">
-                  <p className="Font12 text-GreyScale-grey02">중기 (~4/16)</p>
-                </div>
+              <div className="flex">
+                <p className="Font12 mr-4 px-2 py-1 text-GreyScale-grey02 bg-BrandColor-green04 rounded">
+                  중기 (~4/16)
+                </p>
                 <img src="/images/svgIcons/settings.svg" alt="settings" />
               </div>
             </article>
