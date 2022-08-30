@@ -8,7 +8,7 @@
   <path
   d="M3 4.5L6 7.5L9 4.5"
   stroke="#2A2A2A"
-  stroke-linecap="round"
-  stroke-linejoin="round"
+  strokeLinecap="round"
+  strokeLinejoin="round"
   />
 </svg>
