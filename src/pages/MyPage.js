@@ -9,7 +9,7 @@ export default function MyPage() {
             <article className="flex justify-between">
               <div className="flex">
                 <p className="pr-1 Font16sb">꼬물이</p>
-                <img src="/images/svgIcons/down2.svg" alt="down2" />
+                {/* <img src="/images/svgIcons/down2.svg" alt="down2" /> */}
               </div>
               <img src="/images/svgIcons/settings.svg" alt="settings" />
             </article>
