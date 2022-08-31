@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import TabBar from "../components/TabBar";
 
 export default function MealPlan() {
   return (
@@ -7,12 +7,12 @@ export default function MealPlan() {
         <div>
           <section className="p-4">
             <article className="flex justify-between">
-              <div className="Font16sb flex">
+              <div className="flex Font16sb">
                 <p className="mr-2">2022년 6월</p>
                 <img src="/images/svgIcons/down2.svg" alt="down2" />
               </div>
               <div className="flex">
-                <p className="Font12 mr-4 px-2 py-1 text-GreyScale-grey02 bg-BrandColor-green04 rounded">
+                <p className="px-2 py-1 mr-4 rounded Font12 text-GreyScale-grey02 bg-BrandColor-green04">
                   중기 (~4/16)
                 </p>
                 <img src="/images/svgIcons/settings.svg" alt="settings" />
@@ -24,7 +24,7 @@ export default function MealPlan() {
               달력
             </article>
           </section>
-          <section className="mt-2 px-4">
+          <section className="px-4 mt-2">
             <article>
               <div className="py-4">
                 <p className="Font16sb">4월 6일 목요일 / D+252</p>
@@ -35,7 +35,7 @@ export default function MealPlan() {
               </div>
             </article>
           </section>
-          <section className="mt-6 px-4">
+          <section className="px-4 mt-6">
             <article>
               <div className="pb-[3.25rem]">
                 <p className="Font16sb">식단</p>
@@ -44,10 +44,10 @@ export default function MealPlan() {
                 <p>계획된 식단이 없습니다.</p>
                 <p className="flex justify-center">
                   아래의&nbsp;
-                  <div className="bg-BrandColor-green03 rounded-full shadow-lg">
+                  <div className="rounded-full shadow-lg bg-BrandColor-green03">
                     <img
-                      src="/images/svgIcons/plusButton.svg"
-                      alt="plusButton"
+                      src="/images/svgIcons/plusButton2.svg"
+                      alt="plusButton2"
                     />
                   </div>
                   &nbsp;버튼을 눌러
@@ -56,14 +56,14 @@ export default function MealPlan() {
               </div>
             </article>
             <div className="flex justify-end">
-              <div className="w-10 h-10 bg-BrandColor-green03 rounded-full flex justify-center items-center shadow-lg">
-                <img src="/images/svgIcons/plusButton.svg" alt="plusButton" />
+              <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
+                <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
               </div>
             </div>
           </section>
         </div>
       </div>
-      <Footer />
+      <TabBar />
     </>
   );
 }

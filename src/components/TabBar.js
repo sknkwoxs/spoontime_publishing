@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function TabBar() {
   return (
     <>
-      <section className="fixed w-full bottom-0 left-0 right-0 bg-GreyScale-White pb-8">
+      <section className="fixed bottom-0 left-0 right-0 w-full pb-8 bg-GreyScale-White">
         <div className="flex pt-2 justify-around font-semibold text-[0.625rem] leading-3">
           <Link to="/Recipe">
-            <div className="flex flex-col mx-auto gap-1 text-center">
+            <div className="flex flex-col gap-1 mx-auto text-center">
               <div className="mx-auto">
                 <img src="/images/svgIcons/recipe.svg" alt="recipe" />
               </div>
@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
           </Link>
           <Link to="/MealPlan">
-            <div className="flex flex-col mx-auto gap-1 text-center">
+            <div className="flex flex-col gap-1 mx-auto text-center">
               <div className="mx-auto">
                 <img src="/images/svgIcons/diet.svg" alt="diet" />
               </div>
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
           </Link>
           <Link to="/MyPage">
-            <div className="flex flex-col mx-auto gap-1 text-center">
+            <div className="flex flex-col gap-1 mx-auto text-center">
               <div className="mx-auto">
                 <img src="/images/svgIcons/diet.svg" alt="diet" />
               </div>
