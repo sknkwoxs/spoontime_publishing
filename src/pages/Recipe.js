@@ -1,5 +1,6 @@
 import TabBar from "../components/TabBar";
 import Alert from "./MealPlan/Alert";
+import PopUp from "./MealPlan/PopUp";
 import { BabyInfo } from "./Recipe/BabyInfo";
 import { List } from "./Recipe/List";
 import { Navigation } from "./Recipe/Navigation";
@@ -15,7 +16,8 @@ export default function Recipe() {
         </div>
         <TabBar />
       </div>
-      <Alert />
+      {/* <Alert /> */}
+      <PopUp />
     </>
   );
 }
