@@ -16,7 +16,7 @@ export default function Filter() {
         <div className="flex items-center gap-1 px-2 py-1 border border-[#B7B7B7] rounded-[1.563rem]">
           <p>추천순</p>
         </div>
-        <select className="flex items-center gap-1 px-2 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none">
+        <select className="flex items-center gap-1 pl-2 pr-6 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
           <option value="알레르기">알레르기</option>
           <option value="달걀">달걀</option>
           <option value="우유">우유</option>

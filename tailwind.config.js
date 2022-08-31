@@ -24,6 +24,9 @@ module.exports = {
           White: "#FFFFFF",
         },
       },
+      backgroundImage: {
+        down: "url('../public/images/svgIcons/down.svg')",
+      },
     },
   },
   plugins: [],
