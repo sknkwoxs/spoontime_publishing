@@ -42,16 +42,16 @@ export default function MealPlan() {
               </div>
               <div className="Font14 text-center py-[5.5rem]">
                 <p>계획된 식단이 없습니다.</p>
-                <p className="flex justify-center">
-                  아래의&nbsp;
-                  <div className="rounded-full shadow-lg bg-BrandColor-green03">
+                <div className="flex justify-center">
+                  <p className="flex justify-center">아래의</p>
+                  <div className="mx-1 rounded-full shadow-lg bg-BrandColor-green03">
                     <img
                       src="/images/svgIcons/plusButton2.svg"
                       alt="plusButton2"
                     />
                   </div>
-                  &nbsp;버튼을 눌러
-                </p>
+                  <p>버튼을 눌러</p>
+                </div>
                 <p>마음에 드는 식단을 추가해 보세요.</p>
               </div>
             </article>
