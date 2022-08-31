@@ -10,18 +10,18 @@ export default function Login() {
   return (
     <>
       <div className="w-full h-screen bg-BrandColor-green04">
-        <section className="fixed">
+        <div className="flex items-center justify-center h-full -translate-x-[7.6%] -translate-y-[12.6%]">
           <img src="/images/splash_img03.svg" alt="splash_img03" />
           {/* <Image src={logoImg} width="500" height="500" /> */}
-        </section>
-        <div className="h-full px-4">
-          <section className="h-full pb-[3.5rem] flex flex-col justify-end">
+        </div>
+        <section className="absolute bottom-0 w-full px-4">
+          <div className="h-full pb-[3.5rem] flex flex-col justify-end">
             <KaKaoLogin />
             <NaverLogin />
             <GoogleLogin />
             <PrivacyPolicy />
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </>
   );
