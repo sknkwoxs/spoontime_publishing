@@ -13,10 +13,12 @@ export default function Filter() {
         </div>
       </article>
       <article className="flex gap-2 py-3 Font12">
-        <div className="flex items-center gap-1 px-2 py-1 border border-[#B7B7B7] rounded-[1.563rem]">
-          <p>추천순</p>
-        </div>
-        <select className="flex items-center gap-1 pl-2 pr-6 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
+        <select className="flex items-center pl-2 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
+          <option value="알레르기">추천순</option>
+          <option value="인기순">인기순</option>
+          <option value="조리 시간순">조리 시간순</option>
+        </select>
+        <select className="flex items-center pl-2 pr-6 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
           <option value="알레르기">알레르기</option>
           <option value="달걀">달걀</option>
           <option value="우유">우유</option>
@@ -30,13 +32,18 @@ export default function Filter() {
           <option value="땅콩">땅콩</option>
           <option value="견과류">견과류</option>
         </select>
-
-        <div className="flex items-center gap-1 px-2 py-1 border border-[#B7B7B7] rounded-[1.563rem]">
-          <p>상태</p>
-        </div>
-        <div className="flex items-center gap-1 px-2 py-1 bg-BrandColor-green04 border border-BrandColor-green03 rounded-[1.563rem]">
-          <p>중기</p>
-        </div>
+        <select className="flex items-center pl-2 pr-6 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
+          <option value="감기/고열">감기/고열</option>
+          <option value="변비">변비</option>
+          <option value="설사">설사</option>
+          <option value="이앓이">이앓이</option>
+        </select>
+        <select className="flex items-center pl-2 pr-6 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem]">
+          <option value="초기 1단계">초기 1단계</option>
+          <option value="초기 2단계">초기 2단계</option>
+          <option value="중기">중기</option>
+          <option value="후기">후기</option>
+        </select>
       </article>
     </>
   );
