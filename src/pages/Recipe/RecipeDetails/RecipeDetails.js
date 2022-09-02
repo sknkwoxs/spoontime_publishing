@@ -315,7 +315,7 @@ export default function BabyInfo() {
       {/* <DeleteMaterialPopUp /> */}
       {/* <StopTimer /> */}
       {/* <Amount /> */}
-      <Substitutes />
+      {/* <Substitutes /> */}
     </>
   );
 }

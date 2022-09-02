@@ -6,6 +6,7 @@ import MyPage from "./pages/MyPage";
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
+import Search from "./pages/Recipe/Search/Search";
 
 export default function Router() {
   return (
@@ -16,6 +17,7 @@ export default function Router() {
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
+        <Route path="/Recipe/Search" element={<Search />} />
         <Route path="/MealPlan" element={<MealPlan />} />
         <Route path="/MyPage" element={<MyPage />} />
       </Routes>
