@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Item from "../Item";
+import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
+import Timer from "./Timer";
 
 export default function BabyInfo() {
   return (
@@ -308,6 +310,8 @@ export default function BabyInfo() {
           </article>
         </div>
       </section>
+      {/* <DeleteMaterialPopUp /> */}
+      <Timer />
     </>
   );
 }
