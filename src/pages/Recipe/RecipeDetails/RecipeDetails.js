@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Item from "../Item";
+import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
-import Timer from "./Timer";
+import StopTimer from "./StopTimer";
 
 export default function BabyInfo() {
   return (
@@ -311,7 +312,8 @@ export default function BabyInfo() {
         </div>
       </section>
       {/* <DeleteMaterialPopUp /> */}
-      <Timer />
+      {/* <StopTimer /> */}
+      <Amount />
     </>
   );
 }

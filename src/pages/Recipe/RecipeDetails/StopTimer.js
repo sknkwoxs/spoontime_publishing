@@ -1,4 +1,4 @@
-export default function Timer() {
+export default function StopTimer() {
   return (
     <>
       {/* 뒷단에 overflow : hidden 처리 필요 */}
