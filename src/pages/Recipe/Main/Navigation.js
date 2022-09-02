@@ -10,8 +10,9 @@ export function Navigation() {
           </Link>
         </div>
         <div>
-          <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
-          {/* to 즐겨 찾기 */}
+          <Link to="/Recipe/Bookmark">
+            <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
+          </Link>
         </div>
         <div>
           <img src="/images/svgIcons/book.svg" alt="book" />

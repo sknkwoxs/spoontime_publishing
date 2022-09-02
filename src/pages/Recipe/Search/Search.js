@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Search() {
   return (
     <>
@@ -5,10 +7,12 @@ export default function Search() {
         <div className="border-b">
           <div className="flex items-center gap-4 px-4 py-3">
             <div>
-              <img
-                src="/images/svgIcons/directionsLeft.svg"
-                alt="directionsLeft"
-              />
+              <Link to="/Recipe">
+                <img
+                  src="/images/svgIcons/directionsLeft.svg"
+                  alt="directionsLeft"
+                />
+              </Link>
             </div>
             <div className="relative w-full">
               <input

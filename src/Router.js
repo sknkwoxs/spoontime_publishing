@@ -7,6 +7,7 @@ import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
 import Search from "./pages/Recipe/Search/Search";
+import Bookmark from "./pages/Recipe/Bookmark/Bookmark";
 
 export default function Router() {
   return (
@@ -18,7 +19,10 @@ export default function Router() {
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
         <Route path="/Recipe/Search" element={<Search />} />
+        <Route path="/Recipe/Bookmark" element={<Bookmark />} />
+        {/* MealPlan */}
         <Route path="/MealPlan" element={<MealPlan />} />
+        {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
