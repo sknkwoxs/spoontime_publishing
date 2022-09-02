@@ -8,28 +8,7 @@ export default function AddMenu() {
           <Link to="/Recipe">
             <div className="absolute px-4 pt-8">
               <div className="py-4 my-auto h-14">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 12H5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12 19L5 12L12 5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <img src="/images/svgIcons/back.svg" alt="back" />
               </div>
             </div>
           </Link>

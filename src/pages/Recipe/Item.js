@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 export default function BabyInfo() {
   return (
     <>
-      <Link to="/Recipe/AddMenu">
-        <article className="flex border-b py-4">
-          <div className="mr-4">
-            <img src="images/Rectangle_869.png" alt="Rectangle_869" />
-          </div>
-          <div className="w-full flex flex-col my-auto">
-            <p className="Font16sb mb-2">한우가지로메인죽</p>
-            <div className="Font12 flex text-GreyScale-grey02">
+      <article className="flex py-4 border-b">
+        <div className="flex w-full ">
+          <Link to="/Recipe/RecipeDetails">
+            <div className="mr-4">
+              <img src="/images/Rectangle_869.png" alt="Rectangle_869" />
+            </div>
+          </Link>
+          <div className="flex flex-col w-full my-auto">
+            <Link to="/Recipe/RecipeDetails">
+              <span className="mb-2 Font16sb">한우가지로메인죽</span>
+            </Link>
+            <div className="flex Font12 text-GreyScale-grey02">
               <div className="flex items-center gap-1 mr-2">
                 <img src="/images/svgIcons/baby.svg" alt="baby" />
                 <p>중기</p>
@@ -21,12 +25,14 @@ export default function BabyInfo() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col my-auto gap-y-2">
-            <img src="/images/svgicons/heart.svg" alt="heart" />
+        </div>
+        <div className="flex flex-col my-auto gap-y-2">
+          <img src="/images/svgicons/heart.svg" alt="heart" />
+          <Link to="/Recipe/AddMenu">
             <img src="/images/svgicons/calendar.svg" alt="calendar" />
-          </div>
-        </article>
-      </Link>
+          </Link>
+        </div>
+      </article>
     </>
   );
 }
