@@ -12,7 +12,7 @@ export default function Amount() {
               <div className="w-full py-1 border ">마스터기</div>
             </div>
           </div>
-          <div className="border-b Font14">
+          <div className="Font14">
             <div>
               <div className="flex justify-between">
                 <div className="mb-4">
@@ -43,7 +43,7 @@ export default function Amount() {
               <div className="mb-6">/ range bar / </div>
             </div>
           </div>
-          <div className="flex gap-10 py-4">
+          <div className="flex gap-10 py-4 border-t">
             <button className="flex items-center gap-2 Font14sb whitespace-nowrap">
               <img src="/images/svgIcons/rotation.svg" alt="rotation" />
               옵션 재설정

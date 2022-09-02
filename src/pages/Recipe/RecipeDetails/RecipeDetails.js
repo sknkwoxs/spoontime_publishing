@@ -3,6 +3,7 @@ import Item from "../Item";
 import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
 import StopTimer from "./StopTimer";
+import Substitutes from "./Substitutes";
 
 export default function BabyInfo() {
   return (
@@ -313,7 +314,8 @@ export default function BabyInfo() {
       </section>
       {/* <DeleteMaterialPopUp /> */}
       {/* <StopTimer /> */}
-      <Amount />
+      {/* <Amount /> */}
+      <Substitutes />
     </>
   );
 }
