@@ -5,13 +5,13 @@ export default function IngredientsItem() {
     <>
       <article className="flex py-4 border-b">
         <div className="flex w-full ">
-          <Link to="/Recipe/RecipeDetails">
+          <Link to="/Recipe/IngredientDetails">
             <div className="mr-4">
               <img src="/images/Rectangle_869.png" alt="Rectangle_869" />
             </div>
           </Link>
           <div className="flex flex-col w-full my-auto">
-            <Link to="/Recipe/RecipeDetails">
+            <Link to="/Recipe/IngredientDetails">
               <span className="mb-2 Font16sb">쌀</span>
             </Link>
             <div className="flex Font12 text-GreyScale-grey02">

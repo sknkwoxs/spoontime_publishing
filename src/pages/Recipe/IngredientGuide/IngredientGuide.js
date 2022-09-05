@@ -15,7 +15,7 @@ export default function IngredientGuide() {
             />
           </Link>
           <p>식재료 가이드</p>
-          <Link to="/">
+          <Link to="#">
             <img src="/images/svgIcons/search.svg" alt="search" />
           </Link>
         </div>

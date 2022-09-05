@@ -14,18 +14,18 @@ export default function IngredientGuideFilter() {
               알레르기 위험도
             </div>
           </div>
-          <div className="inline-block gap-2 py-4 Font12">
+          <div className="inline-block py-4 Font12">
             {/* 섭취 가능 시기 */}
-            <button className=" items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1 mr-2">
+            <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2">
               4~6개월
             </button>
-            <button className=" items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1 mr-2">
+            <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2">
               7~8개월
             </button>
-            <button className=" items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1 mr-2">
+            <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2">
               9~11개월
             </button>
-            <button className=" items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1 mr-2 bg-BrandColor-green04 border-BrandColor-green03">
+            <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2 bg-BrandColor-green04 border-BrandColor-green03">
               12개월 이상
             </button>
             {/* 알레르기 위험도 */}
