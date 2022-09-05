@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TabBar from "../components/TabBar";
 import DeleteMenu from "./MealPlan/Main/DeleteMenu";
 
@@ -16,7 +17,9 @@ export default function MealPlan() {
                 <p className="px-2 py-1 mr-4 rounded Font12 text-GreyScale-grey02 bg-BrandColor-green04">
                   중기 (~4/16)
                 </p>
-                <img src="/images/svgIcons/settings.svg" alt="settings" />
+                <Link to="/MealPlan/Settings">
+                  <img src="/images/svgIcons/settings.svg" alt="settings" />
+                </Link>
               </div>
             </article>
           </section>

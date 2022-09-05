@@ -12,6 +12,7 @@ import IngredientGuide from "./pages/Recipe/IngredientGuide/IngredientGuide";
 import IngredientDetails from "./pages/Recipe/IngredientGuide/IngredientDetails";
 //
 import MealPlan from "./pages/MealPlan";
+import Settings from "./pages/MealPlan/Settings/Settings";
 //
 import MyPage from "./pages/MyPage";
 
@@ -33,6 +34,7 @@ export default function Router() {
         />
         {/* MealPlan */}
         <Route path="/MealPlan" element={<MealPlan />} />
+        <Route path="/MealPlan/Settings" element={<Settings />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
       </Routes>

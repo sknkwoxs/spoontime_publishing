@@ -4,16 +4,18 @@ export default function Bookmark() {
   return (
     <>
       <article className="h-full px-4">
-        <div className="z-10 flex py-4">
-          <div>
-            <Link to="/Recipe">
+        <div className="flex py-4">
+          <div className="absolute">
+            <Link to="/MealPlan">
               <img
                 src="/images/svgIcons/directionsLeft.svg"
                 alt="directionsLeft"
               />
             </Link>
           </div>
-          <p className="mx-auto Font16sb">즐겨 찾기</p>
+          <div className="flex justify-center w-full">
+            <p className="Font16sb">즐겨찾기</p>
+          </div>
         </div>
         <div className="h-full">
           <div className="flex w-full py-2 border-b Font14sb text-GreyScale-grey03">
