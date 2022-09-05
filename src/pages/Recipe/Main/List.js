@@ -1,21 +1,21 @@
 import Filter from "../Filter/Filter.js";
-import Item from "../Item.js";
+import RecipeItem from "../RecipeItem.js";
 
 export function List() {
   return (
     <>
       <section>
         <Filter />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
+        <RecipeItem />
       </section>
     </>
   );

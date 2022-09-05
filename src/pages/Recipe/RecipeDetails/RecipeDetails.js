@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Item from "../Item";
+import RecipeItem from "../RecipeItem";
 import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
 import StopTimer from "./StopTimer";
@@ -306,9 +306,9 @@ export default function BabyInfo() {
           </article>
           <article className="px-4 py-6 border-b">
             <p className="Font16sb">추천 레시피</p>
-            <Item />
-            <Item />
-            <Item />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
           </article>
         </div>
       </section>

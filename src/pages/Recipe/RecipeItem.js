@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function BabyInfo() {
+export default function RecipeItem() {
   return (
     <>
       <article className="flex py-4 border-b">

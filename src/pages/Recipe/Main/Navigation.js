@@ -15,7 +15,9 @@ export function Navigation() {
           </Link>
         </div>
         <div>
-          <img src="/images/svgIcons/book.svg" alt="book" />
+          <Link to="/Recipe/IngredientGuide">
+            <img src="/images/svgIcons/book.svg" alt="book" />
+          </Link>
           {/* to 식재료 가이드 */}
         </div>
       </section>
