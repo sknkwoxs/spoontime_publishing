@@ -6,8 +6,12 @@ export default function RecipeItem() {
       <article className="flex py-4 border-b">
         <div className="flex w-full ">
           <Link to="/Recipe/RecipeDetails">
-            <div className="mr-4">
-              <img src="/images/Rectangle_869.png" alt="Rectangle_869" />
+            <div className="rounded-lg max-w-[64px] h-[64px] object-cover mr-4">
+              <img
+                className="rounded-lg max-w-[64px] h-[64px] object-cover"
+                src="/images/Rectangle_869.png"
+                alt="Rectangle_869"
+              />
             </div>
           </Link>
           <div className="flex flex-col w-full my-auto">
