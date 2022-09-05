@@ -32,9 +32,14 @@ export default function MealPlanItem() {
           </div>
         </div>
         <div className="flex items-center whitespace-nowrap">
-          <button className="px-4 py-1 border-GreyScale-grey01 rounded-[61px] border Font12">
+          {/* <button className="px-4 py-1 border-GreyScale-grey01 rounded-[61px] border Font12">
             확인
-          </button>
+          </button> */}
+          <Link to="/MealPlan/Feedback">
+            <button className="px-4 py-1 border-GreyScale-grey01 rounded-[61px] border Font12">
+              기록
+            </button>
+          </Link>
         </div>
       </article>
     </>
