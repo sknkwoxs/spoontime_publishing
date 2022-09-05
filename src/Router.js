@@ -15,6 +15,8 @@ import MealPlan from "./pages/MealPlan";
 import Settings from "./pages/MealPlan/Settings/Settings";
 //
 import MyPage from "./pages/MyPage";
+//
+import Preloader from "./pages/Preloader";
 
 export default function Router() {
   return (
@@ -37,6 +39,7 @@ export default function Router() {
         <Route path="/MealPlan/Settings" element={<Settings />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
+        <Route path="/Preloader" element={<Preloader />} />
       </Routes>
     </BrowserRouter>
   );
