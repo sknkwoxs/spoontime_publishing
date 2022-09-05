@@ -22,9 +22,9 @@ export default function TabBar() {
             </div>
           </Link>
           <Link to="/MyPage">
-            <div className="flex flex-col gap-1 mx-auto text-center">
-              <div className="mx-auto">
-                <img src="/images/svgIcons/diet.svg" alt="diet" />
+            <div className="flex flex-col items-center justify-center gap-1 mx-auto text-center">
+              <div className="mx-auto max-w-[20px] max-h-[20px]">
+                <img src="/images/RecipeBabyImg.svg" alt="RecipeBabyImg" />
               </div>
               <p>꼬물이</p>
             </div>

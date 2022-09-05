@@ -1,9 +1,9 @@
 import TabBar from "../components/TabBar";
 import Alert from "./Recipe/Alert";
 import PopUp from "./Recipe/PopUp";
-import { BabyInfo } from "./Recipe/Main/BabyInfo";
-import { List } from "./Recipe/Main/List";
-import { Navigation } from "./Recipe/Main/Navigation";
+import { BabyInfo } from "./Recipe/Recipe/BabyInfo";
+import { List } from "./Recipe/Recipe/List";
+import { Navigation } from "./Recipe/Recipe/Navigation";
 
 export default function Recipe() {
   return (

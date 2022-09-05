@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import MealPlanItem from "./MealPlan/MealPlanItem";
 import TabBar from "../components/TabBar";
-import DeleteMenu from "./MealPlan/Main/DeleteMenu";
+import DeleteMenu from "./MealPlan/MealPlan/DeleteMenu";
 
 export default function MealPlan() {
   return (
@@ -41,10 +42,9 @@ export default function MealPlan() {
           </section>
           <section className="px-4 mt-6">
             <article>
-              <div className="pb-[3.25rem]">
-                <p className="Font16sb">식단</p>
-              </div>
-              <div className="Font14 text-center py-[5.5rem]">
+              <p className="Font16sb">식단</p>
+              {/* 식단이 없음 */}
+              {/* <div className="text-center Font14">
                 <p>계획된 식단이 없습니다.</p>
                 <div className="flex justify-center">
                   <p className="flex justify-center">아래의</p>
@@ -57,9 +57,13 @@ export default function MealPlan() {
                   <p>버튼을 눌러</p>
                 </div>
                 <p>마음에 드는 식단을 추가해 보세요.</p>
+              </div> */}
+              {/* 식단이 있음 */}
+              <div>
+                <MealPlanItem />
               </div>
             </article>
-            <div className="flex justify-end">
+            <div className="fixed bottom-[5.75rem] right-4 z-50">
               <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
                 <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
               </div>
