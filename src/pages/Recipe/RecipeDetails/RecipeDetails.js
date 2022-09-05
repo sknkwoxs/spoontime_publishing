@@ -159,7 +159,7 @@ export default function BabyInfo() {
             <div>
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 1</p>
-                <button className="Font12sb flex items-center bg-[#E13F00] text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
+                <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
                   <img src="/images/svgicons/timer.svg" alt="timer" />
                   30분
                 </button>
@@ -201,7 +201,7 @@ export default function BabyInfo() {
             <div>
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 2</p>
-                <button className="Font12sb flex items-center bg-[#E13F00] text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
+                <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
                   <img src="/images/svgicons/timer.svg" alt="timer" />
                   15분
                 </button>

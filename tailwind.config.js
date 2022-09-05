@@ -14,6 +14,7 @@ module.exports = {
           yellow: "#F2D186",
           pink: "#F3CAC2",
           blue: "#D3E3DF",
+          heart: "#E13F00",
         },
         GreyScale: {
           grey01: "#2A2A2A",

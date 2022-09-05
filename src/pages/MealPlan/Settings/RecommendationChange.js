@@ -9,7 +9,7 @@ export default function RecommendationChange() {
           <span className="">
             새로운 식단을 추천받을 경우, 다음의 기간에 입력된 식단은&nbsp;
           </span>
-          <span className="text-[#E13F00]">모두 삭제</span>
+          <span className="text-ContentsColor-heart">모두 삭제</span>
           <span>됩니다.</span>
         </div>
         <p className="mb-6 Font14sb">7월 14일 (금) ~ 8월 1일 (월)</p>
