@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import MealPlanItem from "./MealPlan/MealPlanItem";
 import TabBar from "../components/TabBar";
-import DeleteMenu from "./MealPlan/MealPlan/DeleteMenu";
+// import DeleteMenu from "./MealPlan/MealPlan/DeleteMenu";
 
 export default function MealPlan() {
   return (
@@ -78,6 +78,7 @@ export default function MealPlan() {
               </div>
             </article>
             <div className="fixed bottom-[5.75rem] right-4 z-50">
+              {/* 식단 추가 */}
               <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
                 <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
               </div>

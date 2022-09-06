@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TabBar from "../components/TabBar";
 
 export default function MyPage() {
@@ -9,9 +10,11 @@ export default function MyPage() {
             <article className="flex justify-between">
               <div className="flex">
                 <p className="pr-1 Font16sb">꼬물이</p>
-                {/* <img src="/images/svgIcons/down2.svg" alt="down2" /> */}
+                <img src="/images/svgIcons/down2.svg" alt="down2" />
               </div>
-              <img src="/images/svgIcons/settings.svg" alt="settings" />
+              <Link to="/Profile">
+                <img src="/images/svgIcons/settings.svg" alt="settings" />
+              </Link>
             </article>
           </section>
           <section className="px-4 mb-6">

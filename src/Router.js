@@ -16,6 +16,7 @@ import Settings from "./pages/MealPlan/Settings/Settings";
 import Feedback from "./pages/MealPlan/Feedback/Feedback";
 //
 import MyPage from "./pages/MyPage";
+import Profile from "./pages/MyPage/Profile/Profile";
 //
 import Preloader from "./pages/Preloader";
 
@@ -41,6 +42,8 @@ export default function Router() {
         <Route path="/MealPlan/Feedback" element={<Feedback />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
+        <Route path="/Profile" element={<Profile />} />
+        {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
       </Routes>
     </BrowserRouter>
