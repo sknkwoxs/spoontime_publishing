@@ -25,6 +25,11 @@ module.exports = {
           White: "#FFFFFF",
         },
       },
+      fontFamily: {
+        Pretendard: ["Pretendard-Regular"],
+        PretendardSemiBold: ["Pretendard-SemiBold"],
+        PretendardBold: ["Pretendard-Bold"],
+      },
       backgroundImage: {
         down: "url('../public/images/svgIcons/down.svg')",
       },

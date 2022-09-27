@@ -6,6 +6,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @tailwind base;
 html {
   font-family: "Pretendard-Regular";
@@ -13,6 +29,28 @@ html {
 }
 
 @layer base {
+  .loginBallon {
+    position: relative;
+    width: 10.75rem;
+    height: 2rem;
+    background: #2a2a2a;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .loginBallon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 88%;
+    width: 12px;
+    height: 6px;
+    border: 6px solid transparent;
+    border-top-color: #2a2a2a;
+    border-bottom: 0;
+    margin-left: -6px;
+    margin-bottom: -6px;
+  }
 }
 
 @tailwind components;
@@ -42,7 +80,7 @@ html {
   .Font20 {
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
   }
 

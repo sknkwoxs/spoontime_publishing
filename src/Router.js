@@ -1,7 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
+import Splash from "./pages/Splash";
+import SplashRecipe from "./pages/Splash/SplashRecipe";
+import SplashCalendar from "./pages/Splash/SplashCalendar";
+import SplashPostscript from "./pages/Splash/SplashPostscript";
+import SplashSpoontime from "./pages/Splash/SplashSpoontime";
+//
 import Login from "./pages/Login";
+//
+
 //
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
@@ -24,6 +32,13 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Splash */}
+        <Route path="/Splash" element={<Splash />} />
+        <Route path="/Splash/SplashRecipe" element={<SplashRecipe />} />
+        <Route path="/Splash/SplashCalendar" element={<SplashCalendar />} />
+        <Route path="/Splash/SplashPostscript" element={<SplashPostscript />} />
+        <Route path="/Splash/SplashSpoontime" element={<SplashSpoontime />} />
+        {/* Login */}
         <Route path="/" element={<Login />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
