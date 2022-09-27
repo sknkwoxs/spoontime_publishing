@@ -58,7 +58,11 @@ html {
 @layer components {
   .Font24sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 24px;
     line-height: 32px;
   }
@@ -72,21 +76,29 @@ html {
 
   .Font20sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 20px;
     line-height: 24px;
   }
 
   .Font20 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
   }
 
   .Font18sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 18px;
     line-height: 24px;
   }
@@ -100,14 +112,22 @@ html {
 
   .Font16sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 16px;
     line-height: 24px;
   }
 
   .Font14sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 14px;
     line-height: 24px;
   }
@@ -121,7 +141,11 @@ html {
 
   .Font12sb {
     font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
     font-weight: 600;
+    font-style: normal;
     font-size: 12px;
     line-height: 16px;
   }

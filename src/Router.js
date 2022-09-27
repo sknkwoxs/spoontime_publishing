@@ -9,7 +9,7 @@ import SplashSpoontime from "./pages/Splash/SplashSpoontime";
 //
 import Login from "./pages/Login";
 //
-
+import FamilyShareCode from "./pages/FamilyShareCode/FamilyShareCode";
 //
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
@@ -40,6 +40,8 @@ export default function Router() {
         <Route path="/Splash/SplashSpoontime" element={<SplashSpoontime />} />
         {/* Login */}
         <Route path="/" element={<Login />} />
+        {/* FamilyShareCode */}
+        <Route path="/FamilyShareCode" element={<FamilyShareCode />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
