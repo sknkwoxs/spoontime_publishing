@@ -51,6 +51,30 @@ html {
     margin-left: -6px;
     margin-bottom: -6px;
   }
+
+  .birthdayBallon {
+    position: relative;
+    width: 53px;
+    height: 1.5rem;
+    background: #112f30;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .birthdayBallon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-10%);
+    width: 12px;
+    height: 6px;
+    border: 6px solid transparent;
+    border-top-color: #112f30;
+    border-bottom: 0;
+    margin-left: -4px;
+    margin-bottom: -4px;
+  }
 }
 
 @tailwind components;

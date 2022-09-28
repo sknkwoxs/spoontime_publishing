@@ -24,6 +24,9 @@ module.exports = {
           grey05: "#F5F5F5",
           White: "#FFFFFF",
         },
+        Message: {
+          error: "#F93232",
+        },
       },
       fontFamily: {
         Pretendard: ["Pretendard-Regular"],
@@ -35,5 +38,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

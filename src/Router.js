@@ -11,6 +11,9 @@ import Login from "./pages/Login";
 //
 import FamilyShareCode from "./pages/FamilyShareCode/FamilyShareCode";
 //
+import BabyInfo from "./pages/BabyInfo/BabyInfo";
+import Birth from "./pages/BabyInfo/Birth";
+//
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
@@ -42,6 +45,9 @@ export default function Router() {
         <Route path="/" element={<Login />} />
         {/* FamilyShareCode */}
         <Route path="/FamilyShareCode" element={<FamilyShareCode />} />
+        {/* BabyInfo */}
+        <Route path="/BabyInfo" element={<BabyInfo />} />
+        <Route path="/Birth" element={<Birth />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />

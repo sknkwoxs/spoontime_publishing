@@ -23,11 +23,12 @@ export default function FamilyShareCode() {
                 />
               </button>
             </div>
+            {/* <p className="Font12 text-Message-error">공유코드가 틀립니다.</p> */}
             <p className="Font12 text-GreyScale-grey02">
               가족 공유 코드가 없어요.
-              <span className="underline text-BrandColor-green01">
+              <button className="underline text-BrandColor-green01">
                 새로운 아기를 등록할게요.
-              </span>
+              </button>
             </p>
           </div>
         </div>
@@ -36,6 +37,9 @@ export default function FamilyShareCode() {
             <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
               다음
             </button>
+            {/* <button className="w-full py-3 pb-11 text-GreyScale-White bg-GreyScale-grey04">
+              다음
+            </button> */}
           </div>
         </section>
       </div>
