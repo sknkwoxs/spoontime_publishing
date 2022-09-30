@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import SearchResult from "./SearchResult";
+import SearchResultIngredient from "./SearchResultIngredient";
+import SearchResultRecipe from "./SearchResultRecipe";
 
 export default function Search() {
   return (
@@ -29,8 +30,9 @@ export default function Search() {
               </button>
             </div>
           </div>
+          {/* default */}
           {/* recommend banner */}
-          <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
+          {/* <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
             <button>
               <img
@@ -39,7 +41,7 @@ export default function Search() {
               />
             </button>
           </div>
-          {/* default */}
+
           <div className="px-4 pb-6 border-b">
             <p className="mb-4">추천 검색어</p>
             <div className="gap-x-2">
@@ -102,7 +104,7 @@ export default function Search() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Autocomplete */}
           {/* <div className="px-4">
           <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
@@ -128,7 +130,8 @@ export default function Search() {
           </ul>
         </div> */}
           {/* SearchResult */}
-          {/* <SearchResult /> */}
+          {/* <SearchResultRecipe /> */}
+          <SearchResultIngredient />
         </div>
       </article>
     </>

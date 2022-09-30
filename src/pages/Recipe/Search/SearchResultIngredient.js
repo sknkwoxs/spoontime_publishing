@@ -1,15 +1,15 @@
 import RecipeItem from "../RecipeItem";
 import SearchResultRecipeFilter from "./SearchResultRecipeFilter";
 
-export default function SearchResult() {
+export default function SearchResultIngredient() {
   return (
     <>
       <div className="px-4">
         <div className="flex justify-around mb-3 border-b Font14sb">
-          <div className="w-full border-b-2 border-GreyScale-grey01">
+          <div className="w-full text-GreyScale-grey03">
             <button className="w-full py-2">레시피</button>
           </div>
-          <div className="w-full text-GreyScale-grey03">
+          <div className="w-full border-b-2 border-GreyScale-grey01">
             <button className="w-full py-2">식재료</button>
           </div>
         </div>
@@ -41,9 +41,7 @@ export default function SearchResult() {
               </select>
             </div>
           </div>
-          <div>
-            <RecipeItem />
-          </div>
+          <div></div>
           {/* <SearchResultRecipeFilter /> */}
         </div>
       </div>
