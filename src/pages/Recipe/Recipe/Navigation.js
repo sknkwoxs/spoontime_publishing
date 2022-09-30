@@ -10,7 +10,10 @@ export function Navigation() {
           </Link>
         </div>
         <div>
-          <Link to="/Recipe/Bookmark">
+          <Link to="/Recipe/BookmarkRecipe">
+            <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
+          </Link>
+          <Link to="/Recipe/BookmarkIngredient">
             <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
           </Link>
         </div>

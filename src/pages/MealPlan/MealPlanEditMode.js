@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import MealPlanItem from "./MealPlan/MealPlanItem";
-import TabBar from "../components/TabBar";
+import MealPlanItem from "./MealPlanItem";
+import TabBar from "../../components/TabBar";
+import DeleteMenu from "./MealPlan/DeleteMenu";
 
-export default function MealPlan() {
+export default function MealPlanEditMode() {
   return (
     <>
       <div className="w-full h-screen pb-[76px]">
@@ -85,6 +86,7 @@ export default function MealPlan() {
           </section>
         </div>
       </div>
+      {/* <DeleteMenu /> */}
       <TabBar />
     </>
   );

@@ -28,6 +28,7 @@ import IngredientGuide from "./pages/Recipe/IngredientGuide/IngredientGuide";
 import IngredientDetails from "./pages/Recipe/IngredientGuide/IngredientDetails";
 //
 import MealPlan from "./pages/MealPlan";
+import MealPlanEditMode from "./pages/MealPlan/MealPlanEditMode";
 import Settings from "./pages/MealPlan/Settings/Settings";
 import Feedback from "./pages/MealPlan/Feedback/Feedback";
 //
@@ -74,6 +75,10 @@ export default function Router() {
         />
         {/* MealPlan */}
         <Route path="/MealPlan" element={<MealPlan />} />
+        <Route
+          path="/MealPlan/MealPlanEditMode"
+          element={<MealPlanEditMode />}
+        />
         <Route path="/MealPlan/Settings" element={<Settings />} />
         <Route path="/MealPlan/Feedback" element={<Feedback />} />
         {/* MyPage */}
