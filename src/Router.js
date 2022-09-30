@@ -15,6 +15,7 @@ import BabyInfo from "./pages/BabyInfo/BabyInfo";
 import Birthday from "./pages/BabyInfo/Birthday";
 import PhotoUpload from "./pages/BabyInfo/PhotoUpload";
 import Allergy from "./pages/BabyInfo/Allergy";
+import Configuring from "./pages/BabyInfo/Configuring";
 //
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
@@ -52,6 +53,7 @@ export default function Router() {
         <Route path="/Birthday" element={<Birthday />} />
         <Route path="/PhotoUpload" element={<PhotoUpload />} />
         <Route path="/Allergy" element={<Allergy />} />
+        <Route path="/Configuring" element={<Configuring />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
