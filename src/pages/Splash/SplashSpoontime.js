@@ -25,7 +25,7 @@ export default function SplashSpoontime() {
           <span className="Font24sb font-PretendardSemiBold">스푼타임</span>으로
           쉽고 편리하게
         </div>
-        <p>이미지 교체 필요</p>
+        <p>이미지 깨짐</p>
         <div className="mx-5">
           <img src="/images/splash/Splash_Recipe.jpg" alt="Splash_Recipe" />
         </div>

@@ -24,7 +24,7 @@ export default function SplashCalendar() {
           걱정 없는
           <span className="Font24sb font-PretendardSemiBold">식단 관리</span>
         </div>
-        <p>이미지 교체 필요</p>
+        <p>이미지 깨짐</p>
         <div className="mx-5">
           <img src="/images/splash/Splash_Calendar.jpg" alt="Splash_Calendar" />
         </div>

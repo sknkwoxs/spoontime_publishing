@@ -23,7 +23,7 @@ export default function SplashRecipe() {
           <br /> 내 아기 맞춤형
           <span className="Font24sb font-PretendardSemiBold">레시피 추천</span>
         </div>
-        <p>이미지 교체 필요</p>
+        <p>이미지 깨짐</p>
         <div className="mx-5">
           <img src="/images/splash/Splash_Recipe.jpg" alt="Splash_Recipe" />
         </div>
