@@ -41,7 +41,10 @@ export default function Feedback() {
         <article className="px-4 mt-6 border-b">
           <p className="mb-2 Font16sb">얼마나 먹었나요?</p>
           <div className="mb-4 Font14">
-            <input className="px-3 py-2 mx-1 border rounded w-14" type="text" />
+            <input
+              className="px-3 py-2 mx-1 border rounded border-GreyScale-grey04 w-14"
+              type="text"
+            />
             g
           </div>
           <div className="mb-6">/ range bar / </div>
@@ -49,7 +52,7 @@ export default function Feedback() {
         <article className="px-4 my-6 mb-[80px]">
           <p className="mb-2 Font16sb">한 마디 남겨주세요.</p>
           <input
-            className="w-full p-2 mb-2 border rounded Font14 placeholder:text-GreyScale-grey03"
+            className="w-full p-2 mb-2 border rounded border-GreyScale-grey04 Font14 placeholder:text-GreyScale-grey03"
             type="text"
             placeholder="우리 아기 오늘도 잘 먹어줘서 고마워!"
           />
