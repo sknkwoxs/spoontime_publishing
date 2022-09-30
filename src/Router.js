@@ -15,7 +15,10 @@ import BabyInfo from "./pages/BabyInfo/BabyInfo";
 import Birthday from "./pages/BabyInfo/Birthday";
 import PhotoUpload from "./pages/BabyInfo/PhotoUpload";
 import Allergy from "./pages/BabyInfo/Allergy";
+<<<<<<< HEAD
 import Configuring from "./pages/BabyInfo/Configuring";
+=======
+>>>>>>> 706af778490bf4c2bca6934ddb079f1a1293ce09
 //
 import Recipe from "./pages/Recipe";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
