@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import IngredientsItem from "../IngredientsItem";
+import IngredientsItem from "./IngredientsItem";
 import IngredientGuideFilter from "./IngredientGuideFilter";
 import IngredientGuideSort from "./IngredientGuideSort";
 

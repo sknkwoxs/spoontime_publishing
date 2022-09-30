@@ -32,7 +32,7 @@ export default function Search() {
           </div>
           {/* default */}
           {/* recommend banner */}
-          {/* <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
+          <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
             <button>
               <img
@@ -104,7 +104,7 @@ export default function Search() {
                 </button>
               </div>
             </div>
-          </div> */}
+          </div>
           {/* Autocomplete */}
           {/* <div className="px-4">
           <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
@@ -131,7 +131,7 @@ export default function Search() {
         </div> */}
           {/* SearchResult */}
           {/* <SearchResultRecipe /> */}
-          <SearchResultIngredient />
+          {/* <SearchResultIngredient /> */}
         </div>
       </article>
     </>

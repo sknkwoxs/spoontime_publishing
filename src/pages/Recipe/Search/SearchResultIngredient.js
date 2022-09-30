@@ -1,5 +1,6 @@
 import RecipeItem from "../RecipeItem";
-import SearchResultRecipeFilter from "./SearchResultRecipeFilter";
+import SearchResultIngredientFilter from "./SearchResultIngredientFilter";
+import IngredientsItem from "../IngredientGuide/IngredientsItem";
 
 export default function SearchResultIngredient() {
   return (
@@ -41,8 +42,10 @@ export default function SearchResultIngredient() {
               </select>
             </div>
           </div>
-          <div></div>
-          {/* <SearchResultRecipeFilter /> */}
+          <div>
+            <IngredientsItem />
+          </div>
+          {/* <SearchResultIngredientFilter /> */}
         </div>
       </div>
     </>
