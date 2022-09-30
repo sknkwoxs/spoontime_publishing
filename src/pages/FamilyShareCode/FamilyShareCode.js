@@ -23,7 +23,7 @@ export default function FamilyShareCode() {
                 />
               </button>
             </div>
-            {/* <p className="Font12 text-Message-error">공유코드가 틀립니다.</p> */}
+            {/* <p className="mb-2 Font12 text-Message-error">공유코드가 틀립니다.</p> */}
             <p className="Font12 text-GreyScale-grey02">
               가족 공유 코드가 없어요.
               <button className="underline text-BrandColor-green01">

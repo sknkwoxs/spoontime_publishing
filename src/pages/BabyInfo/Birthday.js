@@ -1,11 +1,20 @@
-export default function FamilyShareCode() {
+export default function Birthday() {
   return (
     <>
       <div className="w-full h-screen">
         <div className="px-4 mt-8">
-          <p className="py-4 mb-3 text-center Font16sb">아기정보</p>
+          <div className="relative">
+            <img
+              className="absolute pt-4"
+              src="images/svgIcons/BabyInfoArrowsLeft.svg"
+              alt="BabyInfoArrowsLeft"
+            />
+            <p className="pt-4 mb-3 text-center Font16sb">아기정보</p>
+          </div>
           <div className="mb-4">
-            <div className="h-1 mb-10 bg-GreyScale-grey04" />
+            <div className="relative h-1 mb-10 bg-GreyScale-grey04">
+              <div className="absolute h-1 bg-BrandColor-green03 w-[50%]" />
+            </div>
             <p className="mb-24 Font20sb">
               아기 생일을 입력해 주세요. <br />
               출산 전이시라면, <br />
@@ -26,6 +35,9 @@ export default function FamilyShareCode() {
                 </button>
               </div>
             </div>
+            {/* <p className="mb-2 Font12 text-Message-error">
+              올바른 출생(예정)일을 입력해 주세요.
+            </p> */}
             <p className="Font12 text-GreyScale-grey02">
               입력한 정보는 언제든 수정할 수 있어요.
             </p>
