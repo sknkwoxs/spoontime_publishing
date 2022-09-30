@@ -1,4 +1,4 @@
-export default function SearchResultIngredientFilter() {
+export default function BookmarkRecipeFilter() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
@@ -6,11 +6,17 @@ export default function SearchResultIngredientFilter() {
         <p className="mt-8 mb-2 Font16sb">검색 정렬</p>
         <div className="flex flex-col Font14">
           <button className="flex items-center justify-between py-4 text-left border-b">
-            추천순
+            최근 추가한 순
             <img src="/images/svgIcons/check.svg" alt="check" />
           </button>
+          <button className="flex items-center justify-between py-4 text-left border-b">
+            이름순
+          </button>
+          <button className="flex items-center justify-between py-4 text-left border-b">
+            섭취 개월 수 순
+          </button>
           <button className="flex items-center justify-between py-4 text-left">
-            적용 개월 수 순
+            조리 시간순
           </button>
         </div>
       </section>

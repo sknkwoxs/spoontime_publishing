@@ -22,7 +22,8 @@ import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
 import Search from "./pages/Recipe/Search/Search";
 import SearchIngredient from "./pages/Recipe/Search/SearchIngredient";
-import Bookmark from "./pages/Recipe/Bookmark/Bookmark";
+import BookmarkRecipe from "./pages/Recipe/Bookmark/BookmarkRecipe";
+import BookmarkIngredient from "./pages/Recipe/Bookmark/BookmarkIngredient";
 import IngredientGuide from "./pages/Recipe/IngredientGuide/IngredientGuide";
 import IngredientDetails from "./pages/Recipe/IngredientGuide/IngredientDetails";
 //
@@ -61,7 +62,11 @@ export default function Router() {
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
         <Route path="/Recipe/Search" element={<Search />} />
         <Route path="/Recipe/SearchIngredient" element={<SearchIngredient />} />
-        <Route path="/Recipe/Bookmark" element={<Bookmark />} />
+        <Route path="/Recipe/BookmarkRecipe" element={<BookmarkRecipe />} />
+        <Route
+          path="/Recipe/BookmarkIngredient"
+          element={<BookmarkIngredient />}
+        />
         <Route path="/Recipe/IngredientGuide" element={<IngredientGuide />} />
         <Route
           path="/Recipe/IngredientDetails"

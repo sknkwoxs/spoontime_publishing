@@ -1,6 +1,6 @@
 import RecipeItem from "../RecipeItem";
-import SearchResultIngredientFilter from "./SearchResultIngredientFilter";
 import IngredientsItem from "../IngredientGuide/IngredientsItem";
+import SearchResultIngredientFilter from "./SearchResultIngredientFilter";
 
 export default function SearchResultIngredient() {
   return (

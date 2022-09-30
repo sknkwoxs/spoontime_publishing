@@ -42,7 +42,7 @@ export default function MealPlan() {
           </section>
           <section className="px-4 mt-6">
             <article>
-              {/* 식단이 없음 */}
+              {/* No Data */}
               {/* <p className="Font16sb">식단</p>
               <div className="text-center Font14">
                 <p>계획된 식단이 없습니다.</p>
@@ -58,11 +58,11 @@ export default function MealPlan() {
                 </div>
                 <p>마음에 드는 식단을 추가해 보세요.</p>
               </div> */}
-              {/* 식단이 있음 */}
+              {/* Daily */}
               <div>
                 <div className="flex justify-between">
                   <p className="Font16sb">식단</p>
-                  <p className="Font12">편집</p>
+                  <button className="Font12">편집</button>
                   {/* <p className="flex items-center Font12">완료</p> */}
                 </div>
                 <MealPlanItem />
