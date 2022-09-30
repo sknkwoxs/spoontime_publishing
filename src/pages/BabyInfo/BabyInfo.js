@@ -3,10 +3,12 @@ export default function FamilyShareCode() {
     <>
       <div className="w-full h-screen">
         <div className="px-4 mt-8">
-          <p className="py-4 mb-3 text-center Font16sb">아기정보</p>
+          <p className="pt-4 mb-3 text-center Font16sb">아기정보</p>
           <div className="mb-8">
-            <div className="h-1 mb-10 bg-GreyScale-grey04" />
-            <p className="mb-6 Font20sb">
+            <div className="relative h-1 mb-10 bg-GreyScale-grey04">
+              <div className="absolute h-1 bg-BrandColor-green03 w-[25%]" />
+            </div>
+            <p className="mb-3 Font20sb">
               아기의 이름(닉네임)을
               <br />
               입력해 주세요.
@@ -19,9 +21,12 @@ export default function FamilyShareCode() {
               <p className="mb-3 Font12 text-GreyScale-grey03">
                 이름 또는 닉네임
               </p>
-              <div className="relative pb-1 mb-3 border-b Font20">
-                <input className="w-full focus:outline-hidden" type="text" />
-                <button className="absolute right-0">
+              <div className="flex pb-1 mb-3 border-b">
+                <input
+                  className="w-full p-0 border-none focus:outline-hidden Font20"
+                  type="text"
+                />
+                <button className="flex items-center">
                   <img
                     src="/images/svgIcons/FamilyShareCodeX.svg"
                     alt="FamilyShareCodeX"
