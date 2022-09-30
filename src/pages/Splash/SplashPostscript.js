@@ -26,7 +26,7 @@ export default function SplashPostscript() {
         <p>이미지 깨짐</p>
         <div className="mx-5">
           <img
-            src="/images/splash/Splash_Postscript.jpg"
+            src="/images/splash/SplashPostscript.jpg"
             alt="Splash_Postscript"
           />
         </div>

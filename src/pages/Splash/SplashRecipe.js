@@ -25,7 +25,7 @@ export default function SplashRecipe() {
         </div>
         <p>이미지 깨짐</p>
         <div className="mx-5">
-          <img src="/images/splash/Splash_Recipe.jpg" alt="Splash_Recipe" />
+          <img src="/images/Splash/SplashRecipe.jpg" alt="SplashRecipe" />
         </div>
       </section>
       <section className="fixed bottom-0 w-full">

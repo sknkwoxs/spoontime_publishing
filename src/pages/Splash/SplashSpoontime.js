@@ -18,7 +18,6 @@ export default function SplashSpoontime() {
             </li>
           </ul>
         </div>
-
         <div className="text-center Font24">
           우리 아기 밥상 고민
           <br />
@@ -27,7 +26,7 @@ export default function SplashSpoontime() {
         </div>
         <p>이미지 깨짐</p>
         <div className="mx-5">
-          <img src="/images/splash/Splash_Recipe.jpg" alt="Splash_Recipe" />
+          <img src="/images/Splash/SplashSpoontime.jpg" alt="SplashSpoontime" />
         </div>
       </section>
       <section className="fixed bottom-0 w-full">

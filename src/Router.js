@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
 import Splash from "./pages/Splash";
-import Authority from "./pages/Splash/Authority";
+import Authority from "./pages/Authority";
 import SplashRecipe from "./pages/Splash/SplashRecipe";
 import SplashCalendar from "./pages/Splash/SplashCalendar";
 import SplashPostscript from "./pages/Splash/SplashPostscript";
@@ -43,8 +43,8 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         {/* Splash */}
-        <Route path="/Splash" element={<Splash />} />
-        <Route path="/Splash/Authority" element={<Authority />} />
+        {/* <Route path="/Splash" element={<Splash />} /> */}
+        <Route path="/Authority" element={<Authority />} />
         <Route path="/Splash/SplashRecipe" element={<SplashRecipe />} />
         <Route path="/Splash/SplashCalendar" element={<SplashCalendar />} />
         <Route path="/Splash/SplashPostscript" element={<SplashPostscript />} />
