@@ -2,7 +2,7 @@ export default function Allergy() {
   return (
     <>
       <div className="w-full h-screen">
-        <div className="px-4 mt-8">
+        <div className="px-4">
           <div className="relative">
             <img
               className="absolute pt-4"

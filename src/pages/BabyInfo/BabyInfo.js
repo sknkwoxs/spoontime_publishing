@@ -2,7 +2,7 @@ export default function FamilyShareCode() {
   return (
     <>
       <div className="w-full h-screen">
-        <div className="px-4 mt-8">
+        <div className="px-4">
           <p className="pt-4 mb-3 text-center Font16sb">아기정보</p>
           <div className="mb-8">
             <div className="relative h-1 mb-10 bg-GreyScale-grey04">

@@ -16,7 +16,7 @@ export default function Search() {
             </div>
             <div className="relative w-full">
               <input
-                className="flex w-full py-1 rounded px-9 bg-GreyScale-grey05 Font14"
+                className="flex w-full py-1 border-none rounded px-9 bg-GreyScale-grey05 Font14"
                 type="text"
                 placeholder="식단검색"
               />
@@ -28,12 +28,14 @@ export default function Search() {
               </button>
             </div>
           </div>
-          <div className="flex justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
+          <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
-            <img
-              src="/images/svgIcons/directionsRight.svg"
-              alt="directionsRight"
-            />
+            <button>
+              <img
+                src="/images/svgIcons/directionsRight.svg"
+                alt="directionsRight"
+              />
+            </button>
           </div>
           <div className="px-4 mb-6">
             <p className="mb-4">추천 검색어</p>
@@ -73,19 +75,27 @@ export default function Search() {
           <div>
             <div className="flex items-center justify-between pb-3">
               <p className="Font14">한우가지로메인죽</p>
-              <img src="/images/svgIcons/x.svg" alt="x" />
+              <button>
+                <img src="/images/svgIcons/x.svg" alt="x" />
+              </button>
             </div>
             <div className="flex items-center justify-between pb-3">
               <p className="Font14">김가네 떡볶이</p>
-              <img src="/images/svgIcons/x.svg" alt="x" />
+              <button>
+                <img src="/images/svgIcons/x.svg" alt="x" />
+              </button>
             </div>
             <div className="flex items-center justify-between pb-3">
               <p className="Font14">한우강낭콩죽</p>
-              <img src="/images/svgIcons/x.svg" alt="x" />
+              <button>
+                <img src="/images/svgIcons/x.svg" alt="x" />
+              </button>
             </div>
             <div className="flex items-center justify-between pb-3">
               <p className="Font14">닭고기시금치죽</p>
-              <img src="/images/svgIcons/x.svg" alt="x" />
+              <button>
+                <img src="/images/svgIcons/x.svg" alt="x" />
+              </button>
             </div>
           </div>
         </div>
