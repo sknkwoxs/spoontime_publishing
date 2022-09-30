@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SearchResult from "./SearchResult";
 
 export default function Search() {
   return (
@@ -28,6 +29,7 @@ export default function Search() {
               </button>
             </div>
           </div>
+          {/* recommend banner */}
           <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
             <button>
@@ -37,71 +39,72 @@ export default function Search() {
               />
             </button>
           </div>
-        </div>
-        {/* default */}
-        {/* <div className="px-4 pb-6 border-b">
-          <p className="mb-4">추천 검색어</p>
-          <div className="gap-x-2">
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              알레르기
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              감기
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              이앓이
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              여름
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              한우
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              아기 주도
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              냉이
-            </button>
-            <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-              알레르기
-            </button>
-          </div>
-        </div>
-        <div className="px-4">
-          <div className="flex justify-between pt-6 pb-4">
-            <p className="Font14sb">최근 검색</p>
-            <button className="Font12 text-BrandColor-green01">전체삭제</button>
-          </div>
-          <div>
-            <div className="flex items-center justify-between pb-3">
-              <p className="Font14">한우가지로메인죽</p>
-              <button>
-                <img src="/images/svgIcons/x.svg" alt="x" />
+          {/* default */}
+          <div className="px-4 pb-6 border-b">
+            <p className="mb-4">추천 검색어</p>
+            <div className="gap-x-2">
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                알레르기
               </button>
-            </div>
-            <div className="flex items-center justify-between pb-3">
-              <p className="Font14">김가네 떡볶이</p>
-              <button>
-                <img src="/images/svgIcons/x.svg" alt="x" />
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                감기
               </button>
-            </div>
-            <div className="flex items-center justify-between pb-3">
-              <p className="Font14">한우강낭콩죽</p>
-              <button>
-                <img src="/images/svgIcons/x.svg" alt="x" />
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                이앓이
               </button>
-            </div>
-            <div className="flex items-center justify-between pb-3">
-              <p className="Font14">닭고기시금치죽</p>
-              <button>
-                <img src="/images/svgIcons/x.svg" alt="x" />
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                여름
+              </button>
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                한우
+              </button>
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                아기 주도
+              </button>
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                냉이
+              </button>
+              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                알레르기
               </button>
             </div>
           </div>
-        </div> */}
-        {/* Autocomplete */}
-        {/* <div className="px-4">
+          <div className="px-4">
+            <div className="flex justify-between pt-6 pb-4">
+              <p className="Font14sb">최근 검색</p>
+              <button className="Font12 text-BrandColor-green01">
+                전체삭제
+              </button>
+            </div>
+            <div>
+              <div className="flex items-center justify-between pb-3">
+                <p className="Font14">한우가지로메인죽</p>
+                <button>
+                  <img src="/images/svgIcons/x.svg" alt="x" />
+                </button>
+              </div>
+              <div className="flex items-center justify-between pb-3">
+                <p className="Font14">김가네 떡볶이</p>
+                <button>
+                  <img src="/images/svgIcons/x.svg" alt="x" />
+                </button>
+              </div>
+              <div className="flex items-center justify-between pb-3">
+                <p className="Font14">한우강낭콩죽</p>
+                <button>
+                  <img src="/images/svgIcons/x.svg" alt="x" />
+                </button>
+              </div>
+              <div className="flex items-center justify-between pb-3">
+                <p className="Font14">닭고기시금치죽</p>
+                <button>
+                  <img src="/images/svgIcons/x.svg" alt="x" />
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* Autocomplete */}
+          {/* <div className="px-4">
           <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
             <li>
               [식재료] 본<span className="text-BrandColor-green03">죽</span>
@@ -124,27 +127,8 @@ export default function Search() {
             </li>
           </ul>
         </div> */}
-        {/* No-data */}
-        <div className="px-4">
-          <div className="flex justify-around border-b Font14sb">
-            <div className="w-full border-b-2 border-GreyScale-grey01">
-              <button className="w-full py-2">레시피</button>
-            </div>
-            <div className="w-full text-GreyScale-grey03">
-              <button className="w-full py-2">식재료</button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center mt-[252px]">
-            <div className="mb-4">
-              <img
-                src="/images/Recipe/RecipeSearchNoData.svg"
-                alt="RecipeSearchNoData"
-              />
-            </div>
-            <p className="Font14 text-BrandColor-green01">
-              검색 결과가 없습니다.
-            </p>
-          </div>
+          {/* SearchResult */}
+          {/* <SearchResult /> */}
         </div>
       </article>
     </>
