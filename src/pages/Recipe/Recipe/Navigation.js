@@ -13,9 +13,9 @@ export function Navigation() {
           <Link to="/Recipe/BookmarkRecipe">
             <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
           </Link>
-          <Link to="/Recipe/BookmarkIngredient">
+          {/* <Link to="/Recipe/BookmarkIngredient">
             <img src="/images/svgIcons/mainHeart.svg" alt="mainHeart" />
-          </Link>
+          </Link> */}
         </div>
         <div>
           <Link to="/Recipe/IngredientGuide">
