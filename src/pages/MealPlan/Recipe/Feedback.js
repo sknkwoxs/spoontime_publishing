@@ -37,7 +37,7 @@ export default function Feedback() {
                     alt="suggestedCircleX"
                   />
                 </button>
-                <div className="absolute top-[50%] left-[50%] -translate-x-[50%] text-GreyScale-White">
+                <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-GreyScale-White">
                   <img src="/images/watermarkLogo.svg" alt="watermarkLogo" />
                 </div>
                 <div className="absolute bottom-4 right-4 text-GreyScale-White">

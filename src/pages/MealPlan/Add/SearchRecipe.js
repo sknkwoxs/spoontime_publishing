@@ -40,24 +40,53 @@ export default function SearchRecipe() {
           </button>
         </div>
         <article className="h-full px-4">
-          <div className="flex justify-between py-3">
-            <p className="Font14sb">즐겨찾는 레시피</p>
+          {/* default */}
+          <p className="Font14sb">즐겨찾는 레시피</p>
+          <div className="h-full">
+            <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] Font14">
+              즐겨 찾는 레시피가 없습니다.
+            </p>
+          </div>
+          {/* SearchRecipe */}
+          {/* <div className="flex justify-between py-3">
+            <p className="Font14">
+              총 <span className="Font14sb">19</span>개
+            </p>
             <button className="flex items-center gap-1 py-1 px-2 border border-GreyScale-grey03 rounded-[25px]">
-              <span className="Font12">최근 추가한 순</span>
+              <span className="Font12">추천순</span>
               <img src="/images/svgIcons/down.svg" alt="down" />
             </button>
           </div>
-          {/* <div className="h-full">
-            <p className="absolute top-[50%] left-[50%] -translate-x-[50%] Font14">
-              즐겨 찾는 레시피가 없습니다.
-            </p>
-          </div> */}
           <div>
             <SearchRecipeItem />
             <SearchRecipeItem />
             <SearchRecipeItem />
             <SearchRecipeItem />
-          </div>
+          </div> */}
+          {/* Autocomplete */}
+          {/* <div>
+            <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
+              <li>
+                [식재료] 본<span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [6개월]{" "}
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [6개월] 전복
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [8개월] 닭
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [9개월] 팥
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+            </ul>
+          </div> */}
         </article>
       </section>
       {/* <SearchRecipeFilter /> */}

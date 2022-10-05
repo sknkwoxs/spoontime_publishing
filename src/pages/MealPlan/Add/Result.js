@@ -39,7 +39,7 @@ export default function Result() {
             />
           </button>
         </div>
-        <article className="absolute top-[50%] left-[50%] -translate-x-[50%] px-4">
+        <article className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-4">
           <div className="flex flex-col items-center justify-center whitespace-nowrap">
             <div className="mb-4">
               <img src="/images/noDataLogo.svg" alt="noDataLogo" />
