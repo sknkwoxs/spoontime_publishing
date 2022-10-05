@@ -38,6 +38,7 @@ import Album from "./pages/MealPlan/Recipe/Album";
 import Read from "./pages/MealPlan/Recipe/Read";
 import FeedbackEdit from "./pages/MealPlan/Recipe/FeedbackEdit";
 import SearchRecipe from "./pages/MealPlan/Add/SearchRecipe";
+import Result from "./pages/MealPlan/Add/Result";
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
@@ -98,6 +99,7 @@ export default function Router() {
           element={<FeedbackEdit />}
         />
         <Route path="/MealPlan/Add/SearchRecipe" element={<SearchRecipe />} />
+        <Route path="/MealPlan/Add/Result" element={<Result />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/Profile" element={<Profile />} />
