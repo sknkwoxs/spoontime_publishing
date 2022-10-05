@@ -21,7 +21,7 @@ export default function SplashRecipe() {
         <div className="text-center Font24">
           300개 이상의
           <br /> 내 아기 맞춤형
-          <span className="Font24sb font-PretendardSemiBold">레시피 추천</span>
+          <span className="Font24sb">레시피 추천</span>
         </div>
         <p>이미지 깨짐</p>
         <div className="mx-5">

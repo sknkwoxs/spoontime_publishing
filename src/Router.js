@@ -34,6 +34,10 @@ import Settings from "./pages/MealPlan/Settings/Settings";
 import MealDetails from "./pages/MealPlan/MealDetails";
 import Feedback from "./pages/MealPlan/Recipe/Feedback";
 import Library from "./pages/MealPlan/Recipe/Library";
+import Album from "./pages/MealPlan/Recipe/Album";
+import Read from "./pages/MealPlan/Recipe/Read";
+import FeedbackEdit from "./pages/MealPlan/Recipe/FeedbackEdit";
+import SearchRecipe from "./pages/MealPlan/Add/SearchRecipe";
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
@@ -87,6 +91,13 @@ export default function Router() {
         <Route path="/MealPlan/MealDetails" element={<MealDetails />} />
         <Route path="/MealPlan/Recipe/Feedback" element={<Feedback />} />
         <Route path="/MealPlan/Recipe/Library" element={<Library />} />
+        <Route path="/MealPlan/Recipe/Album" element={<Album />} />
+        <Route path="/MealPlan/Recipe/Read" element={<Read />} />
+        <Route
+          path="/MealPlan/Recipe/FeedbackEdit"
+          element={<FeedbackEdit />}
+        />
+        <Route path="/MealPlan/Add/SearchRecipe" element={<SearchRecipe />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/Profile" element={<Profile />} />

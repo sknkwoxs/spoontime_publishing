@@ -21,7 +21,7 @@ export default function SplashPostscript() {
         <div className="text-center Font24">
           예쁘게 기록하고
           <br /> 쉽게 공유하는
-          <span className="Font24sb font-PretendardSemiBold">식단 후기</span>
+          <span className="Font24sb">식단 후기</span>
         </div>
         <p>이미지 깨짐</p>
         <div className="mx-5">

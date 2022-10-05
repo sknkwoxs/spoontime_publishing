@@ -21,8 +21,7 @@ export default function SplashSpoontime() {
         <div className="text-center Font24">
           우리 아기 밥상 고민
           <br />
-          <span className="Font24sb font-PretendardSemiBold">스푼타임</span>으로
-          쉽고 편리하게
+          <span className="Font24sb">스푼타임</span>으로 쉽고 편리하게
         </div>
         <p>이미지 깨짐</p>
         <div className="mx-5">

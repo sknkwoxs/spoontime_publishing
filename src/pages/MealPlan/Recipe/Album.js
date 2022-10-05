@@ -5,95 +5,57 @@ export default function Album() {
     <>
       <section>
         <div className="flex py-4">
-          <div className="absolute left-4">
+          <div className="flex justify-center w-full">
+            <p className="Font16sb">사진첩 선택</p>
+          </div>
+          <div className="absolute right-4">
             <Link to="/MealPlan">
-              <img
-                src="/images/svgIcons/directionsLeft.svg"
-                alt="directionsLeft"
-              />
+              <span className="Font12 text-BrandColor-green01">취소</span>
             </Link>
           </div>
-          <div className="flex justify-center w-full">
-            <p className="Font16sb">사진 선택</p>
-          </div>
         </div>
-        <article>
-          <div className="object-cover w-full">
-            <img
-              className="object-cover w-full max-h-[360px]"
-              src="/images/RecipeDetails1.jpg"
-              alt="RecipeDetails1"
-            />
+        <article className="px-4">
+          <div className="flex gap-4 mb-2">
+            <div className="max-w-[4rem] max-h-[4rem] object-cover">
+              <img
+                className="object-cover w-full h-full rounded-lg"
+                src="/images/RecipeDetails1.jpg"
+                alt="RecipeDetails1"
+              />
+            </div>
+            <div className="flex flex-col items-start justify-center">
+              <p className="Font16 font-PretendardSemiBold">최근 항목</p>
+              <p className="Font12sb font-PretendardSemiBold">7505</p>
+            </div>
           </div>
-        </article>
-        <article className="mb-[4.5rem]">
-          <div className="flex items-center justify-between p-4">
-            <button className="flex items-center">
-              <p className="Font16sb">최근항목</p>
-              <img src="/images/svgIcons/down2.svg" alt="down2" />
-            </button>
-            <button>
-              <img src="/images/svgIcons/cameraOn.svg" alt="cameraOn" />
-            </button>
+          <div className="flex gap-4 mb-2">
+            <div className="max-w-[4rem] max-h-[4rem] object-cover">
+              <img
+                className="object-cover w-full h-full rounded-lg"
+                src="/images/RecipeDetails1.jpg"
+                alt="RecipeDetails1"
+              />
+            </div>
+            <div className="flex flex-col items-start justify-center">
+              <p className="Font16 font-PretendardSemiBold">즐겨찾는 항목</p>
+              <p className="Font12sb">53</p>
+            </div>
           </div>
-          <div className="grid grid-cols-3 gap-[3px]">
-            <div className="object-cover w-full">
+          <div className="flex gap-4 mb-2">
+            <div className="max-w-[4rem] max-h-[4rem] object-cover">
               <img
-                className="object-cover w-full max-h-[7.375rem]"
+                className="object-cover w-full h-full rounded-lg"
                 src="/images/RecipeDetails1.jpg"
                 alt="RecipeDetails1"
               />
             </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
-            </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
-            </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
-            </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
-            </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
-            </div>
-            <div className="object-cover w-full">
-              <img
-                className="object-cover w-full max-h-[7.375rem]"
-                src="/images/RecipeDetails1.jpg"
-                alt="RecipeDetails1"
-              />
+            <div className="flex flex-col items-start justify-center">
+              <p className="Font16 font-PretendardSemiBold">스크린샷</p>
+              <p className="Font12sb font-PretendardSemiBold">142</p>
             </div>
           </div>
         </article>
       </section>
-      <div>
-        <button className="fixed bottom-0 left-0 right-0 w-full py-3 bg-BrandColor-green01 text-GreyScale-White Font16sb">
-          사진 선택
-        </button>
-      </div>
     </>
   );
 }

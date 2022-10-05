@@ -20,7 +20,7 @@ export default function Library() {
         <article>
           <div className="object-cover w-full">
             <img
-              className="object-cover w-full max-h-[360px]"
+              className="object-cover w-full max-h-[22.5rem]"
               src="/images/RecipeDetails1.jpg"
               alt="RecipeDetails1"
             />

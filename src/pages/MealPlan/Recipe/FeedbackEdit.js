@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Feedback() {
+export default function FeedbackEdit() {
   return (
     <>
       <section>
@@ -24,7 +24,7 @@ export default function Feedback() {
           </p>
           {/* delete photo */}
           <div className="h-[22.5rem] bg-GreyScale-grey05">
-            <div className="object-cover w-full">
+            {/* <div className="object-cover w-full">
               <div className="relative">
                 <img
                   className="object-cover w-full max-h-[22.5rem]"
@@ -47,15 +47,15 @@ export default function Feedback() {
                   </p>
                 </div>
               </div>
-            </div>
-            {/* <div className="flex items-center justify-center w-full h-full">
-              <img src="/images/defaultImgLogo.svg" alt="defaultImgLogo" />
             </div> */}
+            <div className="flex items-center justify-center w-full h-full">
+              <img src="/images/defaultImgLogo.svg" alt="defaultImgLogo" />
+            </div>
           </div>
           <div className="py-4 mx-4">
             <button className="flex items-center justify-center w-full gap-1 py-2 border rounded border-GreyScale-grey04 Font14sb">
               <img src="/images/svgIcons/camera.svg" alt="camera" />
-              직접 촬영한 식단 사진으로 변경
+              식단 사진 변경하기
             </button>
           </div>
         </article>
@@ -89,7 +89,7 @@ export default function Feedback() {
       </section>
       <div>
         <button className="fixed bottom-0 left-0 right-0 w-full py-3 bg-BrandColor-green01 text-GreyScale-White Font16sb">
-          기록 남기기
+          기록 수정하기
         </button>
       </div>
     </>
