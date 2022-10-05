@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Feedback() {
   return (
     <>
-      <section className="">
+      <section>
         <div className="flex py-4">
           <div className="absolute left-4">
             <Link to="/MealPlan">
@@ -22,6 +22,7 @@ export default function Feedback() {
             <span className="text-BrandColor-green02">꾸물이</span>가 잘
             먹었나요?
           </p>
+          {/* delete photo */}
           <div className="h-[360px] bg-GreyScale-grey05">
             {/* <div className="object-cover w-full">
               <img

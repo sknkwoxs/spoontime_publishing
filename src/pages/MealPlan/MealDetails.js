@@ -8,17 +8,14 @@ export default function MealDetails() {
         <div>
           <div className="absolute w-full">
             <div className="flex items-center justify-between px-4 pt-8 text-center">
-              <Link to="/Recipe">
+              <Link to="/MealPlan">
                 <div>
                   <img src="/images/svgIcons/back.svg" alt="back" />
                 </div>
               </Link>
               <div className="flex gap-3">
                 <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
-                <img
-                  src="/images/svgIcons/calendarWhite.svg"
-                  alt="calendarWhite"
-                />
+                <img src="/images/svgIcons/highlight.svg" alt="highlight" />
               </div>
             </div>
           </div>
@@ -59,7 +56,7 @@ export default function MealDetails() {
             <div className="py-2 border-b">
               <div className="flex justify-between Font14">
                 <div className="flex gap-2">
-                  <div></div>
+                  <div className="flex items-center justify-center w-5 h-5"></div>
                   <p>물</p>
                 </div>
                 <div className="w-[7.25rem] flex justify-between">
@@ -73,7 +70,7 @@ export default function MealDetails() {
             <div className="py-2 border-b">
               <div className="flex justify-between Font14">
                 <div className="flex gap-2">
-                  <div></div>
+                  <div className="flex items-center justify-center w-5 h-5"></div>
                   <p>쌀</p>
                 </div>
                 <div className="w-[7.25rem] flex justify-between">
@@ -87,7 +84,7 @@ export default function MealDetails() {
             <div className="py-2 border-b">
               <div className="flex justify-between Font14">
                 <div className="flex gap-2">
-                  <div></div>
+                  <div className="flex items-center justify-center w-5 h-5"></div>
                   <p>소고기 안심</p>
                 </div>
                 <div className="w-[7.25rem] flex justify-between">
@@ -135,12 +132,52 @@ export default function MealDetails() {
                 </div>
               </div>
             </div>
-            <div className="p-4 mt-4 rounded Font12 bg-GreyScale-grey05">
+            <div className="p-4 mt-4 rounded Font12 bg-GreyScale-grey05 text-GreyScale-grey02">
               - 도구, 필요한 용량, 끼니를 입력하여 정확한 재료의 양을
-              확인하세요. - 가지고 있는 재료를 선택해 주세요. - 재료가 없는
-              경우, 다른 재료로 대체할 수 있어요.
+              확인하세요.
+              <br /> - 가지고 있는 재료를 선택해 주세요.
+              <br /> - 재료가 없는 경우, 다른 재료로 대체할 수 있어요.
             </div>
           </article>
+          {/* Manual */}
+          {/* <article className="px-4 py-6 border-b">
+            <div className="flex justify-between pb-2 border-b border-GreyScale-grey01">
+              <p className="flex items-center Font16sb">식재료</p>
+            </div>
+            <div className="py-2 border-b">
+              <div className="flex justify-between Font14">
+                <div className="flex gap-2">
+                  <div className="flex items-center justify-center w-5 h-5">
+                    <img src="/images/ingredients/carrot.svg" alt="carrot" />
+                  </div>
+                  <p>당근</p>
+                </div>
+              </div>
+            </div>
+            <div className="py-2 border-b">
+              <div className="flex justify-between Font14">
+                <div className="flex gap-2">
+                  <div className="flex items-center justify-center w-5 h-5">
+                    <img src="/images/ingredients/shrimp.svg" alt="shrimp" />
+                  </div>
+                  <p>새우</p>
+                </div>
+              </div>
+            </div>
+            <div className="py-2 border-b">
+              <div className="flex justify-between Font14">
+                <div className="flex gap-2">
+                  <div className="flex items-center justify-center w-5 h-5">
+                    <img
+                      src="/images/ingredients/eggplant.svg"
+                      alt="eggplant"
+                    />
+                  </div>
+                  <p>가지</p>
+                </div>
+              </div>
+            </div>
+          </article> */}
           <article className="px-4 py-6 border-b">
             <div className="flex items-center gap-2 mb-4 Font16sb">
               <img src="/images/svgicons/miniLogo.svg" alt="miniLogo" />

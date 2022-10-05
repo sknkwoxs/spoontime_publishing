@@ -37,7 +37,9 @@ export default function RecipeDetails() {
             <div className="flex flex-col w-full px-4 py-6 my-auto">
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">한우가지로메인죽</p>
-                <img src="/images/svgicons/upload.svg" alt="upload" />
+                <button>
+                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
                 <div className="flex items-center gap-1 mr-2">
@@ -128,10 +130,11 @@ export default function RecipeDetails() {
                 </div>
               </div>
             </div>
-            <div className="p-4 mt-4 rounded Font12 bg-GreyScale-grey05">
+            <div className="p-4 mt-4 rounded Font12 bg-GreyScale-grey05 text-GreyScale-grey02">
               - 도구, 필요한 용량, 끼니를 입력하여 정확한 재료의 양을
-              확인하세요. - 가지고 있는 재료를 선택해 주세요. - 재료가 없는
-              경우, 다른 재료로 대체할 수 있어요.
+              확인하세요.
+              <br /> - 가지고 있는 재료를 선택해 주세요.
+              <br /> - 재료가 없는 경우, 다른 재료로 대체할 수 있어요.
             </div>
           </article>
           <article className="px-4 py-6 border-b">

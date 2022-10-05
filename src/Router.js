@@ -33,6 +33,7 @@ import MealPlanEditMode from "./pages/MealPlan/MealPlanEditMode";
 import Settings from "./pages/MealPlan/Settings/Settings";
 import MealDetails from "./pages/MealPlan/MealDetails";
 import Feedback from "./pages/MealPlan/Recipe/Feedback";
+import Library from "./pages/MealPlan/Recipe/Library";
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
@@ -84,7 +85,8 @@ export default function Router() {
         />
         <Route path="/MealPlan/Settings" element={<Settings />} />
         <Route path="/MealPlan/MealDetails" element={<MealDetails />} />
-        <Route path="/MealPlan/Feedback" element={<Feedback />} />
+        <Route path="/MealPlan/Recipe/Feedback" element={<Feedback />} />
+        <Route path="/MealPlan/Recipe/Library" element={<Library />} />
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/Profile" element={<Profile />} />
