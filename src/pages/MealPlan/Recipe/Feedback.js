@@ -18,7 +18,10 @@ export default function Feedback() {
           </div>
         </div>
         <article className="border-b">
-          <p className="px-4 pt-6 pb-4 Font16sb">꾸물이가 잘 먹었나요?</p>
+          <p className="px-4 pt-6 pb-4 Font16sb">
+            <span className="text-BrandColor-green02">꾸물이</span>가 잘
+            먹었나요?
+          </p>
           <div className="h-[360px] bg-GreyScale-grey05">
             {/* <div className="object-cover w-full">
               <img
@@ -47,7 +50,15 @@ export default function Feedback() {
             />
             g
           </div>
-          <div className="mb-6">/ range bar / </div>
+          <div className="w-full mb-6">
+            <input
+              className="slider"
+              type="range"
+              min="80"
+              max="200"
+              value="140"
+            />
+          </div>
         </article>
         <article className="px-4 my-6 mb-[80px]">
           <p className="mb-2 Font16sb">한 마디 남겨주세요.</p>

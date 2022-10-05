@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
-import RecipeItem from "../RecipeItem";
-import Amount from "./Amount";
-import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
-import StopTimer from "./StopTimer";
-import Substitutes from "./Substitutes";
+import RecipeItem from "../Recipe/RecipeItem";
 
-export default function RecipeDetails() {
+export default function MealDetails() {
   return (
     <>
       <section>
@@ -37,7 +33,9 @@ export default function RecipeDetails() {
             <div className="flex flex-col w-full px-4 py-6 my-auto">
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">한우가지로메인죽</p>
-                <img src="/images/svgicons/upload.svg" alt="upload" />
+                <button>
+                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
                 <div className="flex items-center gap-1 mr-2">
@@ -102,8 +100,10 @@ export default function RecipeDetails() {
             </div>
             <div className="py-2 border-b">
               <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
+                <div className="flex items-center gap-2">
+                  <button className="flex items-center justify-center w-5 h-5 border rounded-full border-GreyScale-grey03">
+                    <img src="/images/svgIcons/symbolX.svg" alt="symbolX" />
+                  </button>
                   <p>가지</p>
                 </div>
                 <div className="w-[7.25rem] flex justify-between">
@@ -116,9 +116,16 @@ export default function RecipeDetails() {
             </div>
             <div className="py-2 border-b">
               <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
+                <div className="flex items-center gap-1">
+                  <button className="flex items-center justify-center w-5 h-5 mr-1 border rounded-full border-GreyScale-grey03">
+                    <img src="/images/svgIcons/symbolX.svg" alt="symbolX" />
+                  </button>
                   <p>달걀</p>
+                  <span className="text-GreyScale-grey03">(대체)</span>
+                  <img
+                    src="/images/svgIcons/suggestedCircle.svg"
+                    alt="suggestedCircle"
+                  />
                 </div>
                 <div className="w-[7.25rem] flex justify-between">
                   <p className="inline-block text-left">15g</p>
