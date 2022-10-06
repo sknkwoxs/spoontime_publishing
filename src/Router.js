@@ -44,7 +44,9 @@ import Name from "./pages/MealPlan/AddAMealPlan/Manual/Name";
 import FinalStep from "./pages/MealPlan/AddAMealPlan/FinalStep";
 //
 import MyPage from "./pages/MyPage";
-import Profile from "./pages/MyPage/Profile";
+import Profile from "./pages/MyPage/Profile/Profile";
+import DeleteProfile from "./pages/MyPage/Profile/DeleteProfile";
+import Sharing from "./pages/MyPage/Profile/Sharing";
 //
 import Preloader from "./pages/Preloader";
 
@@ -107,15 +109,15 @@ export default function Router() {
         />
         <Route path="/MealPlan/AddAMealPlan/Result" element={<Result />} />
         <Route path="/MealPlan/AddAMealPlan/Manual/Name" element={<Name />} />
-
         <Route
           path="/MealPlan/AddAMealPlan/FinalStep"
           element={<FinalStep />}
         />
-
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/MyPage/Profile" element={<Profile />} />
+        <Route path="/MyPage/DeleteProfile" element={<DeleteProfile />} />
+        <Route path="/MyPage/Sharing" element={<Sharing />} />
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
       </Routes>

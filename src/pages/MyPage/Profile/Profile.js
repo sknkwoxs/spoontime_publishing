@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import DeleteChanges from "./DeleteChanges";
+import EditProfile from "./EditProfile";
 
 export default function Profile() {
   return (
@@ -21,14 +23,16 @@ export default function Profile() {
           <div>
             <div className=" w-full bg-BrandColor-green04 min-h-[7.5rem]" />
             <div>
-              <div></div>
-              <div className="absolute left-[50%] right-[50%] -translate-x-[50%] -translate-y-[50%] w-[6.5rem] h-[6.5rem] bg-GreyScale-grey03 rounded-full">
+              <div className="absolute left-[50%] right-[50%] -translate-x-[50%] -translate-y-[50%] w-[6.5rem] h-[6.5rem] bg-GreyScale-White rounded-full">
                 <div className=" w-[6.4rem] min-h-[6.4rem] flex items-center justify-center">
-                  <img
+                  {/* <img
                     className=" items-center justify-center object-cover rounded-full w-[6.4rem] min-h-[6.4rem]"
                     src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
                     alt="baby"
-                  />
+                  /> */}
+                  <button className="absolute bottom-0 right-0">
+                    <img src="/images/profileEdit.svg" alt="profileEdit" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -39,7 +43,7 @@ export default function Profile() {
                 이름 혹은 닉네임
               </label>
               <input
-                className="p-2 border border-GreyScale-grey04 Font14 "
+                className="p-2 border rounded border-GreyScale-grey04 Font14"
                 id="baby_name"
                 type="text"
               />
@@ -49,7 +53,7 @@ export default function Profile() {
                 출생(예정)일
               </label>
               <input
-                className="p-2 border border-GreyScale-grey04 Font14 "
+                className="p-2 border rounded border-GreyScale-grey04 Font14"
                 id="baby_birth"
                 type="text"
               />
@@ -72,6 +76,8 @@ export default function Profile() {
           아기 프로필 수정하기
         </button>
       </div>
+      {/* <DeleteChanges /> */}
+      {/* <EditProfile /> */}
     </>
   );
 }
