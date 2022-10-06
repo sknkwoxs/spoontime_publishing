@@ -28,7 +28,7 @@ export default function Inquiry() {
           </div>
           <div>
             <textarea
-              className="w-full rounded Font14"
+              className="w-full rounded Font14 placeholder:text-GreyScale-grey03"
               name=""
               id=""
               cols="30"

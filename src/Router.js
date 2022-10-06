@@ -47,9 +47,12 @@ import Profile from "./pages/MyPage/Profile/Profile";
 import DeleteProfile from "./pages/MyPage/Profile/DeleteProfile";
 import Sharing from "./pages/MyPage/Profile/Sharing";
 import DietInfo from "./pages/MyPage/DietInfo/DietInfo";
+import FamilyShareInfo from "./pages/MyPage/FamilyShareInfo/FamilyShareInfo";
 
 import Settings from "./pages/MyPage/Settings/Settings";
-import EditPW from "./pages/MyPage/Settings/EditPW";
+import AccountInfo from "./pages/MyPage/Settings/AccountInfo";
+import EditPWCurrent from "./pages/MyPage/Settings/EditPWCurrent";
+import EditPWNew from "./pages/MyPage/Settings/EditPWNew";
 import Leave from "./pages/MyPage/Settings/Leave";
 import Opinion from "./pages/MyPage/Settings/Opinion";
 import Confirm from "./pages/MyPage/Settings/Confirm";
@@ -133,9 +136,15 @@ export default function Router() {
         <Route path="/MyPage/DeleteProfile" element={<DeleteProfile />} />
         <Route path="/MyPage/Sharing" element={<Sharing />} />
         <Route path="/MyPage/DietInfo" element={<DietInfo />} />
+        <Route path="/MyPage/FamilyShareInfo" element={<FamilyShareInfo />} />
 
         <Route path="/MyPage/Settings" element={<Settings />} />
-        <Route path="/MyPage/Settings/EditPW" element={<EditPW />} />
+        <Route path="/MyPage/Settings/AccountInfo" element={<AccountInfo />} />
+        <Route
+          path="/MyPage/Settings/EditPWCurrent"
+          element={<EditPWCurrent />}
+        />
+        <Route path="/MyPage/Settings/EditPWNew" element={<EditPWNew />} />
         <Route path="/MyPage/Settings/Leave" element={<Leave />} />
         <Route path="/MyPage/Settings/Opinion" element={<Opinion />} />
         <Route path="/MyPage/Settings/Confirm" element={<Confirm />} />

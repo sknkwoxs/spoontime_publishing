@@ -1,7 +1,6 @@
 export default function RecommendationOff() {
   return (
     <>
-      {/* 뒷단에 overflow : hidden 처리 필요 */}
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
       <section className="h-[176px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000]">
         <p className="mb-2 Font16sb">식단 추천 기능을 끌까요?</p>

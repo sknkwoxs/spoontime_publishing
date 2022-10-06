@@ -1,7 +1,6 @@
 export default function Substitutes() {
   return (
     <>
-      {/* 뒷단에 overflow : hidden 처리 필요 */}
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
         <div className="flex pt-8 pb-5 Font16sb">
