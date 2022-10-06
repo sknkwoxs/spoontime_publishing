@@ -24,10 +24,6 @@ export default function SplashCalendar() {
           걱정 없는
           <span className="Font24sb">식단 관리</span>
         </div>
-        <p>이미지 교체 필요</p>
-        <div className="mx-5">
-          <img src="/images/splash/Splash_Calendar.jpg" alt="Splash_Calendar" />
-        </div>
       </section>
       <section className="fixed bottom-0 w-full">
         <div className="w-full">

@@ -39,9 +39,9 @@ import Read from "./pages/MealPlan/Recipe/Read";
 import FeedbackEdit from "./pages/MealPlan/Recipe/FeedbackEdit";
 import SearchRecipe from "./pages/MealPlan/AddAMealPlan/SearchRecipe";
 import Result from "./pages/MealPlan/AddAMealPlan/Result";
+import Name from "./pages/MealPlan/AddAMealPlan/Manual/Name";
 
 import FinalStep from "./pages/MealPlan/AddAMealPlan/FinalStep";
-
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
@@ -106,6 +106,7 @@ export default function Router() {
           element={<SearchRecipe />}
         />
         <Route path="/MealPlan/AddAMealPlan/Result" element={<Result />} />
+        <Route path="/MealPlan/AddAMealPlan/Manual/Name" element={<Name />} />
 
         <Route
           path="/MealPlan/AddAMealPlan/FinalStep"

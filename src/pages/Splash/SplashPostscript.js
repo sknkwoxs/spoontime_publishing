@@ -23,13 +23,6 @@ export default function SplashPostscript() {
           <br /> 쉽게 공유하는
           <span className="Font24sb">식단 후기</span>
         </div>
-        <p>이미지 깨짐</p>
-        <div className="mx-5">
-          <img
-            src="/images/splash/SplashPostscript.jpg"
-            alt="Splash_Postscript"
-          />
-        </div>
       </section>
       <section className="fixed bottom-0 w-full">
         <div className="w-full">
