@@ -15,8 +15,11 @@ export default function FamilyShareCode() {
           <div>
             <p className="mb-3 Font12 text-GreyScale-grey03">가족 공유 코드</p>
             <div className="relative pb-1 mb-3 border-b Font20">
-              <input className="w-full focus:outline-hidden" type="text" />
-              <button className="absolute right-0">
+              <input
+                className="w-full border-none focus:outline-hidden"
+                type="text"
+              />
+              <button className="absolute right-0 bottom-1">
                 <img
                   src="/images/svgIcons/FamilyShareCodeX.svg"
                   alt="FamilyShareCodeX"

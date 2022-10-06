@@ -7,23 +7,24 @@ export default function Amount() {
           <div className="pt-8 pb-6">
             <p className="mb-4 Font16sb">도구 및 식이 기준 설정</p>
             <div className="flex text-center Font14sb text-GreyScale-grey03">
-              <div className="w-full py-1 border ">냄비</div>
-              <div className="w-full py-1 border ">밥솥</div>
+              <div className="w-full py-1 border border-r-0">냄비</div>
+              <div className="w-full py-1 border border-r-0">밥솥</div>
               <div className="w-full py-1 border ">마스터기</div>
             </div>
           </div>
           <div className="Font14">
             <div>
-              <div className="flex justify-between">
-                <div className="mb-4">
+              <div className="flex justify-between mb-4">
+                <div className="flex items-center">
                   한 끼에
                   <input
-                    className="px-4 py-2 mx-1 border rounded w-14"
+                    className="px-4 py-2 mx-1 border rounded border-GreyScale-grey04 w-14"
                     type="text"
                   />
                   g 씩
                 </div>
                 <img
+                  className="flex items-center"
                   src="/images/svgIcons/suggestedCircle.svg"
                   alt="suggestedCircle"
                 />
@@ -31,10 +32,10 @@ export default function Amount() {
               <div className="mb-4">/ range bar / </div>
             </div>
             <div>
-              <div className="flex justify-between">
-                <div className="mb-4">
+              <div className="flex justify-between mb-4">
+                <div className="">
                   <input
-                    className="w-12 px-4 py-2 mx-1 border rounded"
+                    className="w-12 px-4 py-2 mx-1 border rounded border-GreyScale-grey04"
                     type="text"
                   />
                   끼
@@ -43,8 +44,8 @@ export default function Amount() {
               <div className="mb-6">/ range bar / </div>
             </div>
           </div>
-          <div className="flex gap-10 py-4 border-t">
-            <button className="flex items-center gap-2 Font14sb whitespace-nowrap">
+          <div className="flex py-4 border-t">
+            <button className="flex items-center w-full gap-2 Font14sb">
               <img src="/images/svgIcons/rotation.svg" alt="rotation" />
               옵션 재설정
             </button>

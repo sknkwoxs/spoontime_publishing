@@ -4,6 +4,7 @@ import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
 import StopTimer from "./StopTimer";
 import Substitutes from "./Substitutes";
+import Timer from "./Timer";
 
 export default function RecipeDetails() {
   return (
@@ -319,6 +320,7 @@ export default function RecipeDetails() {
       {/* <StopTimer /> */}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
+      <Timer />
     </>
   );
 }
