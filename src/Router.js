@@ -44,7 +44,7 @@ import Name from "./pages/MealPlan/AddAMealPlan/Manual/Name";
 import FinalStep from "./pages/MealPlan/AddAMealPlan/FinalStep";
 //
 import MyPage from "./pages/MyPage";
-import Profile from "./pages/MyPage/Profile/Profile";
+import Profile from "./pages/MyPage/Profile";
 //
 import Preloader from "./pages/Preloader";
 
@@ -115,7 +115,7 @@ export default function Router() {
 
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/MyPage/Profile" element={<Profile />} />
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
       </Routes>

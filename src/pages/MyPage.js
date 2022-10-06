@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import TabBar from "../components/TabBar";
+import BabyList from "./MyPage/BabyList";
 
 export default function MyPage() {
   return (
@@ -12,7 +13,7 @@ export default function MyPage() {
                 <p className="pr-1 Font16sb">꼬물이</p>
                 <img src="/images/svgIcons/down2.svg" alt="down2" />
               </div>
-              <Link to="/Profile">
+              <Link to="/MyPage/Profile">
                 <img src="/images/svgIcons/settings.svg" alt="settings" />
               </Link>
             </article>
@@ -163,6 +164,7 @@ export default function MyPage() {
         </div>
       </div>
       <TabBar />
+      {/* <BabyList /> */}
     </>
   );
 }
