@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import TabBar from "../components/TabBar";
+import AddaMeal from "./MyPage/AddaMeal";
 import BabyList from "./MyPage/BabyList";
 
 export default function MyPage() {
@@ -45,7 +46,8 @@ export default function MyPage() {
               </div>
             </article>
           </section>
-          <section className="mt-6">
+          {/* data */}
+          {/* <section className="mt-6">
             <article className="grid grid-cols-3 gap-0.5">
               <div className="h-0 pb-[100%] overflow-hidden relative">
                 <img
@@ -160,11 +162,28 @@ export default function MyPage() {
                 />
               </div>
             </article>
+          </section> */}
+          {/* No data */}
+          <section className="absolute text-center left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
+            <div className="w-full">
+              <p className="mb-2 Font16sb whitespace-nowrap">
+                냠냠이의 첫 식단 기록을 남겨보세요.
+              </p>
+              <p className="mb-4 Font14">
+                식단 메뉴에서 식단을 추가하면,
+                <br />
+                식단 기록을 남길 수 있어요.
+              </p>
+              <button className="border rounded border-BrandColor-green01 py-2 px-[1.625rem] Font14sb">
+                최근 식단 기록하기
+              </button>
+            </div>
           </section>
         </div>
       </div>
       <TabBar />
       {/* <BabyList /> */}
+      {/* <AddaMeal /> */}
     </>
   );
 }
