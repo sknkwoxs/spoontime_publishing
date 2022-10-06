@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Disconnection from "./Disconnection";
 
 export default function FamilyShareInfo() {
   return (
@@ -53,6 +54,7 @@ export default function FamilyShareInfo() {
           </button>
         </article>
       </section>
+      <Disconnection />
     </>
   );
 }
