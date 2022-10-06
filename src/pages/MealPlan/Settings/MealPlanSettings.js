@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import RecommendationChange from "./RecommendationChange";
 import RecommendationOff from "./RecommendationOff";
 
-export default function Settings() {
+export default function MealPlanSettings() {
   return (
     <>
       <article className="px-4">

@@ -30,7 +30,7 @@ import IngredientDetails from "./pages/Recipe/IngredientGuide/IngredientDetails"
 //
 import MealPlan from "./pages/MealPlan";
 import MealPlanEditMode from "./pages/MealPlan/MealPlanEditMode";
-import Settings from "./pages/MealPlan/Settings/Settings";
+import MealPlanSettings from "./pages/MealPlan/Settings/MealPlanSettings";
 import MealDetails from "./pages/MealPlan/MealDetails";
 import Feedback from "./pages/MealPlan/Recipe/Feedback";
 import Library from "./pages/MealPlan/Recipe/Library";
@@ -40,13 +40,24 @@ import FeedbackEdit from "./pages/MealPlan/Recipe/FeedbackEdit";
 import SearchRecipe from "./pages/MealPlan/AddAMealPlan/SearchRecipe";
 import Result from "./pages/MealPlan/AddAMealPlan/Result";
 import Name from "./pages/MealPlan/AddAMealPlan/Manual/Name";
-
 import FinalStep from "./pages/MealPlan/AddAMealPlan/FinalStep";
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
 import DeleteProfile from "./pages/MyPage/Profile/DeleteProfile";
 import Sharing from "./pages/MyPage/Profile/Sharing";
+import DietInfo from "./pages/MyPage/DietInfo/DietInfo";
+
+import Settings from "./pages/MyPage/Settings/Settings";
+import EditPW from "./pages/MyPage/Settings/EditPW";
+import Leave from "./pages/MyPage/Settings/Leave";
+import Opinion from "./pages/MyPage/Settings/Opinion";
+import Confirm from "./pages/MyPage/Settings/Confirm";
+import Notice from "./pages/MyPage/Settings/Notice";
+import Details from "./pages/MyPage/Settings/Details";
+import Inquiry from "./pages/MyPage/Settings/Inquiry";
+import TermsofService from "./pages/MyPage/Settings/TermsofService";
+import PrivacyPolicy from "./pages/MyPage/Settings/PrivacyPolicy";
 //
 import Preloader from "./pages/Preloader";
 
@@ -93,7 +104,10 @@ export default function Router() {
           path="/MealPlan/MealPlanEditMode"
           element={<MealPlanEditMode />}
         />
-        <Route path="/MealPlan/Settings" element={<Settings />} />
+        <Route
+          path="/MealPlan/MealPlanSettings"
+          element={<MealPlanSettings />}
+        />
         <Route path="/MealPlan/MealDetails" element={<MealDetails />} />
         <Route path="/MealPlan/Recipe/Feedback" element={<Feedback />} />
         <Route path="/MealPlan/Recipe/Library" element={<Library />} />
@@ -118,6 +132,24 @@ export default function Router() {
         <Route path="/MyPage/Profile" element={<Profile />} />
         <Route path="/MyPage/DeleteProfile" element={<DeleteProfile />} />
         <Route path="/MyPage/Sharing" element={<Sharing />} />
+        <Route path="/MyPage/DietInfo" element={<DietInfo />} />
+
+        <Route path="/MyPage/Settings" element={<Settings />} />
+        <Route path="/MyPage/Settings/EditPW" element={<EditPW />} />
+        <Route path="/MyPage/Settings/Leave" element={<Leave />} />
+        <Route path="/MyPage/Settings/Opinion" element={<Opinion />} />
+        <Route path="/MyPage/Settings/Confirm" element={<Confirm />} />
+        <Route path="/MyPage/Settings/Notice" element={<Notice />} />
+        <Route path="/MyPage/Settings/Details" element={<Details />} />
+        <Route path="/MyPage/Settings/Inquiry" element={<Inquiry />} />
+        <Route
+          path="/MyPage/Settings/TermsofService"
+          element={<TermsofService />}
+        />
+        <Route
+          path="/MyPage/Settings/PrivacyPolicy"
+          element={<PrivacyPolicy />}
+        />
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
       </Routes>
