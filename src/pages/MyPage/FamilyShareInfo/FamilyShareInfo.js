@@ -17,14 +17,35 @@ export default function FamilyShareInfo() {
             <p className="Font16sb">가족 공유 정보</p>
           </div>
         </div>
-        <article className="px-4 py-6 border-b">
-          <button className="flex items-center">
-            <p className="Font16sb">아기 프로필 및 정보 삭제</p>
+        <article className="px-4 py-6">
+          <div className="flex items-center gap-1">
+            <p className="Font16sb">가족 공유 목록</p>
             <img
-              className="absolute right-4"
-              src="/images/svgIcons/directionsRight.svg"
-              alt="directionsRight"
+              src="/images/svgIcons/exclamationMark.svg"
+              alt="exclamationMark"
             />
+          </div>
+          <div className="mb-4">
+            <div className="flex justify-between py-4 border-b h-14">
+              <div className="flex items-center gap-2">
+                <div>
+                  <img src="/images/svgIcons/check.svg" alt="check" />
+                </div>
+                <p className="absolute Font14 left-11">김은혜</p>
+              </div>
+              {/* <button className="px-4 py-1 border rounded Font12 border-GreyScale-grey01">
+                연결끊기
+              </button> */}
+            </div>
+            <div className="flex justify-between py-4 border-b h-14">
+              <div className="flex items-center gap-2">
+                <p className="absolute Font14 left-11">박찬우</p>
+              </div>
+            </div>
+          </div>
+          <button className="flex items-center gap-2">
+            <img src="/images/svgIcons/symbolPlus.svg" alt="symbolPlus" />
+            <p className="Font14sb">가족 초대하기</p>
           </button>
         </article>
       </section>
