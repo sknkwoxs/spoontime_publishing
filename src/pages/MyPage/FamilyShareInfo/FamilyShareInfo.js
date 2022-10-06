@@ -53,11 +53,6 @@ export default function FamilyShareInfo() {
           </button>
         </article>
       </section>
-      <div>
-        <button className="fixed bottom-0 left-0 right-0 w-full py-3 bg-GreyScale-grey04 text-GreyScale-White Font16sb">
-          아기 프로필 수정하기
-        </button>
-      </div>
     </>
   );
 }
