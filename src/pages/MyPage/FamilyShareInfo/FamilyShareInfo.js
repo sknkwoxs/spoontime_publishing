@@ -18,6 +18,10 @@ export default function FamilyShareInfo() {
           </div>
         </div>
         <article className="px-4 py-6">
+          <div className="absolute mb-1 leading-5 familyShareBallon Font12 top-5 left-[6.25rem]">
+            1명의 다른 가족을 초대하여
+            <br /> 아기의 정보를 공유할 수 있어요.
+          </div>
           <div className="flex items-center gap-1">
             <p className="Font16sb">가족 공유 목록</p>
             <img

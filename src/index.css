@@ -194,6 +194,31 @@ html {
     margin-bottom: -4px;
   }
 
+  .familyShareBallon {
+    position: relative;
+    width: 169px;
+    height: 56px;
+    padding: 8px;
+    background: #2a2a2a;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .familyShareBallon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-10%);
+    width: 12px;
+    height: 6px;
+    border: 6px solid transparent;
+    border-top-color: #112f30;
+    border-bottom: 0;
+    margin-left: -4px;
+    margin-bottom: -4px;
+  }
+
   .slider {
     -webkit-appearance: none;
     width: 100%;
