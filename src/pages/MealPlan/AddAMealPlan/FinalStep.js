@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DeleteMenu from "../MealPlan/DeleteMenu";
 
 export default function FinalStep() {
   return (
@@ -19,7 +20,12 @@ export default function FinalStep() {
               />
             </div>
             <div className="flex flex-col w-full px-4 py-6 my-auto">
-              <p className="mb-2 Font20sb">한우가지로메인죽</p>
+              <div className="flex items-center justify-between mb-2">
+                <p className="flex items-center Font20sb">한우가지로메인죽</p>
+                <button className="px-4 py-1 border rounded border-GreyScale-grey01 Font12">
+                  변경
+                </button>
+              </div>
               <div className="flex Font12 text-GreyScale-grey02">
                 <div className="flex items-center gap-1 mr-2">
                   <img src="/images/svgIcons/baby.svg" alt="baby" />
@@ -46,7 +52,7 @@ export default function FinalStep() {
           <article className="mb-4 border-b">
             <div className="flex p-4">
               <img src="/images/svgIcons/diet.svg" alt="diet" />
-              <p className="px-2 Font14sb">7월 13일 - 7월 14일</p>
+              <p className="px-2 Font14sb">7월 13일</p>
               <img src="/images/svgIcons/down2.svg" alt="down2" />
             </div>
           </article>
@@ -55,9 +61,11 @@ export default function FinalStep() {
           </article>
           <article className="fixed bottom-0 w-full text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">
             <button className="py-3">식단 추가하기</button>
+            {/* <button className="py-3">식단 수정하기</button> */}
           </article>
         </div>
       </section>
+      {/* <DeleteMenu /> */}
     </>
   );
 }
