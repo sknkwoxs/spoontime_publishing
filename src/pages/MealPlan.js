@@ -5,7 +5,7 @@ import TabBar from "../components/TabBar";
 export default function MealPlan() {
   return (
     <>
-      <div className="w-full h-screen pb-[76px]">
+      <div className="w-full pb-[52px]">
         <div>
           <section className="p-4">
             <article className="flex justify-between">

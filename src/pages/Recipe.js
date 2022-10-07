@@ -8,7 +8,7 @@ import { Navigation } from "./Recipe/Recipe/Navigation";
 export default function Recipe() {
   return (
     <>
-      <div className="w-full min-h-full pb-[76px]">
+      <div className="w-full pb-[52px]">
         <div className="px-4 pb-4">
           <Navigation />
           <BabyInfo />

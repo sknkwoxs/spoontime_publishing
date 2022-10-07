@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function TabBar() {
   return (
     <>
-      <section className="fixed bottom-0 left-0 right-0 w-full pb-8 bg-GreyScale-White">
-        <div className="flex pt-2 justify-around font-semibold text-[0.625rem] leading-3">
+      <section className="fixed bottom-0 left-0 right-0 w-full bg-GreyScale-White">
+        <div className="flex py-2 justify-around font-semibold text-[0.625rem] leading-3">
           <Link to="/Recipe">
             <div className="flex flex-col gap-1 mx-auto text-center">
               <div className="mx-auto">

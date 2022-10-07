@@ -44,6 +44,8 @@ import FinalStep from "./pages/MealPlan/AddAMealPlan/FinalStep";
 //
 import MyPage from "./pages/MyPage";
 import Profile from "./pages/MyPage/Profile/Profile";
+import ProfileLibrary from "./pages/MyPage/Profile/ProfileLibrary";
+import ProfileAlbum from "./pages/MyPage/Profile/ProfileAlbum";
 import DeleteProfile from "./pages/MyPage/Profile/DeleteProfile";
 import Sharing from "./pages/MyPage/Profile/Sharing";
 import DietInfo from "./pages/MyPage/DietInfo/DietInfo";
@@ -135,6 +137,11 @@ export default function Router() {
         {/* MyPage */}
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/MyPage/Profile" element={<Profile />} />
+        <Route
+          path="/MyPage/Profile/ProfileLibrary"
+          element={<ProfileLibrary />}
+        />
+        <Route path="/MyPage/Profile/ProfileAlbum" element={<ProfileAlbum />} />
         <Route path="/MyPage/DeleteProfile" element={<DeleteProfile />} />
         <Route path="/MyPage/Sharing" element={<Sharing />} />
         <Route path="/MyPage/DietInfo" element={<DietInfo />} />
