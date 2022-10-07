@@ -247,4 +247,10 @@ html {
     background: #112f30;
     cursor: pointer;
   }
+
+  .allergyButtonOnClick {
+    border: 1px solid #c0d6b1;
+    border-radius: 4px;
+    background-color: #e6efe0;
+  }
 }

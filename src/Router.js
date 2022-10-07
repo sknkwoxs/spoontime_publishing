@@ -47,8 +47,10 @@ import Profile from "./pages/MyPage/Profile/Profile";
 import DeleteProfile from "./pages/MyPage/Profile/DeleteProfile";
 import Sharing from "./pages/MyPage/Profile/Sharing";
 import DietInfo from "./pages/MyPage/DietInfo/DietInfo";
+import DietInfoAllergy from "./pages/MyPage/DietInfo/DietInfoAllergy";
+import DietInfoStep from "./pages/MyPage/DietInfo/DietInfoStep";
+import DietInfoTried from "./pages/MyPage/DietInfo/DietInfoTried";
 import FamilyShareInfo from "./pages/MyPage/FamilyShareInfo/FamilyShareInfo";
-
 import Settings from "./pages/MyPage/Settings/Settings";
 import AccountInfo from "./pages/MyPage/Settings/AccountInfo";
 import EditPWCurrent from "./pages/MyPage/Settings/EditPWCurrent";
@@ -136,8 +138,10 @@ export default function Router() {
         <Route path="/MyPage/DeleteProfile" element={<DeleteProfile />} />
         <Route path="/MyPage/Sharing" element={<Sharing />} />
         <Route path="/MyPage/DietInfo" element={<DietInfo />} />
+        <Route path="/MyPage/DietInfoAllergy" element={<DietInfoAllergy />} />
+        <Route path="/MyPage/DietInfoStep" element={<DietInfoStep />} />
+        <Route path="/MyPage/DietInfoTried" element={<DietInfoTried />} />
         <Route path="/MyPage/FamilyShareInfo" element={<FamilyShareInfo />} />
-
         <Route path="/MyPage/Settings" element={<Settings />} />
         <Route path="/MyPage/Settings/AccountInfo" element={<AccountInfo />} />
         <Route

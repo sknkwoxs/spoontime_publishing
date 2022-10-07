@@ -54,7 +54,7 @@ export default function FamilyShareInfo() {
           </button>
         </article>
       </section>
-      <Disconnection />
+      {/* <Disconnection /> */}
     </>
   );
 }
