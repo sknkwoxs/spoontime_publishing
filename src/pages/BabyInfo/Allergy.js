@@ -4,11 +4,12 @@ export default function Allergy() {
       <div className="w-full h-screen">
         <div className="px-4">
           <div className="relative">
-            <img
-              className="absolute pt-4"
-              src="images/svgIcons/BabyInfoArrowsLeft.svg"
-              alt="BabyInfoArrowsLeft"
-            />
+            <button className="absolute mt-4">
+              <img
+                src="images/svgIcons/BabyInfoArrowsLeft.svg"
+                alt="BabyInfoArrowsLeft"
+              />
+            </button>
             <p className="pt-4 mb-3 text-center Font16sb">아기정보</p>
           </div>
           <div className="mb-8">
