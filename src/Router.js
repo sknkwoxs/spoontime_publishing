@@ -80,7 +80,7 @@ export default function Router() {
         <Route path="/Splash/SplashPostscript" element={<SplashPostscript />} />
         <Route path="/Splash/SplashSpoontime" element={<SplashSpoontime />} />
         {/* Login */}
-        <Route path="/" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         {/* FamilyShareCode */}
         <Route path="/FamilyShareCode" element={<FamilyShareCode />} />
         {/* BabyInfo */}
