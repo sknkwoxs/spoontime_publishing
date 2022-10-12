@@ -35,7 +35,7 @@ export default function MealPlanItem() {
           {/* <button className="px-4 py-1 border-GreyScale-grey01 rounded-[61px] border Font12">
             확인
           </button> */}
-          <Link to="/MealPlan/Feedback">
+          <Link to="/MealPlan/Recipe/Feedback">
             <button className="px-4 py-1 border-GreyScale-grey01 rounded-[61px] border Font12">
               기록
             </button>
