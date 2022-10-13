@@ -50,19 +50,24 @@ export default function FinalStep() {
             </div>
           </article>
           <article className="mb-4 border-b">
-            <div className="flex p-4">
+            <button className="flex m-4">
               <img src="/images/svgIcons/diet.svg" alt="diet" />
               <p className="px-2 Font14sb">7월 13일</p>
               <img src="/images/svgIcons/down2.svg" alt="down2" />
-            </div>
+            </button>
           </article>
           <article className="px-4">
             <button className="w-full py-2 border Font14sb">식단 삭제</button>
           </article>
-          <article className="fixed bottom-0 w-full text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">
-            <button className="py-3">식단 추가하기</button>
-            {/* <button className="py-3">식단 수정하기</button> */}
-          </article>
+
+          <div>
+            <button className="fixed bottom-0 left-0 right-0 w-full py-3 bg-BrandColor-green01 text-GreyScale-White Font16sb">
+              식단 추가하기
+            </button>
+            {/* <button className="fixed bottom-0 left-0 right-0 w-full py-3 bg-GreyScale-grey04 text-GreyScale-White Font16sb">
+              식단 수정하기
+            </button> */}
+          </div>
         </div>
       </section>
       {/* <DeleteMenu /> */}
