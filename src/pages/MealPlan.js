@@ -17,7 +17,7 @@ export default function MealPlan() {
                 <p className="px-2 py-1 mr-4 rounded Font12 text-GreyScale-grey02 bg-BrandColor-green04">
                   중기 (~4/16)
                 </p>
-                <Link to="/MealPlan/Settings">
+                <Link to="/MealPlan/MealPlanSettings">
                   <img src="/images/svgIcons/settings.svg" alt="settings" />
                 </Link>
               </div>

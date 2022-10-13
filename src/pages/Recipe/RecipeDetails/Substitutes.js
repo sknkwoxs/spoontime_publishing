@@ -8,14 +8,14 @@ export default function Substitutes() {
           <span>대체 식재료 설정</span>
         </div>
         <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6">
-          <div className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
+          <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
             <img src="/images/ingredients/potato.svg" alt="potato" />
-            <p>감자</p>
-          </div>
-          <div className="flex flex-col items-center justify-center rounded gap-y-1">
+            <p className="Font12">감자</p>
+          </button>
+          <button className="flex flex-col items-center justify-center rounded gap-y-1">
             <img src="/images/ingredients/potato.svg" alt="potato" />
-            <p>고구마</p>
-          </div>
+            <p className="Font12">고구마</p>
+          </button>
         </div>
         <div className="py-4 border-t">
           <button className="w-full py-3 rounded-lg Font16sb text-GreyScale-White bg-BrandColor-green01">

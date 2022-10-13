@@ -15,9 +15,10 @@ export default function RecipeItem() {
             </div>
           </Link>
           <div className="flex flex-col w-full my-auto">
-            <Link to="/Recipe/RecipeDetails">
-              <span className="mb-2 Font16sb">한우가지로메인죽</span>
-            </Link>
+            <span className="mb-2 Font16sb">
+              <Link to="/Recipe/RecipeDetails">한우가지로메인죽 </Link>
+            </span>
+
             <div className="flex Font12 text-GreyScale-grey02">
               <div className="flex items-center gap-1 mr-2">
                 <img src="/images/svgIcons/baby.svg" alt="baby" />
