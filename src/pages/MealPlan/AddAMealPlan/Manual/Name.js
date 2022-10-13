@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import IngredientList from "./IngredientList";
 
 export default function Name() {
   return (
@@ -24,14 +25,15 @@ export default function Name() {
             type="text"
           />
         </article>
-        <article className="mb-6">
+        <article className="mb-2">
           <p className="mb-2 Font16sb">식재료를 입력해 주세요.</p>
           <input
             className="w-full p-2 border rounded border-GreyScale-grey04 Font14"
             type="text"
           />
         </article>
-        <article className="">
+        <IngredientList />
+        <article>
           <p className="mb-2 Font16sb">식단 사진이 있나요?</p>
           <p className="mb-6 Font12 text-GreyScale-grey02">
             없어도 괜찮아요. 스푼타임 기본 이미지로 대체합니다.

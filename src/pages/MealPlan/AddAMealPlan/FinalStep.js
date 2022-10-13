@@ -70,7 +70,7 @@ export default function FinalStep() {
           </div>
         </div>
       </section>
-      <DeleteMenu />
+      {/* <DeleteMenu /> */}
     </>
   );
 }
