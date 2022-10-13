@@ -15,7 +15,7 @@ export default function Amount() {
           <div className="Font14">
             <div>
               <div className="flex justify-between mb-4">
-                <div className="flex items-center">
+                <div className="flex items-center Font14">
                   한 끼에
                   <input
                     className="px-4 py-2 mx-1 border rounded border-GreyScale-grey04 w-14"
@@ -29,11 +29,19 @@ export default function Amount() {
                   alt="suggestedCircle"
                 />
               </div>
-              <div className="mb-4">/ range bar / </div>
+              <div className="mb-4">
+                <input
+                  className="slider"
+                  type="range"
+                  min="50"
+                  max="150"
+                  value="140"
+                />
+              </div>
             </div>
             <div>
               <div className="flex justify-between mb-4">
-                <div className="">
+                <div className="Font14">
                   <input
                     className="w-12 px-4 py-2 mx-1 border rounded border-GreyScale-grey04"
                     type="text"
@@ -41,14 +49,24 @@ export default function Amount() {
                   끼
                 </div>
               </div>
-              <div className="mb-6">/ range bar / </div>
+              <div className="mb-6">
+                <input
+                  className="slider"
+                  type="range"
+                  min="1"
+                  max="12"
+                  value="4"
+                />
+              </div>
             </div>
           </div>
           <div className="flex py-4 border-t">
-            <button className="flex items-center w-full gap-2 Font14sb">
-              <img src="/images/svgIcons/rotation.svg" alt="rotation" />
-              옵션 재설정
-            </button>
+            <div className="flex w-full">
+              <button className="flex items-center gap-2 Font14sb">
+                <img src="/images/svgIcons/rotation.svg" alt="rotation" />
+                옵션 재설정
+              </button>
+            </div>
             <button className="w-full py-3 rounded-lg Font16sb text-GreyScale-White bg-BrandColor-green01">
               적용하기
             </button>

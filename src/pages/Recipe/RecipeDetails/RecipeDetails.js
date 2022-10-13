@@ -320,7 +320,7 @@ export default function RecipeDetails() {
       {/* <StopTimer /> */}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
-      <Timer />
+      {/* <Timer /> */}
     </>
   );
 }

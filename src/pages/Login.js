@@ -6,7 +6,7 @@ import { PrivacyPolicy } from "./Login/PrivacyPolicy";
 export default function Login() {
   return (
     <>
-      <div className="w-full h-screen bg-BrandColor-green04">
+      <div className="w-full h-screen bg-GreyScale-White">
         <div className="flex items-center justify-center h-full -translate-x-[7.6%] -translate-y-[12.6%]">
           <img src="/images/Splash/SplashLogo.svg" alt="SplashLogo" />
         </div>
