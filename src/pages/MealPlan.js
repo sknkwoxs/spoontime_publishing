@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import MealPlanItem from "./MealPlan/MealPlanItem";
 import TabBar from "../components/TabBar";
+import Calendar from "./MealPlan/Calendar/Calendar";
 
 export default function MealPlan() {
   return (
@@ -24,9 +25,10 @@ export default function MealPlan() {
             </article>
           </section>
           <section>
-            <article className="flex justify-center items-center h-[8.5rem] bg-BrandColor-green04">
+            {/* <article className="flex justify-center items-center h-[8.5rem] bg-BrandColor-green04">
               달력
-            </article>
+            </article> */}
+            <Calendar />
           </section>
           <section className="px-4 mt-2">
             <article>
