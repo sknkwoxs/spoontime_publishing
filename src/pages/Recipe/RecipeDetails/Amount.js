@@ -31,11 +31,11 @@ export default function Amount() {
               </div>
               <div className="mb-4">
                 <input
-                  className="slider"
+                  className="rangeSlider"
                   type="range"
                   min="50"
                   max="150"
-                  value="140"
+                  defaultValue="140"
                 />
               </div>
             </div>
@@ -51,11 +51,11 @@ export default function Amount() {
               </div>
               <div className="mb-6">
                 <input
-                  className="slider"
+                  className="rangeSlider"
                   type="range"
                   min="1"
                   max="12"
-                  value="4"
+                  defaultValue="4"
                 />
               </div>
             </div>

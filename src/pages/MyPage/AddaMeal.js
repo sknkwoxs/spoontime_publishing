@@ -10,7 +10,7 @@ export default function AddaMeal() {
         </p>
 
         <div className="flex gap-2 pb-4 Font14sb">
-          <button className="w-full py-2 rounded bg-GreyScale-grey05">
+          <button className="w-full py-2 rounded bg-GreyScale-grey05 border-GreyScale-grey04">
             취소
           </button>
           <button className="w-full py-2 rounded text-GreyScale-White bg-BrandColor-green01">

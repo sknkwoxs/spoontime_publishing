@@ -25,7 +25,7 @@ export default function IngredientGuideFilter() {
             <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2">
               9~11개월
             </button>
-            <button className="border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 mr-2 bg-BrandColor-green04 border-BrandColor-green03">
+            <button className="border rounded-[1.563rem] px-2 py-1 mr-2 bg-BrandColor-green04 border-BrandColor-green03">
               12개월 이상
             </button>
             {/* 알레르기 위험도 */}

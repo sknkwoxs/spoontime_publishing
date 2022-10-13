@@ -13,7 +13,7 @@ export default function DietInfoAllergyRecommendationChange() {
         </p>
         <p className="mb-6 Font14sb">7월 14일 (금) ~ 8월 1일 (월)</p>
         <div className="flex gap-2 pb-4 Font14sb">
-          <button className="w-full py-2 rounded bg-GreyScale-grey05">
+          <button className="w-full py-2 rounded bg-GreyScale-grey05 border-GreyScale-grey04">
             현재 식단 유지
           </button>
           <button className="w-full py-2 rounded text-GreyScale-White bg-BrandColor-green01">
