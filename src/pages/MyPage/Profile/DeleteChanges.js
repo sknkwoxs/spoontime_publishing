@@ -8,7 +8,7 @@ export default function DeleteChanges() {
           지금 돌아가면 변경 내용이 삭제됩니다.
         </p>
         <div className="flex gap-2 pb-4 Font14sb">
-          <button className="w-full py-2 rounded bg-GreyScale-grey05">
+          <button className="w-full py-2 rounded bg-GreyScale-grey05 border-GreyScale-grey04">
             계속 수정
           </button>
           <button className="w-full py-2 rounded text-GreyScale-White bg-BrandColor-green01">

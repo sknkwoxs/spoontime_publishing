@@ -8,7 +8,7 @@ export default function DeleteMaterialPopUp() {
           필요없는 식재료는 삭제하실 수 있습니다.
         </p>
         <div className="flex gap-2 pb-4 Font14sb">
-          <button className="w-full py-2 rounded bg-GreyScale-grey05">
+          <button className="w-full py-2 rounded bg-GreyScale-grey05 border-GreyScale-grey04">
             취소
           </button>
           <button className="w-full py-2 rounded text-GreyScale-White bg-BrandColor-green01">
