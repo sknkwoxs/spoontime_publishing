@@ -225,8 +225,7 @@ html {
     background-color: #787880;
   }
 
-  /*
-  .slider {
+  .rangeSlider {
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
@@ -237,7 +236,7 @@ html {
     transition: opacity 0.2s;
   }
 
-  .slider::-webkit-slider-thumb {
+  .rangeSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -247,14 +246,13 @@ html {
     cursor: pointer;
   }
 
-  .slider::-moz-range-thumb {
+  .rangeSlider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: #112f30;
     cursor: pointer;
   }
-*/
 
   .switch {
     position: relative;
