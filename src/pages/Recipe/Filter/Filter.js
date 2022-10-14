@@ -1,33 +1,34 @@
 export default function Filter() {
   return (
     <>
-      <article className="flex h-10 border-b Font14sb justify-evenly text-GreyScale-grey03">
-        <div className="w-full text-center">
-          <p className="leading-10">메인요리</p>
+      <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
+      <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
+        <p className="pt-8 mb-2 Font16sb">
+          <span className="text-BrandColor-green02">꼬물이</span> 맞춤정보
+        </p>
+        <div>
+          <div className="flex gap-5 border-b Font14sb text-GreyScale-grey03">
+            <button className="px-1 pb-2 ">알레르기</button>
+            <button className="px-1 pb-2">상태</button>
+            <button className="px-1 pb-2 border-b-2 border-GreyScale-grey01">
+              단계
+            </button>
+          </div>
+
+          <div></div>
         </div>
-        <div className="w-full text-center">
-          <p className="leading-10">간식</p>
+        <div className="flex py-4">
+          <div className="flex w-full">
+            <button className="flex items-center gap-2 Font14sb">
+              <img src="/images/svgIcons/rotation.svg" alt="rotation" />
+              옵션 재설정
+            </button>
+          </div>
+          <button className="w-full py-3 rounded-lg Font16sb text-GreyScale-White bg-BrandColor-green01">
+            적용하기
+          </button>
         </div>
-        <div className="w-full text-center">
-          <p className="leading-10">전체</p>
-        </div>
-      </article>
-      <article className="flex gap-2 py-3 Font12">
-        <select className="flex items-center pl-2 py-1 border border-[#B7B7B7] rounded-[1.563rem] appearance-none bg-down bg-no-repeat bg-[center_right_0.5rem] Font12">
-          <option value="알레르기">추천순</option>
-          <option value="인기순">인기순</option>
-          <option value="조리 시간순">조리 시간순</option>
-        </select>
-        <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 gap-1">
-          알레르기 <img src="/images/svgIcons/down.svg" alt="down" />
-        </button>
-        <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 gap-1">
-          상태 <img src="/images/svgIcons/down.svg" alt="down" />
-        </button>
-        <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 gap-1">
-          단계 <img src="/images/svgIcons/down.svg" alt="down" />
-        </button>
-      </article>
+      </section>
     </>
   );
 }
