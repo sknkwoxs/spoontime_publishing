@@ -26,8 +26,9 @@ export default function Calendar() {
         plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         // weekends={false}
-        dateClick={handleDateClick}
+        // dateClick={handleDateClick}
         eventContent={renderEventContent}
+        showNonCurrentDates={false}
       />
     </>
   );
