@@ -5,14 +5,14 @@ export default function IngredientGuideFilter() {
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
         <p className="mt-8 mb-2 Font16sb">필터 설정</p>
         <div className="border-b">
-          <div className="flex w-full py-2 border-b Font14sb text-GreyScale-grey03">
+          <div className="flex w-full my-2 border-b Font14sb text-GreyScale-grey03">
             {/* tab */}
-            <div className="flex justify-center w-full text-center">
+            <button className="flex justify-center w-full py-2 text-center border-b-2 border-GreyScale-grey01">
               섭취 가능 시기
-            </div>
-            <div className="flex justify-center w-full text-center">
+            </button>
+            <button className="flex justify-center w-full py-2 text-center">
               알레르기 위험도
-            </div>
+            </button>
           </div>
           <div className="inline-block py-4 Font12">
             {/* 섭취 가능 시기 */}

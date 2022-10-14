@@ -1,11 +1,11 @@
-import Filter from "../Filter/Filter.js";
+import HeaderFilter from "../Filter/HeaderFilter.js";
 import RecipeItem from "../RecipeItem.js";
 
 export function List() {
   return (
     <>
       <section>
-        <Filter />
+        <HeaderFilter />
         <RecipeItem />
         <RecipeItem />
         <RecipeItem />
