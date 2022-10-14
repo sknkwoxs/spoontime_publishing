@@ -31,7 +31,7 @@ export default function IngredientGuide() {
             <button className="flex justify-center w-full pb-2 text-center">
               야채류
             </button>
-            <button className="flex justify-center w-full pb-2 text-center border-b-2 border-GreyScale-grey02">
+            <button className="flex justify-center w-full pb-2 text-center border-b-2 border-GreyScale-grey01">
               단백질류
             </button>
             <button className="flex justify-center w-full pb-2 text-center">
