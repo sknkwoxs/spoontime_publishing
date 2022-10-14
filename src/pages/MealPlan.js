@@ -62,7 +62,7 @@ export default function MealPlan() {
               {/* Daily */}
               <div>
                 <div className="flex justify-between">
-                  <p className="Font16sb">식단</p>
+                  <p className="Font16sb testMenu">식단</p>
                   <button className="Font12">편집</button>
                   {/* <p className="flex items-center Font12">완료</p> */}
                 </div>
