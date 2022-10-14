@@ -42,9 +42,9 @@ export default function DietInfoStep() {
             </p>
           </div>
 
-          <div className="mb-8">
-            {/* components */}
-            <button className="w-full  grid grid-cols-[max(56px)_1fr] mb-2 gap-4 items-center border border-GreyScale-grey01 rounded p-2">
+          <div className="grid grid-cols-1 gap-2 mb-8 ">
+            {/* list */}
+            <button className="w-full  grid grid-cols-[max(56px)_1fr] gap-4 items-center border border-GreyScale-grey01 rounded p-2">
               <div className="h-0 pb-[100%] overflow-hidden relative rounded z-0 max-w-[3.5rem]">
                 <img
                   className="absolute max-w-[3.5rem] object-cover w-full h-full rounded"
@@ -67,7 +67,7 @@ export default function DietInfoStep() {
               </div>
             </button>
 
-            <button className="w-full grid grid-cols-[max(56px)_1fr] mb-2 gap-4 items-center border border-GreyScale-grey04 rounded p-2">
+            <button className="w-full grid grid-cols-[max(56px)_1fr] gap-4 items-center border border-GreyScale-grey04 rounded p-2">
               <div className="h-0 pb-[100%] overflow-hidden relative rounded z-0 max-w-[3.5rem]">
                 <p className="absolute px-1 Font11 text-[0.625rem] bg-BrandColor-green04 rounded z-[100] top-0.5 left-0.5">
                   추천
@@ -92,7 +92,7 @@ export default function DietInfoStep() {
                 </div>
               </div>
             </button>
-            <button className="w-full grid grid-cols-[max(56px)_1fr] mb-2 gap-4 items-center border border-GreyScale-grey04 rounded p-2">
+            <button className="w-full grid grid-cols-[max(56px)_1fr] gap-4 items-center border border-GreyScale-grey04 rounded p-2">
               <div className="h-0 pb-[100%] overflow-hidden relative rounded z-0 max-w-[3.5rem]">
                 <p className="absolute px-1 Font11 text-[0.625rem] bg-BrandColor-green04 rounded z-[100] top-0.5 left-0.5">
                   추천
@@ -117,7 +117,7 @@ export default function DietInfoStep() {
                 </div>
               </div>
             </button>
-            <button className="w-full grid grid-cols-[max(56px)_1fr] mb-2 gap-4 items-center border border-GreyScale-grey04 rounded p-2">
+            <button className="w-full grid grid-cols-[max(56px)_1fr] gap-4 items-center border border-GreyScale-grey04 rounded p-2">
               <div className="h-0 pb-[100%] overflow-hidden relative rounded z-0 max-w-[3.5rem]">
                 <img
                   className="absolute max-w-[3.5rem] object-cover w-full h-full rounded"
@@ -140,7 +140,7 @@ export default function DietInfoStep() {
                 </div>
               </div>
             </button>
-            <button className="w-full grid grid-cols-[max(56px)_1fr] mb-2 gap-4 items-center border border-GreyScale-grey04 rounded p-2">
+            <button className="w-full grid grid-cols-[max(56px)_1fr] gap-4 items-center border border-GreyScale-grey04 rounded p-2">
               <div className="h-0 pb-[100%] overflow-hidden relative rounded z-0 max-w-[3.5rem]">
                 <img
                   className="absolute max-w-[3.5rem] object-cover w-full h-full rounded"
@@ -181,7 +181,7 @@ export default function DietInfoStep() {
           </button>
         </div>
       </section>
-      <DietInfoStepRecommendationChange />
+      {/* <DietInfoStepRecommendationChange /> */}
     </>
   );
 }

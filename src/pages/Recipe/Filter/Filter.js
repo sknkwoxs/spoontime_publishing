@@ -100,7 +100,7 @@ export default function Filter() {
                   10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
                 </p>
               </div>
-            </button>{" "}
+            </button>
             <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
               <div className="rounded h-0 pb-[100%] overflow-hidden relative">
                 <img
