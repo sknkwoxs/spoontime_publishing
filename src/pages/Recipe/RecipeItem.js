@@ -5,7 +5,7 @@ export default function RecipeItem() {
     <>
       <article className="flex py-4 border-b">
         <div className="flex w-full ">
-          <Link to="/Recipe/RecipeDetails">
+          <Link to="#!">
             <div className="rounded-lg max-w-[64px] h-[64px] object-cover mr-4">
               <img
                 className="rounded-lg max-w-[64px] h-[64px] object-cover"
@@ -16,7 +16,7 @@ export default function RecipeItem() {
           </Link>
           <div className="flex flex-col w-full my-auto">
             <span className="mb-2 Font16sb">
-              <Link to="/Recipe/RecipeDetails">한우가지로메인죽 </Link>
+              <Link to="#!">한우가지로메인죽</Link>
             </span>
 
             <div className="flex Font12 text-GreyScale-grey02">
@@ -32,7 +32,9 @@ export default function RecipeItem() {
           </div>
         </div>
         <div className="flex flex-col my-auto gap-y-2">
-          <img src="/images/svgicons/heart.svg" alt="heart" />
+          <button>
+            <img src="/images/svgicons/heart.svg" alt="heart" />
+          </button>
           <Link to="/Recipe/AddMenu">
             <img src="/images/svgicons/calendar.svg" alt="calendar" />
           </Link>

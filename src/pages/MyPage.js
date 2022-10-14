@@ -10,21 +10,21 @@ export default function MyPage() {
         <div>
           <section className="p-4">
             <article className="flex justify-between">
-              <div className="flex">
+              <button className="flex items-center">
                 <p className="pr-1 Font16sb">꼬물이</p>
                 <img src="/images/svgIcons/down2.svg" alt="down2" />
-              </div>
+              </button>
               <Link to="/MyPage/Profile">
                 <img src="/images/svgIcons/settings.svg" alt="settings" />
               </Link>
             </article>
           </section>
           <section className="px-4 mb-6">
-            <article className="flex mb-4">
+            <article className="flex items-center mb-4">
               <div className="mr-2">
                 <img src="/images/RecipeBabyImg.svg" alt="RecipeBabyImg" />
               </div>
-              <div>
+              <div className="">
                 <div className="flex">
                   <p className="mr-2 leading-6 Font18sb text-BrandColor-green02">
                     꼬물이

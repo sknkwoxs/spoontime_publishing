@@ -15,9 +15,10 @@ export default function IngredientsItem() {
             </div>
           </Link>
           <div className="flex flex-col w-full my-auto">
-            <Link to="/Recipe/IngredientDetails">
-              <span className="mb-2 Font16sb">쌀</span>
-            </Link>
+            <span className="mb-2 Font16sb">
+              <Link to="/Recipe/IngredientDetails">쌀 </Link>
+            </span>
+
             <div className="flex Font12 text-GreyScale-grey02">
               <div className="flex items-center gap-1 mr-2">
                 <img src="/images/svgicons/ingredients.svg" alt="ingredients" />
@@ -34,9 +35,9 @@ export default function IngredientsItem() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col my-auto gap-y-2">
+        <button className="flex flex-col my-auto gap-y-2">
           <img src="/images/svgicons/heart.svg" alt="heart" />
-        </div>
+        </button>
       </article>
     </>
   );

@@ -20,16 +20,26 @@ export default function IngredientGuide() {
           </Link>
         </div>
         <div>
-          <div className="flex w-full py-2 border-b Font14sb text-GreyScale-grey03">
+          <div className="flex w-full my-2 border-b Font14sb text-GreyScale-grey03">
             {/* tab */}
-            <div className="flex justify-center w-full text-center">전체</div>
-            <div className="flex justify-center w-full text-center">곡류</div>
-            <div className="flex justify-center w-full text-center">야채류</div>
-            <div className="flex justify-center w-full text-center">
+            <button className="flex justify-center w-full pb-2 text-center ">
+              전체
+            </button>
+            <button className="flex justify-center w-full pb-2 text-center">
+              곡류
+            </button>
+            <button className="flex justify-center w-full pb-2 text-center">
+              야채류
+            </button>
+            <button className="flex justify-center w-full pb-2 text-center border-b-2 border-GreyScale-grey02">
               단백질류
-            </div>
-            <div className="flex justify-center w-full text-center">우유류</div>
-            <div className="flex justify-center w-full text-center">과일류</div>
+            </button>
+            <button className="flex justify-center w-full pb-2 text-center">
+              우유류
+            </button>
+            <button className="flex justify-center w-full pb-2 text-center">
+              과일류
+            </button>
           </div>
           <div className="flex gap-2 py-3 Font12">
             <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">

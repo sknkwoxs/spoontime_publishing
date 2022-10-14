@@ -21,7 +21,7 @@ export default function Timer() {
           </div>
         </div>
         <div
-          class=" bg-BrandColor-green03 h-10 absolute bottom-0 "
+          className="absolute bottom-0 h-10 bg-BrandColor-green03 "
           style={{ width: "5%" }}
         ></div>
       </section>
