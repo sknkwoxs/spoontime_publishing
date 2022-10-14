@@ -7,9 +7,13 @@ export default function Amount() {
           <div className="pt-8 pb-6">
             <p className="mb-4 Font16sb">도구 및 식이 기준 설정</p>
             <div className="flex text-center Font14sb text-GreyScale-grey03">
-              <div className="w-full py-1 border border-r-0">냄비</div>
-              <div className="w-full py-1 border border-r-0">밥솥</div>
-              <div className="w-full py-1 border ">마스터기</div>
+              <button className="w-full py-1 border border-r-0 rounded-l-lg">
+                냄비
+              </button>
+              <button className="w-full py-1 border border-r-0">밥솥</button>
+              <button className="w-full py-1 border rounded-r-lg">
+                마스터기
+              </button>
             </div>
           </div>
           <div className="Font14">

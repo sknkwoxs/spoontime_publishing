@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import RecipeItem from "../Recipe/RecipeItem";
+import DeleteMaterialPopUp from "../Recipe/RecipeDetails/DeleteMaterialPopUp";
+import StopTimer from "../Recipe/RecipeDetails/StopTimer";
+import Amount from "../Recipe/RecipeDetails/Amount";
+import Substitutes from "../Recipe/RecipeDetails/Substitutes";
 
 export default function MealDetails() {
   return (
@@ -14,8 +18,12 @@ export default function MealDetails() {
                 </div>
               </Link>
               <div className="flex gap-3">
-                <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
-                <img src="/images/svgIcons/highlight.svg" alt="highlight" />
+                <button>
+                  <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
+                </button>
+                <button>
+                  <img src="/images/svgIcons/highlight.svg" alt="highlight" />
+                </button>
               </div>
             </div>
           </div>

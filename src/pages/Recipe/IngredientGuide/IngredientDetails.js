@@ -13,9 +13,9 @@ export default function IngredientDetails() {
                   <img src="/images/svgIcons/back.svg" alt="back" />
                 </div>
               </Link>
-              <div className="flex gap-3">
+              <button className="flex gap-3">
                 <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
-              </div>
+              </button>
             </div>
           </div>
           <article className="border-b">
@@ -29,7 +29,9 @@ export default function IngredientDetails() {
             <div className="flex flex-col w-full px-4 py-6 my-auto">
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">쌀</p>
-                <img src="/images/svgicons/upload.svg" alt="upload" />
+                <button>
+                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
                 <div className="flex items-center gap-1 mr-2">
