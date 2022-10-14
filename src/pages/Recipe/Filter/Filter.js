@@ -15,7 +15,113 @@ export default function Filter() {
             </button>
           </div>
 
-          <div></div>
+          {/* Allergy */}
+          {/* <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
+            <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
+              <img src="/images/ingredients/potato.svg" alt="potato" />
+              <p className="Font12">감자</p>
+            </button>
+            <button className="flex flex-col items-center justify-center rounded gap-y-1">
+              <img src="/images/ingredients/potato.svg" alt="potato" />
+              <p className="Font12">고구마</p>
+            </button>
+          </div> */}
+
+          {/* Status */}
+          {/* <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
+            <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
+              <img src="/images/ingredients/potato.svg" alt="potato" />
+              <p className="Font12">감기/고열</p>
+            </button>
+            <button className="flex flex-col items-center justify-center rounded gap-y-1">
+              <img src="/images/ingredients/potato.svg" alt="potato" />
+              <p className="Font12">변비</p>
+            </button>
+          </div> */}
+
+          {/* Step */}
+          <div className="grid grid-cols-1 gap-2 py-5 overflow-auto max-h-[16.75rem]">
+            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded border-GreyScale-grey01">
+              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                <img
+                  className="absolute object-cover w-full h-full rounded"
+                  src="/images/defaultImage.png"
+                  alt="defaultImage"
+                />
+              </div>
+              <div>
+                <div className="flex items-center gap-1">
+                  <p className="Font14sb">초기 1</p>
+                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                    권장 150~190일
+                  </p>
+                </div>
+                <p className="text-GreyScale-grey02 Font12">
+                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
+                </p>
+              </div>
+            </button>
+            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
+              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                <img
+                  className="absolute object-cover w-full h-full rounded"
+                  src="/images/defaultImage.png"
+                  alt="defaultImage"
+                />
+              </div>
+              <div>
+                <div className="flex items-center gap-1">
+                  <p className="Font14sb">초기 2</p>
+                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                    권장 150~190일
+                  </p>
+                </div>
+                <p className="text-GreyScale-grey02 Font12">
+                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
+                </p>
+              </div>
+            </button>
+            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
+              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                <img
+                  className="absolute object-cover w-full h-full rounded"
+                  src="/images/defaultImage.png"
+                  alt="defaultImage"
+                />
+              </div>
+              <div>
+                <div className="flex items-center gap-1">
+                  <p className="Font14sb">중기</p>
+                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                    권장 150~190일
+                  </p>
+                </div>
+                <p className="text-GreyScale-grey02 Font12">
+                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
+                </p>
+              </div>
+            </button>{" "}
+            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
+              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                <img
+                  className="absolute object-cover w-full h-full rounded"
+                  src="/images/defaultImage.png"
+                  alt="defaultImage"
+                />
+              </div>
+              <div>
+                <div className="flex items-center gap-1">
+                  <p className="Font14sb">초기 3</p>
+                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                    권장 150~190일
+                  </p>
+                </div>
+                <p className="text-GreyScale-grey02 Font12">
+                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
+                </p>
+              </div>
+            </button>
+          </div>
         </div>
         <div className="flex py-4">
           <div className="flex w-full">
