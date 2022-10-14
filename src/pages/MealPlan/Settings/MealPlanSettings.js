@@ -23,9 +23,9 @@ export default function MealPlanSettings() {
           <div className="py-6 border-b">
             <div className="flex justify-between mb-6">
               <p className="Font16sb">식단 추천</p>
-              <label class="switch">
+              <label className="switch">
                 <input type="checkbox" />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
               </label>
             </div>
             <p className="Font12 text-GreyScale-grey02">
