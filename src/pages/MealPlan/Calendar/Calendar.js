@@ -33,19 +33,19 @@ export default function Calendar() {
         plugins={[dayGridPlugin, interactionPlugin]}
         locale={koLocale}
         initialView="dayGridMonth"
+        dateClick={handleDateClick} // 클릭 이벤트
+        eventContent={renderEventContent} // 클릭 이벤트 발생 시 렌더링되는 내용
         headerToolbar={{
           start: "title myCustomButton",
           center: "",
-          end: "prev,next",
+          end: "myCustomButton myCustomButton",
+        }}
+        dayHeaderContent={function (arg) {
+          return Day_Names[arg.date.getDay()];
         }}
         weekends={true} // 한 주 씩 보기
         showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
         firstDay={false} // true 시, 월요일 시작
-        dateClick={handleDateClick} // 클릭 이벤트
-        eventContent={renderEventContent} // 클릭 이벤트 발생 시 렌더링되는 내용
-        dayHeaderContent={function (arg) {
-          return Day_Names[arg.date.getDay()];
-        }}
         formatDate={(locale, date) =>
           date.toLocaleString("en", { date: "numeric" })
         }
@@ -68,6 +68,9 @@ export default function Calendar() {
           },
         }}
       />
+      <div>
+        <input type="date" />
+      </div>
     </>
   );
 }

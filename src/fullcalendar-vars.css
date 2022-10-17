@@ -90,13 +90,16 @@
   border: 0;
 }
 
-.fc-theme-standard td,
 .fc-theme-standard th {
   border: 0;
 }
 
+.fc-theme-standard td {
+  border: 0;
+}
+
 .fc-theme-standard td,
-.fc-theme-standrd th {
+.fc-theme-standard th {
   border: 0;
 }
 
