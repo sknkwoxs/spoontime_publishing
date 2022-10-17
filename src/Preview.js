@@ -1,4 +1,4 @@
-export default function home() {
+export default function Preview() {
   return (
     <>
       <div className="ritz grid-container" dir="ltr">
