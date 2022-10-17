@@ -173,7 +173,7 @@ export default function Router() {
         />
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
