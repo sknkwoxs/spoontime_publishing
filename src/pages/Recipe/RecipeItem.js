@@ -25,7 +25,7 @@ export default function RecipeItem() {
                 <p>중기</p>
               </div>
               <div className="flex items-center gap-1 mr-2">
-                <img src="/images/svgicons/clock.svg" alt="clock" />
+                <img src="/images/svgIcons/clock.svg" alt="clock" />
                 <p>30분</p>
               </div>
             </div>
@@ -33,10 +33,10 @@ export default function RecipeItem() {
         </div>
         <div className="flex flex-col my-auto gap-y-2">
           <button>
-            <img src="/images/svgicons/heart.svg" alt="heart" />
+            <img src="/images/svgIcons/heart.svg" alt="heart" />
           </button>
           <Link to="/Recipe/AddMenu">
-            <img src="/images/svgicons/calendar.svg" alt="calendar" />
+            <img src="/images/svgIcons/calendar.svg" alt="calendar" />
           </Link>
         </div>
       </article>

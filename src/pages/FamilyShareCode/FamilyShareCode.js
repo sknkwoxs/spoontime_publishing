@@ -16,7 +16,7 @@ export default function FamilyShareCode() {
             <p className="mb-3 Font12 text-GreyScale-grey03">가족 공유 코드</p>
             <div className="relative pb-1 mb-3 border-b Font20">
               <input
-                className="w-full border-none focus:outline-hidden"
+                className="w-full p-0 border-none Font20 focus:outline-hidden"
                 type="text"
               />
               <button className="absolute right-0 bottom-1">
@@ -28,7 +28,7 @@ export default function FamilyShareCode() {
             </div>
             {/* <p className="mb-2 Font12 text-Message-error">공유코드가 틀립니다.</p> */}
             <p className="Font12 text-GreyScale-grey02">
-              가족 공유 코드가 없어요.
+              가족 공유 코드가 없어요.&nbsp;
               <button className="underline text-BrandColor-green01">
                 새로운 아기를 등록할게요.
               </button>

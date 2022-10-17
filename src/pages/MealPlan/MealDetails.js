@@ -39,7 +39,7 @@ export default function MealDetails() {
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">한우가지로메인죽</p>
                 <button>
-                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                  <img src="/images/svgIcons/upload.svg" alt="upload" />
                 </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
@@ -48,7 +48,7 @@ export default function MealDetails() {
                   <p>중기</p>
                 </div>
                 <div className="flex items-center gap-1 mr-2">
-                  <img src="/images/svgicons/clock.svg" alt="clock" />
+                  <img src="/images/svgIcons/clock.svg" alt="clock" />
                   <p>30분</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function MealDetails() {
           </article> */}
           <article className="px-4 py-6 border-b">
             <div className="flex items-center gap-2 mb-4 Font16sb">
-              <img src="/images/svgicons/miniLogo.svg" alt="miniLogo" />
+              <img src="/images/svgIcons/miniLogo.svg" alt="miniLogo" />
               스푼타임 Advise
             </div>
             <p className="mb-4 Font14">
@@ -212,7 +212,7 @@ export default function MealDetails() {
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 1</p>
                 <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
-                  <img src="/images/svgicons/timer.svg" alt="timer" />
+                  <img src="/images/svgIcons/timer.svg" alt="timer" />
                   30분
                 </button>
               </div>
@@ -254,7 +254,7 @@ export default function MealDetails() {
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 2</p>
                 <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
-                  <img src="/images/svgicons/timer.svg" alt="timer" />
+                  <img src="/images/svgIcons/timer.svg" alt="timer" />
                   15분
                 </button>
               </div>
@@ -310,7 +310,7 @@ export default function MealDetails() {
             <div className="flex flex-col py-4 mb-4 border-b gap-y-4">
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam1.svg"
+                  src="/images/svgIcons/verificationTeam1.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -322,7 +322,7 @@ export default function MealDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam2.svg"
+                  src="/images/svgIcons/verificationTeam2.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -334,7 +334,7 @@ export default function MealDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam3.svg"
+                  src="/images/svgIcons/verificationTeam3.svg"
                   alt="verificationTeam1"
                 />
                 <div>
