@@ -1,7 +1,7 @@
 :root {
   --fc-small-font-size: 0.85em;
   --fc-page-bg-color: #fff;
-  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+  --fc-neutral-bg-color: #ffffff;
   --fc-neutral-text-color: #808080;
   --fc-border-color: #ddd;
 
@@ -29,17 +29,89 @@
   --fc-bg-event-color: rgb(143, 223, 130);
   --fc-bg-event-opacity: 0.3;
   --fc-highlight-color: rgba(188, 232, 241, 0.3);
-  --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+  --fc-today-bg-color: #ffffff;
   --fc-now-indicator-color: red;
 }
 
 .fc {
+  height: calc(100vh - 108px);
   padding: 0 16px;
 }
 
 .fc .fc-header-toolbar {
-  display: none;
+  /* display: none; */
 }
 
-.fc-toolbar-title {
+.fc .fc-toolbar-chunk {
+  display: flex;
+}
+
+.fc .fc-toolbar-chunk h2.fc-toolbar-title {
+  font-style: normal;
+  font-family: "Pretendard-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fc .fc-button-primary {
+  /* background-color: #ffffff; */
+}
+
+.fc .fc-toolbar-chunk .button.fc-myCustomButton-button {
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.fc .fc-daygrid-day-number {
+  font-style: normal;
+  font-family: "Pretendard-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.fc .fc-daygrid-body {
+  z-index: 0;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: 0;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 0;
+}
+
+.fc-theme-standard td,
+.fc-theme-standrd th {
+  border: 0;
+}
+
+.fc-scrollgrid {
+  border: none !important;
+}
+
+.fc-scrollgrid td:last-of-type {
+  border-right: none !important;
+}
+
+.fc .fc-day-sun {
+  color: #f93232;
+}
+
+.fc .fc-day-sat {
+  color: #0172cb;
 }

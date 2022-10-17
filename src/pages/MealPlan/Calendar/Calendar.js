@@ -3,46 +3,80 @@ import koLocale from "@fullcalendar/core/locales/ko";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
-import { formatDate } from "@fullcalendar/common";
+// import { formatDayString } from "@fullcalendar/common";
 
 export default function Calendar() {
+  const [date, setDate] = useState(new Date());
+  // const locale = "fr-CA";
+
   const handleDateClick = (arg) => {
     alert(arg.dateStr);
   };
 
-  // let str = formatDate(new Date(), {
-  //   month: "long",
-  //   year: "numeric",
-  //   day: "numeric",
-  // });
+  // console.log(str);
 
   // console.log(str);
+
+  let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
+
+  let d = new Date();
+
+  console.log(d.toLocaleString("ko", { day: "numeric" }));
+
+  console.log(d.toLocaleString("en", { day: "numeric" }));
 
   console.log();
 
   return (
     <>
       <FullCalendar
-        locale={koLocale}
-        // dateFormatter={(locale, date) =>
-        //   date.toLocaleString("en", { day: "numeric" })
-        // }
         plugins={[dayGridPlugin, interactionPlugin]}
+        locale={koLocale}
         initialView="dayGridMonth"
-        // weekends={false}
-        // dateClick={handleDateClick}
-        // eventContent={renderEventContent}
-        showNonCurrentDates={false}
+        headerToolbar={{
+          start: "title myCustomButton",
+          center: "",
+          end: "prev,next",
+        }}
+        weekends={true} // 한 주 씩 보기
+        showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
+        firstDay={false} // true 시, 월요일 시작
+        dateClick={handleDateClick} // 클릭 이벤트
+        eventContent={renderEventContent} // 클릭 이벤트 발생 시 렌더링되는 내용
+        dayHeaderContent={function (arg) {
+          return Day_Names[arg.date.getDay()];
+        }}
+        formatDate={(locale, date) =>
+          date.toLocaleString("en", { date: "numeric" })
+        }
+        views={{
+          month: {
+            columnFormat: "dddd",
+            eventLimit: "4", // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
+          },
+          agendaWeek: {
+            columnFormat: "M/D ddd",
+            titleFormat: "YYYY년 M월 D일",
+            eventLimit: false,
+          },
+          agendaDay: {
+            columnFormat: "dddd",
+            eventLimit: false,
+          },
+          listWeek: {
+            columnFormat: "",
+          },
+        }}
       />
     </>
   );
 }
 
-// function renderEventContent(eventInfo) {
-//   return (
-//     <>
-//       <b>{eventInfo.timeText}</b>
-//       <i>{eventInfo.event.title}</i>
-//     </>
-//   );
-// }
+function renderEventContent(eventInfo) {
+  return (
+    <>
+      <b>{eventInfo.timeText}</b>
+      <i>{eventInfo.event.title}</i>
+    </>
+  );
+}
