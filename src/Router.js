@@ -67,6 +67,7 @@ import TermsofService from "./pages/MyPage/Settings/TermsofService";
 import PrivacyPolicy from "./pages/MyPage/Settings/PrivacyPolicy";
 //
 import Preloader from "./pages/Preloader";
+import Home from "./Home";
 
 export default function Router() {
   return (
@@ -172,6 +173,7 @@ export default function Router() {
         />
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
+        <Route path="" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
