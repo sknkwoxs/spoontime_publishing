@@ -67,7 +67,7 @@ import TermsofService from "./pages/MyPage/Settings/TermsofService";
 import PrivacyPolicy from "./pages/MyPage/Settings/PrivacyPolicy";
 //
 import Preloader from "./pages/Preloader";
-import Preview from "./Preview";
+import Preview from "./Preview";
 
 export default function Router() {
   return (
