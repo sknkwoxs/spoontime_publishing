@@ -67,7 +67,7 @@ import TermsofService from "./pages/MyPage/Settings/TermsofService";
 import PrivacyPolicy from "./pages/MyPage/Settings/PrivacyPolicy";
 //
 import Preloader from "./pages/Preloader";
-import Preview from "./Preview";
+import Preview from "./Preview";
 
 export default function Router() {
   return (
@@ -118,6 +118,7 @@ export default function Router() {
         />
         <Route path="/MealPlan/MealDetails" element={<MealDetails />} />
         <Route path="/MealPlan/Recipe/Feedback" element={<Feedback />} />
+
         <Route path="/MealPlan/Recipe/Library" element={<Library />} />
         <Route path="/MealPlan/Recipe/Album" element={<Album />} />
         <Route path="/MealPlan/Recipe/Read" element={<Read />} />

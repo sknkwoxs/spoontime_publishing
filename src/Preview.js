@@ -37,9 +37,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/authority"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Authority"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/authority
+                  https://spoontime-publishing-iq5v.vercel.app/Authority
                 </a>
               </td>
             </tr>
@@ -51,9 +51,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/splashrecipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app//Splash/SplashRecipe"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/splashrecipe
+                  https://spoontime-publishing-iq5v.vercel.app//Splash/SplashRecipe
                 </a>
               </td>
             </tr>
@@ -65,9 +65,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/splashcalendar"
+                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashCalendar"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/splashcalendar
+                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashCalendar
                 </a>
               </td>
             </tr>
@@ -79,9 +79,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/splashpostscript"
+                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashPostscript"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/splashpostscript
+                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashPostscript
                 </a>
               </td>
             </tr>
@@ -93,9 +93,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/splashspoontime"
+                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashSpoontime"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/splashspoontime
+                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashSpoontime
                 </a>
               </td>
             </tr>
@@ -114,9 +114,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/login"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Login"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/login
+                  https://spoontime-publishing-iq5v.vercel.app/Login
                 </a>
               </td>
             </tr>
@@ -128,9 +128,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/familysharecode"
+                  href="https://spoontime-publishing-iq5v.vercel.app/FamilyShareCode"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/familysharecode
+                  https://spoontime-publishing-iq5v.vercel.app/FamilyShareCode
                 </a>
               </td>
             </tr>
@@ -142,9 +142,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/babyinfo"
+                  href="https://spoontime-publishing-iq5v.vercel.app/BabyInfo"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/babyinfo
+                  https://spoontime-publishing-iq5v.vercel.app/BabyInfo
                 </a>
               </td>
             </tr>
@@ -156,9 +156,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/birthday"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Birthday"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/birthday
+                  https://spoontime-publishing-iq5v.vercel.app/Birthday
                 </a>
               </td>
             </tr>
@@ -184,9 +184,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/allergy"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Allergy"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/allergy
+                  https://spoontime-publishing-iq5v.vercel.app/Allergy
                 </a>
               </td>
             </tr>
@@ -212,9 +212,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/recipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/recipe
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
                 </a>
               </td>
             </tr>
@@ -223,42 +223,84 @@ export default function Preview() {
                 <div className="row-header-wrapper">18</div>
               </th>
               <td className="s2">Recipe / Alarm toast</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R18" className="row-headers-background">
                 <div className="row-header-wrapper">19</div>
               </th>
               <td className="s2">Recipe</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R19" className="row-headers-background">
                 <div className="row-header-wrapper">20</div>
               </th>
               <td className="s2">Recipe / Filter / Allergy</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R20" className="row-headers-background">
                 <div className="row-header-wrapper">21</div>
               </th>
               <td className="s2">Recipe / Filter / Status</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R21" className="row-headers-background">
                 <div className="row-header-wrapper">22</div>
               </th>
               <td className="s2">Recipe / Filter / Step</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R22" className="row-headers-background">
                 <div className="row-header-wrapper">23</div>
               </th>
-              <td className="s2">Recipe / Filter / select</td>
-              <td className="s3"></td>
+              <td className="s2">Recipe / Filter / Select</td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R23" className="row-headers-background">
@@ -268,9 +310,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/recipe/addmenu"
+                  href="https://spoontime-publishing-iq5v.vercel.app/recipe/AddMenu"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/recipe/addmenu
+                  https://spoontime-publishing-iq5v.vercel.app/recipe/AddMenu
                 </a>
               </td>
             </tr>
@@ -302,42 +344,84 @@ export default function Preview() {
               <td className="s2">
                 Recipe / Recipe Details / delete material popup
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R27" className="row-headers-background">
                 <div className="row-header-wrapper">28</div>
               </th>
               <td className="s2">Recipe / Recipe Details/timer</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R28" className="row-headers-background">
                 <div className="row-header-wrapper">29</div>
               </th>
               <td className="s2">Recipe / Recipe Details/Stop timer</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R29" className="row-headers-background">
                 <div className="row-header-wrapper">30</div>
               </th>
               <td className="s2">Recipe / Recipe Details / Amount</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R30" className="row-headers-background">
                 <div className="row-header-wrapper">31</div>
               </th>
               <td className="s2">Recipe / Recipe Details / Substitutes</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/RecipeDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R31" className="row-headers-background">
                 <div className="row-header-wrapper">32</div>
               </th>
               <td className="s2">Recipe / Search</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/Search"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/Search
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R32" className="row-headers-background">
@@ -372,7 +456,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">37</div>
               </th>
               <td className="s2">Recipe / Search / Result / Ingredient</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/SearchIngredient"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/SearchIngredient
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R37" className="row-headers-background">
@@ -395,42 +486,84 @@ export default function Preview() {
                 <div className="row-header-wrapper">40</div>
               </th>
               <td className="s2">Recipe / Bookmark / No-data / Recipe</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R40" className="row-headers-background">
                 <div className="row-header-wrapper">41</div>
               </th>
               <td className="s2">Recipe / Bookmark / No-data / Ingredient</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R41" className="row-headers-background">
                 <div className="row-header-wrapper">42</div>
               </th>
               <td className="s2">Recipe / Bookmark / Recipe</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R42" className="row-headers-background">
                 <div className="row-header-wrapper">43</div>
               </th>
               <td className="s2">Recipe / Bookmark / Recipe / filter</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R43" className="row-headers-background">
                 <div className="row-header-wrapper">44</div>
               </th>
               <td className="s2">Recipe / Bookmark / Ingredient</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R44" className="row-headers-background">
                 <div className="row-header-wrapper">45</div>
               </th>
               <td className="s2">Recipe / Bookmark / Ingredient / filter</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkIngredient
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R45" className="row-headers-background">
@@ -451,14 +584,29 @@ export default function Preview() {
                 <div className="row-header-wrapper">47</div>
               </th>
               <td className="s2">Meal Plan / Daily</td>
-              <td className="s3"></td>
+              <td className="s3">
+                {" "}
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R47" className="row-headers-background">
                 <div className="row-header-wrapper">48</div>
               </th>
               <td className="s2">Meal Plan / Daily / Edit Mode</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealPlanEditMode"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealPlanEditMode
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R48" className="row-headers-background">
@@ -495,7 +643,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">53</div>
               </th>
               <td className="s2">Meal Plan / Settings / Default</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealPlanSettings"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealPlanSettings
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R53" className="row-headers-background">
@@ -541,7 +696,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">59</div>
               </th>
               <td className="s2">Meal Plan / Meal Details</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealDetails"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/MealDetails
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R59" className="row-headers-background">
@@ -555,7 +717,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">61</div>
               </th>
               <td className="s2">Meal Plan / Recipe / Feedback</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Feedback"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Feedback
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R61" className="row-headers-background">
@@ -571,7 +740,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">63</div>
               </th>
               <td className="s2">Meal Plan / Recipe / Feedback / Library</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Library"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Library
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R63" className="row-headers-background">
@@ -580,7 +756,14 @@ export default function Preview() {
               <td className="s2">
                 Meal Plan / Recipe / Feedback / Library / Album
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Album"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Album
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R64" className="row-headers-background">
@@ -594,7 +777,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">66</div>
               </th>
               <td className="s2">Meal Plan / Recipe / Feedback / Read</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Read"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Read
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R66" className="row-headers-background">
@@ -619,7 +809,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">69</div>
               </th>
               <td className="s2">Meal Plan / Recipe / Feedback / Edit</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/FeedbackEdit"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/FeedbackEdit
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R69" className="row-headers-background">
@@ -628,7 +825,14 @@ export default function Preview() {
               <td className="s2">
                 Meal Plan / add a Meal Plan / Search Recipe
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/AddAMealPlan/SearchRecipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/AddAMealPlan/SearchRecipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R70" className="row-headers-background">
@@ -653,7 +857,14 @@ export default function Preview() {
               <td className="s2">
                 Meal Plan / add a Meal Plan / Search Recipe / Autocomplete
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/SearchRecipe"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/SearchRecipe
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R73" className="row-headers-background">
@@ -662,7 +873,14 @@ export default function Preview() {
               <td className="s2">
                 Meal Plan / add a Meal Plan / Search Recipe / Result
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/Result"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/Result
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R74" className="row-headers-background">
@@ -680,7 +898,14 @@ export default function Preview() {
               <td className="s2">
                 Meal Plan / add a Meal Plan / Search Recipe / Manual / Name
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/Manual/Name"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/Manual/Name
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R76" className="row-headers-background">
@@ -727,7 +952,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">81</div>
               </th>
               <td className="s2">Meal Plan / add a Meal Plan / Final Step</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/FinalStep"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/AddAMealPlan/FinalStep
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R81" className="row-headers-background">
@@ -750,7 +982,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">84</div>
               </th>
               <td className="s2">My Page</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R84" className="row-headers-background">
@@ -771,7 +1010,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">87</div>
               </th>
               <td className="s2">My Page / Profile</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Profile"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Profile
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R87" className="row-headers-background">
@@ -833,7 +1079,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">95</div>
               </th>
               <td className="s2">My Page / Diet Info</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/DietInfo"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/DietInfo
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R95" className="row-headers-background">
@@ -902,14 +1155,28 @@ export default function Preview() {
                 <div className="row-header-wrapper">104</div>
               </th>
               <td className="s2">My Page / Settings</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R104" className="row-headers-background">
                 <div className="row-header-wrapper">105</div>
               </th>
               <td className="s2">My Page / Settings / Account Info</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/AccountInfo"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/AccountInfo
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R105" className="row-headers-background">
@@ -941,7 +1208,14 @@ export default function Preview() {
               <td className="s2">
                 My Page / Settings / Account Info / Edit PW / Current
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/EditPWCurrent"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/EditPWCurrent
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R109" className="row-headers-background">
@@ -950,14 +1224,28 @@ export default function Preview() {
               <td className="s2">
                 My Page / Settings / Account Info / Edit PW / New
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/EditPWNew"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/EditPWNew
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R110" className="row-headers-background">
                 <div className="row-header-wrapper">111</div>
               </th>
               <td className="s2">My Page / Settings / Account Info / Leave</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Leave"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Leave
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R111" className="row-headers-background">
@@ -966,7 +1254,14 @@ export default function Preview() {
               <td className="s2">
                 My Page / Settings / Account Info / Leave / Opinion
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Opinion"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Opinion
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R112" className="row-headers-background">
@@ -975,42 +1270,84 @@ export default function Preview() {
               <td className="s2">
                 My Page / Settings / Account Info / Leave / Confirm
               </td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Confirm"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Confirm
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R113" className="row-headers-background">
                 <div className="row-header-wrapper">114</div>
               </th>
               <td className="s2">My Page / Settings / Notice</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Notice"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Notice
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R114" className="row-headers-background">
                 <div className="row-header-wrapper">115</div>
               </th>
               <td className="s2">My Page / Settings / Notice / Details</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Details"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Details
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R115" className="row-headers-background">
                 <div className="row-header-wrapper">116</div>
               </th>
               <td className="s2">My Page / Settings / Inquiry</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Inquiry"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/Inquiry
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R116" className="row-headers-background">
                 <div className="row-header-wrapper">117</div>
               </th>
               <td className="s2">My Page / Settings / Terms of service</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/TermsofService"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/TermsofService
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R117" className="row-headers-background">
                 <div className="row-header-wrapper">118</div>
               </th>
               <td className="s2">My Page / Settings / Privacy Policy</td>
-              <td className="s3"></td>
+              <td className="s3">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/PrivacyPolicy"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage/Settings/PrivacyPolicy
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R118" className="row-headers-background">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MealPlanItem from "./MealPlanItem";
+import MealPlanEditItem from "./MealPlanEditItem";
 import TabBar from "../../components/TabBar";
 import DeleteMenu from "./MealPlan/DeleteMenu";
 
@@ -62,19 +62,19 @@ export default function MealPlanEditMode() {
               <div>
                 <div className="flex justify-between">
                   <p className="Font16sb">식단</p>
-                  <button className="Font12">편집</button>
+                  <button className="Font12">완료</button>
                   {/* <p className="flex items-center Font12">완료</p> */}
                 </div>
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
-                <MealPlanItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
+                <MealPlanEditItem />
               </div>
             </article>
             <div className="fixed bottom-[5.75rem] right-4 z-50">
