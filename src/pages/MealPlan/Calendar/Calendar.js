@@ -5,15 +5,15 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 // import { formatDayString } from "@fullcalendar/common";
 
+import events from "./events";
+
 export default function Calendar() {
-  const [date, setDate] = useState(new Date());
+  // const [date, setDate] = useState(new Date());
   // const locale = "fr-CA";
 
   const handleDateClick = (arg) => {
     alert(arg.dateStr);
   };
-
-  // console.log(str);
 
   // console.log(str);
 
@@ -26,6 +26,12 @@ export default function Calendar() {
   console.log(d.toLocaleString("en", { day: "numeric" }));
 
   console.log();
+
+  // const events = [
+  //   { title: "event 1", date: new Date() },
+  //   { title: "event 2", date: new Date() },
+  //   { title: "event 3", date: new Date() },
+  // ];
 
   return (
     <>
@@ -67,6 +73,8 @@ export default function Calendar() {
             columnFormat: "",
           },
         }}
+        events={events}
+        droppable={true}
       />
       <div>
         <input type="date" />
