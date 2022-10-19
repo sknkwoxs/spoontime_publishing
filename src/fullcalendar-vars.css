@@ -34,7 +34,8 @@
 }
 
 .fc {
-  height: calc(100vh - 108px);
+  /* height: calc(100vh - 108px); */
+  height: 100vh;
   padding: 0 16px;
 }
 
@@ -137,7 +138,7 @@
 
 .fc .fc-daygrid-day-number {
   margin: 0 auto;
-  padding: 0 0 8px 0;
+  padding: 8px 0;
 
   /* text-align: center; */
 }
