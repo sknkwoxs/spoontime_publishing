@@ -436,4 +436,12 @@ html {
   .ritz .waffle .s4:hover {
     background-color: #f5f5f5 !important;
   }
+
+  /* Splash */
+  /* .slick-slider .slick-list {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    right: 0;
+  } */
 }
