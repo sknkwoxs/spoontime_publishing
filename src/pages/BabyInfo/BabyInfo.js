@@ -19,7 +19,7 @@ export default function FamilyShareCode() {
   };
 
   const handleClick = () => {
-    setMessage("지웁니다");
+    setMessage("");
   };
 
   return (
@@ -53,6 +53,7 @@ export default function FamilyShareCode() {
             >
               이름 또는 닉네임
             </label>
+
             <div className="flex pb-1 mb-3 border-b">
               <input
                 className="w-full p-0 border-none focus:outline-hidden Font20"
@@ -99,6 +100,8 @@ export default function FamilyShareCode() {
               form="myform"
               value="다음"
               disabled={isSubmitting}
+              method="post"
+              formAction="../Birthday.js"
               className="w-full py-3 cursor-pointer text-GreyScale-White bg-GreyScale-grey04"
               // className="w-full py-3 cursor-pointer text-GreyScale-White bg-BrandColor-green01"
             ></input>
