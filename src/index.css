@@ -444,4 +444,45 @@ html {
     left: 0;
     right: 0;
   } */
+
+  /* BabyInfo Allergy */
+  .allergyForm input[type="checkbox"]:not(:checked),
+  .allergyForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .allergyForm input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 1px 0;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .reactionsForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
+
+  .reactionsForm input[type="checkbox"]:not(:checked),
+  .reactionsForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .reactionsForm input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 1px 0;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .reactionsForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
 }
