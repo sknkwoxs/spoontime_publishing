@@ -51,9 +51,9 @@ export default function Preview() {
               <td className="s4">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app//Splash/SplashRecipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app//Splash/Splash"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app//Splash/SplashRecipe
+                  https://spoontime-publishing-iq5v.vercel.app/Splash/Splash
                 </a>
               </td>
             </tr>
@@ -62,42 +62,18 @@ export default function Preview() {
                 <div className="row-header-wrapper">5</div>
               </th>
               <td className="s2">Splash / Calendar</td>
-              <td className="s4">
-                <a
-                  target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashCalendar"
-                >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashCalendar
-                </a>
-              </td>
             </tr>
             <tr>
               <th id="0R5" className="row-headers-background">
                 <div className="row-header-wrapper">6</div>
               </th>
               <td className="s2">Splash / Postscript</td>
-              <td className="s4">
-                <a
-                  target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashPostscript"
-                >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashPostscript
-                </a>
-              </td>
             </tr>
             <tr>
               <th id="0R6" className="row-headers-background">
                 <div className="row-header-wrapper">7</div>
               </th>
               <td className="s2">Splash / Spoontime</td>
-              <td className="s4">
-                <a
-                  target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/splash/SplashSpoontime"
-                >
-                  https://spoontime-publishing-iq5v.vercel.app/splash/SplashSpoontime
-                </a>
-              </td>
             </tr>
             <tr>
               <th id="0R7" className="row-headers-background">
