@@ -1,4 +1,27 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+
 export default function Birthday() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { isSubmitting, errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+  console.log(watch("number"));
+
+  const [message, setMessage] = useState("");
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = () => {
+    setMessage("");
+  };
+
   return (
     <>
       <div className="w-full h-screen">
@@ -21,28 +44,53 @@ export default function Birthday() {
               출산 전이시라면, <br />
               출산 예정일로 알려주세요.
             </p>
-            <div>
-              <p className="mb-3 Font12 text-GreyScale-grey03">출생(예정)일</p>
-              <div className="flex pb-1 mb-3 border-b">
-                <input
-                  className="w-full p-0 border-none focus:outline-hidden Font20"
-                  type="text"
+          </div>
+          <form
+            id="myform"
+            className="mb-8"
+            method="get"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <label
+              className="block mb-3 Font12 text-GreyScale-grey03"
+              htmlFor="email"
+            >
+              출생(예정)일
+            </label>
+
+            <div className="flex pb-1 mb-3 border-b">
+              <input
+                className="w-full p-0 border-none focus:outline-hidden Font20 placeholder:text-GreyScale-grey03"
+                {...register("number", {
+                  required: true,
+                  minLength: 8,
+                  maxLength: 8,
+                  valueAsNumber: true,
+                  pattern: {
+                    value: /^(0|[1-9]\d*)(\.\d+)?$/,
+                  },
+                })}
+                type="number"
+                onChange={handleChange}
+                value={message}
+                placeholder="20210101"
+              />
+              <button onClick={handleClick} className="flex items-center">
+                <img
+                  src="/images/svgIcons/FamilyShareCodeX.svg"
+                  alt="FamilyShareCodeX"
                 />
-                <button className="flex items-center ">
-                  <img
-                    src="/images/svgIcons/FamilyShareCodeX.svg"
-                    alt="FamilyShareCodeX"
-                  />
-                </button>
-              </div>
+              </button>
             </div>
-            {/* <p className="mb-2 Font12 text-Message-error">
-              올바른 출생(예정)일을 입력해 주세요.
-            </p> */}
+            {errors.number && (
+              <span className="inline-block pb-2 Font12 text-Message-error">
+                올바른 출생(예정)일을 입력해 주세요.
+              </span>
+            )}
             <p className="Font12 text-GreyScale-grey02">
               입력한 정보는 언제든 수정할 수 있어요.
             </p>
-          </div>
+          </form>
           <div>
             <div className="flex items-center justify-center mb-2 text-center Font12 birthdayBallon">
               D+179
@@ -95,12 +143,16 @@ export default function Birthday() {
         </div>
         <section className="fixed bottom-0 w-full">
           <div className="w-full">
-            {/* <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
-              다음
-            </button> */}
-            <button className="w-full py-3 pb-11 text-GreyScale-White bg-GreyScale-grey04">
-              다음
-            </button>
+            <input
+              type="submit"
+              form="myform"
+              value="다음"
+              disabled={isSubmitting}
+              method="post"
+              formAction="../Birthday.js"
+              className="w-full py-3 cursor-pointer text-GreyScale-White bg-GreyScale-grey04"
+              // className="w-full py-3 cursor-pointer text-GreyScale-White bg-BrandColor-green01"
+            ></input>
           </div>
         </section>
       </div>
