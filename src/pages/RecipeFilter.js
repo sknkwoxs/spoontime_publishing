@@ -6,7 +6,7 @@ import { BabyInfo } from "./Recipe/Recipe/BabyInfo";
 import { List } from "./Recipe/Recipe/List";
 import { Navigation } from "./Recipe/Recipe/Navigation";
 
-export default function Recipe() {
+export default function RecipeFilter() {
   return (
     <>
       <div className="w-full pb-[52px]">
@@ -19,7 +19,7 @@ export default function Recipe() {
       </div>
       {/* <Alert /> */}
       {/* <PopUp /> */}
-      {/* <Filter /> */}
+      <Filter />
     </>
   );
 }

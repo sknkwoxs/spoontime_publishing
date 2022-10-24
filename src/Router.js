@@ -15,6 +15,7 @@ import Allergy from "./pages/BabyInfo/Allergy";
 import Configuring from "./pages/BabyInfo/Configuring";
 //
 import Recipe from "./pages/Recipe";
+import RecipeFilter from "./pages/RecipeFilter";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
 import Search from "./pages/Recipe/Search/Search";
@@ -86,6 +87,7 @@ export default function Router() {
         <Route path="/Configuring" element={<Configuring />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
+        <Route path="/RecipeFilter" element={<RecipeFilter />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
         <Route path="/Recipe/Search" element={<Search />} />
