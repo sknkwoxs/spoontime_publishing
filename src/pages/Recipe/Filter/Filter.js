@@ -8,11 +8,11 @@ export default function Filter() {
         </p>
         <div>
           <div className="flex gap-5 border-b Font14sb text-GreyScale-grey03">
-            <button className="px-1 pb-2 ">알레르기</button>
-            <button className="px-1 pb-2">상태</button>
             <button className="px-1 pb-2 border-b-2 border-GreyScale-grey01">
-              단계
+              알레르기
             </button>
+            <button className="px-1 pb-2">상태</button>
+            <button className="px-1 pb-2">단계</button>
           </div>
 
           {/* Allergy */}
@@ -28,7 +28,7 @@ export default function Filter() {
           </div> */}
 
           {/* Status */}
-          {/* <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
+          <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
             <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
               <img src="/images/ingredients/potato.svg" alt="potato" />
               <p className="Font12">감기/고열</p>
@@ -37,10 +37,10 @@ export default function Filter() {
               <img src="/images/ingredients/potato.svg" alt="potato" />
               <p className="Font12">변비</p>
             </button>
-          </div> */}
+          </div>
 
           {/* Step */}
-          <div className="grid grid-cols-1 gap-2 py-5 overflow-auto max-h-[16.75rem]">
+          {/* <div className="grid grid-cols-1 gap-2 py-5 overflow-auto max-h-[16.75rem]">
             <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded border-GreyScale-grey01">
               <div className="rounded h-0 pb-[100%] overflow-hidden relative">
                 <img
@@ -121,7 +121,8 @@ export default function Filter() {
                 </p>
               </div>
             </button>
-          </div>
+          </div> */}
+          {/*  */}
         </div>
         <div className="flex py-4">
           <div className="flex w-full">
