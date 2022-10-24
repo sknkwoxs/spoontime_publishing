@@ -26,7 +26,7 @@ export default function Recipe() {
       </div>
       {/* <Alert /> */}
       {/* <PopUp /> */}
-      <Filter />
+      {/* <Filter /> */}
       {/* <RecipeSort /> */}
     </>
   );

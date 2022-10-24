@@ -1,8 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchResultIngredient from "./SearchResultIngredient";
 import SearchResultRecipe from "./SearchResultRecipe";
 
 export default function Search() {
+  // input창 clear버튼
+  const [message, setMessage] = useState("");
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = () => {
+    setMessage("");
+  };
+
   return (
     <>
       <article className="w-full min-h-[calc(100vh_-_7.75rem)]">
@@ -21,11 +33,16 @@ export default function Search() {
                 className="flex w-full py-1 border-none rounded px-9 bg-GreyScale-grey05 Font14 text-GreyScale-grey01"
                 type="text"
                 placeholder="식단검색"
+                onChange={handleChange}
+                value={message}
               />
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
-              <button className="absolute top-0 h-full right-2">
+              <button
+                className="absolute top-0 h-full right-2"
+                onClick={handleClick}
+              >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
               </button>
             </div>

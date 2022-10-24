@@ -12,6 +12,7 @@ export default function FamilyShareCode() {
   const onSubmit = (data) => console.log(data);
   console.log(watch("nickName"));
 
+  // input창 clear버튼
   const [message, setMessage] = useState("");
 
   const handleChange = (event) => {
