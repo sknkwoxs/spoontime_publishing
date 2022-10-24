@@ -11,6 +11,7 @@ export default function RecipeSort() {
                 id="recipeSortOfRecommended"
                 type="radio"
                 name="recipeSort"
+                defaultChecked
               />
               <label
                 className="w-full cursor-pointer"
