@@ -19,7 +19,10 @@ export default function RecipeDetails() {
                 </div>
               </Link>
               <div className="flex gap-3">
-                <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
+                <img
+                  src="/images/svgIcons/recipeDetailsHeart.svg"
+                  alt="recipeDetailsHeart"
+                />
                 <img
                   src="/images/svgIcons/calendarWhite.svg"
                   alt="calendarWhite"

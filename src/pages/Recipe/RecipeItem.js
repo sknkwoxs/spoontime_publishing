@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function RecipeItem() {
+  const [liked, setLiked] = useState(false);
+  const handleClick = () => {
+    setLiked(!liked);
+  };
+
   return (
     <>
       <article className="flex py-4 border-b">
@@ -32,8 +38,15 @@ export default function RecipeItem() {
           </div>
         </div>
         <div className="flex flex-col my-auto gap-y-2">
-          <button>
-            <img src="/images/svgIcons/heart.svg" alt="heart" />
+          <button onClick={handleClick}>
+            <img
+              src={
+                liked
+                  ? "/images/svgIcons/heart.svg"
+                  : "/images/svgIcons/heartFill.svg"
+              }
+              alt="heart"
+            />
           </button>
           <Link to="/Recipe/AddMenu">
             <img src="/images/svgIcons/calendar.svg" alt="calendar" />
