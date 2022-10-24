@@ -1,4 +1,137 @@
+import { useEffect } from "react";
+
 export default function Filter() {
+  // 외부 화면 스크롤 방지
+  useEffect(() => {
+    document.body.style.cssText = `
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
+
+  const allergyList = [
+    {
+      for: "eggCheckbox",
+      id: "eggCheckbox",
+      src: "/images/ingredients/egg.svg",
+      alt: "egg",
+      allergyName: "달걀",
+    },
+    {
+      for: "milkCheckbox",
+      id: "milkCheckbox",
+      src: "/images/ingredients/milk.svg",
+      alt: "milk",
+      allergyName: "우유",
+    },
+    {
+      for: "wheatCheckbox",
+      id: "wheatCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "wheat",
+      allergyName: "밀",
+    },
+    {
+      for: "buckwheatCheckbox",
+      id: "buckwheatCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "buckwheat",
+      allergyName: "메밀",
+    },
+    {
+      for: "beansCheckbox",
+      id: "beansCheckbox",
+      src: "/images/ingredients/beans.svg",
+      alt: "beans",
+      allergyName: "대두",
+    },
+  ];
+
+  const statusList = [
+    {
+      for: "eggCheckbox",
+      id: "eggCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "default",
+      status: "감기/고열",
+    },
+    {
+      for: "milkCheckbox",
+      id: "milkCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "default",
+      status: "변비",
+    },
+    {
+      for: "wheatCheckbox",
+      id: "wheatCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "default",
+      status: "설사",
+    },
+    {
+      for: "buckwheatCheckbox",
+      id: "buckwheatCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "default",
+      status: "이앓이",
+    },
+  ];
+
+  const stepList = [
+    {
+      for: "step1",
+      id: "step1",
+      src: "/images/defaultImage.png",
+      alt: "default",
+      step: "초기 1",
+      recommend: "권장 150~190일",
+      description: "10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도",
+    },
+    {
+      for: "step2",
+      id: "step2",
+      src: "/images/defaultImage.png",
+      alt: "default",
+      step: "초기 2",
+      recommend: "권장 150~190일",
+      description: "10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도",
+    },
+    {
+      for: "step3",
+      id: "step3",
+      src: "/images/defaultImage.png",
+      alt: "default",
+      step: "중기",
+      recommend: "권장 150~190일",
+      description: "10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도",
+    },
+    {
+      for: "step4",
+      id: "step4",
+      src: "/images/defaultImage.png",
+      alt: "default",
+      step: "후기",
+      recommend: "권장 150~190일",
+      description: "10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도",
+    },
+    {
+      for: "step5",
+      id: "step5",
+      src: "/images/defaultImage.png",
+      alt: "default",
+      step: "초기 1",
+      recommend: "권장 150~190일",
+      description: "10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도",
+    },
+  ];
+
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
@@ -16,112 +149,84 @@ export default function Filter() {
           </div>
 
           {/* Allergy */}
-          {/* <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
-            <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
-              <img src="/images/ingredients/potato.svg" alt="potato" />
-              <p className="Font12">감자</p>
-            </button>
-            <button className="flex flex-col items-center justify-center rounded gap-y-1">
-              <img src="/images/ingredients/potato.svg" alt="potato" />
-              <p className="Font12">고구마</p>
-            </button>
-          </div> */}
+          {/* <ul className="mt-5 border-b">
+            <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
+              {allergyList.map((allergyList, index) => {
+                return (
+                  <li className="mx-auto text-center" key={index}>
+                    <input id={allergyList.id} type="checkbox" />
+                    <label htmlFor={allergyList.for}>
+                      <img
+                        className="mx-auto mb-1"
+                        src={allergyList.src}
+                        alt={allergyList.alt}
+                      />
+                      {allergyList.allergyName}
+                    </label>
+                  </li>
+                );
+              })}
+            </form>
+          </ul> */}
 
           {/* Status */}
-          <div className="grid grid-cols-4 mb-[52px] h-[64px] gap-6 my-5">
-            <button className="flex flex-col items-center justify-center w-full h-full border rounded bg-BrandColor-green04 border-BrandColor-green03 gap-y-1">
-              <img src="/images/ingredients/potato.svg" alt="potato" />
-              <p className="Font12">감기/고열</p>
-            </button>
-            <button className="flex flex-col items-center justify-center rounded gap-y-1">
-              <img src="/images/ingredients/potato.svg" alt="potato" />
-              <p className="Font12">변비</p>
-            </button>
-          </div>
+          {/* <ul className="mt-5 border-b">
+            <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
+              {statusList.map((statusList, index) => {
+                return (
+                  <li className="mx-auto text-center" key={index}>
+                    <input id={statusList.id} type="checkbox" />
+                    <label
+                      className="max-w-[64px] whitespace-nowrap"
+                      htmlFor={statusList.for}
+                    >
+                      <img
+                        className="mx-auto mb-1"
+                        src={statusList.src}
+                        alt={statusList.alt}
+                      />
+                      {statusList.status}
+                    </label>
+                  </li>
+                );
+              })}
+            </form>
+          </ul> */}
 
           {/* Step */}
-          {/* <div className="grid grid-cols-1 gap-2 py-5 overflow-auto max-h-[16.75rem]">
-            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded border-GreyScale-grey01">
-              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
-                <img
-                  className="absolute object-cover w-full h-full rounded"
-                  src="/images/defaultImage.png"
-                  alt="defaultImage"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  <p className="Font14sb">초기 1</p>
-                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
-                    권장 150~190일
-                  </p>
-                </div>
-                <p className="text-GreyScale-grey02 Font12">
-                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
-                </p>
-              </div>
-            </button>
-            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
-              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
-                <img
-                  className="absolute object-cover w-full h-full rounded"
-                  src="/images/defaultImage.png"
-                  alt="defaultImage"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  <p className="Font14sb">초기 2</p>
-                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
-                    권장 150~190일
-                  </p>
-                </div>
-                <p className="text-GreyScale-grey02 Font12">
-                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
-                </p>
-              </div>
-            </button>
-            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
-              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
-                <img
-                  className="absolute object-cover w-full h-full rounded"
-                  src="/images/defaultImage.png"
-                  alt="defaultImage"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  <p className="Font14sb">중기</p>
-                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
-                    권장 150~190일
-                  </p>
-                </div>
-                <p className="text-GreyScale-grey02 Font12">
-                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
-                </p>
-              </div>
-            </button>
-            <button className="grid items-center w-full grid-cols-[max(56px)_1fr] gap-4 p-2 text-left border rounded">
-              <div className="rounded h-0 pb-[100%] overflow-hidden relative">
-                <img
-                  className="absolute object-cover w-full h-full rounded"
-                  src="/images/defaultImage.png"
-                  alt="defaultImage"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  <p className="Font14sb">초기 3</p>
-                  <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
-                    권장 150~190일
-                  </p>
-                </div>
-                <p className="text-GreyScale-grey02 Font12">
-                  10~ 20배죽의 주르륵 흘러내리는 묽은 수프 농도
-                </p>
-              </div>
-            </button>
-          </div> */}
+          <ul className="border-b">
+            <form className="grid grid-cols-1 pb-3 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto pt-5">
+              {stepList.map((stepList, index) => {
+                return (
+                  <li className="mx-auto text-center" key={index}>
+                    <input id={stepList.id} type="radio" name="stepFilter" />
+                    <label htmlFor={stepList.for}>
+                      <div className="grid items-center w-full grid-cols-[max(56px)_1fr] p-2 gap-4 text-left rounded">
+                        <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                          <img
+                            className="absolute object-cover w-full h-full rounded"
+                            src={stepList.src}
+                            alt={stepList.alt}
+                          />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-1">
+                            <p className="Font14sb">{stepList.step}</p>
+                            <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                              {stepList.recommend}
+                            </p>
+                          </div>
+                          <p className="text-GreyScale-grey02 Font12">
+                            {stepList.description}
+                          </p>
+                        </div>
+                      </div>
+                    </label>
+                  </li>
+                );
+              })}
+            </form>
+          </ul>
           {/*  */}
         </div>
         <div className="flex py-4">

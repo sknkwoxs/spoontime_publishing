@@ -67,7 +67,7 @@ export default function Allergy() {
             <br /> 선택한 식재료는 언제든 수정할 수 있어요.
           </p>
           <ul>
-            <form className="grid grid-cols-4 allergyForm Font12 text-GreyScale-grey01 gap-y-4">
+            <form className="grid grid-cols-4 gap-4 selectForm Font12 text-GreyScale-grey01">
               {allergyList.map((allergyList, index) => {
                 return (
                   <li className="mx-auto text-center" key={index}>
