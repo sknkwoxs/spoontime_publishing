@@ -438,12 +438,6 @@ html {
   }
 
   /* Splash */
-  /* .slick-slider .slick-list {
-    position: absolute;
-    top: 128px;
-    left: 0;
-    right: 0;
-  } */
 
   /* BabyInfo Allergy */
   .allergyForm input[type="checkbox"]:not(:checked),
@@ -461,7 +455,7 @@ html {
     border-radius: 4px;
   }
 
-  .reactionsForm input[type="checkbox"]:checked + label {
+  .allergyForm input[type="checkbox"]:checked + label {
     outline: 1px solid #c0d6b1;
     background-color: #e6efe0;
   }
