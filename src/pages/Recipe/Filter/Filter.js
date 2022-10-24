@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import TabContents from "./TabContents";
+import TabNavItem from "./TabNavItem";
 
 export default function Filter() {
   // 외부 화면 스크롤 방지
@@ -14,6 +16,11 @@ export default function Filter() {
       window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
     };
   }, []);
+
+  const handleClick = () => {
+    setActiveTab();
+  };
+  const [activeTab, setActiveTab] = useState("allergyTab");
 
   const allergyList = [
     {
@@ -135,113 +142,130 @@ export default function Filter() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
-      <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
+      <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl h-[452px]">
         <p className="pt-8 mb-2 Font16sb">
           <span className="text-BrandColor-green02">꼬물이</span> 맞춤정보
         </p>
         <div>
-          <div className="flex gap-5 border-b Font14sb text-GreyScale-grey03">
-            <button className="px-1 pb-2 border-b-2 border-GreyScale-grey01">
-              알레르기
-            </button>
-            <button className="px-1 pb-2">상태</button>
-            <button className="px-1 pb-2">단계</button>
-          </div>
+          <ul className="flex gap-5 border-b Font14sb text-GreyScale-grey03 recipeFilterTab">
+            <TabNavItem
+              title="알레르기"
+              id="allergyTab"
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+            <TabNavItem
+              title="상태"
+              id="statusTab"
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+            <TabNavItem
+              title="단계"
+              id="stepTab"
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+          </ul>
 
           {/* Allergy */}
-          {/* <ul className="mt-5 border-b">
-            <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
-              {allergyList.map((allergyList, index) => {
-                return (
-                  <li className="mx-auto text-center" key={index}>
-                    <input id={allergyList.id} type="checkbox" />
-                    <label htmlFor={allergyList.for}>
-                      <img
-                        className="mx-auto mb-1"
-                        src={allergyList.src}
-                        alt={allergyList.alt}
-                      />
-                      {allergyList.allergyName}
-                    </label>
-                  </li>
-                );
-              })}
-            </form>
-          </ul> */}
-
+          <TabContents id="allergyTab" activeTab={activeTab}>
+            <ul className="mt-5">
+              <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
+                {allergyList.map((allergyList, index) => {
+                  return (
+                    <li className="mx-auto text-center" key={index}>
+                      <input id={allergyList.id} type="checkbox" />
+                      <label htmlFor={allergyList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={allergyList.src}
+                          alt={allergyList.alt}
+                        />
+                        {allergyList.allergyName}
+                      </label>
+                    </li>
+                  );
+                })}
+              </form>
+            </ul>
+          </TabContents>
           {/* Status */}
-          {/* <ul className="mt-5 border-b">
-            <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
-              {statusList.map((statusList, index) => {
-                return (
-                  <li className="mx-auto text-center" key={index}>
-                    <input id={statusList.id} type="checkbox" />
-                    <label
-                      className="max-w-[64px] whitespace-nowrap"
-                      htmlFor={statusList.for}
-                    >
-                      <img
-                        className="mx-auto mb-1"
-                        src={statusList.src}
-                        alt={statusList.alt}
-                      />
-                      {statusList.status}
-                    </label>
-                  </li>
-                );
-              })}
-            </form>
-          </ul> */}
-
+          <TabContents id="statusTab" activeTab={activeTab}>
+            <ul className="mt-5">
+              <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
+                {statusList.map((statusList, index) => {
+                  return (
+                    <li className="mx-auto text-center" key={index}>
+                      <input id={statusList.id} type="checkbox" />
+                      <label
+                        className="max-w-[64px] whitespace-nowrap"
+                        htmlFor={statusList.for}
+                      >
+                        <img
+                          className="mx-auto mb-1"
+                          src={statusList.src}
+                          alt={statusList.alt}
+                        />
+                        {statusList.status}
+                      </label>
+                    </li>
+                  );
+                })}
+              </form>
+            </ul>
+          </TabContents>
           {/* Step */}
-          <ul className="border-b">
-            <form className="grid grid-cols-1 pb-3 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto pt-5 px-0.5">
-              {stepList.map((stepList, index) => {
-                return (
-                  <li className="w-full mx-auto text-center" key={index}>
-                    <input id={stepList.id} type="radio" name="stepFilter" />
-                    <label
-                      className="w-full cursor-pointer"
-                      htmlFor={stepList.for}
-                    >
-                      <div className="grid items-center w-full grid-cols-[max(56px)_1fr] p-2 gap-4 text-left rounded">
-                        <div className="rounded h-0 pb-[100%] overflow-hidden relative">
-                          <img
-                            className="absolute object-cover w-full h-full rounded"
-                            src={stepList.src}
-                            alt={stepList.alt}
-                          />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-1">
-                            <p className="Font14sb">{stepList.step}</p>
-                            <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
-                              {stepList.recommend}
+          <TabContents id="stepTab" activeTab={activeTab}>
+            <ul>
+              <form className="grid grid-cols-1 py-5 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto px-0.5">
+                {stepList.map((stepList, index) => {
+                  return (
+                    <li className="w-full mx-auto text-center" key={index}>
+                      <input id={stepList.id} type="radio" name="stepFilter" />
+                      <label
+                        className="w-full cursor-pointer"
+                        htmlFor={stepList.for}
+                      >
+                        <div className="grid items-center w-full grid-cols-[max(56px)_1fr] p-2 gap-4 text-left rounded">
+                          <div className="rounded h-0 pb-[100%] overflow-hidden relative">
+                            <img
+                              className="absolute object-cover w-full h-full rounded"
+                              src={stepList.src}
+                              alt={stepList.alt}
+                            />
+                          </div>
+                          <div>
+                            <div className="flex items-center gap-1">
+                              <p className="Font14sb">{stepList.step}</p>
+                              <p className="text-GreyScale-grey02 font-normal text-[0.625rem] leading-[1rem px-2 bg-BrandColor-green04 rounded">
+                                {stepList.recommend}
+                              </p>
+                            </div>
+                            <p className="text-GreyScale-grey02 Font12">
+                              {stepList.description}
                             </p>
                           </div>
-                          <p className="text-GreyScale-grey02 Font12">
-                            {stepList.description}
-                          </p>
                         </div>
-                      </div>
-                    </label>
-                  </li>
-                );
-              })}
-            </form>
-          </ul>
+                      </label>
+                    </li>
+                  );
+                })}
+              </form>
+            </ul>
+          </TabContents>
           {/*  */}
         </div>
-        <div className="flex py-4">
-          <div className="flex w-full">
-            <button className="flex items-center gap-2 Font14sb">
+        <div className="fixed bottom-0 left-0 right-0 px-4 ">
+          <div className="flex w-full py-4 border-t">
+            <button className="flex items-center w-full gap-2 Font14sb">
               <img src="/images/svgIcons/rotation.svg" alt="rotation" />
               옵션 재설정
             </button>
+            <button className="min-w-[200px] py-3 rounded-lg Font16sb text-GreyScale-White bg-BrandColor-green01">
+              레시피 보기
+            </button>
           </div>
-          <button className="w-full py-3 rounded-lg Font16sb text-GreyScale-White bg-BrandColor-green01">
-            적용하기
-          </button>
         </div>
       </section>
     </>
