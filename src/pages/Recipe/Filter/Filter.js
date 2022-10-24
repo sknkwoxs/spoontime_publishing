@@ -195,12 +195,15 @@ export default function Filter() {
 
           {/* Step */}
           <ul className="border-b">
-            <form className="grid grid-cols-1 pb-3 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto pt-5">
+            <form className="grid grid-cols-1 pb-3 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto pt-5 px-0.5">
               {stepList.map((stepList, index) => {
                 return (
-                  <li className="mx-auto text-center" key={index}>
+                  <li className="w-full mx-auto text-center" key={index}>
                     <input id={stepList.id} type="radio" name="stepFilter" />
-                    <label htmlFor={stepList.for}>
+                    <label
+                      className="w-full cursor-pointer"
+                      htmlFor={stepList.for}
+                    >
                       <div className="grid items-center w-full grid-cols-[max(56px)_1fr] p-2 gap-4 text-left rounded">
                         <div className="rounded h-0 pb-[100%] overflow-hidden relative">
                           <img
