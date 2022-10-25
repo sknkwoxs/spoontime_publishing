@@ -1,6 +1,43 @@
 import { Link } from "react-router-dom";
 
 export default function AddMenu() {
+  const colorPickerPalette = [
+    {
+      id: "FCD6DD",
+      className: "bg-[#FCD6DD]",
+      for: "FCD6DD",
+    },
+    {
+      id: "FEDAC9",
+      className: "bg-[#FEDAC9]",
+      for: "FEDAC9",
+    },
+    {
+      id: "F9EEAB",
+      className: "bg-[#F9EEAB]",
+      for: "F9EEAB",
+    },
+    {
+      id: "CCF3D4",
+      className: "bg-[#CCF3D4]",
+      for: "CCF3D4",
+    },
+    {
+      id: "CCE2FE",
+      className: "bg-[#CCE2FE]",
+      for: "CCE2FE",
+    },
+    {
+      id: "E3D0FB",
+      className: "bg-[#E3D0FB]",
+      for: "E3D0FB",
+    },
+    {
+      id: "D9DADC",
+      className: "bg-[#D9DADC]",
+      for: "D9DADC",
+    },
+  ];
   return (
     <>
       <section>
@@ -35,26 +72,35 @@ export default function AddMenu() {
             </div>
           </article>
           <article className="border-b">
-            <div className="flex justify-between px-4 py-6">
-              <div className="w-8 h-8 bg-[#FCD6DD] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#FEDAC9] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#F9EEAB] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#CCF3D4] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#CCE2FE] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#E3D0FB] rounded-full"></div>
-              <div className="w-8 h-8 bg-[#D9DADC] rounded-full"></div>
-            </div>
+            <form className="flex justify-between px-4 py-6 addMenuColorPicker">
+              {colorPickerPalette.map((colorPickerPalette, index) => {
+                return (
+                  <>
+                    <input
+                      id={colorPickerPalette.id}
+                      type="radio"
+                      name="recipeSort"
+                      defaultChecked={index === 0}
+                    />
+                    <label
+                      className={colorPickerPalette.className}
+                      htmlFor={colorPickerPalette.for}
+                    ></label>
+                  </>
+                );
+              })}
+            </form>
           </article>
           <article className="border-b">
-            <div className="flex p-4">
+            <button className="flex items-center p-4">
               <img src="/images/svgIcons/diet.svg" alt="diet" />
               <p className="px-2 Font14sb">7월 13일 - 7월 14일</p>
-              {/* <img src="/images/svgIcons/down2.svg" alt="down2" /> */}
-            </div>
+              <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
+            </button>
           </article>
-          <article className="fixed bottom-0 w-full pb-8 text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">
-            <p className="py-6">식단 추가하기</p>
-          </article>
+          <button className="fixed bottom-0 w-full text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">
+            <p className="py-3">식단 추가하기</p>
+          </button>
         </div>
       </section>
     </>

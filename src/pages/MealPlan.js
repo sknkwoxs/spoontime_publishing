@@ -11,7 +11,7 @@ export default function MealPlan() {
             <article className="flex justify-between">
               <div className="flex Font16sb">
                 <p className="mr-2">2022년 6월</p>
-                <img src="/images/svgIcons/down2.svg" alt="down2" />
+                <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
               </div>
               <div className="flex">
                 <p className="px-2 py-1 mr-4 rounded Font12 text-GreyScale-grey02 bg-BrandColor-green04">

@@ -532,4 +532,23 @@ html {
     background-attachment: absolute;
     background-position: right;
   }
+
+  /* Recipe AddMenu */
+  .addMenuColorPicker input[type="radio"]:not(:checked),
+  .addMenuColorPicker input[type="radio"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .addMenuColorPicker input[type="radio"] + label {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+
+  .addMenuColorPicker input[type="radio"]:checked + label {
+    outline: 2px solid #2a2a2a;
+  }
 }

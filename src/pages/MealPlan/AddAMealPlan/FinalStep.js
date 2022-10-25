@@ -53,7 +53,7 @@ export default function FinalStep() {
             <button className="flex m-4">
               <img src="/images/svgIcons/diet.svg" alt="diet" />
               <p className="px-2 Font14sb">7월 13일</p>
-              <img src="/images/svgIcons/down2.svg" alt="down2" />
+              <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
             </button>
           </article>
           <article className="px-4">

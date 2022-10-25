@@ -12,7 +12,7 @@ export default function MyPage() {
             <article className="flex justify-between">
               <button className="flex items-center">
                 <p className="pr-1 Font16sb">꼬물이</p>
-                <img src="/images/svgIcons/down2.svg" alt="down2" />
+                <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
               </button>
               <Link to="/MyPage/Profile">
                 <img src="/images/svgIcons/settings.svg" alt="settings" />
