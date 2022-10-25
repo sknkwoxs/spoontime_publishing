@@ -1,6 +1,11 @@
 import RecipeItem from "../RecipeItem.js";
 
-export function List() {
+export function List({
+  openFilterModal,
+  setOpenFilterModal,
+  openSortModal,
+  setOpenSortModal,
+}) {
   return (
     <>
       <section>
@@ -16,16 +21,28 @@ export function List() {
           </button>
         </article>
         <article className="flex gap-2 py-3 Font12">
-          <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+          <button
+            className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+            onClick={() => setOpenFilterModal(!openFilterModal)}
+          >
             추천순 <img src="/images/svgIcons/down.svg" alt="down" />
           </button>
-          <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+          <button
+            className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+            onClick={() => setOpenFilterModal(!openFilterModal)}
+          >
             알레르기 <img src="/images/svgIcons/down.svg" alt="down" />
           </button>
-          <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+          <button
+            className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+            onClick={() => setOpenFilterModal(!openFilterModal)}
+          >
             상태 <img src="/images/svgIcons/down.svg" alt="down" />
           </button>
-          <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+          <button
+            className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+            onClick={() => setOpenSortModal(!openSortModal)}
+          >
             단계 <img src="/images/svgIcons/down.svg" alt="down" />
           </button>
         </article>

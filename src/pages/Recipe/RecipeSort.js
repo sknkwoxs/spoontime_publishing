@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function RecipeSort() {
+export default function RecipeSort({ closeSortModal }) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
@@ -17,7 +17,10 @@ export default function RecipeSort() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
+      <div
+        className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
+        onClick={closeSortModal}
+      ></div>
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
         <p className="pt-8 Font16sb">레시피 정렬</p>
         <div>

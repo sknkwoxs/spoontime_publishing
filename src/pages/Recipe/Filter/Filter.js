@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TabContents from "./TabContents";
 import TabNavItem from "./TabNavItem";
 
-export default function Filter() {
+export default function Filter({ closeFilterModal }) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
@@ -143,7 +143,10 @@ export default function Filter() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
+      <div
+        className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
+        onClick={closeFilterModal}
+      ></div>
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl h-[452px]">
         <p className="pt-8 mb-2 Font16sb">
           <span className="text-BrandColor-green02">꼬물이</span> 맞춤정보
