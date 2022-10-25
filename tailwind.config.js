@@ -28,6 +28,12 @@ module.exports = {
           error: "#F93232",
         },
       },
+      dropShadow: {
+        1: [
+          "0px 19px 19px rgba(0, 0, 0, 0.3)",
+          "0px 15px 15px rgba(0, 0, 0, 0.22)",
+        ],
+      },
       fontFamily: {
         Pretendard: ["Pretendard-Regular"],
         PretendardSemiBold: ["Pretendard-SemiBold"],

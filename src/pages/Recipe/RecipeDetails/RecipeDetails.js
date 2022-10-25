@@ -319,7 +319,7 @@ export default function RecipeDetails() {
           </article>
         </div>
       </section>
-      {/* <DeleteMaterialPopUp /> */}
+      <DeleteMaterialPopUp />
       {/* <StopTimer /> */}
       {/* <Amount /> */}
       {/* <Substitutes /> */}

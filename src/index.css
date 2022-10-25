@@ -139,6 +139,10 @@ html {
     font-size: 11px;
     line-height: 16px;
   }
+
+  .dropShadow {
+    box-shadow: 0 19px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @tailwind utilities;
