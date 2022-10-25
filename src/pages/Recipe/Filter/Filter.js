@@ -17,11 +17,13 @@ export default function Filter() {
     };
   }, []);
 
+  // 탭
   const handleClick = () => {
     setActiveTab();
   };
   const [activeTab, setActiveTab] = useState("allergyTab");
 
+  // 데이터
   const allergyList = [
     {
       for: "eggCheckbox",
