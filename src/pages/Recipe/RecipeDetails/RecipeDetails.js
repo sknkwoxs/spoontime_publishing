@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import RecipeItem from "../RecipeItem";
 import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
@@ -7,6 +9,9 @@ import Substitutes from "./Substitutes";
 import Timer from "./Timer";
 
 export default function RecipeDetails() {
+  const [openDeleteModal, setOpenDeleteModal] = useState(false);
+  const [openStopTimerModal, setOpenStopTimerModal] = useState(false);
+
   return (
     <>
       <section>
@@ -319,8 +324,16 @@ export default function RecipeDetails() {
           </article>
         </div>
       </section>
-      <DeleteMaterialPopUp />
-      {/* <StopTimer /> */}
+      {openDeleteModal && (
+        <DeleteMaterialPopUp
+          closeDeleteModal={() => setOpenDeleteModal(!openDeleteModal)}
+        />
+      )}
+      {openStopTimerModal && (
+        <StopTimer
+          closeStopTimerModal={() => setOpenStopTimerModal(!openStopTimerModal)}
+        />
+      )}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
       {/* <Timer /> */}
