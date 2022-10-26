@@ -559,7 +559,7 @@ html {
   }
 
   /* Recipe Details */
-  /* @ERROR@ */
+  /* 적용 오류 */
   .image-gallery-thumbnail {
     transition: none;
   }
