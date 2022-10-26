@@ -559,16 +559,36 @@ html {
   }
 
   /* Recipe Details */
+  /* @ERROR@ */
   .image-gallery-thumbnail {
     transition: none;
   }
-  .image-gallery-thumbnail .image-gallery-thumbnail-image {
-    border-radius: 4px;
+
+  .image-gallery-slide {
+    position: relative !important;
+    padding-bottom: 100% !important;
+    height: 0;
+    overflow: hidden;
+  }
+
+  image-gallery-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .image-gallery-thumbnail.active,
   .image-gallery-thumbnail:focus {
+    background-color: #c0d6b1;
     border: 2px solid #c0d6b1;
     border-radius: 4px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .image-gallery-thumbnail:hover {
+      outline: none;
+      border: 0 !important;
+    }
   }
 }
