@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ImageGallery from "react-image-gallery";
 
 import RecipeItem from "../RecipeItem";
 import Amount from "./Amount";
@@ -11,6 +12,21 @@ import Timer from "./Timer";
 export default function RecipeDetails() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [openStopTimerModal, setOpenStopTimerModal] = useState(false);
+
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
   return (
     <>
@@ -159,12 +175,12 @@ export default function RecipeDetails() {
               먹을 수 있는 한우가지로메인 레시피 추천해요.
             </p>
             <div className="flex gap-2 Font14">
-              <div className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
+              <button className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
                 #식이섬유풍부
-              </div>
-              <div className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
+              </button>
+              <button className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
                 #향이있는
-              </div>
+              </button>
             </div>
           </article>
           <article className="py-6 border-b">
@@ -177,7 +193,7 @@ export default function RecipeDetails() {
                 </button>
               </div>
               <div>
-                <div className="h-0 pb-[100%] overflow-hidden relative z-0">
+                {/* <div className="h-0 pb-[100%] overflow-hidden relative z-0">
                   <img
                     className="absolute object-cover w-full h-full"
                     src="/images/RecipeDetails4.jpg"
@@ -185,8 +201,7 @@ export default function RecipeDetails() {
                   />
                 </div>
                 <div className="flex gap-4 p-4">
-                  <div className="max-w-[64px] max-h-[64px] border-[2px] border-BrandColor-green03 rounded">
-                    {/* click 시 border 생성 */}
+                  <div className="max-w-[64px] max-h-[64px] border-[2px]  rounded">
                     <img
                       className="object-cover w-full h-full rounded "
                       src="/images/RecipeDetails4.jpg"
@@ -207,7 +222,17 @@ export default function RecipeDetails() {
                       alt="RecipeDetails2"
                     />
                   </div>
-                </div>
+                </div> */}
+                <ImageGallery
+                  items={images}
+                  showNav={false}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                />
+                <p className="px-4 pt-6 Font14">
+                  소고기는 키친타월에 올려 핏물을 제거해 주세요. 볼에 불고기
+                  양념 재료를 넣고 섞은 후 소고기를 넣고 버무려주세요.
+                </p>
               </div>
             </div>
             <div>

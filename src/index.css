@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -554,5 +556,19 @@ html {
 
   .addMenuColorPicker input[type="radio"]:checked + label {
     outline: 2px solid #2a2a2a;
+  }
+
+  /* Recipe Details */
+  .image-gallery-thumbnail {
+    transition: none;
+  }
+  .image-gallery-thumbnail .image-gallery-thumbnail-image {
+    border-radius: 4px;
+  }
+
+  .image-gallery-thumbnail.active,
+  .image-gallery-thumbnail:focus {
+    border: 2px solid #c0d6b1;
+    border-radius: 4px;
   }
 }
