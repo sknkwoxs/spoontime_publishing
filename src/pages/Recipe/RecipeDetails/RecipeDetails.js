@@ -343,9 +343,11 @@ export default function RecipeDetails() {
           </article>
           <article className="px-4 py-6 border-b">
             <p className="Font16sb">추천 레시피</p>
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
+            <div className="max-h-[11.25rem] overflow-auto">
+              <RecipeItem />
+              <RecipeItem />
+              <RecipeItem />
+            </div>
           </article>
         </div>
       </section>
