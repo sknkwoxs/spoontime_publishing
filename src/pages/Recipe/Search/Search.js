@@ -152,13 +152,17 @@ export default function Search() {
                     className="flex items-center justify-between pb-3"
                     key={id}
                   >
-                    <p className="Font14">{text}</p>
+                    <p className="truncate Font14">{text}</p>
                     <button
                       onClick={() => {
                         handleRemoveKeyword(id);
                       }}
                     >
-                      <img src="/images/svgIcons/x.svg" alt="x" />
+                      <img
+                        className="min-w-[20px] ml-4"
+                        src="/images/svgIcons/x.svg"
+                        alt="x"
+                      />
                     </button>
                   </li>
                 );
