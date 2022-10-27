@@ -6,6 +6,8 @@ import SearchResultNavItem from "./SearchResultNavItem";
 import SearchResultContents from "./SearchResultContents";
 import SearchResultRecipeFilter from "./SearchResultRecipeFilter";
 import SearchResultIngredientFilter from "./SearchResultIngredientFilter";
+import RecipeItem from "../RecipeItem";
+import IngredientsItem from "../IngredientGuide/IngredientsItem";
 
 export default function Search() {
   const [keywords, setKeywords] = useState(
@@ -61,34 +63,6 @@ export default function Search() {
       alt: "egg",
       allergyName: "달걀",
     },
-    {
-      for: "milkCheckbox",
-      id: "milkCheckbox",
-      src: "/images/ingredients/milk.svg",
-      alt: "milk",
-      allergyName: "우유",
-    },
-    {
-      for: "wheatCheckbox",
-      id: "wheatCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "wheat",
-      allergyName: "밀",
-    },
-    {
-      for: "buckwheatCheckbox",
-      id: "buckwheatCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "buckwheat",
-      allergyName: "메밀",
-    },
-    {
-      for: "beansCheckbox",
-      id: "beansCheckbox",
-      src: "/images/ingredients/beans.svg",
-      alt: "beans",
-      allergyName: "대두",
-    },
   ];
 
   const statusList = [
@@ -98,27 +72,6 @@ export default function Search() {
       src: "/images/ingredients/default.svg",
       alt: "default",
       status: "감기/고열",
-    },
-    {
-      for: "milkCheckbox",
-      id: "milkCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "default",
-      status: "변비",
-    },
-    {
-      for: "wheatCheckbox",
-      id: "wheatCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "default",
-      status: "설사",
-    },
-    {
-      for: "buckwheatCheckbox",
-      id: "buckwheatCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "default",
-      status: "이앓이",
     },
   ];
 
@@ -199,7 +152,7 @@ export default function Search() {
 
         {/* Recipe */}
         <SearchResultContents id="searchResultRecipeTab" activeTab={activeTab}>
-          <div className="flex items-center justify-between py-3 mb-2">
+          <div className="flex items-center justify-between py-3">
             <div className="Font14">
               총 <span className="Font14sb">19</span>개
             </div>
@@ -213,7 +166,7 @@ export default function Search() {
             </article>
           </div>
 
-          <ul className="mt-5">
+          {/* <ul className="mt-3">
             <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
               {allergyList.map((allergyList, index) => {
                 return (
@@ -231,7 +184,10 @@ export default function Search() {
                 );
               })}
             </form>
-          </ul>
+          </ul> */}
+
+          <RecipeItem />
+          <RecipeItem />
         </SearchResultContents>
 
         {/* Ingredient */}
@@ -239,9 +195,9 @@ export default function Search() {
           id="searchResultIngredientTab"
           activeTab={activeTab}
         >
-          <div className="flex items-center justify-between py-3 mb-2">
+          <div className="flex items-center justify-between py-3">
             <div className="Font14">
-              총 <span className="Font14sb">19</span>개
+              총 <span className="Font14sb">2</span>개
             </div>
             <article className="flex gap-2 Font12">
               <button
@@ -255,7 +211,7 @@ export default function Search() {
             </article>
           </div>
 
-          <ul className="mt-5">
+          {/* <ul className="mt-3">
             <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
               {statusList.map((statusList, index) => {
                 return (
@@ -276,7 +232,10 @@ export default function Search() {
                 );
               })}
             </form>
-          </ul>
+          </ul> */}
+
+          <IngredientsItem />
+          <IngredientsItem />
         </SearchResultContents>
       </article>
 
