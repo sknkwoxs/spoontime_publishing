@@ -1,4 +1,11 @@
 export default function SearchIngredient() {
+  const initCheckbox = () => {
+    const checkboxes = document.getElementsByName("list");
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
   const vegetablesList = [
     {
       for: "eggplantCheckbox",
@@ -136,7 +143,12 @@ export default function SearchIngredient() {
               />
             </button>
             <p className="Font16sb">식재료 선택</p>
-            <button className="Font12 text-BrandColor-green01">초기화</button>
+            <button
+              className="Font12 text-BrandColor-green01"
+              onClick={initCheckbox}
+            >
+              초기화
+            </button>
           </div>
           <div className="mb-10">
             <p className="mb-2 Font16sb">식재료 선택 (최대 5개)</p>
@@ -156,7 +168,11 @@ export default function SearchIngredient() {
                   {vegetablesList.map((vegetablesList, index) => {
                     return (
                       <li className="mx-auto text-center" key={index}>
-                        <input id={vegetablesList.id} type="checkbox" />
+                        <input
+                          id={vegetablesList.id}
+                          type="checkbox"
+                          name="list"
+                        />
                         <label htmlFor={vegetablesList.for}>
                           <img
                             className="mx-auto mb-1"
@@ -181,7 +197,11 @@ export default function SearchIngredient() {
                   {proteinsList.map((proteinsList, index) => {
                     return (
                       <li className="mx-auto text-center" key={index}>
-                        <input id={proteinsList.id} type="checkbox" />
+                        <input
+                          id={proteinsList.id}
+                          type="checkbox"
+                          name="list"
+                        />
                         <label htmlFor={proteinsList.for}>
                           <img
                             className="mx-auto mb-1"
