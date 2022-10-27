@@ -18,7 +18,7 @@ export default function Filter({ closeFilterModal }) {
   }, []);
 
   // 탭
-  const [activeTab, setActiveTab] = useState("allergyTab");
+  const [activeTab, setActiveTab] = useState("filterAllergyTab");
 
   // 데이터
   const allergyList = [
@@ -152,21 +152,21 @@ export default function Filter({ closeFilterModal }) {
           <ul className="flex gap-5 border-b Font14sb text-GreyScale-grey03 recipeFilterTab">
             <FilterNavItem
               className="cursor-pointer"
-              id="allergyTab"
+              id="filterAllergyTab"
               title="알레르기"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
             <FilterNavItem
               className="cursor-pointer"
-              id="statusTab"
+              id="filterStatusTab"
               title="상태"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
             <FilterNavItem
               className="cursor-pointer"
-              id="stepTab"
+              id="filterStepTab"
               title="단계"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
@@ -174,7 +174,7 @@ export default function Filter({ closeFilterModal }) {
           </ul>
 
           {/* Allergy */}
-          <FilterContents id="allergyTab" activeTab={activeTab}>
+          <FilterContents id="filterAllergyTab" activeTab={activeTab}>
             <ul className="mt-5">
               <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
                 {allergyList.map((allergyList, index) => {
@@ -200,7 +200,7 @@ export default function Filter({ closeFilterModal }) {
           </FilterContents>
 
           {/* Status */}
-          <FilterContents id="statusTab" activeTab={activeTab}>
+          <FilterContents id="filterStatusTab" activeTab={activeTab}>
             <ul className="mt-5">
               <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
                 {statusList.map((statusList, index) => {
@@ -226,7 +226,7 @@ export default function Filter({ closeFilterModal }) {
           </FilterContents>
 
           {/* Step */}
-          <FilterContents id="stepTab" activeTab={activeTab}>
+          <FilterContents id="filterStepTab" activeTab={activeTab}>
             <ul>
               <form className="grid grid-cols-1 py-5 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto px-0.5">
                 {stepList.map((stepList, index) => {

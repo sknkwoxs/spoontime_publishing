@@ -45,7 +45,7 @@ export default function SearchResultIngredient() {
           <div>
             <IngredientsItem />
           </div>
-          {/* <SearchResultIngredientFilter /> */}
+          <SearchResultIngredientFilter />
         </div>
       </div>
     </>

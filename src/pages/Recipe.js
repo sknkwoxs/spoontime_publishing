@@ -12,6 +12,7 @@ import RecipeSort from "./Recipe/RecipeSort";
 export default function Recipe() {
   // 모달 창
   const [openFilterModal, setOpenFilterModal] = useState(false);
+
   const [openSortModal, setOpenSortModal] = useState(false);
 
   return (
