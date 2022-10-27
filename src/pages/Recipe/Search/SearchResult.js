@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import SearchResultIngredient from "./SearchResultIngredient";
-import SearchResultRecipe from "./SearchResultRecipe";
 import SearchResultNavItem from "./SearchResultNavItem";
 import SearchResultContents from "./SearchResultContents";
 import SearchResultRecipeFilter from "./SearchResultRecipeFilter";

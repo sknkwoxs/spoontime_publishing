@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import SearchResultIngredient from "./SearchResultIngredient";
-import SearchResultRecipe from "./SearchResultRecipe";
 
 export default function Search() {
   const [keywords, setKeywords] = useState(
@@ -193,10 +191,6 @@ export default function Search() {
               </li>
             </ul>
           </div> */}
-
-          {/* SearchResult */}
-          {/* <SearchResultRecipe /> */}
-          {/* <SearchResultIngredient /> */}
         </div>
       </article>
     </>
