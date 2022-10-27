@@ -32,30 +32,18 @@ export default function Search() {
     }
   };
 
+  // input창 clear
   const handleClearKeyword = () => {
     setKeyword("");
   };
 
-  //keyword가 있으면 true, 없으면 false가 리턴이 되는 것을 확인 할 수 있습니다
+  //keyword가 있으면 true, 없으면 false
   console.log(!!keyword);
 
   useEffect(() => {
     //array 타입을 string 형태로 변환
     localStorage.setItem("keywords", JSON.stringify(keywords));
   }, [keywords]);
-
-  //검색어 삭제
-  const handleRemoveKeyword = (id) => {
-    const nextKeyword = keywords.filter((thisKeyword) => {
-      return thisKeyword.id !== id;
-    });
-    setKeywords(nextKeyword);
-  };
-
-  // input창 clear
-  const handleClearKeywords = () => {
-    setKeywords([]);
-  };
 
   return (
     <>
@@ -92,15 +80,6 @@ export default function Search() {
               </button>
             </div>
           </div>
-          {/* default */}
-          {/* recommend banner */}
-
-          {/* 추천 검색어 */}
-
-          {/* 최근 검색 */}
-
-          {/* Autocomplete */}
-
           {/* SearchResult */}
           <SearchResultRecipe />
           {/* <SearchResultIngredient /> */}

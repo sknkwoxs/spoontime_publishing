@@ -32,11 +32,12 @@ export default function Search() {
     }
   };
 
-  const handleClearKeyword = () => {
+  // input창 clear
+  const handleClearInputKeyword = () => {
     setKeyword("");
   };
 
-  //keyword가 있으면 true, 없으면 false가 리턴이 되는 것을 확인 할 수 있습니다
+  //keyword가 있으면 true, 없으면 false
   console.log(!!keyword);
 
   useEffect(() => {
@@ -52,7 +53,7 @@ export default function Search() {
     setKeywords(nextKeyword);
   };
 
-  // input창 clear
+  // 최근 검색어 삭제
   const handleClearKeywords = () => {
     setKeywords([]);
   };
@@ -86,7 +87,7 @@ export default function Search() {
               {/* clear 버튼 */}
               <button
                 className="absolute top-0 h-full right-2"
-                onClick={handleClearKeyword}
+                onClick={handleClearInputKeyword}
               >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
               </button>
