@@ -1,18 +1,76 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SearchResultIngredient from "./SearchResultIngredient";
 import SearchResultRecipe from "./SearchResultRecipe";
 
 export default function Search() {
   // input창 clear버튼
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const handleChange = (event) => {
-    setMessage(event.target.value);
+  // const handleChange = (event) => {
+  //   setMessage(event.target.value);
+  // };
+
+  // const handleClick = () => {
+  //   setMessage("");
+  // };
+
+  const [keywords, setKeywords] = useState(
+    JSON.parse(localStorage.getItem("keywords") || "[]")
+  );
+
+  //검색어 추가
+  const handleAddKeyword = (text) => {
+    console.log("text", text);
+    const newKeyword = {
+      id: Date.now(),
+      text: text,
+    };
+    setKeywords([newKeyword, ...keywords]);
   };
 
-  const handleClick = () => {
-    setMessage("");
+  const [keyword, setKeyword] = useState("");
+
+  const handleKeyword = (event) => {
+    setKeyword(event.target.value);
+  };
+
+  const handleEnter = (event) => {
+    if (keyword && event.keyCode === 13) {
+      //엔터일때 부모의 addkeyword에 전달
+      handleAddKeyword(keyword);
+      setKeyword("");
+    }
+  };
+
+  const handleClearKeyword = () => {
+    setKeyword("");
+  };
+
+  //느낌표로 키워드를 갖고있냐 없냐로 boolean 형태로 나옴
+  //키워드를 가지고 있다면 active가 발생하여 padding이 발생함. // 패딩이 없으면 x 아이콘까지 글자가 침법하기 때문
+  const hasKeyword = !!keyword;
+
+  //keyword가 있으면 true, 없으면 false가 리턴이 되는 것을 확인 할 수 있습니다
+  console.log(!!keyword);
+
+  //keyword에 변화가 일어날때만 랜더링
+  useEffect(() => {
+    //array 타입을 string형태로 바꾸기 위해 json.stringfy를 사용한다.
+    localStorage.setItem("keywords", JSON.stringify(keywords));
+  }, [keywords]);
+
+  //검색어 삭제
+  const handleRemoveKeyword = (id) => {
+    const nextKeyword = keywords.filter((thisKeyword) => {
+      return thisKeyword.id !== id;
+    });
+    setKeywords(nextKeyword);
+  };
+
+  //검색어 전체 삭제
+  const handleClearKeywords = () => {
+    setKeywords([]);
   };
 
   return (
@@ -33,15 +91,18 @@ export default function Search() {
                 className="flex w-full py-1 border-none rounded px-9 bg-GreyScale-grey05 Font14 text-GreyScale-grey01"
                 type="text"
                 placeholder="식단검색"
-                onChange={handleChange}
-                value={message}
+                onChange={handleKeyword}
+                onKeyDown={handleEnter}
+                // active={hasKeyword.toString()}
+                value={keyword}
               />
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
               <button
                 className="absolute top-0 h-full right-2"
-                onClick={handleClick}
+                // onClick={handleClick}
+                onClick={handleClearKeyword}
               >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
               </button>
@@ -58,7 +119,7 @@ export default function Search() {
               />
             </button>
           </div>
-
+          {/* 추천 검색어 */}
           <div className="px-4 pb-6 border-b">
             <p className="mb-4">추천 검색어</p>
             <div className="gap-x-2">
@@ -88,64 +149,86 @@ export default function Search() {
               </button>
             </div>
           </div>
+          {/* 최근 검색 */}
           <div className="px-4">
             <div className="flex justify-between pt-6 pb-4">
               <p className="Font14sb">최근 검색</p>
-              <button className="Font12 text-BrandColor-green01">
+              <button
+                className="Font12 text-BrandColor-green01"
+                onClick={handleClearKeywords}
+              >
                 전체삭제
               </button>
             </div>
-            <div>
-              <div className="flex items-center justify-between pb-3">
+            <ul>
+              {keywords.map(({ id, text }) => {
+                return (
+                  <li
+                    className="flex items-center justify-between pb-3"
+                    key={id}
+                  >
+                    <p className="Font14">{text}</p>
+                    <button
+                      onClick={() => {
+                        handleRemoveKeyword(id);
+                      }}
+                    >
+                      <img src="/images/svgIcons/x.svg" alt="x" />
+                    </button>
+                  </li>
+                );
+              })}
+              {/* <li className="flex items-center justify-between pb-3">
                 <p className="Font14">한우가지로메인죽</p>
                 <button>
                   <img src="/images/svgIcons/x.svg" alt="x" />
                 </button>
-              </div>
-              <div className="flex items-center justify-between pb-3">
+              </li>
+              <li className="flex items-center justify-between pb-3">
                 <p className="Font14">김가네 떡볶이</p>
                 <button>
                   <img src="/images/svgIcons/x.svg" alt="x" />
                 </button>
-              </div>
-              <div className="flex items-center justify-between pb-3">
+              </li>
+              <li className="flex items-center justify-between pb-3">
                 <p className="Font14">한우강낭콩죽</p>
                 <button>
                   <img src="/images/svgIcons/x.svg" alt="x" />
                 </button>
-              </div>
-              <div className="flex items-center justify-between pb-3">
+              </li>
+              <li className="flex items-center justify-between pb-3">
                 <p className="Font14">닭고기시금치죽</p>
                 <button>
                   <img src="/images/svgIcons/x.svg" alt="x" />
                 </button>
-              </div>
-            </div>
+              </li> */}
+            </ul>
           </div>
           {/* Autocomplete */}
           {/* <div className="px-4">
-          <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
-            <li>
-              [식재료] 본<span className="text-BrandColor-green03">죽</span>
-            </li>
-            <li>
-              [레시피] [6개월]{" "}
-              <span className="text-BrandColor-green03">죽</span>
-            </li>
-            <li>
-              [레시피] [6개월] 전복
-              <span className="text-BrandColor-green03">죽</span>
-            </li>
-            <li>
-              [레시피] [8개월] 닭
-              <span className="text-BrandColor-green03">죽</span>
-            </li>
-            <li>
-              [레시피] [9개월] 팥
-              <span className="text-BrandColor-green03">죽</span>
-            </li>
-          </ul>
-        </div> */}
+            <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
+              <li>
+                [식재료] 본<span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [6개월]{" "}
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [6개월] 전복
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [8개월] 닭
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+              <li>
+                [레시피] [9개월] 팥
+                <span className="text-BrandColor-green03">죽</span>
+              </li>
+            </ul>
+          </div> */}
+
           {/* SearchResult */}
           {/* <SearchResultRecipe /> */}
           {/* <SearchResultIngredient /> */}
