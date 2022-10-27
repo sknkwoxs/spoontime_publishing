@@ -1,11 +1,27 @@
 export default function SearchIngredient() {
-  const initCheckbox = () => {
-    const checkboxes = document.getElementsByName("list");
+  // 초기화 버튼
+  const checkboxes = document.getElementsByName("list");
+  let checkboxesCount = 0;
 
+  const initCheckbox = () => {
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   };
+
+  const limitCheckbox = (Object) => {
+    for (let i = 0; i < checkboxesCount.length; i++) {
+      if (checkboxes[i].checked) {
+        checkboxesCount++;
+      }
+    }
+    if (checkboxesCount > 6) {
+      alert("can't");
+      Object.checked = false;
+      return false;
+    }
+  };
+
   const vegetablesList = [
     {
       for: "eggplantCheckbox",
@@ -173,7 +189,10 @@ export default function SearchIngredient() {
                           type="checkbox"
                           name="list"
                         />
-                        <label htmlFor={vegetablesList.for}>
+                        <label
+                          htmlFor={vegetablesList.for}
+                          onClick={limitCheckbox}
+                        >
                           <img
                             className="mx-auto mb-1"
                             src={vegetablesList.src}
