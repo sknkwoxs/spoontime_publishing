@@ -4,17 +4,6 @@ import SearchResultIngredient from "./SearchResultIngredient";
 import SearchResultRecipe from "./SearchResultRecipe";
 
 export default function Search() {
-  // input창 clear버튼
-  // const [message, setMessage] = useState("");
-
-  // const handleChange = (event) => {
-  //   setMessage(event.target.value);
-  // };
-
-  // const handleClick = () => {
-  //   setMessage("");
-  // };
-
   const [keywords, setKeywords] = useState(
     JSON.parse(localStorage.getItem("keywords") || "[]")
   );
@@ -35,9 +24,9 @@ export default function Search() {
     setKeyword(event.target.value);
   };
 
+  // Enter로 검색어 추가
   const handleEnter = (event) => {
     if (keyword && event.keyCode === 13) {
-      //엔터일때 부모의 addkeyword에 전달
       handleAddKeyword(keyword);
       setKeyword("");
     }
@@ -47,16 +36,11 @@ export default function Search() {
     setKeyword("");
   };
 
-  //느낌표로 키워드를 갖고있냐 없냐로 boolean 형태로 나옴
-  //키워드를 가지고 있다면 active가 발생하여 padding이 발생함. // 패딩이 없으면 x 아이콘까지 글자가 침법하기 때문
-  const hasKeyword = !!keyword;
-
   //keyword가 있으면 true, 없으면 false가 리턴이 되는 것을 확인 할 수 있습니다
   console.log(!!keyword);
 
-  //keyword에 변화가 일어날때만 랜더링
   useEffect(() => {
-    //array 타입을 string형태로 바꾸기 위해 json.stringfy를 사용한다.
+    //array 타입을 string 형태로 변환
     localStorage.setItem("keywords", JSON.stringify(keywords));
   }, [keywords]);
 
@@ -68,7 +52,7 @@ export default function Search() {
     setKeywords(nextKeyword);
   };
 
-  //검색어 전체 삭제
+  // input창 clear
   const handleClearKeywords = () => {
     setKeywords([]);
   };
@@ -93,12 +77,13 @@ export default function Search() {
                 placeholder="식단검색"
                 onChange={handleKeyword}
                 onKeyDown={handleEnter}
-                // active={hasKeyword.toString()}
                 value={keyword}
               />
+              {/* search 버튼 */}
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
+              {/* clear 버튼 */}
               <button
                 className="absolute top-0 h-full right-2"
                 // onClick={handleClick}
@@ -178,30 +163,6 @@ export default function Search() {
                   </li>
                 );
               })}
-              {/* <li className="flex items-center justify-between pb-3">
-                <p className="Font14">한우가지로메인죽</p>
-                <button>
-                  <img src="/images/svgIcons/x.svg" alt="x" />
-                </button>
-              </li>
-              <li className="flex items-center justify-between pb-3">
-                <p className="Font14">김가네 떡볶이</p>
-                <button>
-                  <img src="/images/svgIcons/x.svg" alt="x" />
-                </button>
-              </li>
-              <li className="flex items-center justify-between pb-3">
-                <p className="Font14">한우강낭콩죽</p>
-                <button>
-                  <img src="/images/svgIcons/x.svg" alt="x" />
-                </button>
-              </li>
-              <li className="flex items-center justify-between pb-3">
-                <p className="Font14">닭고기시금치죽</p>
-                <button>
-                  <img src="/images/svgIcons/x.svg" alt="x" />
-                </button>
-              </li> */}
             </ul>
           </div>
           {/* Autocomplete */}
