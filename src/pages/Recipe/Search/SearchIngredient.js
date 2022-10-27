@@ -1,24 +1,20 @@
 export default function SearchIngredient() {
-  // 초기화 버튼
   const checkboxes = document.getElementsByName("list");
-  let checkboxesCount = 0;
 
+  // 초기화 버튼
   const initCheckbox = () => {
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   };
 
-  const limitCheckbox = (Object) => {
-    for (let i = 0; i < checkboxesCount.length; i++) {
-      if (checkboxes[i].checked) {
-        checkboxesCount++;
-      }
-    }
-    if (checkboxesCount > 6) {
-      alert("can't");
-      Object.checked = false;
-      return false;
+  const limitCheckbox = (event) => {
+    var checks = document.querySelectorAll(".check");
+    var max = 2;
+    for (var i = 0; i < checks.length; i++) checks[i].onclick = selectiveCheck;
+    function selectiveCheck(event) {
+      var checkedChecks = document.querySelectorAll(".check:checked");
+      if (checkedChecks.length >= max + 1) return false;
     }
   };
 
@@ -145,6 +141,34 @@ export default function SearchIngredient() {
       alt: "egg",
       proteins: "달걀",
     },
+    {
+      for: "springonionCheckbox",
+      id: "springonionCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "crab",
+      proteins: "대파",
+    },
+    {
+      for: "garlicCheckbox",
+      id: "garlicCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "fish",
+      proteins: "마늘",
+    },
+    {
+      for: "gimchiCheckbox",
+      id: "gimchiCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "oyster",
+      proteins: "김치",
+    },
+    {
+      for: "SesameCheckbox",
+      id: "SesameCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "egg",
+      proteins: "깻잎",
+    },
   ];
 
   return (
@@ -173,69 +197,69 @@ export default function SearchIngredient() {
               <br /> 검색해 보세요.
             </p>
           </div>
-          <div>
-            <div>
+          <ul className="overflow-auto max-h-[536px]">
+            <form>
               <p className="mb-5 Font14sb">
-                야채류&nbsp;<span className="text-BrandColor-green03">3</span>
+                곡류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
               </p>
-
-              <ul>
-                <form className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
-                  {vegetablesList.map((vegetablesList, index) => {
-                    return (
-                      <li className="mx-auto text-center" key={index}>
-                        <input
-                          id={vegetablesList.id}
-                          type="checkbox"
-                          name="list"
+              <p className="mb-5 Font14sb">
+                야채류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
+              </p>
+              <div className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
+                {vegetablesList.map((vegetablesList, index) => {
+                  return (
+                    <li className="mx-auto text-center" key={index}>
+                      <input
+                        id={vegetablesList.id}
+                        className="check"
+                        type="checkbox"
+                        name="list"
+                      />
+                      <label htmlFor={vegetablesList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={vegetablesList.src}
+                          alt={vegetablesList.alt}
                         />
-                        <label
-                          htmlFor={vegetablesList.for}
-                          onClick={limitCheckbox}
-                        >
-                          <img
-                            className="mx-auto mb-1"
-                            src={vegetablesList.src}
-                            alt={vegetablesList.alt}
-                          />
-                          {vegetablesList.vegetables}
-                        </label>
-                      </li>
-                    );
-                  })}
-                </form>
-              </ul>
-            </div>
-            <div>
+                        {vegetablesList.vegetables}
+                      </label>
+                    </li>
+                  );
+                })}
+              </div>
               <p className="mb-5 Font14sb">
                 단백질류&nbsp;
-                <span className="text-BrandColor-green03">2</span>
+                <span className="text-BrandColor-green03">1</span>
               </p>
-              <ul>
-                <form className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
-                  {proteinsList.map((proteinsList, index) => {
-                    return (
-                      <li className="mx-auto text-center" key={index}>
-                        <input
-                          id={proteinsList.id}
-                          type="checkbox"
-                          name="list"
+              <div className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
+                {proteinsList.map((proteinsList, index) => {
+                  return (
+                    <li className="mx-auto text-center" key={index}>
+                      <input id={proteinsList.id} type="checkbox" name="list" />
+                      <label htmlFor={proteinsList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={proteinsList.src}
+                          alt={proteinsList.alt}
                         />
-                        <label htmlFor={proteinsList.for}>
-                          <img
-                            className="mx-auto mb-1"
-                            src={proteinsList.src}
-                            alt={proteinsList.alt}
-                          />
-                          {proteinsList.proteins}
-                        </label>
-                      </li>
-                    );
-                  })}
-                </form>
-              </ul>
-            </div>
-          </div>
+                        {proteinsList.proteins}
+                      </label>
+                    </li>
+                  );
+                })}
+              </div>
+              <p className="mb-5 Font14sb">
+                우유류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
+              </p>
+              <p className="mb-5 Font14sb">
+                과일류&nbsp;
+                <span className="text-BrandColor-green03">1</span>
+              </p>
+            </form>
+          </ul>
         </div>
         <section className="fixed bottom-0 w-full">
           <div className="w-full">
