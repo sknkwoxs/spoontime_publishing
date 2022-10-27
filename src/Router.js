@@ -19,6 +19,7 @@ import RecipeFilter from "./pages/RecipeFilter";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
 import Search from "./pages/Recipe/Search/Search";
+import SearchResult from "./pages/Recipe/Search/SearchResult";
 import SearchIngredient from "./pages/Recipe/Search/SearchIngredient";
 import BookmarkRecipe from "./pages/Recipe/Bookmark/BookmarkRecipe";
 import BookmarkIngredient from "./pages/Recipe/Bookmark/BookmarkIngredient";
@@ -91,6 +92,7 @@ export default function Router() {
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
         <Route path="/Recipe/Search" element={<Search />} />
+        <Route path="/Recipe/SearchResult" element={<SearchResult />} />
         <Route path="/Recipe/SearchIngredient" element={<SearchIngredient />} />
         <Route path="/Recipe/BookmarkRecipe" element={<BookmarkRecipe />} />
         <Route

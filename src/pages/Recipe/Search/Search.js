@@ -59,7 +59,7 @@ export default function Search() {
 
   return (
     <>
-      <article className="w-full min-h-[calc(100vh_-_7.75rem)]">
+      <article className="w-full">
         <div>
           <div className="flex items-center gap-4 px-4 py-3">
             <div>
