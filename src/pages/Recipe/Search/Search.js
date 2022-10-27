@@ -86,7 +86,6 @@ export default function Search() {
               {/* clear 버튼 */}
               <button
                 className="absolute top-0 h-full right-2"
-                // onClick={handleClick}
                 onClick={handleClearKeyword}
               >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />

@@ -1,5 +1,5 @@
 import React from "react";
-const TabNavItem = ({ id, title, activeTab, setActiveTab }) => {
+const FilterNavItem = ({ id, title, activeTab, setActiveTab }) => {
   const handleClick = () => {
     setActiveTab(id);
   };
@@ -10,4 +10,4 @@ const TabNavItem = ({ id, title, activeTab, setActiveTab }) => {
     </li>
   );
 };
-export default TabNavItem;
+export default FilterNavItem;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import TabContents from "./TabContents";
-import TabNavItem from "./TabNavItem";
+import FilterContents from "./FilterContents";
+import FilterNavItem from "./FilterNavItem";
 
 export default function Filter({ closeFilterModal }) {
   // 외부 화면 스크롤 방지
@@ -18,9 +18,6 @@ export default function Filter({ closeFilterModal }) {
   }, []);
 
   // 탭
-  const handleClick = () => {
-    setActiveTab();
-  };
   const [activeTab, setActiveTab] = useState("allergyTab");
 
   // 데이터
@@ -153,35 +150,41 @@ export default function Filter({ closeFilterModal }) {
         </p>
         <div>
           <ul className="flex gap-5 border-b Font14sb text-GreyScale-grey03 recipeFilterTab">
-            <TabNavItem
-              title="알레르기"
+            <FilterNavItem
+              className="cursor-pointer"
               id="allergyTab"
+              title="알레르기"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
-            <TabNavItem
-              title="상태"
+            <FilterNavItem
+              className="cursor-pointer"
               id="statusTab"
+              title="상태"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
-            <TabNavItem
-              title="단계"
+            <FilterNavItem
+              className="cursor-pointer"
               id="stepTab"
+              title="단계"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
           </ul>
 
           {/* Allergy */}
-          <TabContents id="allergyTab" activeTab={activeTab}>
+          <FilterContents id="allergyTab" activeTab={activeTab}>
             <ul className="mt-5">
               <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
                 {allergyList.map((allergyList, index) => {
                   return (
-                    <li className="mx-auto text-center" key={index}>
+                    <li className="mx-auto text-center " key={index}>
                       <input id={allergyList.id} type="checkbox" />
-                      <label htmlFor={allergyList.for}>
+                      <label
+                        className="cursor-pointer"
+                        htmlFor={allergyList.for}
+                      >
                         <img
                           className="mx-auto mb-1"
                           src={allergyList.src}
@@ -194,17 +197,18 @@ export default function Filter({ closeFilterModal }) {
                 })}
               </form>
             </ul>
-          </TabContents>
+          </FilterContents>
+
           {/* Status */}
-          <TabContents id="statusTab" activeTab={activeTab}>
+          <FilterContents id="statusTab" activeTab={activeTab}>
             <ul className="mt-5">
               <form className="grid grid-cols-4 gap-4 mb-3 selectForm Font12 text-GreyScale-grey01">
                 {statusList.map((statusList, index) => {
                   return (
-                    <li className="mx-auto text-center" key={index}>
+                    <li className="mx-auto text-center " key={index}>
                       <input id={statusList.id} type="checkbox" />
                       <label
-                        className="max-w-[64px] whitespace-nowrap"
+                        className="max-w-[64px] whitespace-nowrap cursor-pointer"
                         htmlFor={statusList.for}
                       >
                         <img
@@ -219,9 +223,10 @@ export default function Filter({ closeFilterModal }) {
                 })}
               </form>
             </ul>
-          </TabContents>
+          </FilterContents>
+
           {/* Step */}
-          <TabContents id="stepTab" activeTab={activeTab}>
+          <FilterContents id="stepTab" activeTab={activeTab}>
             <ul>
               <form className="grid grid-cols-1 py-5 gap-y-2 stepFilterForm Font12 text-GreyScale-grey01 max-h-[16.75rem] overflow-auto px-0.5">
                 {stepList.map((stepList, index) => {
@@ -258,7 +263,7 @@ export default function Filter({ closeFilterModal }) {
                 })}
               </form>
             </ul>
-          </TabContents>
+          </FilterContents>
           {/*  */}
         </div>
         <div className="fixed bottom-0 left-0 right-0 px-4 ">

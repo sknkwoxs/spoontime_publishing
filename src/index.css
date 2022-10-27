@@ -493,12 +493,14 @@ html {
   /* Recipe Filter */
   .recipeFilterTab li {
     padding: 8px 0;
+    pointer: cursor !important;
   }
 
   .recipeFilterTab li.active {
     padding: 8px 0;
     color: #2a2a2a;
     border-bottom: 2px solid #2a2a2a;
+    /* pointer: cursor; */
   }
 
   .stepFilterForm input[type="radio"]:not(:checked),
