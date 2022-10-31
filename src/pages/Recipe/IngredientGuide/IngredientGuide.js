@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import IngredientNavItem from "./IngredientGuideNavItem";
 import IngredientGuideContents from "./IngredientGuideContents";
-import IngredientGuideFilter from "./IngredientGuideFilter";
 import IngredientsItem from "./IngredientsItem";
 import IngredientGuideSort from "./IngredientGuideSort";
+import IngredientGuideFilter from "./IngredientGuideFilter";
 
 export default function IngredientGuide() {
   // 탭
@@ -13,6 +13,10 @@ export default function IngredientGuide() {
 
   // sort 모달
   const [openIngredientGuideSortModal, setOpenIngredientGuideSortModal] =
+    useState(false);
+
+  // filter 모달
+  const [openIngredientGuideFilterModal, setOpenIngredientGuideFilterModal] =
     useState(false);
 
   return (
@@ -86,11 +90,25 @@ export default function IngredientGuide() {
               >
                 추천순 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
-              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideFilterModal(
+                    !openIngredientGuideFilterModal
+                  )
+                }
+              >
                 섭취 가능 시기
                 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
-              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideFilterModal(
+                    !openIngredientGuideFilterModal
+                  )
+                }
+              >
                 알레르기 위험 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
             </article>
@@ -113,11 +131,25 @@ export default function IngredientGuide() {
               >
                 추천순 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
-              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideFilterModal(
+                    !openIngredientGuideFilterModal
+                  )
+                }
+              >
                 섭취 가능 시기
                 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
-              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideFilterModal(
+                    !openIngredientGuideFilterModal
+                  )
+                }
+              >
                 알레르기 위험 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
             </article>
@@ -127,11 +159,17 @@ export default function IngredientGuide() {
         </IngredientGuideContents>
       </article>
 
-      {/* <IngredientGuideFilter /> */}
       {openIngredientGuideSortModal && (
         <IngredientGuideSort
           closeIngredientGuideSortModal={() =>
             setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
+          }
+        />
+      )}
+      {openIngredientGuideFilterModal && (
+        <IngredientGuideFilter
+          closeIngredientGuideFilterModal={() =>
+            setOpenIngredientGuideFilterModal(!openIngredientGuideFilterModal)
           }
         />
       )}

@@ -686,4 +686,42 @@ html {
     border-bottom: 2px solid #2a2a2a;
     pointer: cursor;
   }
+
+  .ingredientGuideFilterTab li {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    pointer: cursor;
+  }
+
+  .ingredientGuideFilterTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
+
+  .ingredientGuideForm input[type="checkbox"]:not(:checked),
+  .ingredientGuideForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .ingredientGuideForm input[type="checkbox"] + label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 0;
+    padding: 4px 8px;
+    color: #2a2a2a;
+    background-color: white;
+    outline: 1px solid #b7b7b7;
+    border-radius: 25px;
+  }
+
+  .ingredientGuideForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
 }
