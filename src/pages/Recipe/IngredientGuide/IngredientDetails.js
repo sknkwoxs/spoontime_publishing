@@ -30,7 +30,7 @@ export default function IngredientDetails() {
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">쌀</p>
                 <button>
-                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                  <img src="/images/svgIcons/upload.svg" alt="upload" />
                 </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
@@ -42,7 +42,7 @@ export default function IngredientDetails() {
                   <p>곡류</p>
                 </div>
                 <div className="flex items-center gap-1 mr-2">
-                  <img src="/images/svgicons/baby.svg" alt="baby" />
+                  <img src="/images/svgIcons/baby.svg" alt="baby" />
                   <p>4개월+</p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function IngredientDetails() {
             <div className="flex flex-col py-4 mb-4 border-b gap-y-4">
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam1.svg"
+                  src="/images/svgIcons/verificationTeam1.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -253,7 +253,7 @@ export default function IngredientDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam2.svg"
+                  src="/images/svgIcons/verificationTeam2.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -265,7 +265,7 @@ export default function IngredientDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam3.svg"
+                  src="/images/svgIcons/verificationTeam3.svg"
                   alt="verificationTeam1"
                 />
                 <div>

@@ -24,7 +24,7 @@ export default function IngredientsItem() {
               <div className="flex Font12 text-GreyScale-grey02">
                 <div className="flex items-center gap-1 mr-2">
                   <img
-                    src="/images/svgicons/ingredients.svg"
+                    src="/images/svgIcons/ingredients.svg"
                     alt="ingredients"
                   />
                   <p>곡류</p>
@@ -34,7 +34,7 @@ export default function IngredientsItem() {
                   <p>4개월+</p>
                 </div>
                 <div className="flex items-center gap-1 mr-2">
-                  <img src="/images/svgicons/triangle.svg" alt="triangle" />
+                  <img src="/images/svgIcons/triangle.svg" alt="triangle" />
                   <p>주의</p>
                 </div>
               </div>
