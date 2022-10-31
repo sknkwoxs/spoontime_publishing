@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import IngredientGuideFilterContents from "./IngredientGuideFilterContents";
 import IngredientGuideFilterNavItem from "./IngredientGuideFilterNavItem";
 
-export default function IngredientGuideFilter({ closeFilterModal }) {
+export default function IngredientGuideFilter({
+  closeIngredientGuideFilterModal,
+}) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
@@ -58,11 +60,20 @@ export default function IngredientGuideFilter({ closeFilterModal }) {
     },
   ];
 
+  const checkboxes = document.getElementsByName("list");
+
+  // 초기화 버튼
+  const initCheckbox = () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+
   return (
     <>
       <div
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
-        onClick={closeFilterModal}
+        onClick={closeIngredientGuideFilterModal}
       ></div>
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl h-[300px]">
         <p className="pt-8 mb-2 Font16sb">
@@ -96,7 +107,11 @@ export default function IngredientGuideFilter({ closeFilterModal }) {
                 {ingestibleList.map((ingestibleList, index) => {
                   return (
                     <li key={index}>
-                      <input id={ingestibleList.id} type="checkbox" />
+                      <input
+                        id={ingestibleList.id}
+                        type="checkbox"
+                        name="list"
+                      />
                       <label
                         className="cursor-pointer"
                         htmlFor={ingestibleList.for}
@@ -120,7 +135,7 @@ export default function IngredientGuideFilter({ closeFilterModal }) {
                 {riskList.map((riskList, index) => {
                   return (
                     <li key={index}>
-                      <input id={riskList.id} type="checkbox" />
+                      <input id={riskList.id} type="checkbox" name="list" />
                       <label
                         className="cursor-pointer whitespace-nowrap"
                         htmlFor={riskList.for}
@@ -136,7 +151,10 @@ export default function IngredientGuideFilter({ closeFilterModal }) {
         </div>
         <div className="fixed bottom-0 left-0 right-0 px-4 ">
           <div className="flex w-full py-4 border-t">
-            <button className="flex items-center w-full gap-2 Font14sb">
+            <button
+              className="flex items-center w-full gap-2 Font14sb"
+              onClick={initCheckbox}
+            >
               <img src="/images/svgIcons/rotation.svg" alt="rotation" />
               옵션 재설정
             </button>
