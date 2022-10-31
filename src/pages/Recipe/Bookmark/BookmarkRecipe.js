@@ -8,7 +8,7 @@ export default function BookmarkRecipe() {
       <article className="h-full px-4">
         <div className="flex py-4">
           <div className="absolute">
-            <Link to="/MealPlan">
+            <Link to="/Recipe">
               <img
                 src="/images/svgIcons/directionsLeft.svg"
                 alt="directionsLeft"
