@@ -40,12 +40,7 @@ export default function BookmarkIngredientSort({ closeIngredientSortModal }) {
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfName"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
+              <input id="recipeSortOfName" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
                 htmlFor="recipeSortOfName"
@@ -54,12 +49,7 @@ export default function BookmarkIngredientSort({ closeIngredientSortModal }) {
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfMonth"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
+              <input id="recipeSortOfMonth" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
                 htmlFor="recipeSortOfMonth"

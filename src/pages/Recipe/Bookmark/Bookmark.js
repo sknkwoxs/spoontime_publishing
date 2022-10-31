@@ -67,19 +67,6 @@ export default function Bookmark() {
               </button>
             </div>
           </div> */}
-        {/* Result / No-data */}
-        {/* 로고 및 텍스트 위치 조정 필요 */}
-        {/* <div className="flex flex-col items-center mt-[252px]">
-          <div className="mb-4">
-            <img
-              src="/images/Recipe/RecipeSearchNoData.svg"
-              alt="RecipeSearchNoData"
-            />
-          </div>
-          <p className="Font14 text-BrandColor-green01">
-            검색 결과가 없습니다.
-          </p>
-        </div> */}
 
         {/* Recipe */}
         <BookmarkContents id="bookmarkRecipeTab" activeTab={activeTab}>

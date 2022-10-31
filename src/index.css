@@ -672,4 +672,18 @@ html {
     border-bottom: 2px solid #2a2a2a;
     pointer: cursor;
   }
+
+  /* Ingredient Guide */
+  .ingredientGuideTab li {
+    padding: 8px 0;
+    text-align: center;
+    pointer: cursor;
+  }
+
+  .ingredientGuideTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
 }

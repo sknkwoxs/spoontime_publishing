@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import IngredientsItem from "./IngredientsItem";
+import IngredientNavItem from "./IngredientGuideNavItem";
+import IngredientGuideContents from "./IngredientGuideContents";
 import IngredientGuideFilter from "./IngredientGuideFilter";
+import IngredientsItem from "./IngredientsItem";
 import IngredientGuideSort from "./IngredientGuideSort";
 
 export default function IngredientGuide() {
-  // 필터 모달
+  // 탭
+  const [activeTab, setActiveTab] = useState("ingredientGuideDefaultTab");
+
+  // sort 모달
   const [openIngredientGuideSortModal, setOpenIngredientGuideSortModal] =
     useState(false);
 
@@ -25,53 +30,104 @@ export default function IngredientGuide() {
             <img src="/images/svgIcons/search.svg" alt="search" />
           </Link>
         </div>
-        <div>
-          <div className="flex w-full my-2 border-b Font14sb text-GreyScale-grey03">
-            {/* tab */}
-            <button className="flex justify-center w-full pb-2 text-center ">
-              전체
-            </button>
-            <button className="flex justify-center w-full pb-2 text-center">
-              곡류
-            </button>
-            <button className="flex justify-center w-full pb-2 text-center">
-              야채류
-            </button>
-            <button className="flex justify-center w-full pb-2 text-center border-b-2 border-GreyScale-grey01">
-              단백질류
-            </button>
-            <button className="flex justify-center w-full pb-2 text-center">
-              우유류
-            </button>
-            <button className="flex justify-center w-full pb-2 text-center">
-              과일류
-            </button>
-          </div>
-          <div className="flex gap-2 py-3 Font12">
-            <button
-              className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
-              onClick={() =>
-                setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
-              }
-            >
-              추천순 <img src="/images/svgIcons/down.svg" alt="down" />
-            </button>
-            <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
-              섭취 가능 시기 <img src="/images/svgIcons/down.svg" alt="down" />
-            </button>
-            <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
-              알레르기 위험 <img src="/images/svgIcons/down.svg" alt="down" />
-            </button>
-          </div>
-          <IngredientsItem />
-          <IngredientsItem />
-          <IngredientsItem />
-          <IngredientsItem />
-          <IngredientsItem />
-        </div>
       </article>
-      {/* <IngredientGuideFilter /> */}
+      <article className="px-4">
+        <ul className="flex gap-6 my-2 overflow-x-auto border-b Font14sb ingredientGuideTab text-GreyScale-grey03 whitespace-nowrap">
+          <IngredientNavItem
+            id="ingredientGuideDefaultTab"
+            title="전체"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <IngredientNavItem
+            id="ingredientCrealsGuideTab"
+            title="곡류"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <IngredientNavItem
+            id="ingredientGuideVegetableTab"
+            title="야채류"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <IngredientNavItem
+            id="ingredientGuideProteinsTab"
+            title="단백질류"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <IngredientNavItem
+            id="ingredientGuideMilksTab"
+            title="우유류"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+          <IngredientNavItem
+            id="ingredientGuideFruitsTab"
+            title="과일류"
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+        </ul>
 
+        {/* Default */}
+        <IngredientGuideContents
+          id="ingredientCrealsGuideTab"
+          activeTab={activeTab}
+        >
+          <div className="flex items-center justify-between py-3">
+            <article className="flex gap-2 Font12">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
+                }
+              >
+                추천순 <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+                섭취 가능 시기
+                <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+                알레르기 위험 <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+            </article>
+          </div>
+          <IngredientsItem />
+        </IngredientGuideContents>
+
+        {/* Default */}
+        <IngredientGuideContents
+          id="ingredientGuideDefaultTab"
+          activeTab={activeTab}
+        >
+          <div className="flex items-center justify-between py-3">
+            <article className="flex gap-2 Font12">
+              <button
+                className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+                onClick={() =>
+                  setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
+                }
+              >
+                추천순 <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+                섭취 가능 시기
+                <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+              <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
+                알레르기 위험 <img src="/images/svgIcons/down.svg" alt="down" />
+              </button>
+            </article>
+          </div>
+          <IngredientsItem />
+          <IngredientsItem />
+        </IngredientGuideContents>
+      </article>
+
+      {/* <IngredientGuideFilter /> */}
       {openIngredientGuideSortModal && (
         <IngredientGuideSort
           closeIngredientGuideSortModal={() =>

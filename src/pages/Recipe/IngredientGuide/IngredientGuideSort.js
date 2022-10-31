@@ -27,25 +27,20 @@ export default function IngredientGuideSort({ closeIngredientGuideSortModal }) {
           <form className="flex flex-col overflow-auto recipeSortForm text-GreyScale-grey01">
             <li className="w-full mx-auto list-none">
               <input
-                id="recipeSortOfLatest"
+                id="recipeSortOfRecommended"
                 type="radio"
                 name="recipeSort"
                 defaultChecked
               />
               <label
                 className="w-full cursor-pointer"
-                htmlFor="recipeSortOfLatest"
+                htmlFor="recipeSortOfRecommended"
               >
                 <p className="py-4 Font14">추천순</p>
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfName"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
+              <input id="recipeSortOfName" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
                 htmlFor="recipeSortOfName"
@@ -54,12 +49,7 @@ export default function IngredientGuideSort({ closeIngredientGuideSortModal }) {
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfMonth"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
+              <input id="recipeSortOfMonth" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
                 htmlFor="recipeSortOfMonth"
