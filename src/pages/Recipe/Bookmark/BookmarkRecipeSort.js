@@ -1,15 +1,13 @@
 import { useEffect } from "react";
 
-export default function BookmarkIngredientFilter({
-  closeIngredientFilterModal,
-}) {
+export default function BookmarkRecipeSort({ closeRecipeSortModal }) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
-        position: fixed; 
-        top: -${window.scrollY}px;
-        overflow-y: scroll;
-        width: 100%;`;
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
     return () => {
       const scrollY = document.body.style.top;
       document.body.style.cssText = "";
@@ -21,7 +19,7 @@ export default function BookmarkIngredientFilter({
     <>
       <div
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
-        onClick={closeIngredientFilterModal}
+        onClick={closeRecipeSortModal}
       ></div>
       <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
         <p className="pt-8 Font16sb">검색 정렬</p>
@@ -29,44 +27,25 @@ export default function BookmarkIngredientFilter({
           <form className="flex flex-col overflow-auto recipeSortForm text-GreyScale-grey01">
             <li className="w-full mx-auto list-none">
               <input
-                id="recipeSortOfLatest"
+                id="recipeSortOfRecommended"
                 type="radio"
                 name="recipeSort"
                 defaultChecked
               />
               <label
                 className="w-full cursor-pointer"
-                htmlFor="recipeSortOfLatest"
+                htmlFor="recipeSortOfRecommended"
               >
-                <p className="py-4 Font14">최근 추가한 순</p>
+                <p className="py-4 Font14">추천순</p>
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfName"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
-              <label
-                className="w-full cursor-pointer"
-                htmlFor="recipeSortOfName"
-              >
-                <p className="py-4 Font14">이름순</p>
-              </label>
-            </li>
-            <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfMonth"
-                type="radio"
-                name="recipeSort"
-                defaultChecked
-              />
+              <input id="recipeSortOfMonth" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
                 htmlFor="recipeSortOfMonth"
               >
-                <p className="py-4 Font14">섭취 개월 수 순</p>
+                <p className="py-4 Font14">적용 개월 수 순</p>
               </label>
             </li>
             <li className="w-full mx-auto list-none">

@@ -1,9 +1,15 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import IngredientsItem from "./IngredientsItem";
 import IngredientGuideFilter from "./IngredientGuideFilter";
 import IngredientGuideSort from "./IngredientGuideSort";
 
 export default function IngredientGuide() {
+  // 필터 모달
+  const [openIngredientGuideSortModal, setOpenIngredientGuideSortModal] =
+    useState(false);
+
   return (
     <>
       <article className="mx-4">
@@ -14,7 +20,7 @@ export default function IngredientGuide() {
               alt="directionsLeft"
             />
           </Link>
-          <p>식재료 가이드</p>
+          <p className="Font16sb">식재료 가이드</p>
           <Link to="#">
             <img src="/images/svgIcons/search.svg" alt="search" />
           </Link>
@@ -42,9 +48,13 @@ export default function IngredientGuide() {
             </button>
           </div>
           <div className="flex gap-2 py-3 Font12">
-            <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
-              추천순
-              <img src="/images/svgIcons/down.svg" alt="down" />
+            <button
+              className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
+              onClick={() =>
+                setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
+              }
+            >
+              추천순 <img src="/images/svgIcons/down.svg" alt="down" />
             </button>
             <button className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1">
               섭취 가능 시기 <img src="/images/svgIcons/down.svg" alt="down" />
@@ -61,7 +71,14 @@ export default function IngredientGuide() {
         </div>
       </article>
       {/* <IngredientGuideFilter /> */}
-      {/* <IngredientGuideSort /> */}
+
+      {openIngredientGuideSortModal && (
+        <IngredientGuideSort
+          closeIngredientGuideSortModal={() =>
+            setOpenIngredientGuideSortModal(!openIngredientGuideSortModal)
+          }
+        />
+      )}
     </>
   );
 }

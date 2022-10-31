@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import BookmarkNavItem from "./BookmarkNavItem";
 import BookmarkContents from "./BookmarkContents";
-import BookmarkRecipeFilter from "./BookmarkRecipeFilter";
-import BookmarkIngredientFilter from "./BookmarkIngredientFilter";
+import BookmarkRecipeSort from "./BookmarkRecipeSort";
+import BookmarkIngredientSort from "./BookmarkIngredientSort";
 import RecipeItem from "../RecipeItem";
 import IngredientsItem from "../IngredientGuide/IngredientsItem";
 
@@ -13,9 +13,8 @@ export default function Bookmark() {
   const [activeTab, setActiveTab] = useState("bookmarkRecipeTab");
 
   // 필터 모달
-  const [openRecipeFilterModal, setOpenRecipeFilterModal] = useState(false);
-  const [openIngredientFilterModal, setOpenIngredientFilterModal] =
-    useState(false);
+  const [openRecipeSortModal, setOpenRecipeSortModal] = useState(false);
+  const [openIngredientSortModal, setOpenIngredientSortModal] = useState(false);
 
   return (
     <>
@@ -91,7 +90,7 @@ export default function Bookmark() {
             <article className="flex gap-2 Font12">
               <button
                 className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
-                onClick={() => setOpenRecipeFilterModal(!openRecipeFilterModal)}
+                onClick={() => setOpenRecipeSortModal(!openRecipeSortModal)}
               >
                 추천순 <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
@@ -132,7 +131,7 @@ export default function Bookmark() {
               <button
                 className="flex items-center border border-[#B7B7B7] rounded-[1.563rem] px-2 py-1 gap-1"
                 onClick={() =>
-                  setOpenIngredientFilterModal(!openIngredientFilterModal)
+                  setOpenIngredientSortModal(!openIngredientSortModal)
                 }
               >
                 최근 추가한 순{" "}
@@ -168,17 +167,17 @@ export default function Bookmark() {
           <IngredientsItem />
         </BookmarkContents>
       </article>
-      {openRecipeFilterModal && (
-        <BookmarkRecipeFilter
-          closeRecipeFilterModal={() =>
-            setOpenRecipeFilterModal(!openRecipeFilterModal)
+      {openRecipeSortModal && (
+        <BookmarkRecipeSort
+          closeRecipeSortModal={() =>
+            setOpenRecipeSortModal(!openRecipeSortModal)
           }
         />
       )}
-      {openIngredientFilterModal && (
-        <BookmarkIngredientFilter
-          closeIngredientFilterModal={() =>
-            setOpenIngredientFilterModal(!openIngredientFilterModal)
+      {openIngredientSortModal && (
+        <BookmarkIngredientSort
+          closeIngredientSortModal={() =>
+            setOpenIngredientSortModal(!openIngredientSortModal)
           }
         />
       )}
