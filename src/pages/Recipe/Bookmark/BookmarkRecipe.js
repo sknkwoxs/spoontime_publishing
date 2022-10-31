@@ -1,8 +1,23 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import RecipeItem from "../RecipeItem";
 import BookmarkRecipeFilter from "./BookmarkRecipeFilter";
 
 export default function BookmarkRecipe() {
+  // 외부 화면 스크롤 방지
+  useEffect(() => {
+    document.body.style.cssText = `
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
+
   return (
     <>
       <article className="h-full px-4">
@@ -64,7 +79,7 @@ export default function BookmarkRecipe() {
             <div>
               <RecipeItem />
             </div>
-            {/* <BookmarkRecipeFilter /> */}
+            <BookmarkRecipeFilter />
           </div>
         </div>
       </article>
