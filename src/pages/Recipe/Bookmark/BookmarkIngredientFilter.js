@@ -29,29 +29,53 @@ export default function BookmarkIngredientFilter({
           <form className="flex flex-col overflow-auto recipeSortForm text-GreyScale-grey01">
             <li className="w-full mx-auto list-none">
               <input
-                id="recipeSortOfRecommended"
+                id="recipeSortOfLatest"
                 type="radio"
                 name="recipeSort"
                 defaultChecked
               />
               <label
                 className="w-full cursor-pointer"
-                htmlFor="recipeSortOfRecommended"
+                htmlFor="recipeSortOfLatest"
               >
-                <p className="py-4 Font14">추천순</p>
+                <p className="py-4 Font14">최근 추가한 순</p>
               </label>
             </li>
             <li className="w-full mx-auto list-none">
               <input
-                id="recipeSortOfPopularity"
+                id="recipeSortOfName"
                 type="radio"
                 name="recipeSort"
+                defaultChecked
               />
               <label
                 className="w-full cursor-pointer"
-                htmlFor="recipeSortOfPopularity"
+                htmlFor="recipeSortOfName"
               >
-                <p className="py-4 Font14">적용 개월 수 순</p>
+                <p className="py-4 Font14">이름순</p>
+              </label>
+            </li>
+            <li className="w-full mx-auto list-none">
+              <input
+                id="recipeSortOfMonth"
+                type="radio"
+                name="recipeSort"
+                defaultChecked
+              />
+              <label
+                className="w-full cursor-pointer"
+                htmlFor="recipeSortOfMonth"
+              >
+                <p className="py-4 Font14">섭취 개월 수 순</p>
+              </label>
+            </li>
+            <li className="w-full mx-auto list-none">
+              <input id="recipeSortOfTime" type="radio" name="recipeSort" />
+              <label
+                className="w-full cursor-pointer"
+                htmlFor="recipeSortOfTime"
+              >
+                <p className="py-4 Font14">조리 시간순</p>
               </label>
             </li>
           </form>

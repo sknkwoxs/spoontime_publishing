@@ -40,14 +40,10 @@ export default function BookmarkRecipeFilter({ closeRecipeFilterModal }) {
               </label>
             </li>
             <li className="w-full mx-auto list-none">
-              <input
-                id="recipeSortOfPopularity"
-                type="radio"
-                name="recipeSort"
-              />
+              <input id="recipeSortOfMonth" type="radio" name="recipeSort" />
               <label
                 className="w-full cursor-pointer"
-                htmlFor="recipeSortOfPopularity"
+                htmlFor="recipeSortOfMonth"
               >
                 <p className="py-4 Font14">적용 개월 수 순</p>
               </label>

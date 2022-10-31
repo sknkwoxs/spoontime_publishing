@@ -135,7 +135,8 @@ export default function Bookmark() {
                   setOpenIngredientFilterModal(!openIngredientFilterModal)
                 }
               >
-                추천순 <img src="/images/svgIcons/down.svg" alt="down" />
+                최근 추가한 순{" "}
+                <img src="/images/svgIcons/down.svg" alt="down" />
               </button>
             </article>
           </div>
@@ -167,10 +168,10 @@ export default function Bookmark() {
           <IngredientsItem />
         </BookmarkContents>
       </article>
-      {openIngredientFilterModal && (
+      {openRecipeFilterModal && (
         <BookmarkRecipeFilter
-          closeIngredientFilterModal={() =>
-            setOpenIngredientFilterModal(!openIngredientFilterModal)
+          closeRecipeFilterModal={() =>
+            setOpenRecipeFilterModal(!openRecipeFilterModal)
           }
         />
       )}
