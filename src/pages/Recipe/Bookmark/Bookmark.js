@@ -1,140 +1,73 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import SearchResultNavItem from "./SearchResultNavItem";
-import SearchResultContents from "./SearchResultContents";
-import SearchResultRecipeFilter from "./SearchResultRecipeFilter";
-import SearchResultIngredientFilter from "./SearchResultIngredientFilter";
+
+import BookmarkNavItem from "./BookmarkNavItem";
+import BookmarkContents from "./BookmarkContents";
+import BookmarkRecipeFilter from "./BookmarkRecipeFilter";
+import BookmarkIngredientFilter from "./BookmarkIngredientFilter";
 import RecipeItem from "../RecipeItem";
 import IngredientsItem from "../IngredientGuide/IngredientsItem";
 
-export default function Search() {
-  const [keywords, setKeywords] = useState(
-    JSON.parse(localStorage.getItem("keywords") || "[]")
-  );
-
-  //검색어 추가
-  const handleAddKeyword = (text) => {
-    console.log("text", text);
-    const newKeyword = {
-      id: Date.now(),
-      text: text,
-    };
-    setKeywords([newKeyword, ...keywords]);
-  };
-
-  const [keyword, setKeyword] = useState("");
-
-  const handleKeyword = (event) => {
-    setKeyword(event.target.value);
-  };
-
-  // Enter로 검색어 추가
-  const handleEnter = (event) => {
-    if (keyword && event.keyCode === 13) {
-      handleAddKeyword(keyword);
-      setKeyword("");
-    }
-  };
-
-  // input창 clear
-  const handleClearKeyword = () => {
-    setKeyword("");
-  };
-
-  //keyword가 있으면 true, 없으면 false
-  console.log(!!keyword);
-
-  useEffect(() => {
-    //array 타입을 string 형태로 변환
-    localStorage.setItem("keywords", JSON.stringify(keywords));
-  }, [keywords]);
-
+export default function Bookmark() {
   // 탭
-  const [activeTab, setActiveTab] = useState("searchResultRecipeTab");
-
-  // 데이터
-  const allergyList = [
-    {
-      for: "eggCheckbox",
-      id: "eggCheckbox",
-      src: "/images/ingredients/egg.svg",
-      alt: "egg",
-      allergyName: "달걀",
-    },
-  ];
-
-  const statusList = [
-    {
-      for: "eggCheckbox",
-      id: "eggCheckbox",
-      src: "/images/ingredients/default.svg",
-      alt: "default",
-      status: "감기/고열",
-    },
-  ];
+  const [activeTab, setActiveTab] = useState("bookmarkRecipeTab");
 
   // 필터 모달
   const [openRecipeFilterModal, setOpenRecipeFilterModal] = useState(false);
-
   const [openIngredientFilterModal, setOpenIngredientFilterModal] =
     useState(false);
 
   return (
     <>
-      <article className="w-full">
-        <div>
-          <div className="flex items-center gap-4 px-4 py-3">
-            <div>
-              <Link to="/Recipe">
-                <img
-                  src="/images/svgIcons/directionsLeft.svg"
-                  alt="directionsLeft"
-                />
-              </Link>
-            </div>
-            <div className="relative w-full">
-              <input
-                className="flex w-full py-1 border-none rounded px-9 bg-GreyScale-grey05 Font14 text-GreyScale-grey01"
-                type="text"
-                placeholder="식단검색"
-                onChange={handleKeyword}
-                onKeyDown={handleEnter}
-                value={keyword}
+      <article className="h-full px-4">
+        <div className="flex py-4">
+          <div className="absolute">
+            <Link to="/Recipe">
+              <img
+                src="/images/svgIcons/directionsLeft.svg"
+                alt="directionsLeft"
               />
-              {/* search 버튼 */}
-              <button className="absolute top-0 h-full left-2">
-                <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
-              </button>
-              {/* clear 버튼 */}
-              <button
-                className="absolute top-0 h-full right-2"
-                onClick={handleClearKeyword}
-              >
-                <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
-              </button>
-            </div>
+            </Link>
           </div>
-
-          {/* <SearchResultRecipe /> */}
-          {/* <SearchResultIngredient /> */}
+          <div className="flex justify-center w-full">
+            <p className="Font16sb">즐겨찾기</p>
+          </div>
         </div>
       </article>
       <article className="px-4">
         <ul className="flex border-b Font14sb text-GreyScale-grey03 searchResultTab">
-          <SearchResultNavItem
-            id="searchResultRecipeTab"
+          <BookmarkNavItem
+            id="bookmarkRecipeTab"
             title="레시피"
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           />
-          <SearchResultNavItem
-            id="searchResultIngredientTab"
+          <BookmarkNavItem
+            id="bookmarkIngredientTab"
             title="식재료"
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           />
         </ul>
-
+        {/* No Data */}
+        {/* <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center mx-4">
+            <div className="mb-4">
+              <img
+                className="object-cover h-[128px] w-full"
+                src="/images/RecipeDetails1.jpg"
+                alt="RecipeDetails1"
+              />
+            </div>
+            <div>
+              <p className="mb-4 text-center Font14">
+                즐겨 찾는 레시피가 없습니다.
+                <br /> 마음에 드는 레시피에 (하트)를 눌러보세요.
+              </p>
+              <button className="flex justify-center px-8 py-2 mx-auto mt-5 border rounded Font14sb border-BrandColor-green01">
+                레시피 보러 가기
+              </button>
+            </div>
+          </div> */}
         {/* Result / No-data */}
         {/* 로고 및 텍스트 위치 조정 필요 */}
         {/* <div className="flex flex-col items-center mt-[252px]">
@@ -150,7 +83,7 @@ export default function Search() {
         </div> */}
 
         {/* Recipe */}
-        <SearchResultContents id="searchResultRecipeTab" activeTab={activeTab}>
+        <BookmarkContents id="bookmarkRecipeTab" activeTab={activeTab}>
           <div className="flex items-center justify-between py-3">
             <div className="Font14">
               총 <span className="Font14sb">19</span>개
@@ -187,13 +120,10 @@ export default function Search() {
 
           <RecipeItem />
           <RecipeItem />
-        </SearchResultContents>
+        </BookmarkContents>
 
         {/* Ingredient */}
-        <SearchResultContents
-          id="searchResultIngredientTab"
-          activeTab={activeTab}
-        >
+        <BookmarkContents id="bookmarkIngredientTab" activeTab={activeTab}>
           <div className="flex items-center justify-between py-3">
             <div className="Font14">
               총 <span className="Font14sb">2</span>개
@@ -235,18 +165,17 @@ export default function Search() {
 
           <IngredientsItem />
           <IngredientsItem />
-        </SearchResultContents>
+        </BookmarkContents>
       </article>
-
-      {openRecipeFilterModal && (
-        <SearchResultRecipeFilter
-          closeRecipeFilterModal={() =>
-            setOpenRecipeFilterModal(!openRecipeFilterModal)
+      {openIngredientFilterModal && (
+        <BookmarkRecipeFilter
+          closeIngredientFilterModal={() =>
+            setOpenIngredientFilterModal(!openIngredientFilterModal)
           }
         />
       )}
       {openIngredientFilterModal && (
-        <SearchResultIngredientFilter
+        <BookmarkIngredientFilter
           closeIngredientFilterModal={() =>
             setOpenIngredientFilterModal(!openIngredientFilterModal)
           }

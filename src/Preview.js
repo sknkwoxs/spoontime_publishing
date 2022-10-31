@@ -465,9 +465,9 @@ export default function Preview() {
               <td className="s3">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark
                 </a>
               </td>
             </tr>
@@ -493,9 +493,9 @@ export default function Preview() {
               <td className="s3">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark
                 </a>
               </td>
             </tr>
@@ -507,9 +507,9 @@ export default function Preview() {
               <td className="s3">
                 <a
                   target="_blank"
-                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe"
+                  href="https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark"
                 >
-                  https://spoontime-publishing-iq5v.vercel.app/Recipe/BookmarkRecipe
+                  https://spoontime-publishing-iq5v.vercel.app/Recipe/Bookmark
                 </a>
               </td>
             </tr>

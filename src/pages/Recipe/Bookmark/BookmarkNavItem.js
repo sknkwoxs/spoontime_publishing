@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchResultNavItem = ({ id, title, activeTab, setActiveTab }) => {
+const BookmarkNavItem = ({ id, title, activeTab, setActiveTab }) => {
   const handleClick = () => {
     setActiveTab(id);
   };
@@ -11,4 +11,4 @@ const SearchResultNavItem = ({ id, title, activeTab, setActiveTab }) => {
     </li>
   );
 };
-export default SearchResultNavItem;
+export default BookmarkNavItem;
