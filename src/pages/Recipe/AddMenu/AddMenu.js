@@ -75,7 +75,7 @@ export default function AddMenu() {
             <form className="flex justify-between px-4 py-6 addMenuColorPicker">
               {colorPickerPalette.map((colorPickerPalette, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <input
                       id={colorPickerPalette.id}
                       type="radio"
@@ -86,7 +86,7 @@ export default function AddMenu() {
                       className={colorPickerPalette.className}
                       htmlFor={colorPickerPalette.for}
                     ></label>
-                  </>
+                  </div>
                 );
               })}
             </form>
