@@ -755,7 +755,7 @@ html {
     position: relative;
     width: 104px;
     height: 104px;
-
+    border: 2px solid transparent;
     border-radius: 50%;
     background-image: linear-gradient(#fff, #fff),
       linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);

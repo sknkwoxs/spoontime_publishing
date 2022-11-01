@@ -44,11 +44,17 @@ export default function Settings() {
           <p className="mb-6 Font16sb">앱 설정</p>
           <div className="flex justify-between mb-4">
             <p className="Font14sb">푸쉬 알림</p>
-            <input type="checkbox" />
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
           </div>
           <div className="flex justify-between">
             <p className="Font14sb">레시피 화면 꺼짐 방지</p>
-            <input type="checkbox" />
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
           </div>
         </article>
 
