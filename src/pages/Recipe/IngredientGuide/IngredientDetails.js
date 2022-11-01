@@ -14,7 +14,7 @@ export default function IngredientDetails() {
                 </div>
               </Link>
               <button className="flex gap-3">
-                <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
+                <img src="/images/svgIcons/heart24.svg" alt="heart24" />
               </button>
             </div>
           </div>
