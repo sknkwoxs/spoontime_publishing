@@ -30,13 +30,13 @@ module.exports = {
         },
       },
       dropShadow: {
-        popup: [
-          "0px 19px 38px 0px rgba(0, 0, 0, 0.3)",
-          "0px 15px 12px 0px rgba(0, 0, 0, 0.22)",
-        ],
         button: [
-          "0px 8px 16px 0px rgba(52, 60, 68, 0.1)",
-          "0px 2px 4px 0px rgba(117, 131, 142, 0.04)",
+          "0 8px 16px rgba(52, 60, 68, 0.1)",
+          "0 2px 4px rgba(117, 131, 142, 0.04)",
+        ],
+        popup: [
+          "0 19px 38px rgba(0, 0, 0, 0.3)",
+          "0 15px 12px rgba(0, 0, 0, 0.22)",
         ],
       },
       fontFamily: {

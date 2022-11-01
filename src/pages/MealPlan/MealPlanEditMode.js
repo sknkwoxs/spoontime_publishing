@@ -77,7 +77,7 @@ export default function MealPlanEditMode() {
                 <MealPlanEditItem />
               </div>
             </article>
-            <div className="fixed bottom-[5.75rem] right-4 z-50">
+            <div className="fixed bottom-[5.75rem] right-4 z-50 drop-shadow-button">
               {/* 식단 추가 */}
               <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
                 <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
