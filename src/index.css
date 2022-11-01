@@ -724,4 +724,16 @@ html {
     outline: 1px solid #c0d6b1;
     background-color: #e6efe0;
   }
+
+  .recipeProfileImgae {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #e6efe0 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
 }

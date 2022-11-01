@@ -3,16 +3,12 @@ export function BabyInfo() {
     <>
       <section className="mb-6">
         <article className="flex gap-2 mb-4">
-          <div className="">
-            <div className="relative w-12 h-12 bg-BrandColor-green03 rounded-[100px]">
-              <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] right-0 z-10 w-10 h-10">
-                <img
-                  className="w-full h-full border-2 border-GreyScale-White rounded-[100px] box-content"
-                  src="/images/defaultImage.png"
-                  alt="defaultImg"
-                />
-              </div>
-            </div>
+          <div className="recipeProfileImgae">
+            <img
+              className="w-full h-full border-2 rounded-full border-GreyScale-White"
+              src="/images/defaultImage.png"
+              alt="defaultImg"
+            />
           </div>
           <div>
             <div className="flex">
