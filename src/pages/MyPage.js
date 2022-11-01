@@ -20,9 +20,13 @@ export default function MyPage() {
             </article>
           </section>
           <section className="px-4 mb-6">
-            <article className="flex items-center mb-4">
-              <div className="mr-2">
-                <img src="/images/RecipeBabyImg.svg" alt="RecipeBabyImg" />
+            <article className="flex items-center gap-2 mb-4">
+              <div className="recipeProfileImgae">
+                <img
+                  className="w-full h-full border-2 rounded-full border-GreyScale-White"
+                  src="/images/defaultImage.png"
+                  alt="defaultImage"
+                />
               </div>
               <div className="">
                 <div className="flex">

@@ -554,6 +554,31 @@ html {
     background-color: #e6efe0;
   }
 
+  /* Recipe Profile BabyInfo */
+  .recipeProfileImgae {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  /* footer tab */
+  .footerTabProfileImgae {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
   /* Recipe Filter */
   .recipeFilterTab li {
     padding: 8px 0;
@@ -723,17 +748,5 @@ html {
   .ingredientGuideForm input[type="checkbox"]:checked + label {
     outline: 1px solid #c0d6b1;
     background-color: #e6efe0;
-  }
-
-  .recipeProfileImgae {
-    position: relative;
-    width: 48px;
-    height: 48px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    background-image: linear-gradient(#fff, #fff),
-      linear-gradient(to right top, #e6efe0 20%, #c0d6b1 80%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
   }
 }
