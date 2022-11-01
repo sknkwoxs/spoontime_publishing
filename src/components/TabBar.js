@@ -37,7 +37,7 @@ export default function TabBar() {
             <Link to="/MyPage">
               <div className="flex flex-col items-center justify-center gap-1 mx-auto text-center">
                 <div className="mx-auto max-w-[20px] max-h-[20px]">
-                  <img src="/images/RecipeBabyImg.svg" alt="RecipeBabyImg" />
+                  <img src="/images/babyDefault.svg" alt="babyDefault" />
                 </div>
                 <p>꼬물이</p>
               </div>
