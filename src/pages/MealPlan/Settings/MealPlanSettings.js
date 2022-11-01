@@ -90,7 +90,7 @@ export default function MealPlanSettings() {
         </div>
         <div className="flex justify-between py-6">
           <div className="flex">
-            <p className="Font16sb">월 달력 표시 정보</p>
+            <p className="Font16sb">월 달력 표시 정보</p>&nbsp;
             <p className="Font14">(식재료 이름 + 일러스트)</p>
           </div>
           <button>
