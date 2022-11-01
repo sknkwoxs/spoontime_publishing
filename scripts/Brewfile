@@ -1,0 +1,16 @@
+# Tap homebrew
+tap 'homebrew/cask'
+
+# Node, Xcode etc
+brew 'nvm'
+brew 'mas'
+mas 'Xcode', id: 497799835
+brew 'cocoapods'
+
+# Android
+cask 'android-studio'
+cask 'android-file-transfer'
+cask 'android-messages'
+cask 'android-ndk'
+cask 'android-platform-tools'
+cask 'android-sdk'
