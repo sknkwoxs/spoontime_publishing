@@ -186,7 +186,7 @@ export default function MyPage() {
         </div>
       </div>
       <TabBar />
-      <BabyList />
+      {/* <BabyList /> */}
       {/* <AddaMeal /> */}
     </>
   );

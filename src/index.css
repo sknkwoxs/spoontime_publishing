@@ -749,4 +749,17 @@ html {
     outline: 1px solid #c0d6b1;
     background-color: #e6efe0;
   }
+
+  /* MyPage Profile */
+  .myPageProfileImgae {
+    position: relative;
+    width: 104px;
+    height: 104px;
+
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
 }
