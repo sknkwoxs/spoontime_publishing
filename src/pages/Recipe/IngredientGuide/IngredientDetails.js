@@ -192,8 +192,8 @@ export default function IngredientDetails() {
                     alt="RecipeDetails4"
                   />
                 </div>
-                <div className="px-4 pt-6 Font14">
-                  <p className="Font14sb">초기</p>
+                <div className="px-4 pt-2 Font14">
+                  <p className="mt-4 mb-2 Font14sb">초기</p>
                   <p>
                     쌀은 아기가 태어나는 대로 도입될 수 있다. 고체를 시작할
                     준비가 된 일반적으로 생후 6개월 정도입니다. 다만 쌀과 쌀아
@@ -202,7 +202,7 @@ export default function IngredientDetails() {
                     그런 만큼 아기에게 쌀 시리얼을 대접하는 것은 피해야 한다는
                     것이 우리의 의견입니다.
                   </p>
-                  <p className="Font14sb">중기</p>
+                  <p className="mt-4 mb-2 Font14sb">중기</p>
                   <p>
                     쌀은 아기가 태어나는 대로 도입될 수 있다. 고체를 시작할
                     준비가 된 일반적으로 생후 6개월 정도입니다. 다만 쌀과 쌀아
@@ -211,7 +211,7 @@ export default function IngredientDetails() {
                     그런 만큼 아기에게 쌀 시리얼을 대접하는 것은 피해야 한다는
                     것이 우리의 의견입니다.
                   </p>
-                  <p className="Font14sb">후기</p>
+                  <p className="mt-4 mb-2 Font14sb">후기</p>
                   <p>
                     쌀은 아기가 태어나는 대로 도입될 수 있다. 고체를 시작할
                     준비가 된 일반적으로 생후 6개월 정도입니다. 다만 쌀과 쌀아

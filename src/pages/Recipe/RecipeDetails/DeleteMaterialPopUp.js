@@ -21,7 +21,7 @@ export default function DeleteMaterialPopUp(closeDeleteModal) {
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
         onClick={closeDeleteModal}
       ></div>
-      <section className="h-[144px] fixed top-[29%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-1">
+      <section className="h-[144px] fixed top-[29%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-popup">
         <p className="mb-2 Font16sb">식재료를 삭제하시겠습니까?</p>
         <p className="mb-4 Font14 text-GreyScale-grey02">
           필요없는 식재료는 삭제하실 수 있습니다.

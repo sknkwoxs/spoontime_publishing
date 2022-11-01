@@ -75,7 +75,7 @@ export default function IngredientGuideFilter({
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
         onClick={closeIngredientGuideFilterModal}
       ></div>
-      <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl h-[300px]">
+      <section className="z-[1000] drop-shadow-popup fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl h-[300px]">
         <p className="pt-8 mb-2 Font16sb">
           <span className="text-BrandColor-green02">꼬물이</span> 맞춤정보
         </p>

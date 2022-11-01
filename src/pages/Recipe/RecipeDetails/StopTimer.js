@@ -21,7 +21,7 @@ export default function StopTimer(closeStopTimerModal) {
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
         onClick={closeStopTimerModal}
       ></div>
-      <section className="h-[144px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000]">
+      <section className="h-[144px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-popup">
         <p className="mb-2 Font16sb">타이머를 종료할까요?</p>
         <p className="mb-4 Font14 text-GreyScale-grey02">
           종료하면 최초 시간으로 리셋됩니다.

@@ -21,7 +21,7 @@ export default function BookmarkIngredientSort({ closeIngredientSortModal }) {
         className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"
         onClick={closeIngredientSortModal}
       ></div>
-      <section className="z-[1000] fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
+      <section className="z-[1000] drop-shadow-popup fixed bottom-0 left-0 right-0 px-4 bg-GreyScale-White rounded-t-2xl">
         <p className="pt-8 Font16sb">검색 정렬</p>
         <div>
           <form className="flex flex-col overflow-auto recipeSortForm text-GreyScale-grey01">

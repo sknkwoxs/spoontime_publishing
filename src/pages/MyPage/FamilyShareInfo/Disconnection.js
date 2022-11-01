@@ -2,7 +2,7 @@ export default function Disconnection() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
-      <section className="h-[208px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000]">
+      <section className="h-[208px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-popup">
         <p className="mb-2 Font16sb">연결을 끊으실 건가요?</p>
         <p className="mb-2 Font14 text-GreyScale-grey02">
           연결을 끊을 경우, 꼬물이의 모든 정보를 더 이상 확인할 수 없습니다.

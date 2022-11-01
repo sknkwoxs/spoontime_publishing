@@ -2,7 +2,7 @@ export default function AddaMeal() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
-      <section className="h-[136px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000]">
+      <section className="h-[136px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-popup">
         <p className="mb-4 Font16sb">
           앗! 아직 추가된 식단이 없네요.
           <br />

@@ -2,7 +2,7 @@ export default function More() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
-      <section className="z-[1000] fixed bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-t-2xl">
+      <section className="z-[1000] drop-shadow-popup fixed bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-t-2xl">
         <div>
           <div className="flex gap-2 mb-4">
             <button className="flex items-center justify-center w-full gap-1 py-3 border rounded-lg Font14sb border-GreyScale-grey04 bg-GreyScale-grey05">
