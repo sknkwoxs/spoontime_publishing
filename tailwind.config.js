@@ -25,6 +25,7 @@ module.exports = {
           White: "#FFFFFF",
         },
         Message: {
+          info: "#0172CB",
           error: "#F93232",
         },
       },

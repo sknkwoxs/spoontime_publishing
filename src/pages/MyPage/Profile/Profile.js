@@ -76,8 +76,8 @@ export default function Profile() {
           아기 프로필 수정하기
         </button>
       </div>
-      <DeleteChanges />
-      <EditProfile />
+      {/* <DeleteChanges /> */}
+      {/* <EditProfile /> */}
     </>
   );
 }
