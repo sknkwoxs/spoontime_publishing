@@ -50,6 +50,27 @@ export default function Allergy() {
       alt: "beans",
       allergyName: "대두",
     },
+    {
+      for: "shrimpCheckbox",
+      id: "shrimpCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "wheat",
+      allergyName: "새우",
+    },
+    {
+      for: "crabCheckbox",
+      id: "crabCheckbox",
+      src: "/images/ingredients/default.svg",
+      alt: "buckwheat",
+      allergyName: "게",
+    },
+    {
+      for: "shellfishCheckbox",
+      id: "shellfishCheckbox",
+      src: "/images/ingredients/beans.svg",
+      alt: "beans",
+      allergyName: "조개류",
+    },
   ];
 
   return (
