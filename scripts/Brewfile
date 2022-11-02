@@ -8,6 +8,7 @@ mas 'Xcode', id: 497799835
 brew 'cocoapods'
 
 # Android
+brew 'openjdk@11'
 cask 'android-studio'
 cask 'android-file-transfer'
 cask 'android-messages'

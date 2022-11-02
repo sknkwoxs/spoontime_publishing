@@ -19,3 +19,10 @@ EOT
   echo node: $(node --version)
   source ~/.zprofile
 fi
+
+# gradle jdk11 이상 오류 발생.
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+echo 'export ANDROID_HOME="/Users/mozo/Library/Android/sdk/"' >> ~/.zshrc
+echo 'export PATH=/Users/mozo/Library/Android/sdk/tools:/Users/mozo/Library/Android/sdk/tools/bin:/Users/mozo/Library/Android/sdk/platform-tools:$PATH' >> ~/.zshrc
