@@ -57,7 +57,7 @@ export default function FamilyShareCode() {
 
             <div className="flex pb-1 mb-3 border-b">
               <input
-                className="w-full p-0 border-none focus:outline-hidden Font20"
+                className="w-full p-0 border-none Font20 focus:outline-hidden"
                 {...register("nickName", {
                   required: true,
                   max: 255,
@@ -67,6 +67,7 @@ export default function FamilyShareCode() {
                 })}
                 onChange={handleChange}
                 value={message}
+                type="text"
               />
               <button onClick={handleClick} className="flex items-center">
                 <img
