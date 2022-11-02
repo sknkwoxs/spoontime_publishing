@@ -95,6 +95,7 @@ export default function FamilyShareCode() {
             </p>
           </div>
         </div>
+
         <section className="fixed bottom-0 w-full">
           <div className="w-full">
             <input
