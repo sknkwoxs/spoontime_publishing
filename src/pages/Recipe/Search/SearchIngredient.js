@@ -1,22 +1,22 @@
 export default function SearchIngredient() {
+  // 초기화 버튼
   const checkboxes = document.getElementsByName("list");
 
-  // 초기화 버튼
   const initCheckbox = () => {
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   };
 
-  const limitCheckbox = (event) => {
-    var checks = document.querySelectorAll(".check");
-    var max = 2;
-    for (var i = 0; i < checks.length; i++) checks[i].onclick = selectiveCheck;
-    function selectiveCheck(event) {
-      var checkedChecks = document.querySelectorAll(".check:checked");
-      if (checkedChecks.length >= max + 1) return false;
-    }
-  };
+  // const limitCheckbox = (event) => {
+  //   var checks = document.querySelectorAll(".check");
+  //   var max = 2;
+  //   for (var i = 0; i < checks.length; i++) checks[i].onclick = selectiveCheck;
+  //   function selectiveCheck(event) {
+  //     var checkedChecks = document.querySelectorAll(".check:checked");
+  //     if (checkedChecks.length >= max + 1) return false;
+  //   }
+  // };
 
   const vegetablesList = [
     {

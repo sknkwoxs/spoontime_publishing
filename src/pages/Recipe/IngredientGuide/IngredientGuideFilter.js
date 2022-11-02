@@ -60,9 +60,9 @@ export default function IngredientGuideFilter({
     },
   ];
 
+  // 초기화 버튼
   const checkboxes = document.getElementsByName("list");
 
-  // 초기화 버튼
   const initCheckbox = () => {
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;

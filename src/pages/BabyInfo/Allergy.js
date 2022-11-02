@@ -1,4 +1,19 @@
 export default function Allergy() {
+  const allergyCheckboxes = document.getElementsByName("reaction");
+  const reactionCheckboxes = document.getElementsByName("noReaction");
+
+  const allergyInitCheckbox = () => {
+    allergyCheckboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+
+  const reactionInitCheckbox = () => {
+    reactionCheckboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+
   const allergyList = [
     {
       for: "eggCheckbox",
@@ -68,12 +83,22 @@ export default function Allergy() {
           </p>
           <ul>
             <form className=" Font12 text-GreyScale-grey01">
-              <div className="grid grid-cols-4 gap-4 selectForm ">
+              <div
+                className="grid grid-cols-4 gap-4 selectForm"
+                htmlFor="reaction"
+              >
                 {allergyList.map((allergyList, index) => {
                   return (
                     <li className="mx-auto text-center" key={index}>
-                      <input id={allergyList.id} type="checkbox" />
-                      <label htmlFor={allergyList.for}>
+                      <input
+                        id={allergyList.id}
+                        type="checkbox"
+                        name="reaction"
+                      />
+                      <label
+                        htmlFor={allergyList.for}
+                        onClick={reactionInitCheckbox}
+                      >
                         <img
                           className="mx-auto mb-1"
                           src={allergyList.src}
@@ -85,11 +110,12 @@ export default function Allergy() {
                   );
                 })}
               </div>
-              <div className="mt-8 reactionsForm">
-                <input id="reactions" type="checkbox" />
+              <div className="mt-8 reactionsForm" htmlFor="reaction">
+                <input id="reactions" type="checkbox" name="noReaction" />
                 <label
                   className="flex justify-center w-full py-3 text-center border rounded Font12 text-BrandColor-green01 border-GreyScale-grey04"
                   htmlFor="reactions"
+                  onClick={allergyInitCheckbox}
                 >
                   아직까지는 이상 반응이 없었어요
                 </label>
