@@ -67,36 +67,37 @@ export default function Allergy() {
             <br /> 선택한 식재료는 언제든 수정할 수 있어요.
           </p>
           <ul>
-            <form className="grid grid-cols-4 gap-4 selectForm Font12 text-GreyScale-grey01">
-              {allergyList.map((allergyList, index) => {
-                return (
-                  <li className="mx-auto text-center" key={index}>
-                    <input id={allergyList.id} type="checkbox" />
-                    <label htmlFor={allergyList.for}>
-                      <img
-                        className="mx-auto mb-1"
-                        src={allergyList.src}
-                        alt={allergyList.alt}
-                      />
-                      {allergyList.allergyName}
-                    </label>
-                  </li>
-                );
-              })}
+            <form className=" Font12 text-GreyScale-grey01">
+              <div className="grid grid-cols-4 gap-4 selectForm ">
+                {allergyList.map((allergyList, index) => {
+                  return (
+                    <li className="mx-auto text-center" key={index}>
+                      <input id={allergyList.id} type="checkbox" />
+                      <label htmlFor={allergyList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={allergyList.src}
+                          alt={allergyList.alt}
+                        />
+                        {allergyList.allergyName}
+                      </label>
+                    </li>
+                  );
+                })}
+              </div>
+              <div className="mt-8 reactionsForm">
+                <input id="reactions" type="checkbox" />
+                <label
+                  className="flex justify-center w-full py-3 text-center border rounded Font12 text-BrandColor-green01 border-GreyScale-grey04"
+                  htmlFor="reactions"
+                >
+                  아직까지는 이상 반응이 없었어요
+                </label>
+              </div>
             </form>
           </ul>
         </div>
-        <div className="px-4">
-          <form className="Font12 text-GreyScale-grey01 reactionsForm">
-            <input id="reactions" type="checkbox" />
-            <label
-              className="flex justify-center w-full py-3 text-center border rounded Font12 text-BrandColor-green01 border-GreyScale-grey04"
-              htmlFor="reactions"
-            >
-              아직까지는 이상 반응이 없었어요
-            </label>
-          </form>
-        </div>
+
         <section className="fixed bottom-0 w-full">
           <div className="w-full">
             <button

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function FamilyShareCode() {
+  // validation
   const {
     register,
     handleSubmit,
