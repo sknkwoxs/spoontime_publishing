@@ -118,7 +118,7 @@ export default function Authority() {
           </div>
           <section className="fixed bottom-0 w-full">
             <div className="w-full">
-              <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
+              <button className="w-full py-3 text-GreyScale-White bg-BrandColor-green01">
                 확인
               </button>
             </div>

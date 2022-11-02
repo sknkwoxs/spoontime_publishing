@@ -78,7 +78,7 @@ export default function Splash() {
 
       <section className="fixed bottom-0 w-full">
         <div className="w-full">
-          <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
+          <button className="w-full py-3 text-GreyScale-White bg-BrandColor-green01">
             스푼타임 시작하기
           </button>
         </div>
