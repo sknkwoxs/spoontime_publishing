@@ -69,7 +69,7 @@ export default function Splash() {
           {contents.map((contents, index) => {
             return (
               <li className="" key={index}>
-                <div>
+                <div className="">
                   <div className="text-center Font24">{contents.title1}</div>
                   <div className="text-center Font24 mb-14">
                     {contents.title2}
@@ -80,7 +80,7 @@ export default function Splash() {
                   </div>
                 </div>
 
-                <div className="flex drop-shadow-splash">
+                <div className="justify-center mx-auto max-w-[80%] h-[calc(100vh_-_15rem)]  drop-shadow-splash flex items-end">
                   <img className="" src={contents.src} alt={contents.alt} />
                 </div>
               </li>
