@@ -25,8 +25,20 @@ module.exports = {
           White: "#FFFFFF",
         },
         Message: {
+          info: "#0172CB",
           error: "#F93232",
         },
+      },
+      dropShadow: {
+        splash: ["0 0 32px rgba(0, 0, 0, 0.12)"],
+        button: [
+          "0 8px 16px rgba(52, 60, 68, 0.1)",
+          "0 2px 4px rgba(117, 131, 142, 0.04)",
+        ],
+        popup: [
+          "0 19px 38px rgba(0, 0, 0, 0.3)",
+          "0 15px 12px rgba(0, 0, 0, 0.22)",
+        ],
       },
       fontFamily: {
         Pretendard: ["Pretendard-Regular"],
@@ -35,6 +47,7 @@ module.exports = {
       },
       backgroundImage: {
         down: "url('../public/images/svgIcons/down.svg')",
+        heart: "url('../public/images/svgIcons/heart.svg')",
       },
     },
   },

@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import ImageGallery from "react-image-gallery";
+
 import RecipeItem from "../RecipeItem";
 import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
@@ -7,6 +10,25 @@ import Substitutes from "./Substitutes";
 import Timer from "./Timer";
 
 export default function RecipeDetails() {
+  const [openDeleteModal, setOpenDeleteModal] = useState(false);
+
+  const [openStopTimerModal, setOpenStopTimerModal] = useState(false);
+
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
+
   return (
     <>
       <section>
@@ -19,7 +41,10 @@ export default function RecipeDetails() {
                 </div>
               </Link>
               <div className="flex gap-3">
-                <img src="/images/svgIcons/heartFill.svg" alt="heartFill" />
+                <img
+                  src="/images/svgIcons/recipeDetailsHeart.svg"
+                  alt="recipeDetailsHeart"
+                />
                 <img
                   src="/images/svgIcons/calendarWhite.svg"
                   alt="calendarWhite"
@@ -39,7 +64,7 @@ export default function RecipeDetails() {
               <div className="flex items-center justify-between mb-2">
                 <p className="Font20sb">한우가지로메인죽</p>
                 <button>
-                  <img src="/images/svgicons/upload.svg" alt="upload" />
+                  <img src="/images/svgIcons/upload.svg" alt="upload" />
                 </button>
               </div>
               <div className="flex Font12 text-GreyScale-grey02">
@@ -48,7 +73,7 @@ export default function RecipeDetails() {
                   <p>중기</p>
                 </div>
                 <div className="flex items-center gap-1 mr-2">
-                  <img src="/images/svgicons/clock.svg" alt="clock" />
+                  <img src="/images/svgIcons/clock.svg" alt="clock" />
                   <p>30분</p>
                 </div>
               </div>
@@ -140,7 +165,7 @@ export default function RecipeDetails() {
           </article>
           <article className="px-4 py-6 border-b">
             <div className="flex items-center gap-2 mb-4 Font16sb">
-              <img src="/images/svgicons/miniLogo.svg" alt="miniLogo" />
+              <img src="/images/svgIcons/miniLogo.svg" alt="miniLogo" />
               스푼타임 Advise
             </div>
             <p className="mb-4 Font14">
@@ -151,12 +176,12 @@ export default function RecipeDetails() {
               먹을 수 있는 한우가지로메인 레시피 추천해요.
             </p>
             <div className="flex gap-2 Font14">
-              <div className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
+              <button className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
                 #식이섬유풍부
-              </div>
-              <div className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
+              </button>
+              <button className="border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
                 #향이있는
-              </div>
+              </button>
             </div>
           </article>
           <article className="py-6 border-b">
@@ -164,12 +189,12 @@ export default function RecipeDetails() {
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 1</p>
                 <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
-                  <img src="/images/svgicons/timer.svg" alt="timer" />
+                  <img src="/images/svgIcons/timer.svg" alt="timer" />
                   30분
                 </button>
               </div>
               <div>
-                <div className="h-0 pb-[100%] overflow-hidden relative z-0">
+                {/* <div className="h-0 pb-[100%] overflow-hidden relative z-0">
                   <img
                     className="absolute object-cover w-full h-full"
                     src="/images/RecipeDetails4.jpg"
@@ -177,8 +202,7 @@ export default function RecipeDetails() {
                   />
                 </div>
                 <div className="flex gap-4 p-4">
-                  <div className="max-w-[64px] max-h-[64px] border-[2px] border-BrandColor-green03 rounded">
-                    {/* click 시 border 생성 */}
+                  <div className="max-w-[64px] max-h-[64px] border-[2px]  rounded">
                     <img
                       className="object-cover w-full h-full rounded "
                       src="/images/RecipeDetails4.jpg"
@@ -199,14 +223,24 @@ export default function RecipeDetails() {
                       alt="RecipeDetails2"
                     />
                   </div>
-                </div>
+                </div> */}
+                <ImageGallery
+                  items={images}
+                  showNav={false}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                />
+                <p className="px-4 pt-6 Font14">
+                  소고기는 키친타월에 올려 핏물을 제거해 주세요. 볼에 불고기
+                  양념 재료를 넣고 섞은 후 소고기를 넣고 버무려주세요.
+                </p>
               </div>
             </div>
             <div>
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 2</p>
                 <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
-                  <img src="/images/svgicons/timer.svg" alt="timer" />
+                  <img src="/images/svgIcons/timer.svg" alt="timer" />
                   15분
                 </button>
               </div>
@@ -262,7 +296,7 @@ export default function RecipeDetails() {
             <div className="flex flex-col py-4 mb-4 border-b gap-y-4">
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam1.svg"
+                  src="/images/svgIcons/verificationTeam1.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -274,7 +308,7 @@ export default function RecipeDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam2.svg"
+                  src="/images/svgIcons/verificationTeam2.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -286,7 +320,7 @@ export default function RecipeDetails() {
               </div>
               <div className="flex gap-2">
                 <img
-                  src="/images/svgicons/verificationTeam3.svg"
+                  src="/images/svgIcons/verificationTeam3.svg"
                   alt="verificationTeam1"
                 />
                 <div>
@@ -310,14 +344,24 @@ export default function RecipeDetails() {
           </article>
           <article className="px-4 py-6 border-b">
             <p className="Font16sb">추천 레시피</p>
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
+            <div className="max-h-[11.25rem] overflow-auto">
+              <RecipeItem />
+              <RecipeItem />
+              <RecipeItem />
+            </div>
           </article>
         </div>
       </section>
-      {/* <DeleteMaterialPopUp /> */}
-      {/* <StopTimer /> */}
+      {openDeleteModal && (
+        <DeleteMaterialPopUp
+          closeDeleteModal={() => setOpenDeleteModal(!openDeleteModal)}
+        />
+      )}
+      {openStopTimerModal && (
+        <StopTimer
+          closeStopTimerModal={() => setOpenStopTimerModal(!openStopTimerModal)}
+        />
+      )}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
       {/* <Timer /> */}

@@ -2,9 +2,13 @@ export function BabyInfo() {
   return (
     <>
       <section className="mb-6">
-        <article className="flex mb-4">
-          <div className="mr-2">
-            <img src="/images/RecipeBabyImg.svg" alt="RecipeBabyImg" />
+        <article className="flex gap-2 mb-4">
+          <div className="recipeProfileImgae">
+            <img
+              className="w-full h-full border-2 rounded-full border-GreyScale-White"
+              src="/images/defaultImage.png"
+              alt="defaultImg"
+            />
           </div>
           <div>
             <div className="flex">

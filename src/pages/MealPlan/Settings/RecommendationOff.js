@@ -2,7 +2,7 @@ export default function RecommendationOff() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
-      <section className="h-[176px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000]">
+      <section className="h-[176px] fixed top-[30%] bottom-0 left-0 right-0 p-4 bg-GreyScale-White rounded-lg mx-10 z-[1000] drop-shadow-popup">
         <p className="mb-2 Font16sb">식단 추천 기능을 끌까요?</p>
         <p className="mb-6 Font14 text-GreyScale-grey02">
           기능을 끄더라도 지금까지 추천받은 식단은 모두 유지됩니다.

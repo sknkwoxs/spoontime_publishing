@@ -1,92 +1,173 @@
 export default function SearchIngredient() {
+  // 초기화 버튼
+  const checkboxes = document.getElementsByName("list");
+
+  const initCheckbox = () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+
+  // const limitCheckbox = (event) => {
+  //   var checks = document.querySelectorAll(".check");
+  //   var max = 2;
+  //   for (var i = 0; i < checks.length; i++) checks[i].onclick = selectiveCheck;
+  //   function selectiveCheck(event) {
+  //     var checkedChecks = document.querySelectorAll(".check:checked");
+  //     if (checkedChecks.length >= max + 1) return false;
+  //   }
+  // };
+
   const vegetablesList = [
     {
+      for: "eggplantCheckbox",
+      id: "eggplantCheckbox",
       src: "/images/ingredients/eggplant.svg",
       alt: "eggplant",
-      name: "가지",
+      vegetables: "가지",
     },
     {
+      for: "potatoCheckbox",
+      id: "potatoCheckbox",
       src: "/images/ingredients/potato.svg",
       alt: "potato",
-      name: "감자",
+      vegetables: "감자",
     },
     {
+      for: "peaCheckbox",
+      id: "peaCheckbox",
       src: "/images/ingredients/pea.svg",
       alt: "pea",
-      name: "완두콩",
+      vegetables: "완두콩",
     },
     {
+      for: "carrotCheckbox",
+      id: "carrotCheckbox",
       src: "/images/ingredients/carrot.svg",
       alt: "carrot",
-      name: "당근",
+      vegetables: "당근",
     },
     {
+      for: "cabbageCheckbox",
+      id: "cabbageCheckbox",
       src: "/images/ingredients/cabbage.svg",
       alt: "cabbage",
-      name: "양배추",
+      vegetables: "양배추",
     },
     {
+      for: "broccoliCheckbox",
+      id: "broccoliCheckbox",
       src: "/images/ingredients/broccoli.svg",
       alt: "broccoli",
-      name: "브로콜리",
+      vegetables: "브로콜리",
     },
     {
+      for: "beetCheckbox",
+      id: "beetCheckbox",
       src: "/images/ingredients/beet.svg",
       alt: "beet",
-      name: "비트",
+      vegetables: "비트",
     },
     {
+      for: "onionCheckbox",
+      id: "onionCheckbox",
       src: "/images/ingredients/onion.svg",
       alt: "onion",
-      name: "양파",
+      vegetables: "양파",
     },
     {
+      for: "paprikaCheckbox",
+      id: "paprikaCheckbox",
       src: "/images/ingredients/paprika.svg",
       alt: "paprika",
-      name: "파프리카",
+      vegetables: "파프리카",
     },
     {
+      for: "cucumberCheckbox",
+      id: "cucumberCheckbox",
       src: "/images/ingredients/cucumber.svg",
       alt: "cucumber",
-      name: "오이",
+      vegetables: "오이",
     },
     {
+      for: "cornCheckbox",
+      id: "cornCheckbox",
       src: "/images/ingredients/corn.svg",
       alt: "corn",
-      name: "옥수수",
+      vegetables: "옥수수",
     },
     {
+      for: "tomatoCheckbox",
+      id: "tomatoCheckbox",
       src: "/images/ingredients/tomato.svg",
       alt: "tomato",
-      name: "토마토",
+      vegetables: "토마토",
     },
     {
+      for: "pumpkinCheckbox",
+      id: "pumpkinCheckbox",
       src: "/images/ingredients/pumpkin.svg",
       alt: "pumpkin",
-      name: "호박",
+      vegetables: "호박",
     },
   ];
 
   const proteinsList = [
     {
+      for: "crabCheckbox",
+      id: "crabCheckbox",
       src: "/images/ingredients/crab.svg",
       alt: "crab",
-      name: "가지",
+      proteins: "게",
     },
     {
+      for: "fishCheckbox",
+      id: "fishCheckbox",
       src: "/images/ingredients/fish.svg",
       alt: "fish",
-      name: "생선",
+      proteins: "생선",
     },
     {
+      for: "oysterCheckbox",
+      id: "oysterCheckbox",
       src: "/images/ingredients/oyster.svg",
       alt: "oyster",
-      name: "굴",
+      proteins: "굴",
     },
     {
+      for: "eggCheckbox",
+      id: "eggCheckbox",
       src: "/images/ingredients/egg.svg",
       alt: "egg",
-      name: "달걀",
+      proteins: "달걀",
+    },
+    {
+      for: "springonionCheckbox",
+      id: "springonionCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "crab",
+      proteins: "대파",
+    },
+    {
+      for: "garlicCheckbox",
+      id: "garlicCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "fish",
+      proteins: "마늘",
+    },
+    {
+      for: "gimchiCheckbox",
+      id: "gimchiCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "oyster",
+      proteins: "김치",
+    },
+    {
+      for: "SesameCheckbox",
+      id: "SesameCheckbox",
+      src: "/images/defaultimage.png",
+      alt: "egg",
+      proteins: "깻잎",
     },
   ];
 
@@ -102,7 +183,12 @@ export default function SearchIngredient() {
               />
             </button>
             <p className="Font16sb">식재료 선택</p>
-            <button className="Font12 text-BrandColor-green01">초기화</button>
+            <button
+              className="Font12 text-BrandColor-green01"
+              onClick={initCheckbox}
+            >
+              초기화
+            </button>
           </div>
           <div className="mb-10">
             <p className="mb-2 Font16sb">식재료 선택 (최대 5개)</p>
@@ -111,60 +197,73 @@ export default function SearchIngredient() {
               <br /> 검색해 보세요.
             </p>
           </div>
-          <div>
-            <div>
+          <ul className="overflow-auto max-h-[536px]">
+            <form>
               <p className="mb-5 Font14sb">
-                야채류&nbsp;<span className="text-BrandColor-green03">3</span>
+                곡류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
               </p>
-              <ul className="grid grid-cols-4 mb-6 gap-y-4 gap-x-6">
+              <p className="mb-5 Font14sb">
+                야채류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
+              </p>
+              <div className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
                 {vegetablesList.map((vegetablesList, index) => {
                   return (
-                    <li
-                      className="max-h-[4rem] px-5 py-3 mx-auto text-center Font12 whitespace-nowrap flex flex-col items-center justify-center"
-                      key={index}
-                    >
-                      <img
-                        className="mb-1"
-                        src={vegetablesList.src}
-                        alt={vegetablesList.alt}
+                    <li className="mx-auto text-center" key={index}>
+                      <input
+                        id={vegetablesList.id}
+                        className="check"
+                        type="checkbox"
+                        name="list"
                       />
-                      {vegetablesList.name}
+                      <label htmlFor={vegetablesList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={vegetablesList.src}
+                          alt={vegetablesList.alt}
+                        />
+                        {vegetablesList.vegetables}
+                      </label>
                     </li>
                   );
                 })}
-              </ul>
-            </div>
-            <div>
+              </div>
               <p className="mb-5 Font14sb">
                 단백질류&nbsp;
-                <span className="text-BrandColor-green03">2</span>
+                <span className="text-BrandColor-green03">1</span>
               </p>
-              <ul className="grid grid-cols-4">
+              <div className="grid grid-cols-4 gap-4 mb-5 selectForm Font12 text-GreyScale-grey01">
                 {proteinsList.map((proteinsList, index) => {
                   return (
-                    <li
-                      className="max-h-[4rem] px-5 py-3 mx-auto text-center border rounded Font12 whitespace-nowrap flex flex-col items-center justify-center border-BrandColor-green03 bg-BrandColor-green04"
-                      key={index}
-                    >
-                      <img
-                        className="mb-1"
-                        src={proteinsList.src}
-                        alt={proteinsList.alt}
-                      />
-                      {proteinsList.name}
+                    <li className="mx-auto text-center" key={index}>
+                      <input id={proteinsList.id} type="checkbox" name="list" />
+                      <label htmlFor={proteinsList.for}>
+                        <img
+                          className="mx-auto mb-1"
+                          src={proteinsList.src}
+                          alt={proteinsList.alt}
+                        />
+                        {proteinsList.proteins}
+                      </label>
                     </li>
                   );
                 })}
-              </ul>
-            </div>
-          </div>
+              </div>
+              <p className="mb-5 Font14sb">
+                우유류&nbsp;
+                <span className="text-BrandColor-green03">3</span>
+              </p>
+              <p className="mb-5 Font14sb">
+                과일류&nbsp;
+                <span className="text-BrandColor-green03">1</span>
+              </p>
+            </form>
+          </ul>
         </div>
         <section className="fixed bottom-0 w-full">
           <div className="w-full">
-            {/* <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
-              다음
-            </button> */}
-            <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
+            <button className="w-full py-3 text-GreyScale-White bg-BrandColor-green01">
               식재료 선택하기
             </button>
           </div>

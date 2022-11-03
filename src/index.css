@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -26,6 +28,24 @@
 html {
   font-family: "Pretendard-Regular";
   @apply text-[#2A2A2A];
+}
+
+inpu:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #2a2a2a;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow);
+  border-color: #2a2a2a;
 }
 
 @tailwind components;
@@ -338,14 +358,14 @@ html {
     border-bottom: 1px SOLID #000000;
     border-right: 1px SOLID #000000;
     background-color: #ffffff;
-    text-align: right;
-    text-decoration: underline;
+    text-align: left;
+
     -webkit-text-decoration-skip: none;
     text-decoration-skip-ink: none;
-    color: #1155cc;
+    color: black;
     font-family: "Arial";
     font-size: 10pt;
-    vertical-align: bottom;
+
     white-space: nowrap;
     direction: ltr;
     padding: 2px 3px 2px 3px;
@@ -355,14 +375,16 @@ html {
     border-bottom: 1px SOLID #000000;
     border-right: 1px SOLID #000000;
     background-color: #ffffff;
-    text-align: right;
-    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
     -webkit-text-decoration-skip: none;
     text-decoration-skip-ink: none;
-    color: #1155cc;
+    color: black;
     font-family: "Arial";
     font-size: 10pt;
-    vertical-align: bottom;
+
     white-space: nowrap;
     direction: ltr;
     padding: 2px 3px 2px 3px;
@@ -411,15 +433,57 @@ html {
     padding: 2px 3px 2px 3px;
   }
 
-  .ritz .waffle .s6 {
-    border-left: none;
+  .ritz .waffle .s8 {
+    border-right: none;
     border-bottom: 1px SOLID #000000;
     background-color: #ffffff;
     text-align: left;
     color: #000000;
+    font-family: "docs-Gothic A1", Arial;
+    font-size: 9pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s6 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: right;
+    text-decoration: underline;
+    color: #2883f3;
     font-family: "Arial";
     font-size: 10pt;
     vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s7 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: right;
+    text-decoration: underline;
+    font-family: "Arial";
+    font-size: 10pt;
+    color: #2883f3;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s9 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: right;
+    text-decoration: underline;
+    font-family: "Arial";
+    font-size: 10pt;
+    color: #2883f3;
     white-space: nowrap;
     direction: ltr;
     padding: 2px 3px 2px 3px;
@@ -435,5 +499,310 @@ html {
 
   .ritz .waffle .s4:hover {
     background-color: #f5f5f5 !important;
+  }
+
+  .ritz .waffle .s5:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .ritz .waffle .s6:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .ritz .waffle .s7:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .ritz .waffle .s8:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .ritz .waffle .s9:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  /* Splash */
+  .dots_custom {
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .dots_custom li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0;
+  }
+
+  .dots_custom li button {
+    border: none;
+    background: #b7b7b7;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    padding: 0;
+  }
+
+  .dots_custom li.slick-active button {
+    background-color: #112f30;
+  }
+
+  /* BabyInfo Allergy */
+  .selectForm input[type="checkbox"]:not(:checked),
+  .selectForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .selectForm input[type="checkbox"] + label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 1px 0;
+    color: #2a2a2a;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .selectForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
+
+  .reactionsForm input[type="checkbox"]:not(:checked),
+  .reactionsForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .reactionsForm input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 1px 0;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .reactionsForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
+
+  /* Recipe Profile BabyInfo */
+  .recipeProfileImgae {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  /* footer tab */
+  .footerTabProfileImgae {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #98b584 20%, #c0d6b1 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  /* Recipe Filter */
+  .recipeFilterTab li {
+    padding: 8px 0;
+    pointer: cursor !important;
+  }
+
+  .recipeFilterTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
+
+  .stepFilterForm input[type="radio"]:not(:checked),
+  .stepFilterForm input[type="radio"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .stepFilterForm input[type="radio"] + label {
+    display: inline-block;
+    margin: 1px 0;
+    color: #2a2a2a;
+    background-color: white;
+    outline: 1px solid #e8e8e8;
+    border-radius: 4px;
+  }
+
+  .stepFilterForm input[type="radio"]:checked + label {
+    outline: 1px solid #2a2a2a;
+  }
+
+  .recipeSortForm input[type="radio"]:not(:checked),
+  .recipeSortForm input[type="radio"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .recipeSortForm input[type="radio"] + label {
+    display: inline-block;
+    color: #2a2a2a;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .recipeSortForm input[type="radio"]:checked + label {
+    background: url("../public/images/svgIcons/check.svg");
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: right;
+  }
+
+  /* Recipe AddMenu */
+  .addMenuColorPicker input[type="radio"]:not(:checked),
+  .addMenuColorPicker input[type="radio"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .addMenuColorPicker input[type="radio"] + label {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+
+  .addMenuColorPicker input[type="radio"]:checked + label {
+    outline: 2px solid #2a2a2a;
+  }
+
+  /* Recipe Details */
+  /* 적용 오류 */
+  .image-gallery-thumbnail {
+    transition: none;
+  }
+
+  .image-gallery-slide {
+    position: relative !important;
+    padding-bottom: 100% !important;
+    height: 0;
+    overflow: hidden;
+  }
+
+  image-gallery-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-gallery-thumbnail.active,
+  .image-gallery-thumbnail:focus {
+    background-color: #c0d6b1;
+    border: 2px solid #c0d6b1;
+    border-radius: 4px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .image-gallery-thumbnail:hover {
+      outline: none;
+      border: 0 !important;
+    }
+  }
+
+  /* Search */
+  .searchResultTab li {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    pointer: cursor;
+  }
+
+  .searchResultTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
+
+  /* Ingredient Guide */
+  .ingredientGuideTab li {
+    padding: 8px 0;
+    text-align: center;
+    pointer: cursor;
+  }
+
+  .ingredientGuideTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
+
+  .ingredientGuideFilterTab li {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    pointer: cursor;
+  }
+
+  .ingredientGuideFilterTab li.active {
+    padding: 8px 0;
+    color: #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    pointer: cursor;
+  }
+
+  .ingredientGuideForm input[type="checkbox"]:not(:checked),
+  .ingredientGuideForm input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  .ingredientGuideForm input[type="checkbox"] + label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 0;
+    padding: 4px 8px;
+    color: #2a2a2a;
+    background-color: white;
+    outline: 1px solid #b7b7b7;
+    border-radius: 25px;
+  }
+
+  .ingredientGuideForm input[type="checkbox"]:checked + label {
+    outline: 1px solid #c0d6b1;
+    background-color: #e6efe0;
+  }
+
+  /* MyPage Profile */
+  .myPageProfileImgae {
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right top, #fff 20%, #fff 80%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
   }
 }

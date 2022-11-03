@@ -1,12 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //
-import Splash from "./pages/Splash";
+import Splash from "./pages/Splash/Splash";
 import Authority from "./pages/Authority";
-import SplashRecipe from "./pages/Splash/SplashRecipe";
-import SplashCalendar from "./pages/Splash/SplashCalendar";
-import SplashPostscript from "./pages/Splash/SplashPostscript";
-import SplashSpoontime from "./pages/Splash/SplashSpoontime";
 //
 import Login from "./pages/Login";
 //
@@ -19,12 +15,13 @@ import Allergy from "./pages/BabyInfo/Allergy";
 import Configuring from "./pages/BabyInfo/Configuring";
 //
 import Recipe from "./pages/Recipe";
+import RecipeFilter from "./pages/RecipeFilter";
 import AddMenu from "./pages/Recipe/AddMenu/AddMenu";
 import RecipeDetails from "./pages/Recipe/RecipeDetails/RecipeDetails";
 import Search from "./pages/Recipe/Search/Search";
+import SearchResult from "./pages/Recipe/Search/SearchResult";
 import SearchIngredient from "./pages/Recipe/Search/SearchIngredient";
-import BookmarkRecipe from "./pages/Recipe/Bookmark/BookmarkRecipe";
-import BookmarkIngredient from "./pages/Recipe/Bookmark/BookmarkIngredient";
+import Bookmark from "./pages/Recipe/Bookmark/Bookmark";
 import IngredientGuide from "./pages/Recipe/IngredientGuide/IngredientGuide";
 import IngredientDetails from "./pages/Recipe/IngredientGuide/IngredientDetails";
 //
@@ -76,10 +73,8 @@ export default function Router() {
         {/* Splash */}
         {/* <Route path="/Splash" element={<Splash />} /> */}
         <Route path="/Authority" element={<Authority />} />
-        <Route path="/Splash/SplashRecipe" element={<SplashRecipe />} />
-        <Route path="/Splash/SplashCalendar" element={<SplashCalendar />} />
-        <Route path="/Splash/SplashPostscript" element={<SplashPostscript />} />
-        <Route path="/Splash/SplashSpoontime" element={<SplashSpoontime />} />
+        <Route path="/Splash/Splash" element={<Splash />} />
+
         {/* Login */}
         <Route path="/Login" element={<Login />} />
         {/* FamilyShareCode */}
@@ -92,15 +87,13 @@ export default function Router() {
         <Route path="/Configuring" element={<Configuring />} />
         {/* Recipe */}
         <Route path="/Recipe" element={<Recipe />} />
+        <Route path="/RecipeFilter" element={<RecipeFilter />} />
         <Route path="/Recipe/AddMenu" element={<AddMenu />} />
         <Route path="/Recipe/RecipeDetails" element={<RecipeDetails />} />
         <Route path="/Recipe/Search" element={<Search />} />
+        <Route path="/Recipe/SearchResult" element={<SearchResult />} />
         <Route path="/Recipe/SearchIngredient" element={<SearchIngredient />} />
-        <Route path="/Recipe/BookmarkRecipe" element={<BookmarkRecipe />} />
-        <Route
-          path="/Recipe/BookmarkIngredient"
-          element={<BookmarkIngredient />}
-        />
+        <Route path="/Recipe/Bookmark" element={<Bookmark />} />
         <Route path="/Recipe/IngredientGuide" element={<IngredientGuide />} />
         <Route
           path="/Recipe/IngredientDetails"

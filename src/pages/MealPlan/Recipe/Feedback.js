@@ -71,11 +71,14 @@ export default function Feedback() {
           <div className="w-full mb-6">
             <input
               className="rangeSlider"
+              id="feedbackRangeSlider"
               type="range"
               min="80"
               max="200"
               defaultValue="140"
+              name="amount"
             />
+            <output name="amount_output" for="feedbackRangeSlider"></output>
           </div>
         </article>
         <article className="px-4 my-6 mb-[80px]">

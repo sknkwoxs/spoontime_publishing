@@ -173,10 +173,7 @@ export default function DietInfoStep() {
       </section>
       <section className="fixed bottom-0 w-full">
         <div className="w-full">
-          {/* <button className="w-full py-3 pb-11 text-GreyScale-White bg-BrandColor-green01">
-            이유식 단계 수정하기
-          </button> */}
-          <button className="w-full py-3 pb-11 text-GreyScale-White bg-GreyScale-grey04">
+          <button className="w-full py-3 text-GreyScale-White bg-GreyScale-grey04">
             이유식 단계 수정하기
           </button>
         </div>

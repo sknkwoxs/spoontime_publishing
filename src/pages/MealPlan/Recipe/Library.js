@@ -30,7 +30,7 @@ export default function Library() {
           <div className="flex items-center justify-between p-4">
             <button className="flex items-center">
               <p className="Font16sb">최근항목</p>
-              <img src="/images/svgIcons/down2.svg" alt="down2" />
+              <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
             </button>
             <button>
               <img src="/images/svgIcons/cameraOn.svg" alt="cameraOn" />

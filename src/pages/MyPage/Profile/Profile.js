@@ -24,16 +24,16 @@ export default function Profile() {
             <div className=" w-full bg-BrandColor-green04 min-h-[7.5rem]" />
             <div>
               <div className="absolute left-[50%] right-[50%] -translate-x-[50%] -translate-y-[50%] w-[6.5rem] h-[6.5rem] bg-GreyScale-White rounded-full">
-                <div className=" w-[6.4rem] min-h-[6.4rem] flex items-center justify-center">
-                  {/* <img
-                    className=" items-center justify-center object-cover rounded-full w-[6.4rem] min-h-[6.4rem]"
-                    src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
-                    alt="baby"
-                  /> */}
-                  <button className="absolute bottom-0 right-0">
-                    <img src="/images/profileEdit.svg" alt="profileEdit" />
-                  </button>
+                <div className="myPageProfileImgae">
+                  <img
+                    className="w-full h-full rounded-[100px] object-cover"
+                    src="/images/defaultImage.png"
+                    alt="defaultImage"
+                  />
                 </div>
+                <button className="absolute bottom-0 right-0 -translate-x-[20%]">
+                  <img src="/images/profileEdit.svg" alt="profileEdit" />
+                </button>
               </div>
             </div>
           </div>
