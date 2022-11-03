@@ -27,11 +27,11 @@ export default function Profile() {
                 <div className="myPageProfileImgae">
                   <img
                     className="w-full h-full rounded-[100px] object-cover"
-                    src="/images/RecipeDetails4.jpg"
-                    alt="RecipeDetails4"
+                    src="/images/defaultImage.png"
+                    alt="defaultImage"
                   />
                 </div>
-                <button className="absolute bottom-0 right-0">
+                <button className="absolute bottom-0 right-0 -translate-x-[20%]">
                   <img src="/images/profileEdit.svg" alt="profileEdit" />
                 </button>
               </div>
