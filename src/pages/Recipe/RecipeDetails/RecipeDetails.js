@@ -11,6 +11,7 @@ import Timer from "./Timer";
 
 export default function RecipeDetails() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
+
   const [openStopTimerModal, setOpenStopTimerModal] = useState(false);
 
   const images = [

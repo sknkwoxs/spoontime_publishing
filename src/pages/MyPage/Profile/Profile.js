@@ -26,14 +26,14 @@ export default function Profile() {
               <div className="absolute left-[50%] right-[50%] -translate-x-[50%] -translate-y-[50%] w-[6.5rem] h-[6.5rem] bg-GreyScale-White rounded-full">
                 <div className="myPageProfileImgae">
                   <img
-                    className="rounded-full border-[4px] border-GreyScale-White w-full h-full box-content"
-                    src="/images/defaultImage.png"
-                    alt="defaultImage"
+                    className="w-full h-full rounded-[100px] object-cover"
+                    src="/images/RecipeDetails4.jpg"
+                    alt="RecipeDetails4"
                   />
-                  <button className="absolute bottom-0 right-0">
-                    <img src="/images/profileEdit.svg" alt="profileEdit" />
-                  </button>
                 </div>
+                <button className="absolute bottom-0 right-0">
+                  <img src="/images/profileEdit.svg" alt="profileEdit" />
+                </button>
               </div>
             </div>
           </div>
