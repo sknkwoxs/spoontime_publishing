@@ -522,6 +522,35 @@ input[type="number"]:focus {
   }
 
   /* Splash */
+  .dots_custom {
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .dots_custom li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0;
+  }
+
+  .dots_custom li button {
+    border: none;
+    background: #b7b7b7;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    padding: 0;
+  }
+
+  .dots_custom li.slick-active button {
+    background-color: #112f30;
+  }
 
   /* BabyInfo Allergy */
   .selectForm input[type="checkbox"]:not(:checked),

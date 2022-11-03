@@ -30,6 +30,7 @@ module.exports = {
         },
       },
       dropShadow: {
+        splash: ["0 0 32px rgba(0, 0, 0, 0.12)"],
         button: [
           "0 8px 16px rgba(52, 60, 68, 0.1)",
           "0 2px 4px rgba(117, 131, 142, 0.04)",
