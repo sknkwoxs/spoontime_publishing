@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
 
 export default function FamilyShareCode() {
   // validation
@@ -63,7 +64,10 @@ export default function FamilyShareCode() {
                   required: true,
                   max: 255,
                   min: 1,
-                  maxLength: 8,
+                  maxLength: {
+                    value: 8,
+                    message: "This input exceed maxLength.",
+                  },
                   validate: /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/,
                 })}
                 onChange={handleChange}
@@ -77,11 +81,22 @@ export default function FamilyShareCode() {
                 />
               </button>
             </div>
-            {errors.nickName && (
+            {/* {errors.nickName && (
               <span className="inline-block pb-2 Font12 text-Message-error">
                 한글, 영문 대/소문자, 숫자만 입력할 수 있어요.
               </span>
-            )}
+            )} */}
+            <ErrorMessage errors={errors} name="multipleErrorInput">
+              {({ messages }) => {
+                console.log(messages);
+                return (
+                  messages &&
+                  Object.entries(messages).map(([type, message]) => (
+                    <p key={type}>{message}</p>
+                  ))
+                );
+              }}
+            </ErrorMessage>
             <p className="Font12 text-GreyScale-grey02">
               입력한 정보는 언제든 수정할 수 있어요.
             </p>
