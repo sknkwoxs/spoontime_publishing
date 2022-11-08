@@ -245,32 +245,12 @@ export default function RecipeDetails() {
                 </button>
               </div>
               <div>
-                <div className="h-0 pb-[100%] overflow-hidden relative z-0">
-                  <img
-                    className="absolute object-cover w-full h-full"
-                    src="/images/RecipeDetails1.jpg"
-                    alt="RecipeDetails1"
-                  />
-                </div>
-                <div>
-                  <div className="flex gap-4 p-4">
-                    <div className="max-w-[64px] max-h-[64px] border-[2px] border-BrandColor-green03 rounded">
-                      {/* click 시 border 생성 */}
-                      <img
-                        className="object-cover w-full h-full rounded "
-                        src="/images/RecipeDetails3.jpg"
-                        alt="RecipeDetails3"
-                      />
-                    </div>
-                    <div className="max-w-[64px] max-h-[64px]">
-                      <img
-                        className="object-cover w-full h-full rounded "
-                        src="/images/RecipeDetails2.jpg"
-                        alt="RecipeDetails2"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <ImageGallery
+                  items={images}
+                  showNav={false}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                />
                 <div className="px-4 mt-2 Font14">
                   <p className="mb-4">
                     가지는 비스듬히 도톰하게 썰어주세요. 팬에 올리브오일을 약간
