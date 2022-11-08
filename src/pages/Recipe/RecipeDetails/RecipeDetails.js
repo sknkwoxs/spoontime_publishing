@@ -230,7 +230,7 @@ export default function RecipeDetails() {
                   showPlayButton={false}
                   showFullscreenButton={false}
                 />
-                <p className="px-4 pt-6 Font14">
+                <p className="px-4 pt-2 mb-12 Font14">
                   소고기는 키친타월에 올려 핏물을 제거해 주세요. 볼에 불고기
                   양념 재료를 넣고 섞은 후 소고기를 넣고 버무려주세요.
                 </p>

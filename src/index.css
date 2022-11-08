@@ -694,7 +694,7 @@ input[type="number"]:focus {
 
   /* Recipe Details */
   /* 적용 오류 */
-  .image-gallery-thumbnail {
+  /*.image-gallery-thumbnail {
     transition: none;
   }
 
@@ -724,7 +724,7 @@ input[type="number"]:focus {
       outline: none;
       border: 0 !important;
     }
-  }
+  }*/
 
   /* Search */
   .searchResultTab li {
