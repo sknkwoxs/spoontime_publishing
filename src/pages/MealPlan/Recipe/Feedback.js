@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import RangeSlider from "../../../components/RangeSlider";
 
 export default function Feedback() {
   return (
@@ -59,7 +60,7 @@ export default function Feedback() {
             </button>
           </div>
         </article>
-        <article className="px-4 mt-6 border-b">
+        {/* <article className="px-4 mt-6 border-b">
           <p className="mb-2 Font16sb">얼마나 먹었나요?</p>
           <div className="mb-4 Font14">
             <input
@@ -68,7 +69,7 @@ export default function Feedback() {
             />
             g
           </div>
-          <div className="w-full mb-6">
+          <div className="w-full mb-11">
             <input
               className="rangeSlider"
               id="feedbackRangeSlider"
@@ -77,9 +78,13 @@ export default function Feedback() {
               max="200"
               defaultValue="140"
               name="amount"
+              oninput="document.getElementById('amount_output').innerHTML=this.value"
             />
-            <output name="amount_output" for="feedbackRangeSlider"></output>
+            <span id="amount_range_value"></span>
           </div>
+        </article> */}
+        <article className="px-4 mt-6 border-b">
+          <RangeSlider />
         </article>
         <article className="px-4 my-6 mb-[80px]">
           <p className="mb-2 Font16sb">한 마디 남겨주세요.</p>
