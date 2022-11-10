@@ -197,36 +197,6 @@ export default function RecipeDetails() {
                 </button>
               </div>
               <div>
-                {/* <div className="h-0 pb-[100%] overflow-hidden relative z-0">
-                  <img
-                    className="absolute object-cover w-full h-full"
-                    src="/images/RecipeDetails4.jpg"
-                    alt="RecipeDetails4"
-                  />
-                </div>
-                <div className="flex gap-4 p-4">
-                  <div className="max-w-[64px] max-h-[64px] border-[2px]  rounded">
-                    <img
-                      className="object-cover w-full h-full rounded "
-                      src="/images/RecipeDetails4.jpg"
-                      alt="RecipeDetails4"
-                    />
-                  </div>
-                  <div className="max-w-[64px] max-h-[64px]">
-                    <img
-                      className="object-cover w-full h-full rounded "
-                      src="/images/RecipeDetails3.jpg"
-                      alt="RecipeDetails3"
-                    />
-                  </div>
-                  <div className="max-w-[64px] max-h-[64px]">
-                    <img
-                      className="object-cover w-full h-full rounded "
-                      src="/images/RecipeDetails2.jpg"
-                      alt="RecipeDetails2"
-                    />
-                  </div>
-                </div> */}
                 <ImageGallery
                   items={images}
                   showNav={false}
@@ -278,10 +248,13 @@ export default function RecipeDetails() {
             <p className="Font16sb">검증단 및 출처</p>
             <div className="flex flex-col py-4 mb-4 border-b gap-y-4">
               <div className="flex gap-2">
-                <img
-                  src="/images/svgIcons/verificationTeam1.svg"
-                  alt="verificationTeam1"
-                />
+                <div className="object-cover w-12 h-12 rounded-[100px]">
+                  <img
+                    className="w-full h-full rounded-[100px]"
+                    src="/images/defaultImage.png"
+                    alt="verificationTeam1"
+                  />
+                </div>
                 <div>
                   <p className="Font14sb">데이비드 오</p>
                   <p className="Font12 text-GreyScale-grey02">
@@ -290,10 +263,13 @@ export default function RecipeDetails() {
                 </div>
               </div>
               <div className="flex gap-2">
-                <img
-                  src="/images/svgIcons/verificationTeam2.svg"
-                  alt="verificationTeam1"
-                />
+                <div className="object-cover w-12 h-12 rounded-[100px]">
+                  <img
+                    className="w-full h-full rounded-[100px]"
+                    src="/images/defaultImage.png"
+                    alt="verificationTeam1"
+                  />
+                </div>
                 <div>
                   <p className="Font14sb">정지윤</p>
                   <p className="Font12 text-GreyScale-grey02">
@@ -302,10 +278,13 @@ export default function RecipeDetails() {
                 </div>
               </div>
               <div className="flex gap-2">
-                <img
-                  src="/images/svgIcons/verificationTeam3.svg"
-                  alt="verificationTeam1"
-                />
+                <div className="object-cover w-12 h-12 rounded-[100px]">
+                  <img
+                    className="w-full h-full rounded-[100px]"
+                    src="/images/defaultImage.png"
+                    alt="verificationTeam1"
+                  />
+                </div>
                 <div>
                   <p className="Font14sb">엘렌 킴</p>
                   <p className="Font12 text-GreyScale-grey02">영양사</p>

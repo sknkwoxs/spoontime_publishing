@@ -370,6 +370,7 @@
   outline: 2px solid #c0d6b1;
   object-fit: cover;
   transition: none;
+  border: none;
 }
 .image-gallery-thumbnail:focus {
   border: 0;
