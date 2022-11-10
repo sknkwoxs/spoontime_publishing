@@ -7,7 +7,7 @@ import Amount from "./Amount";
 import DeleteMaterialPopUp from "./DeleteMaterialPopUp";
 import StopTimer from "./StopTimer";
 import Substitutes from "./Substitutes";
-import TimerHook from "../../../components/TimerHook";
+import Timer from "./Timer";
 
 export default function RecipeDetails() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
@@ -320,7 +320,7 @@ export default function RecipeDetails() {
         />
       )}
       {openTimerModal && (
-        <TimerHook closeTimerModal={() => setOpenTimerModal(!openTimerModal)} />
+        <Timer closeTimerModal={() => setOpenTimerModal(!openTimerModal)} />
       )}
       {openStopTimerModal && (
         <StopTimer
