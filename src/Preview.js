@@ -2,7 +2,7 @@ export default function Preview() {
   return (
     <>
       <div className="ritz grid-container" dir="ltr">
-        <table className="waffle" cellspacing="0" cellpadding="0">
+        <table className="waffle" cellSpacing="0" cellPadding="0">
           <thead></thead>
           <tbody>
             <tr>
