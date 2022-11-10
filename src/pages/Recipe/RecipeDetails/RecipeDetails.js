@@ -11,7 +11,7 @@ import Timer from "./Timer";
 
 export default function RecipeDetails() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
-
+  const [openTimerModal, setOpenTimerModal] = useState(false);
   const [openStopTimerModal, setOpenStopTimerModal] = useState(false);
 
   const images = [
@@ -188,7 +188,10 @@ export default function RecipeDetails() {
             <div>
               <div className="flex justify-between px-4 pb-4">
                 <p className="Font16sb">Step 1</p>
-                <button className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]">
+                <button
+                  className="Font12sb flex items-center bg-ContentsColor-heart text-GreyScale-White gap-1 px-4 py-1 rounded-[19px]"
+                  onClick={() => setOpenTimerModal(!openTimerModal)}
+                >
                   <img src="/images/svgIcons/timer.svg" alt="timer" />
                   30분
                 </button>
@@ -337,6 +340,9 @@ export default function RecipeDetails() {
           closeDeleteModal={() => setOpenDeleteModal(!openDeleteModal)}
         />
       )}
+      {openTimerModal && (
+        <Timer closeTimerModal={() => setOpenTimerModal(!openTimerModal)} />
+      )}
       {openStopTimerModal && (
         <StopTimer
           closeStopTimerModal={() => setOpenStopTimerModal(!openStopTimerModal)}
@@ -344,7 +350,6 @@ export default function RecipeDetails() {
       )}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
-      <Timer />
     </>
   );
 }
