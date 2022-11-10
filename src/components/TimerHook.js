@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTimer } from "react-timer-hook";
 
-const TimerHook = ({ expiryTimestamp, closeTimerModal }) => {
+export default function TimerHook({ expiryTimestamp, closeTimerModal }) {
   const {
     seconds,
     minutes,
@@ -17,10 +17,13 @@ const TimerHook = ({ expiryTimestamp, closeTimerModal }) => {
     onExpire: () => console.warn("onExpire called"),
   });
 
+  // start, pause 버튼
   const [play, setPlay] = useState(false);
   const handleClick = () => {
     setPlay(!play);
   };
+
+  console.log();
 
   return (
     <>
@@ -89,13 +92,14 @@ const TimerHook = ({ expiryTimestamp, closeTimerModal }) => {
       </section>
     </>
   );
-};
+}
 
-export default function expiryTimestamp() {
+function expiryTimestamp() {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
   return (
     <div>
+      hello
       <TimerHook expiryTimestamp={time} />
     </div>
   );
