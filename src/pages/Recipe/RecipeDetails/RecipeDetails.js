@@ -344,7 +344,7 @@ export default function RecipeDetails() {
       )}
       {/* <Amount /> */}
       {/* <Substitutes /> */}
-      {/* <Timer /> */}
+      <Timer />
     </>
   );
 }
