@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTimer } from "react-timer-hook";
 
-export default function TimerHook({ expiryTimestamp, closeTimerModal }) {
+function TimerHook({ expiryTimestamp, closeTimerModal }) {
   const {
     seconds,
     minutes,
@@ -104,3 +104,7 @@ function expiryTimestamp() {
     </div>
   );
 }
+
+const Stores = { TimerHook, expiryTimestamp };
+
+export default Stores;
