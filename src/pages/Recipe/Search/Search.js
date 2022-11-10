@@ -104,7 +104,7 @@ export default function Search() {
           </div>
           {/* 추천 검색어 */}
           <div className="px-4 pb-6 border-b">
-            <p className="mb-4">추천 검색어</p>
+            <p className="mb-4 Font14sb">추천 검색어</p>
             <div className="gap-x-2">
               <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
                 알레르기

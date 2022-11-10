@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function StopTimer(closeStopTimerModal) {
+export default function StopTimer({ closeStopTimerModal }) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `

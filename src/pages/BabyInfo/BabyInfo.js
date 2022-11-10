@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+// import { ErrorMessage } from "@hookform/error-message";
 
 export default function FamilyShareCode() {
   // validation
@@ -11,7 +12,7 @@ export default function FamilyShareCode() {
   } = useForm();
 
   const onSubmit = (data) => console.log(data);
-  console.log(watch("nickName"));
+  console.log(watch("babyName"));
 
   // input창 clear버튼
   const [message, setMessage] = useState("");
@@ -51,18 +52,19 @@ export default function FamilyShareCode() {
           >
             <label
               className="block mb-3 Font12 text-GreyScale-grey03"
-              htmlFor="email"
+              htmlFor="babyName"
             >
               이름 또는 닉네임
             </label>
 
             <div className="flex pb-1 mb-3 border-b">
               <input
+                id="babyName"
                 className="w-full p-0 border-none Font20 focus:outline-hidden"
-                {...register("nickName", {
+                {...register("babyName", {
                   required: true,
-                  max: 255,
-                  min: 1,
+                  // max: 255,
+                  // min: 1,
                   maxLength: 8,
                   validate: /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/,
                 })}
@@ -77,11 +79,27 @@ export default function FamilyShareCode() {
                 />
               </button>
             </div>
-            {errors.nickName && (
+            {errors.babyName && errors.babyName.type === "required" && (
               <span className="inline-block pb-2 Font12 text-Message-error">
                 한글, 영문 대/소문자, 숫자만 입력할 수 있어요.
               </span>
             )}
+            {errors.babyName && errors.babyName.type === "maxLength" && (
+              <span className="inline-block pb-2 Font12 text-Message-error">
+                최대 8자까지 입력할 수 있어요.
+              </span>
+            )}
+            {/* <ErrorMessage errors={errors} name="multipleErrorInput">
+              {({ messages }) => {
+                console.log(messages);
+                return (
+                  messages &&
+                  Object.entries(messages).map(([type, message]) => (
+                    <p key={type}>{message}</p>
+                  ))
+                );
+              }}
+            </ErrorMessage> */}
             <p className="Font12 text-GreyScale-grey02">
               입력한 정보는 언제든 수정할 수 있어요.
             </p>

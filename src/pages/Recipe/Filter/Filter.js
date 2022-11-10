@@ -139,6 +139,15 @@ export default function Filter({ closeFilterModal }) {
     },
   ];
 
+  // 초기화 버튼
+  const checkboxes = document.getElementsByName("list");
+
+  const initCheckbox = () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+
   return (
     <>
       <div
@@ -181,7 +190,7 @@ export default function Filter({ closeFilterModal }) {
                 {allergyList.map((allergyList, index) => {
                   return (
                     <li className="mx-auto text-center " key={index}>
-                      <input id={allergyList.id} type="checkbox" />
+                      <input id={allergyList.id} type="checkbox" name="list" />
                       <label
                         className="cursor-pointer"
                         htmlFor={allergyList.for}
@@ -207,7 +216,7 @@ export default function Filter({ closeFilterModal }) {
                 {statusList.map((statusList, index) => {
                   return (
                     <li className="mx-auto text-center " key={index}>
-                      <input id={statusList.id} type="checkbox" />
+                      <input id={statusList.id} type="checkbox" name="list" />
                       <label
                         className="max-w-[64px] whitespace-nowrap cursor-pointer"
                         htmlFor={statusList.for}
@@ -233,7 +242,7 @@ export default function Filter({ closeFilterModal }) {
                 {stepList.map((stepList, index) => {
                   return (
                     <li className="w-full mx-auto text-center" key={index}>
-                      <input id={stepList.id} type="radio" name="stepFilter" />
+                      <input id={stepList.id} type="radio" name="list" />
                       <label
                         className="w-full cursor-pointer"
                         htmlFor={stepList.for}
@@ -269,7 +278,10 @@ export default function Filter({ closeFilterModal }) {
         </div>
         <div className="fixed bottom-0 left-0 right-0 px-4 ">
           <div className="flex w-full py-4 border-t">
-            <button className="flex items-center w-full gap-2 Font14sb">
+            <button
+              className="flex items-center w-full gap-2 Font14sb"
+              onClick={initCheckbox}
+            >
               <img src="/images/svgIcons/rotation.svg" alt="rotation" />
               옵션 재설정
             </button>

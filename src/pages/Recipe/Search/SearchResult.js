@@ -85,7 +85,7 @@ export default function Search() {
         <div>
           <div className="flex items-center gap-4 px-4 py-3">
             <div>
-              <Link to="/Recipe">
+              <Link to="/Recipe/Search">
                 <img
                   src="/images/svgIcons/directionsLeft.svg"
                   alt="directionsLeft"

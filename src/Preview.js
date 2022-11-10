@@ -3,20 +3,7 @@ export default function Preview() {
     <>
       <div className="ritz grid-container" dir="ltr">
         <table className="waffle" cellspacing="0" cellpadding="0">
-          <thead>
-            <tr>
-              <th className="row-header freezebar-origin-ltr"></th>
-              <th id="0C0" className="column-headers-background">
-                A
-              </th>
-              <th id="0C1" className="column-headers-background">
-                B
-              </th>
-              <th id="0C2" className="column-headers-background">
-                C
-              </th>
-            </tr>
-          </thead>
+          <thead></thead>
           <tbody>
             <tr>
               <th id="0R0" className="row-headers-background">
@@ -579,7 +566,14 @@ export default function Preview() {
                 <div className="row-header-wrapper">62</div>
               </th>
               <td className="s4">Meal Plan / Recipe / Feedback</td>
-              <td className="s5"></td>
+              <td className="s6">
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Feedback"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MealPlan/Recipe/Feedback
+                </a>
+              </td>
             </tr>
             <tr>
               <th id="0R62" className="row-headers-background">
@@ -720,13 +714,13 @@ export default function Preview() {
               <th id="0R78" className="row-headers-background">
                 <div className="row-header-wrapper">79</div>
               </th>
-              <td className="s8 softmerge">
+              <td className="s4 softmerge">
                 <div className="softmerge-inner">
                   Meal Plan / add a Meal Plan / Search Recipe / Manual / Photo /
                   Default
                 </div>
               </td>
-              <td className="s9"></td>
+              <td className="s7"></td>
             </tr>
             <tr>
               <th id="0R79" className="row-headers-background">

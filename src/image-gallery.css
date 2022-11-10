@@ -1,6 +1,6 @@
 .image-gallery-icon {
   color: #fff;
-  transition: all 0.3s ease-out;
+  transition: 0;
   appearance: none;
   background-color: transparent;
   border: 0;
@@ -12,14 +12,13 @@
 }
 @media (hover: hover) and (pointer: fine) {
   .image-gallery-icon:hover {
-    color: #337ab7;
+    border: inherit;
   }
   .image-gallery-icon:hover .image-gallery-svg {
-    transform: scale(1.1);
   }
 }
 .image-gallery-icon:focus {
-  outline: 2px solid #337ab7;
+  outline: none;
 }
 .image-gallery-using-mouse .image-gallery-icon:focus {
   outline: none;
@@ -132,7 +131,7 @@
   background: #000;
 }
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-  max-height: calc(100vh - 80px);
+  max-height: 360px;
 }
 .image-gallery-content.left .image-gallery-slide .image-gallery-image,
 .image-gallery-content.right .image-gallery-slide .image-gallery-image {
@@ -167,13 +166,15 @@
   position: absolute;
   top: 0;
   width: 100%;
+  height: 360px;
 }
 .image-gallery-slide.center {
   position: relative;
 }
 .image-gallery-slide .image-gallery-image {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 .image-gallery-slide .image-gallery-description {
   background: rgba(0, 0, 0, 0.4);
@@ -217,7 +218,7 @@
   margin: 0 5px;
   outline: none;
   padding: 5px;
-  transition: all 0.2s ease-out;
+  transition: 0;
 }
 @media (max-width: 768px) {
   .image-gallery-bullets .image-gallery-bullet {
@@ -265,12 +266,12 @@
 .image-gallery-thumbnails-wrapper.right {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
+  width: 64px;
 }
 @media (max-width: 768px) {
   .image-gallery-thumbnails-wrapper.left,
   .image-gallery-thumbnails-wrapper.right {
-    width: 81px;
+    width: 64px;
   }
 }
 .image-gallery-thumbnails-wrapper.left .image-gallery-thumbnails,
@@ -301,7 +302,7 @@
   .image-gallery-thumbnail
   + .image-gallery-thumbnail {
   margin-left: 0;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 .image-gallery-thumbnails-wrapper.left,
 .image-gallery-thumbnails-wrapper.right {
@@ -315,30 +316,37 @@
 }
 .image-gallery-thumbnails {
   overflow: hidden;
-  padding: 5px 0;
+  padding: 16px 0;
 }
 @media (max-width: 768px) {
   .image-gallery-thumbnails {
-    padding: 3px 0;
+    padding: 16px 0;
   }
 }
 .image-gallery-thumbnails .image-gallery-thumbnails-container {
+  display: flex;
+  padding: 0 16px;
   cursor: pointer;
   text-align: center;
   white-space: nowrap;
 }
 .image-gallery-thumbnail {
   display: inline-block;
-  border: 4px solid transparent;
-  transition: border 0.3s ease-out;
+  height: 64px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 4px;
+  transition: 0;
   width: 100px;
   background: transparent;
   padding: 0;
+  transition: none;
 }
 @media (max-width: 768px) {
   .image-gallery-thumbnail {
-    border: 3px solid transparent;
-    width: 81px;
+    border: 0;
+    width: 64px;
+    transition: none;
   }
 }
 .image-gallery-thumbnail + .image-gallery-thumbnail {
@@ -347,32 +355,47 @@
 .image-gallery-thumbnail .image-gallery-thumbnail-inner {
   display: block;
   position: relative;
+  height: 100%;
 }
 .image-gallery-thumbnail .image-gallery-thumbnail-image {
   vertical-align: middle;
   width: 100%;
+  height: 100%;
   line-height: 0;
+  border-radius: 4px;
+  object-fit: cover;
 }
-.image-gallery-thumbnail.active,
+.image-gallery-thumbnail.active {
+  box-sizing: border-box;
+  outline: 2px solid #c0d6b1;
+  object-fit: cover;
+  transition: none;
+  border: none;
+}
 .image-gallery-thumbnail:focus {
-  outline: none;
-  border: 4px solid #337ab7;
+  border: 0;
+  outline: 0;
 }
 @media (max-width: 768px) {
-  .image-gallery-thumbnail.active,
+  .image-gallery-thumbnail.active {
+    box-sizing: border-box;
+    border: 2px solid #c0d6b1;
+    border-radius: 6px;
+    outline: 0;
+  }
   .image-gallery-thumbnail:focus {
-    border: 3px solid #337ab7;
+    border: none;
+    outline: none;
   }
 }
 @media (hover: hover) and (pointer: fine) {
   .image-gallery-thumbnail:hover {
-    outline: none;
-    border: 4px solid #337ab7;
+    border: inherit;
   }
 }
 @media (hover: hover) and (pointer: fine) and (max-width: 768px) {
   .image-gallery-thumbnail:hover {
-    border: 3px solid #337ab7;
+    border: inherit;
   }
 }
 .image-gallery-thumbnail-label {
