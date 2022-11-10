@@ -59,6 +59,7 @@ export default function FamilyShareCode() {
                   max: 255,
                   min: 1,
                   maxLength: 8,
+                  // 공유코드관련 validate처리와 error message 논의 필요
                   validate: /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/,
                 })}
                 onChange={handleChange}

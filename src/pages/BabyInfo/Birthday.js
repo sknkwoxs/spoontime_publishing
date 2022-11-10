@@ -11,7 +11,7 @@ export default function Birthday() {
   } = useForm();
 
   const onSubmit = (data) => console.log(data);
-  console.log(watch("number"));
+  console.log(watch("birthday"));
 
   // input창 clear버튼
   const [message, setMessage] = useState("");
@@ -63,7 +63,7 @@ export default function Birthday() {
             <div className="flex pb-1 mb-3 border-b">
               <input
                 className="w-full p-0 border-none focus:outline-hidden Font20 placeholder:text-GreyScale-grey03"
-                {...register("number", {
+                {...register("birthday", {
                   required: true,
                   minLength: 8,
                   maxLength: 8,
@@ -76,6 +76,7 @@ export default function Birthday() {
                 onChange={handleChange}
                 value={message}
                 placeholder="20210101"
+                maxLength="8"
               />
               <button onClick={handleClick} className="flex items-center">
                 <img
