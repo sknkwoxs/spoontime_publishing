@@ -25,15 +25,15 @@ function TimerHook({ expiryTimestamp }) {
 
   return (
     <>
-      <div className="flex">
-        <div className="Font14sb text-GreyScale-grey01">
+      <div className="absolute left-[50%] -translate-x-[50%]">
+        <div className="flex Font14sb text-GreyScale-grey01 whitespace-nowrap">
           <span>{hours}</span>시&nbsp;<span>{minutes}</span>분&nbsp;
           <span>{seconds}초</span>
         </div>
       </div>
-      <div className="flex items-center" onClick={handleClick}>
+      <div onClick={handleClick}>
         {play ? (
-          <button className="flex items-center justify-center" onClick={start}>
+          <button className="flex items-center" onClick={start}>
             <img
               src="/images/svgIcons/start.svg"
               width="20"
@@ -55,7 +55,7 @@ export default function expiryTimestamp() {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
   return (
-    <div>
+    <div className="flex items-center ">
       <TimerHook expiryTimestamp={time} />
     </div>
   );
