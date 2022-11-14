@@ -26,9 +26,9 @@ function TimerHook({ expiryTimestamp }) {
   return (
     <>
       <div
-        className="absolute top-0 bottom-0 left-0 right-0 z-10 w-full h-full transition-all progress bg-BrandColor-green03"
-        // data-size="20"
-        datasize={hours + minutes + seconds}
+        className="absolute top-0 bottom-0 left-0 right-0 z-10 h-full transition-all progress bg-BrandColor-green03"
+        data-size="40"
+        // datasize={[hours + minutes + seconds]}
       ></div>
       <div className="absolute left-[50%] -translate-x-[50%] z-30">
         <div className="flex Font14sb text-GreyScale-grey01 whitespace-nowrap">
@@ -58,9 +58,9 @@ function TimerHook({ expiryTimestamp }) {
 
 export default function expiryTimestamp() {
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 100); // 10 minutes timer
+  time.setSeconds(time.getSeconds() + 100);
   return (
-    <div className="flex items-center ">
+    <div className="flex items-center">
       <TimerHook expiryTimestamp={time} />
     </div>
   );
