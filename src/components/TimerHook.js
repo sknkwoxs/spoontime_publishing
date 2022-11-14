@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { useTimer } from "react-timer-hook";
 
 function TimerHook({ expiryTimestamp }) {
+  // timer-hook
   const { seconds, minutes, hours, start, pause } = useTimer({
     expiryTimestamp,
-    onExpire: () => console.warn("onExpire called"),
+    onExpire: () => console.warn("타이머가 종료 되었어요."),
+    // onExpire: () => "타이머가 종료 되었어요.",
   });
 
   // start, pause 버튼
@@ -20,7 +22,7 @@ function TimerHook({ expiryTimestamp }) {
     setTimeout(() => {
       const { size } = bar.dataset;
       bar.style.width = `${size}%`;
-    }, 1000);
+    }, 100);
   });
 
   return (
@@ -58,7 +60,7 @@ function TimerHook({ expiryTimestamp }) {
 
 export default function expiryTimestamp() {
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 100);
+  time.setSeconds(time.getSeconds() + 10);
   return (
     <div className="flex items-center">
       <TimerHook expiryTimestamp={time} />
