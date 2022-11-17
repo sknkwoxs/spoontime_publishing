@@ -41,6 +41,8 @@
 
 .fc .fc-header-toolbar {
   /* display: none; */
+  padding: 16px 0;
+  margin-bottom: 0 !important;
 }
 
 .fc .fc-toolbar-chunk {
@@ -70,6 +72,25 @@
 }
 
 .fc-myCustomStepButton-button.fc-button.fc-button-primary {
+  padding: 4px 8px !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555555;
+  radius: 4px;
+  background-color: #e6efe0 !important;
+}
+
+.fc-myCustomStepButton-button.fc-button.fc-button-primary:focus:active {
+  padding: 4px 8px !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555555 !important;
+  radius: 4px;
+  background-color: #e6efe0 !important;
 }
 
 .fc-myCustomSettingsButton-button.fc-button.fc-button-primary {
@@ -87,12 +108,12 @@
   border: none !important;
 }
 .fc .fc-button-primary:not(:disabled):active:focus {
-  background-color: #fff !important;
   border: none !important;
   box-shadow: unset !important;
+  color: unset !important;
 }
-.fc .fc-button-primary:hover {
-  background-color: unset !important;
+.fc .fc-button-primary:not(:disabled):active {
+  color: unset !important;
 }
 .fc .fc-button-primary:focus {
   box-shadow: unset !important;

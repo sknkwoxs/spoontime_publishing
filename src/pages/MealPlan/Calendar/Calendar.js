@@ -58,7 +58,7 @@ export default function Calendar() {
             },
           },
           myCustomStepButton: {
-            // text: "custom!",
+            text: "중기 (~4/16)",
             click: function () {
               alert("clicked the custom button!");
             },

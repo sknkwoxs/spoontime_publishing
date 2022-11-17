@@ -8,7 +8,7 @@ export default function MealPlan() {
     <>
       <div className="w-full pb-[52px]">
         <div>
-          <section className="p-4">
+          {/* <section className="p-4">
             <article className="flex justify-between">
               <div className="flex Font16sb">
                 <p className="mr-2">2022년 6월</p>
@@ -23,7 +23,7 @@ export default function MealPlan() {
                 </Link>
               </div>
             </article>
-          </section>
+          </section> */}
           <section>
             {/* <article className="flex justify-center items-center h-[8.5rem] bg-BrandColor-green04">
               달력
