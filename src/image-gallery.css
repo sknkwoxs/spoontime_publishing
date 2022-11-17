@@ -332,6 +332,7 @@
 }
 .image-gallery-thumbnail {
   display: inline-block;
+  max-width: 64px;
   height: 64px;
   margin-right: 16px;
   border: none;

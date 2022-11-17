@@ -6,7 +6,7 @@ export default function Search() {
     JSON.parse(localStorage.getItem("keywords") || "[]")
   );
 
-  //검색어 추가
+  //최근 검색어 추가
   const handleAddKeyword = (text) => {
     console.log("text", text);
     const newKeyword = {

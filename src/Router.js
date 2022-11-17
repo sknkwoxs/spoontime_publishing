@@ -65,6 +65,7 @@ import PrivacyPolicy from "./pages/MyPage/Settings/PrivacyPolicy";
 //
 import Preloader from "./pages/Preloader";
 import Preview from "./Preview";
+import TimerTest from "./TimerTest";
 
 export default function Router() {
   return (
@@ -168,6 +169,7 @@ export default function Router() {
         {/*  */}
         <Route path="/Preloader" element={<Preloader />} />
         <Route path="/" element={<Preview />} />
+        <Route path="/TimerTest" element={<TimerTest />} />
       </Routes>
     </BrowserRouter>
   );

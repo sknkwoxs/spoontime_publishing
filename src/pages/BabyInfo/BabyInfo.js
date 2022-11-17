@@ -68,9 +68,9 @@ export default function FamilyShareCode() {
                   maxLength: 8,
                   validate: /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]+$/,
                 })}
+                type="text"
                 onChange={handleChange}
                 value={message}
-                type="text"
               />
               <button onClick={handleClick} className="flex items-center">
                 <img
@@ -79,6 +79,7 @@ export default function FamilyShareCode() {
                 />
               </button>
             </div>
+            {/* 특수문자 validate 처리 필요 */}
             {errors.babyName && errors.babyName.type === "required" && (
               <span className="inline-block pb-2 Font12 text-Message-error">
                 한글, 영문 대/소문자, 숫자만 입력할 수 있어요.
