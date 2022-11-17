@@ -42,9 +42,33 @@ export default function Calendar() {
         dateClick={handleDateClick} // 클릭 이벤트
         eventContent={renderEventContent} // 클릭 이벤트 발생 시 렌더링되는 내용
         headerToolbar={{
-          start: "title myCustomButton",
+          start: "title myCustomDatePickerButton",
           center: "",
-          end: "myCustomButton myCustomButton",
+          end: "myCustomStepButton myCustomSettingsButton",
+        }}
+        customButtons={{
+          myCustomDatePickerButton: {
+            // icon: function () {
+            //   return (
+            //     <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
+            //   );
+            // },
+            click: function () {
+              alert("clicked the custom button!");
+            },
+          },
+          myCustomStepButton: {
+            // text: "custom!",
+            click: function () {
+              alert("clicked the custom button!");
+            },
+          },
+          myCustomSettingsButton: {
+            // text: "custom!",
+            click: function () {
+              alert("clicked the custom button!");
+            },
+          },
         }}
         dayHeaderContent={function (arg) {
           return Day_Names[arg.date.getDay()];
