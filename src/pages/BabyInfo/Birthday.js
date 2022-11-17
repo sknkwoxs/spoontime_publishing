@@ -67,7 +67,7 @@ export default function Birthday() {
                   required: true,
                   minLength: 8,
                   maxLength: 8,
-                  valueAsNumber: true,
+                  // valueAsNumber: true,
                   pattern: {
                     value: /^(0|[1-9]\d*)(\.\d+)?$/,
                   },
@@ -76,7 +76,7 @@ export default function Birthday() {
                 onChange={handleChange}
                 value={message}
                 placeholder="20210101"
-                maxLength="8"
+                // maxLength="8"
               />
               <button onClick={handleClick} className="flex items-center">
                 <img
@@ -85,9 +85,19 @@ export default function Birthday() {
                 />
               </button>
             </div>
-            {errors.number && (
+            {errors.birthday && errors.birthday.type === "required" && (
               <span className="inline-block pb-2 Font12 text-Message-error">
                 올바른 출생(예정)일을 입력해 주세요.
+              </span>
+            )}
+            {errors.birthday && errors.birthday.type === "minLength" && (
+              <span className="inline-block pb-2 Font12 text-Message-error">
+                올바른 출생(예정)일을 입력해 주세요.
+              </span>
+            )}
+            {errors.birthday && errors.birthday.type === "maxLength" && (
+              <span className="inline-block pb-2 Font12 text-Message-error">
+                최대 8자까지 입력할 수 있어요.
               </span>
             )}
             <p className="Font12 text-GreyScale-grey02">
