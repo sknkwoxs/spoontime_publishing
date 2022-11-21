@@ -5,7 +5,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 // import { formatDayString } from "@fullcalendar/common";
 
-import Datepicker from "./Datepicker";
+// import Datepicker from "./Datepicker";
 import events from "./events";
 
 export default function Calendar() {
@@ -104,7 +104,7 @@ export default function Calendar() {
       <div>
         <input type="date" />
       </div>
-      <Datepicker />
+      {/* <Datepicker /> */}
     </>
   );
 }
