@@ -20,6 +20,16 @@ export default function Search() {
 
   const handleKeyword = (event) => {
     setKeyword(event.target.value);
+
+    if (!!keyword !== true) {
+      document
+        .getElementById("default_search_page")
+        .classList.add("transform_to_autocomplete_page");
+    } else {
+      document
+        .getElementById("default_search_page")
+        .classList.remove("transform_to_autocomplete_page");
+    }
   };
 
   // Enter로 검색어 추가
@@ -55,6 +65,13 @@ export default function Search() {
   const handleClearKeywords = () => {
     setKeywords([]);
   };
+
+  // const handlePage = (document.getElementById("#default_search_page")) => {
+  // if (keyword === true) {
+  //   handlePage.classList.add("transform_to_autocomplete_page");
+  // } else {
+  //   handlePage.classList.remove("transform_to_autocomplete_page");
+  // }}
 
   return (
     <>
@@ -103,69 +120,71 @@ export default function Search() {
             </button>
           </div>
           {/* 추천 검색어 */}
-          <div className="px-4 pb-6 border-b">
-            <p className="mb-4 Font14sb">추천 검색어</p>
-            <div className="gap-x-2">
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                알레르기
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                감기
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                이앓이
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                여름
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                한우
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                아기 주도
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                냉이
-              </button>
-              <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
-                알레르기
-              </button>
+          <div id="default_search_page">
+            <div className="px-4 pb-6 border-b">
+              <p className="mb-4 Font14sb">추천 검색어</p>
+              <div className="gap-x-2">
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  알레르기
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  감기
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  이앓이
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  여름
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  한우
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  아기 주도
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  냉이
+                </button>
+                <button className="inline-block mr-2 mb-2 px-4 py-1 border border-GreyScale-grey01 rounded-[19px] Font12">
+                  알레르기
+                </button>
+              </div>
             </div>
-          </div>
-          {/* 최근 검색 */}
-          <div className="px-4">
-            <div className="flex justify-between pt-6 pb-4">
-              <p className="Font14sb">최근 검색</p>
-              <button
-                className="Font12 text-BrandColor-green01"
-                onClick={handleClearKeywords}
-              >
-                전체삭제
-              </button>
-            </div>
-            <ul>
-              {keywords.map(({ id, text }) => {
-                return (
-                  <li
-                    className="flex items-center justify-between pb-3"
-                    key={id}
-                  >
-                    <p className="truncate Font14">{text}</p>
-                    <button
-                      onClick={() => {
-                        handleRemoveKeyword(id);
-                      }}
+            {/* 최근 검색 */}
+            <div className="px-4">
+              <div className="flex justify-between pt-6 pb-4">
+                <p className="Font14sb">최근 검색</p>
+                <button
+                  className="Font12 text-BrandColor-green01"
+                  onClick={handleClearKeywords}
+                >
+                  전체삭제
+                </button>
+              </div>
+              <ul>
+                {keywords.map(({ id, text }) => {
+                  return (
+                    <li
+                      className="flex items-center justify-between pb-3"
+                      key={id}
                     >
-                      <img
-                        className="min-w-[20px] ml-4"
-                        src="/images/svgIcons/x.svg"
-                        alt="x"
-                      />
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
+                      <p className="truncate Font14">{text}</p>
+                      <button
+                        onClick={() => {
+                          handleRemoveKeyword(id);
+                        }}
+                      >
+                        <img
+                          className="min-w-[20px] ml-4"
+                          src="/images/svgIcons/x.svg"
+                          alt="x"
+                        />
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
           {/* Autocomplete */}
           {/* <div className="px-4">
@@ -173,22 +192,7 @@ export default function Search() {
               <li>
                 [식재료] 본<span className="text-BrandColor-green03">죽</span>
               </li>
-              <li>
-                [레시피] [6개월]{" "}
-                <span className="text-BrandColor-green03">죽</span>
-              </li>
-              <li>
-                [레시피] [6개월] 전복
-                <span className="text-BrandColor-green03">죽</span>
-              </li>
-              <li>
-                [레시피] [8개월] 닭
-                <span className="text-BrandColor-green03">죽</span>
-              </li>
-              <li>
-                [레시피] [9개월] 팥
-                <span className="text-BrandColor-green03">죽</span>
-              </li>
+             
             </ul>
           </div> */}
         </div>

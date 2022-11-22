@@ -744,6 +744,10 @@ input[type="number"]:focus {
     pointer: cursor;
   }
 
+  .transform_to_autocomplete_page {
+    display: none;
+  }
+
   /* Ingredient Guide */
   .ingredientGuideTab li {
     padding: 8px 0;
