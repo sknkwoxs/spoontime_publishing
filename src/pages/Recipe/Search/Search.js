@@ -21,7 +21,7 @@ export default function Search() {
   const handleKeyword = (event) => {
     setKeyword(event.target.value);
 
-    if (!!keyword !== true) {
+    if (!!keyword === true) {
       document
         .getElementById("default_search_page")
         .classList.add("transform_to_autocomplete_page");
