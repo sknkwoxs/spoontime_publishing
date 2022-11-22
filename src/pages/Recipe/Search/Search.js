@@ -66,13 +66,6 @@ export default function Search() {
     setKeywords([]);
   };
 
-  // const handlePage = (document.getElementById("#default_search_page")) => {
-  // if (keyword === true) {
-  //   handlePage.classList.add("transform_to_autocomplete_page");
-  // } else {
-  //   handlePage.classList.remove("transform_to_autocomplete_page");
-  // }}
-
   return (
     <>
       <article className="w-full">
