@@ -8,20 +8,17 @@ export default function Search() {
 
   //최근 검색어 추가
   const handleAddKeyword = (text) => {
+    console.log(text);
+
     console.log("text", text);
+
     const newKeyword = {
       id: Date.now(),
       text: text,
     };
     setKeywords([newKeyword, ...keywords]);
-  };
 
-  const [keyword, setKeyword] = useState("");
-
-  const handleKeyword = (event) => {
-    setKeyword(event.target.value);
-
-    if (!!keyword === true) {
+    if (document.getElementById("search_input").value === "") {
       document
         .getElementById("default_search_page")
         .classList.add("transform_to_autocomplete_page");
@@ -30,6 +27,12 @@ export default function Search() {
         .getElementById("default_search_page")
         .classList.remove("transform_to_autocomplete_page");
     }
+  };
+
+  const [keyword, setKeyword] = useState("");
+
+  const handleKeyword = (event) => {
+    setKeyword(event.target.value);
   };
 
   // Enter로 검색어 추가
@@ -81,6 +84,7 @@ export default function Search() {
             </div>
             <div className="relative w-full">
               <input
+                id="search_input"
                 className="flex w-full py-1 border-none rounded px-9 bg-GreyScale-grey05 Font14 text-GreyScale-grey01"
                 type="text"
                 placeholder="식단검색"
