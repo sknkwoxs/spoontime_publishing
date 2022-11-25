@@ -24,6 +24,7 @@ export default function Search() {
   const handleKeyword = (event) => {
     setKeyword(event.target.value);
 
+    // keyword가 있으면 default_page display: none 처리
     if (!!keyword === true) {
       document
         .getElementById("default_search_page")
@@ -33,7 +34,20 @@ export default function Search() {
         .getElementById("default_search_page")
         .classList.remove("transform_to_autocomplete_page");
     }
+
+    // keyword가 있으면 autocomplete_page display: none 처리
+    if (!!keyword === true) {
+      document
+        .getElementById("autocomplete_page")
+        .classList.add("transform_to_default_page");
+    } else {
+      document
+        .getElementById("autocomplete_page")
+        .classList.remove("transform_to_default_page");
+    }
   };
+
+  // const check_input = document.querySelector("#search_input");
 
   // Enter로 검색어 추가
   const handleEnter = (event) => {
@@ -192,13 +206,13 @@ export default function Search() {
             </div>
           </div>
           {/* Autocomplete */}
-          {/* <div className="px-4">
+          <div id="autocomplete_page" className="hidden px-4">
             <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
               <li>
                 [식재료] 본<span className="text-BrandColor-green03">죽</span>
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
       </article>
     </>

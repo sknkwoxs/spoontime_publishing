@@ -713,7 +713,11 @@ input[type="number"]:focus {
   }
 
   .transform_to_autocomplete_page {
-    display: none;
+    display: none !important;
+  }
+
+  .transform_to_default_page {
+    display: block !important;
   }
 
   /* Ingredient Guide */
