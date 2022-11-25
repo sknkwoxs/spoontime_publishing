@@ -17,8 +17,14 @@ export default function Search() {
       text: text,
     };
     setKeywords([newKeyword, ...keywords]);
+  };
 
-    if (document.getElementById("search_input").value === "") {
+  const [keyword, setKeyword] = useState("");
+
+  const handleKeyword = (event) => {
+    setKeyword(event.target.value);
+
+    if (!!keyword === true) {
       document
         .getElementById("default_search_page")
         .classList.add("transform_to_autocomplete_page");
@@ -29,23 +35,23 @@ export default function Search() {
     }
   };
 
-  const [keyword, setKeyword] = useState("");
-
-  const handleKeyword = (event) => {
-    setKeyword(event.target.value);
-  };
-
   // Enter로 검색어 추가
   const handleEnter = (event) => {
     if (keyword && event.keyCode === 13) {
       handleAddKeyword(keyword);
       setKeyword("");
+      document
+        .getElementById("default_search_page")
+        .classList.remove("transform_to_autocomplete_page");
     }
   };
 
   // input창 clear
   const handleClearInputKeyword = () => {
     setKeyword("");
+    document
+      .getElementById("default_search_page")
+      .classList.remove("transform_to_autocomplete_page");
   };
 
   //keyword가 있으면 true, 없으면 false
@@ -161,22 +167,24 @@ export default function Search() {
               <ul>
                 {keywords.map(({ id, text }) => {
                   return (
-                    <li
-                      className="flex items-center justify-between pb-3"
-                      key={id}
-                    >
-                      <p className="truncate Font14">{text}</p>
-                      <button
-                        onClick={() => {
-                          handleRemoveKeyword(id);
-                        }}
+                    <li key={id}>
+                      <a
+                        className="flex items-center justify-between pb-3"
+                        href="#!"
                       >
-                        <img
-                          className="min-w-[20px] ml-4"
-                          src="/images/svgIcons/x.svg"
-                          alt="x"
-                        />
-                      </button>
+                        <p className="truncate Font14">{text}</p>
+                        <button
+                          onClick={() => {
+                            handleRemoveKeyword(id);
+                          }}
+                        >
+                          <img
+                            className="min-w-[20px] ml-4"
+                            src="/images/svgIcons/x.svg"
+                            alt="x"
+                          />
+                        </button>
+                      </a>
                     </li>
                   );
                 })}
@@ -189,7 +197,6 @@ export default function Search() {
               <li>
                 [식재료] 본<span className="text-BrandColor-green03">죽</span>
               </li>
-             
             </ul>
           </div> */}
         </div>
