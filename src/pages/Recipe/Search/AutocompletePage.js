@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 
 const data = [
-  { label: "#살아있다" },
+  { label: "살아있다" },
   { label: "0.0MHz" },
   { label: "007 스카이폴" },
   { label: "007 스펙터" },
@@ -504,7 +504,7 @@ export default function ComboBox() {
       id="combo-box-demo"
       options={data}
       sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="Songs" />}
+      renderInput={(params) => <TextField {...params} label="식단 검색" />}
     />
   );
 }

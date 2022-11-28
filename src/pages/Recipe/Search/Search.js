@@ -207,14 +207,14 @@ export default function Search() {
             </div>
           </div>
           {/* Autocomplete */}
-          {/* <div id="autocomplete_page" className="hidden px-4">
+          <div id="autocomplete_page" className="hidden px-4">
             <ul className="flex flex-col gap-3 Font14 text-BrandColor-green01">
               <li>
                 [식재료] 본<span className="text-BrandColor-green03">죽</span>
               </li>
             </ul>
-          </div> */}
-          <AutocompletePage />
+            <AutocompletePage />
+          </div>
         </div>
       </article>
     </>
