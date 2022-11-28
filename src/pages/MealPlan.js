@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MealPlanItem from "./MealPlan/MealPlanItem";
+import MealPlanItemUserCustom from "./MealPlan/MealPlanItemUserCustom";
 import TabBar from "../components/TabBar";
 import Calendar from "./MealPlan/Calendar/Calendar";
 
@@ -67,6 +68,7 @@ export default function MealPlan() {
                   {/* <p className="flex items-center Font12">완료</p> */}
                 </div>
                 <MealPlanItem />
+                <MealPlanItemUserCustom />
                 <MealPlanItem />
                 <MealPlanItem />
                 <MealPlanItem />
