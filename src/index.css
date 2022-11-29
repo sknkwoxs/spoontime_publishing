@@ -774,9 +774,11 @@ input[type="number"]:focus {
 
   /* MealPlan datepicker */
   .datepicker.default {
+    border-radius: 16px 16px 0 0;
   }
+
   .datepicker.default .datepicker-header {
-    margin-top: 16px;
+    margin-top: 32px;
     padding: 0 16px;
     text-align: left;
     font-style: normal;
@@ -791,7 +793,7 @@ input[type="number"]:focus {
   }
 
   .datepicker.default .datepicker-caption {
-    padding: 8px 16px 0;
+    padding: 4px 16px 0;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
