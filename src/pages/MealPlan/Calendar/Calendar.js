@@ -37,8 +37,10 @@ export default function Calendar() {
   return (
     <>
       <FullCalendar
-        plugins={[dayGridPlugin, interactionPlugin]}
         locale={koLocale}
+        timeZone="local"
+        weekNumberCalculation="ISO"
+        plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         dateClick={handleDateClick} // 클릭 이벤트
         eventContent={renderEventContent} // 클릭 이벤트 발생 시 렌더링되는 내용
@@ -83,7 +85,7 @@ export default function Calendar() {
         views={{
           month: {
             columnFormat: "dddd",
-            eventLimit: "4", // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
+            eventLimit: 4, // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
           },
           agendaWeek: {
             columnFormat: "M/D ddd",
