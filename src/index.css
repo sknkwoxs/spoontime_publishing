@@ -800,7 +800,9 @@ input[type="number"]:focus {
   }
 
   .datepicker.default .datepicker-content {
-    padding: 0 16px;
+    margin: 0 16px;
+    padding: 0;
+    border-bottom: 1px solid #e8e8e8;
   }
 
   .datepicker.default .datepicker-wheel {
@@ -808,7 +810,15 @@ input[type="number"]:focus {
     border-bottom: 1px solid #c0d6b1;
   }
 
+  .datepicker.default .datepicker-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* transform: translateY(-184px) !important; */
+  }
+
   .datepicker.default .datepicker-scroll > li {
+    height: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -816,6 +826,7 @@ input[type="number"]:focus {
     color: #2a2a2a;
   }
   .datepicker .datepicker-scroll > li {
+    height: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
