@@ -772,6 +772,85 @@ input[type="number"]:focus {
     background-color: #e6efe0;
   }
 
+  /* MealPlan datepicker */
+  .datepicker.default {
+  }
+  .datepicker.default .datepicker-header {
+    margin-top: 16px;
+    padding: 0 16px;
+    text-align: left;
+    font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2a2a2a;
+  }
+
+  .datepicker.default .datepicker-caption {
+    padding: 8px 16px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2a2a2a;
+  }
+
+  .datepicker.default .datepicker-content {
+    padding: 0 16px;
+  }
+
+  .datepicker.default .datepicker-wheel {
+    border-top: 1px solid #c0d6b1;
+    border-bottom: 1px solid #c0d6b1;
+  }
+
+  .datepicker.default .datepicker-scroll > li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2a2a2a;
+  }
+  .datepicker .datepicker-scroll > li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2a2a2a;
+  }
+
+  .datepicker.default .datepicker-navbar {
+    padding: 0 16px 16px !important;
+  }
+
+  .datepicker.default .datepicker-navbar-btn {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 0;
+    font-style: normal;
+    font-family: "Pretendard-SemiBold";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+      format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #112f30;
+  }
+  .datepicker.default .datepicker-navbar-btn:last-child {
+    display: none;
+  }
+
   /* MyPage Profile */
   .myPageProfileImgae {
     position: relative;

@@ -4,8 +4,9 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 // import { formatDayString } from "@fullcalendar/common";
 
-// import Datepicker from "./Datepicker";
 import events from "./events";
+
+import DatePicker from "react-mobile-datepicker";
 
 export default function Calendar() {
   // const [date, setDate] = useState(new Date());
@@ -32,6 +33,21 @@ export default function Calendar() {
   //   { title: "event 2", date: new Date() },
   //   { title: "event 3", date: new Date() },
   // ];
+
+  const monthMap = {
+    1: "Jan",
+    2: "Feb",
+    3: "Mar",
+    4: "Apr",
+    5: "May",
+    6: "Jun",
+    7: "Jul",
+    8: "Aug",
+    9: "Sep",
+    10: "Oct",
+    11: "Nov",
+    12: "Dec",
+  };
 
   return (
     <>
@@ -102,10 +118,32 @@ export default function Calendar() {
         events={events}
         droppable={true}
       />
-      <div>
-        <input type="date" />
-      </div>
-      {/* <Datepicker /> */}
+      <DatePicker
+        isOpen={true}
+        isPopup={true}
+        showCaption={true}
+        dateConfig={{
+          year: {
+            format: "YYYY",
+            caption: "년",
+            step: 1,
+          },
+          month: {
+            format: (value) => monthMap[value.getMonth() + 1],
+            caption: "월",
+            step: 1,
+          },
+          date: {
+            format: "D",
+            caption: "일",
+            step: 1,
+          },
+        }}
+        showHeader={true}
+        headerFormat="날짜 이동"
+        confirmText="적용하기"
+        cancelText={false}
+      />
     </>
   );
 }
