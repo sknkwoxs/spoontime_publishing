@@ -1,39 +1,37 @@
-import koLocale from "@fullcalendar/core/locales/ko";
+import { useState } from "react";
+
 import FullCalendar from "@fullcalendar/react";
+import { DateFormatter } from "@fullcalendar/react";
+import koLocale from "@fullcalendar/core/locales/ko";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
-// import { formatDayString } from "@fullcalendar/common";
+
+import DatePicker from "react-mobile-datepicker";
 
 import events from "./events";
 
-import DatePicker from "react-mobile-datepicker";
-import { useState } from "react";
-
 export default function Calendar() {
-  // const [date, setDate] = useState(new Date());
-  // const locale = "fr-CA";
-
   const handleDateClick = (arg) => {
     alert(arg.dateStr);
   };
 
-  // console.log(str);
-
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
 
-  let d = new Date();
+  let day = new Date();
 
-  console.log(d.toLocaleString("ko", { day: "numeric" }));
+  // let calendar = new Calendar(calendarEl, {
+  //   titleFormat: {
+  //     // will produce something like "Tuesday, September 18, 2018"
+  //     month: "long",
+  //     year: "numeric",
+  //     day: "numeric",
+  //     weekday: "long",
+  //   },
+  // });
 
-  console.log(d.toLocaleString("en", { day: "numeric" }));
+  console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
 
-  console.log();
-
-  // const events = [
-  //   { title: "event 1", date: new Date() },
-  //   { title: "event 2", date: new Date() },
-  //   { title: "event 3", date: new Date() },
-  // ];
+  console.log(day.toLocaleString("en", { day: "numeric" }));
 
   const monthMap = {
     1: "Jan",
@@ -70,36 +68,6 @@ export default function Calendar() {
           center: "",
           end: "myCustomStepButton myCustomSettingsButton",
         }}
-        customButtons={{
-          myCustomDatePickerButton: {
-            // icon: function () {
-            //   return (
-            //     <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
-            //   );
-            // },
-          },
-          myCustomStepButton: {
-            text: "중기 (~4/16)",
-            click: function () {
-              alert("clicked the custom button!");
-            },
-          },
-          myCustomSettingsButton: {
-            // text: "custom!",
-            click: function () {
-              alert("clicked the custom button!");
-            },
-          },
-        }}
-        dayHeaderContent={function (arg) {
-          return Day_Names[arg.date.getDay()];
-        }}
-        weekends={true} // 한 주 씩 보기
-        showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
-        firstDay={false} // true 시, 월요일 시작
-        formatDate={(locale, date) =>
-          date.toLocaleString("en", { date: "numeric" })
-        }
         views={{
           month: {
             columnFormat: "dddd",
@@ -118,11 +86,32 @@ export default function Calendar() {
             columnFormat: "",
           },
         }}
+        customButtons={{
+          myCustomDatePickerButton: {},
+          myCustomStepButton: {
+            text: "중기 (~4/16)",
+            click: function () {
+              alert("clicked the custom button!");
+            },
+          },
+          myCustomSettingsButton: {
+            click: function () {
+              alert("clicked the custom button!");
+            },
+          },
+        }}
+        dayHeaderContent={function (arg) {
+          return Day_Names[arg.date.getDay()];
+        }}
+        weekends={true} // 한 주 씩 보기
+        showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
+        firstDay={false} // true 시, 월요일 시작
+        formatDate={(day) => day.toLocaleString("en", { day: "numeric" })}
         events={events}
         droppable={true}
       />
       <DatePicker
-        isPopup={false}
+        isPopup={true}
         // onSlect={}
         onCancel={handleClick}
         showCaption={true}
@@ -147,6 +136,7 @@ export default function Calendar() {
         headerFormat="날짜 이동"
         confirmText="적용하기"
         cancelText={false}
+        tileContent={({ date, view }) => null}
       />
     </>
   );

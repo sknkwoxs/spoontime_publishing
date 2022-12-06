@@ -24,13 +24,13 @@ const events = [
     color: "#CCF3D4",
   },
   {
-    title: "이벤트 왜 다섯개나와",
+    title: "이벤트 4개까지만",
     start: getDate("YEAR-MONTH-01"),
     end: getDate("YEAR-MONTH-08"),
     color: "#E3D0FB",
   },
   {
-    title: "이벤트 몇개까지 나오는거야",
+    title: "이벤트 4개까지만",
     start: getDate("YEAR-MONTH-01"),
     end: getDate("YEAR-MONTH-08"),
     color: "#E3D0FB",
@@ -60,7 +60,7 @@ const events = [
     color: "#CCF3D4",
   },
   {
-    title: "한우, 버섯, 파프리카",
+    title: "한우, 버섯, 파프리카, 타이틀 길어요",
     start: getDate("YEAR-MONTH-05"),
     end: getDate("YEAR-MONTH-12"),
     color: "#CCE2FE",
