@@ -110,34 +110,37 @@ export default function Calendar() {
         events={events}
         droppable={true}
       />
-      <DatePicker
-        isPopup={true}
-        // onSlect={}
-        onCancel={handleClick}
-        showCaption={true}
-        dateConfig={{
-          year: {
-            format: "YYYY",
-            caption: "년",
-            step: 1,
-          },
-          month: {
-            format: (value) => monthMap[value.getMonth() + 1],
-            caption: "월",
-            step: 1,
-          },
-          date: {
-            format: "D",
-            caption: "일",
-            step: 1,
-          },
-        }}
-        showHeader={true}
-        headerFormat="날짜 이동"
-        confirmText="적용하기"
-        cancelText={false}
-        tileContent={({ date, view }) => null}
-      />
+      {/* <div className="datePickerWrap">
+        <div className="fixed top-0 left-0 right-0 w-full h-full bg-[#00000099] z-[999]"></div>
+        <DatePicker
+          isPopup={false}
+          // onSlect={}
+          onCancel={handleClick}
+          showCaption={true}
+          dateConfig={{
+            year: {
+              format: "YYYY",
+              caption: "년",
+              step: 1,
+            },
+            month: {
+              format: (value) => monthMap[value.getMonth() + 1],
+              caption: "월",
+              step: 1,
+            },
+            date: {
+              format: "D",
+              caption: "일",
+              step: 1,
+            },
+          }}
+          showHeader={true}
+          headerFormat="날짜 이동"
+          confirmText="적용하기"
+          cancelText={false}
+          tileContent={({ date, view }) => null}
+        />
+      </div> */}
     </>
   );
 }

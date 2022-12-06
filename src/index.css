@@ -775,6 +775,7 @@ input[type="number"]:focus {
   /* MealPlan datepicker */
   .datepicker.default {
     border-radius: 16px 16px 0 0;
+    z-index: 1000;
   }
 
   .datepicker.default .datepicker-header {
