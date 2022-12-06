@@ -25,12 +25,7 @@ export default function MealPlan() {
               </div>
             </article>
           </section> */}
-          <section>
-            {/* <article className="flex justify-center items-center h-[8.5rem] bg-BrandColor-green04">
-              달력
-            </article> */}
-            <Calendar />
-          </section>
+          <Calendar />
           <section className="px-4 mt-2">
             <article>
               <div className="py-4">

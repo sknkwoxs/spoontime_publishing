@@ -7,6 +7,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import events from "./events";
 
 import DatePicker from "react-mobile-datepicker";
+import { useState } from "react";
 
 export default function Calendar() {
   // const [date, setDate] = useState(new Date());
@@ -49,6 +50,11 @@ export default function Calendar() {
     12: "Dec",
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <FullCalendar
@@ -71,9 +77,6 @@ export default function Calendar() {
             //     <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
             //   );
             // },
-            click: function () {
-              alert("clicked the custom button!");
-            },
           },
           myCustomStepButton: {
             text: "중기 (~4/16)",
@@ -119,8 +122,9 @@ export default function Calendar() {
         droppable={true}
       />
       <DatePicker
-        isOpen={true}
-        isPopup={true}
+        isPopup={false}
+        // onSlect={}
+        onCancel={handleClick}
         showCaption={true}
         dateConfig={{
           year: {

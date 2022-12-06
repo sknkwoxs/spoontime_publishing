@@ -815,6 +815,8 @@ input[type="number"]:focus {
   .datepicker.default .datepicker-scroll {
     display: flex;
     flex-direction: column;
+    padding-top: 14px;
+    /* margin-top: 6px !important; */
     gap: 8px;
     /* transform: translateY(-184px) !important; */
   }
