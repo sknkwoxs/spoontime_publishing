@@ -10,6 +10,8 @@ import events from "./events";
 import DatePickerWrap from "./DatePickerWrap";
 
 export default function Calendar() {
+  const [openDatePicker, setOpenDatePicker] = useState(false);
+
   const handleDateClick = (arg) => {
     alert(arg.dateStr);
   };
@@ -71,7 +73,9 @@ export default function Calendar() {
           },
         }}
         customButtons={{
-          myCustomDatePickerButton: {},
+          myCustomDatePickerButton: {
+            click: () => setOpenDatePicker(!openDatePicker),
+          },
           myCustomStepButton: {
             text: "중기 (~4/16)",
             click: function () {
@@ -94,7 +98,12 @@ export default function Calendar() {
         events={events}
         droppable={true}
       />
-      <DatePickerWrap />
+
+      {openDatePicker && (
+        <DatePickerWrap
+          closeDatePicker={() => setOpenDatePicker(!openDatePicker)}
+        />
+      )}
     </>
   );
 }
