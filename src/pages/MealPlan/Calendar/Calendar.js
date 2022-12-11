@@ -50,21 +50,15 @@ export default function Calendar() {
           center: "",
           end: "myCustomStepButton myCustomSettingsButton",
         }}
-        // ex_) 2022년 12월..
-        // ex_) '일' 표기 삭제
         titleFormat={function (date) {
-          return date.date.year + "년 " + (date.date.month + 1) + "월";
+          return date.date.year + "년 " + (date.date.month + 1) + "월"; // ex_) 2022년 12월..
         }}
-        // open datePicker modal
         customButtons={{
           myCustomDatePickerButton: {
             click: () => setOpenDatePicker(!openDatePicker),
-          },
+          }, // open datePicker modal
           myCustomStepButton: {
             text: "중기 (~4/16)",
-            click: function () {
-              alert("clicked the custom button!");
-            },
           },
           myCustomSettingsButton: {
             click: function () {
@@ -77,20 +71,6 @@ export default function Calendar() {
           return Day_Names[arg.date.getDay()];
         }} // 요일을 한국어로 표기
         monthNames={[
-          "1월",
-          "2월",
-          "3월",
-          "4월",
-          "5월",
-          "6월",
-          "7월",
-          "8월",
-          "9월",
-          "10월",
-          "11월",
-          "12월",
-        ]}
-        monthNamesShort={[
           "1월",
           "2월",
           "3월",
