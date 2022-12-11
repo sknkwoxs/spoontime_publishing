@@ -16,6 +16,20 @@ export default function Calendar() {
     alert(arg.dateStr);
   };
 
+  let Month_Names = [
+    "1월",
+    "2월",
+    "3월",
+    "4월",
+    "5월",
+    "6월",
+    "7월",
+    "8월",
+    "9월",
+    "10월",
+    "11월",
+    "12월",
+  ];
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
   let day = new Date();
 
@@ -55,7 +69,9 @@ export default function Calendar() {
         //     columnFormat: "",
         //   },
         // }}
-        titleFormat={{ year: "2-digit", month: "short" }}
+        titleFormat={function (date) {
+          return date.date.year + "년 " + (date.date.month + 1) + "월";
+        }}
         customButtons={{
           myCustomDatePickerButton: {
             click: () => setOpenDatePicker(!openDatePicker),
