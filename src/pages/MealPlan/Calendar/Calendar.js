@@ -17,32 +17,15 @@ export default function Calendar() {
   };
 
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
-
   let day = new Date();
-
-  // let calendar = new Calendar(calendarEl, {
-  //   titleFormat: {
-  //     // will produce something like "Tuesday, September 18, 2018"
-  //     month: "long",
-  //     year: "numeric",
-  //     day: "numeric",
-  //     weekday: "long",
-  //   },
-  // });
 
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
 
   console.log(day.toLocaleString("en", { day: "numeric" }));
 
-  // const [isOpen, setIsOpen] = useState(false);
-  // const handleClick = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
   return (
     <>
       <FullCalendar
-        locale={koLocale}
         timeZone="local"
         weekNumberCalculation="ISO"
         plugins={[dayGridPlugin, interactionPlugin]}
@@ -54,24 +37,25 @@ export default function Calendar() {
           center: "",
           end: "myCustomStepButton myCustomSettingsButton",
         }}
-        views={{
-          month: {
-            columnFormat: "dddd",
-            eventLimit: 4, // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
-          },
-          agendaWeek: {
-            columnFormat: "M/D ddd",
-            titleFormat: "YYYY년 M월 D일",
-            eventLimit: false,
-          },
-          agendaDay: {
-            columnFormat: "dddd",
-            eventLimit: false,
-          },
-          listWeek: {
-            columnFormat: "",
-          },
-        }}
+        // views={{
+        //   month: {
+        //     columnFormat: "dddd",
+        //     eventLimit: 4, // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
+        //   },
+        //   agendaWeek: {
+        //     columnFormat: "M/D ddd",
+        //     titleFormat: "YYYY년 M월 D일",
+        //     eventLimit: false,
+        //   },
+        //   agendaDay: {
+        //     columnFormat: "dddd",
+        //     eventLimit: false,
+        //   },
+        //   listWeek: {
+        //     columnFormat: "",
+        //   },
+        // }}
+        titleFormat={{ year: "2-digit", month: "short" }}
         customButtons={{
           myCustomDatePickerButton: {
             click: () => setOpenDatePicker(!openDatePicker),
@@ -90,7 +74,45 @@ export default function Calendar() {
         }}
         dayHeaderContent={function (arg) {
           return Day_Names[arg.date.getDay()];
-        }}
+        }} // 요일을 한국어로 표기
+        monthNames={[
+          "1월",
+          "2월",
+          "3월",
+          "4월",
+          "5월",
+          "6월",
+          "7월",
+          "8월",
+          "9월",
+          "10월",
+          "11월",
+          "12월",
+        ]}
+        monthNamesShort={[
+          "1월",
+          "2월",
+          "3월",
+          "4월",
+          "5월",
+          "6월",
+          "7월",
+          "8월",
+          "9월",
+          "10월",
+          "11월",
+          "12월",
+        ]}
+        dayNames={[
+          "일요일",
+          "월요일",
+          "화요일",
+          "수요일",
+          "목요일",
+          "금요일",
+          "토요일",
+        ]}
+        dayNamesShort={["일", "월", "화", "수", "목", "금", "토"]}
         weekends={true} // 한 주 씩 보기
         showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
         firstDay={false} // true 시, 월요일 시작

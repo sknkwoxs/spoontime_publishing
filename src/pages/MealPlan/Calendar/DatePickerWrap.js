@@ -18,18 +18,18 @@ export default function DatePickerWrap({ closeDatePicker }) {
   }, []);
 
   const monthMap = {
-    1: "Jan",
-    2: "Feb",
-    3: "Mar",
-    4: "Apr",
-    5: "May",
-    6: "Jun",
-    7: "Jul",
-    8: "Aug",
-    9: "Sep",
-    10: "Oct",
-    11: "Nov",
-    12: "Dec",
+    1: "01월",
+    2: "02월",
+    3: "03월",
+    4: "04월",
+    5: "05월",
+    6: "06월",
+    7: "07월",
+    8: "08월",
+    9: "09월",
+    10: "10월",
+    11: "11월",
+    12: "12월",
   };
 
   return (
@@ -55,7 +55,7 @@ export default function DatePickerWrap({ closeDatePicker }) {
             step: 1,
           },
           date: {
-            format: "D",
+            format: "D일",
             caption: "일",
             step: 1,
           },
