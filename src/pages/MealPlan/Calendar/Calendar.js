@@ -34,7 +34,6 @@ export default function Calendar() {
   let day = new Date();
 
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
-
   console.log(day.toLocaleString("en", { day: "numeric" }));
 
   return (
@@ -51,27 +50,12 @@ export default function Calendar() {
           center: "",
           end: "myCustomStepButton myCustomSettingsButton",
         }}
-        // views={{
-        //   month: {
-        //     columnFormat: "dddd",
-        //     eventLimit: 4, // 한 날짜에 최대 이벤트 4개, 나머지는 +처리
-        //   },
-        //   agendaWeek: {
-        //     columnFormat: "M/D ddd",
-        //     titleFormat: "YYYY년 M월 D일",
-        //     eventLimit: false,
-        //   },
-        //   agendaDay: {
-        //     columnFormat: "dddd",
-        //     eventLimit: false,
-        //   },
-        //   listWeek: {
-        //     columnFormat: "",
-        //   },
-        // }}
+        // ex_) 2022년 12월..
+        // ex_) '일' 표기 삭제
         titleFormat={function (date) {
           return date.date.year + "년 " + (date.date.month + 1) + "월";
         }}
+        // open datePicker modal
         customButtons={{
           myCustomDatePickerButton: {
             click: () => setOpenDatePicker(!openDatePicker),
@@ -84,7 +68,8 @@ export default function Calendar() {
           },
           myCustomSettingsButton: {
             click: function () {
-              alert("clicked the custom button!");
+              window.location.href = "/MealPlan/MealPlanSettings";
+              // ""
             },
           },
         }}
