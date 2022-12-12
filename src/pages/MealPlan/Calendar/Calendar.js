@@ -77,7 +77,20 @@ export default function Calendar() {
           firstDay={false} // true 시, 월요일 시작
           formatDate={(day) => day.toLocaleString("en", { day: "numeric" })}
           events={events}
-          eventClick={handleMonthlyCalendar}
+          // eventLimit={true}
+          // views={
+          //   timeGrid = {
+          //     eventLimit = {'4'}
+          //   }
+          // }
+          dayMaxEvents={4}
+          // eventLimitText=""
+          moreLinkText=""
+          // eventLimitText={function () {
+          //   return "123";
+          // }}
+
+          // eventClick={handleMonthlyCalendar}
           droppable={true}
         />
       </div>

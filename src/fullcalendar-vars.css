@@ -224,6 +224,13 @@
   line-height: 16px;
   color: #2a2a2a;
 }
+
+.fc .fc-daygrid-more-link {
+  display: flex;
+  justify-content: center;
+  color: #2a2a2a;
+}
+
 #monthlyFullCalendarWrap {
   /* display: none; */
 }
