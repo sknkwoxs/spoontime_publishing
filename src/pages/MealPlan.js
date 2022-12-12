@@ -7,7 +7,7 @@ import Calendar from "./MealPlan/Calendar/Calendar";
 import WeeklyCalendar from "./MealPlan/Calendar/WeeklyCalendar";
 
 export default function MealPlan() {
-  const displayCalendar = false;
+  const displayCalendar = true;
 
   return (
     <>
