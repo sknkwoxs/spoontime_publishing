@@ -34,8 +34,8 @@
 }
 
 .fc {
-  /* height: calc(100vh - 108px); */
-  height: 100vh;
+  height: calc(100vh - 56px);
+  /* height: 100vh; */
   padding: 0 16px;
 }
 

@@ -9,22 +9,6 @@ export default function MealPlan() {
     <>
       <div className="w-full pb-[52px]">
         <div>
-          {/* <section className="p-4">
-            <article className="flex justify-between">
-              <div className="flex Font16sb">
-                <p className="mr-2">2022년 6월</p>
-                <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
-              </div>
-              <div className="flex">
-                <p className="px-2 py-1 mr-4 rounded Font12 text-GreyScale-grey02 bg-BrandColor-green04">
-                  중기 (~4/16)
-                </p>
-                <Link to="/MealPlan/MealPlanSettings">
-                  <img src="/images/svgIcons/settings.svg" alt="settings" />
-                </Link>
-              </div>
-            </article>
-          </section> */}
           <Calendar />
           <section className="px-4 mt-2">
             <article>
