@@ -19,12 +19,19 @@ export default function Calendar() {
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
   let day = new Date();
 
+  const handleWeeklyCalendar = () => {
+    document.getElementById("weeklyFullCalendarWrap").classList.add("hidden");
+  };
+  const handleMonthlyCalendar = () => {
+    document.getElementById("handleMonthlyCalendar").classList.add("flex");
+  };
+
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
   console.log(day.toLocaleString("en", { day: "numeric" }));
 
   return (
     <>
-      <div className="pb-2 shadow-[0px_0px_4px_0_rgba(0,0,0,0.15)] weeklyFullCalendar shad">
+      <div id="weeklyFullCalendarWrap">
         <FullCalendar
           timeZone="local"
           weekNumberCalculation="ISO"
@@ -57,14 +64,20 @@ export default function Calendar() {
           dayHeaderContent={function (arg) {
             return Day_Names[arg.date.getDay()];
           }} // 요일을 한국어로 표기
+          formatDate={(day) => day.toLocaleString("en", { day: "numeric" })}
           weekends={true} // 한 주 씩 보기
           showNonCurrentDates={false} // 이전 달, 다음 달 미리보기 설정
           firstDay={false} // true 시, 월요일 시작
-          formatDate={(day) => day.toLocaleString("en", { day: "numeric" })}
+          droppable={false}
           events={events}
-          droppable={true}
         />
-        <div className="w-[48px] h-[3px] flex justify-center mx-auto bg-GreyScale-grey04 rounded-[100px]"></div>
+        <button
+          className="w-[48px] h-[3px] flex justify-center mx-auto bg-GreyScale-grey04 rounded-[100px]"
+          onClick={() => {
+            handleWeeklyCalendar();
+            handleMonthlyCalendar();
+          }}
+        />
       </div>
       {openDatePicker && (
         <DatePickerWrap

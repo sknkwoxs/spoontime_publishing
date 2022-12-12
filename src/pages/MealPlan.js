@@ -11,7 +11,7 @@ export default function MealPlan() {
       <div className="w-full pb-[52px]">
         <WeeklyCalendar />
         <Calendar />
-        {/* <div>
+        <div>
           <section className="px-4 mt-2">
             <article>
               <div className="py-4">
@@ -60,7 +60,7 @@ export default function MealPlan() {
               </div>
             </article>
           </section>
-        </div> */}
+        </div>
         <button className="fixed bottom-[5.75rem] right-4 z-50 drop-shadow-button">
           <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
             <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
