@@ -231,7 +231,7 @@
   padding-bottom: 8px;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
 }
-#weeklyFullCalendarWrap tr:not(:has(.fc-day-today)) {
+#weeklyFullCalendarWrap tbody tr:not(:has(.fc-day-today)) {
   display: none;
 }
 #weeklyFullCalendarWrap .fc {
