@@ -108,7 +108,9 @@ function renderEventContent(eventInfo) {
   return (
     <>
       <b>{eventInfo.timeText}</b>
-      <i>{eventInfo.event.title}</i>
+      <i>
+        <span>{eventInfo.event.title}</span>
+      </i>
     </>
   );
 }

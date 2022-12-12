@@ -225,6 +225,13 @@
   color: #2a2a2a;
 }
 
+.fc .fc-event-main i span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
 .fc .fc-daygrid-more-link {
   display: flex;
   justify-content: center;
