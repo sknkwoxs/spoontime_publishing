@@ -3,13 +3,15 @@ import MealPlanItem from "./MealPlan/MealPlanItem";
 import MealPlanItemUserCustom from "./MealPlan/MealPlanItemUserCustom";
 import TabBar from "../components/TabBar";
 import Calendar from "./MealPlan/Calendar/Calendar";
+import WeeklyCalendar from "./MealPlan/Calendar/WeeklyCalendar";
 
 export default function MealPlan() {
   return (
     <>
       <div className="w-full pb-[52px]">
-        <div>
-          <Calendar />
+        <WeeklyCalendar />
+        <Calendar />
+        {/* <div>
           <section className="px-4 mt-2">
             <article>
               <div className="py-4">
@@ -23,8 +25,7 @@ export default function MealPlan() {
           </section>
           <section className="px-4 mt-6">
             <article>
-              {/* No Data */}
-              {/* <p className="Font16sb">식단</p>
+              <p className="Font16sb">식단</p>
               <div className="text-center Font14">
                 <p>계획된 식단이 없습니다.</p>
                 <div className="flex justify-center">
@@ -38,13 +39,12 @@ export default function MealPlan() {
                   <p>버튼을 눌러</p>
                 </div>
                 <p>마음에 드는 식단을 추가해 보세요.</p>
-              </div> */}
-              {/* Daily */}
+              </div>
+
               <div>
                 <div className="flex justify-between">
                   <p className="Font16sb testMenu">식단</p>
                   <button className="Font12">편집</button>
-                  {/* <p className="flex items-center Font12">완료</p> */}
                 </div>
                 <MealPlanItem />
                 <MealPlanItemUserCustom />
@@ -59,14 +59,13 @@ export default function MealPlan() {
                 <MealPlanItem />
               </div>
             </article>
-            <button className="fixed bottom-[5.75rem] right-4 z-50 drop-shadow-button">
-              {/* 식단 추가 */}
-              <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
-                <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
-              </div>
-            </button>
           </section>
-        </div>
+        </div> */}
+        <button className="fixed bottom-[5.75rem] right-4 z-50 drop-shadow-button">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full shadow-lg bg-BrandColor-green03">
+            <img src="/images/svgIcons/plusButton2.svg" alt="plusButton2" />
+          </div>
+        </button>
       </div>
       <TabBar />
     </>
