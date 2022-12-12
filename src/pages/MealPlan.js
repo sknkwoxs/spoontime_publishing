@@ -28,7 +28,7 @@ export default function MealPlan() {
                 </article>
               </section>
               <section className="px-4 mt-6">
-                <article>
+                {/* <article>
                   <p className="Font16sb">식단</p>
                   <div className="text-center Font14">
                     <p>계획된 식단이 없습니다.</p>
@@ -44,24 +44,24 @@ export default function MealPlan() {
                     </div>
                     <p>마음에 드는 식단을 추가해 보세요.</p>
                   </div>
+                </article> */}
 
-                  <div>
-                    <div className="flex justify-between">
-                      <p className="Font16sb testMenu">식단</p>
-                      <button className="Font12">편집</button>
-                    </div>
-                    <MealPlanItem />
-                    <MealPlanItemUserCustom />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
-                    <MealPlanItem />
+                <article>
+                  <div className="flex justify-between">
+                    <p className="Font16sb testMenu">식단</p>
+                    <button className="Font12">편집</button>
                   </div>
+                  <MealPlanItem />
+                  <MealPlanItemUserCustom />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
+                  <MealPlanItem />
                 </article>
               </section>
             </div>
