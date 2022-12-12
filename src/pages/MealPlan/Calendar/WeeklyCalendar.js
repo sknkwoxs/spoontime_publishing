@@ -22,9 +22,6 @@ export default function Calendar() {
   const handleWeeklyCalendar = () => {
     document.getElementById("weeklyFullCalendarWrap").classList.add("hidden");
   };
-  const handleMonthlyCalendar = () => {
-    document.getElementById("handleMonthlyCalendar").classList.add("flex");
-  };
 
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
   console.log(day.toLocaleString("en", { day: "numeric" }));
@@ -73,10 +70,9 @@ export default function Calendar() {
         />
         <button
           className="w-[48px] h-[3px] flex justify-center mx-auto bg-GreyScale-grey04 rounded-[100px]"
-          onClick={() => {
-            handleWeeklyCalendar();
-            handleMonthlyCalendar();
-          }}
+          // onClick={() => {
+          //   handleWeeklyCalendar();
+          // }}
         />
       </div>
       {openDatePicker && (

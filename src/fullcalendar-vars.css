@@ -225,7 +225,7 @@
   color: #2a2a2a;
 }
 #monthlyFullCalendarWrap {
-  display: none;
+  /* display: none; */
 }
 #weeklyFullCalendarWrap {
   padding-bottom: 8px;
