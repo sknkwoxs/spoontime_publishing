@@ -9,7 +9,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import events from "./events";
 import DatePickerWrap from "./DatePickerWrap";
 
-export default function Calendar() {
+export default function Calendar({ displayWeeklyCalendar }) {
   const [openDatePicker, setOpenDatePicker] = useState(false);
 
   const handleDateClick = (arg) => {
@@ -19,20 +19,9 @@ export default function Calendar() {
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
   let day = new Date();
 
-  // const hideMonthlyCalendar = document
-  //   .querySelectorAll(".monthlyFullCalendarWrap")
-  //   .classList.add("hidden");
-
-  // const [hideMonthlyCalendar, setHideMonthlyCalendar] = useState("");
-  // setHideMonthlyCalendar(event.target.value);
-
-  // const handleMonthlyCalendar = (event) => {
-  //   document.querySelector(".monthlyFullCalendarWrap").classList.add("hidden");
+  // const handleMonthlyCalendar = () => {
+  //   document.getElementById("monthlyFullCalendarWrap").classList.add("hidden");
   // };
-
-  const handleMonthlyCalendar = () => {
-    document.getElementById("monthlyFullCalendarWrap").classList.add("hidden");
-  };
 
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
   console.log(day.toLocaleString("en", { day: "numeric" }));
@@ -77,20 +66,9 @@ export default function Calendar() {
           firstDay={false} // true 시, 월요일 시작
           formatDate={(day) => day.toLocaleString("en", { day: "numeric" })}
           events={events}
-          // eventLimit={true}
-          // views={
-          //   timeGrid = {
-          //     eventLimit = {'4'}
-          //   }
-          // }
-          dayMaxEvents={4}
-          // eventLimitText=""
-          moreLinkText=""
-          // eventLimitText={function () {
-          //   return "123";
-          // }}
-
-          // eventClick={handleMonthlyCalendar}
+          dayMaxEvents={4} // 이벤트 수 제한
+          moreLinkText="" // 이벤트 초과시 노출되는 텍스트
+          eventClick={displayWeeklyCalendar}
           droppable={true}
         />
       </div>

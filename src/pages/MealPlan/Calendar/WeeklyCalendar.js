@@ -9,7 +9,10 @@ import interactionPlugin from "@fullcalendar/interaction";
 import events from "./events";
 import DatePickerWrap from "./DatePickerWrap";
 
-export default function Calendar() {
+export default function Calendar({
+  displayMonthlyCalendar,
+  setDisplayMonthlyCalendar,
+}) {
   const [openDatePicker, setOpenDatePicker] = useState(false);
 
   const handleDateClick = (arg) => {
@@ -19,9 +22,9 @@ export default function Calendar() {
   let Day_Names = ["일", "월", "화", "수", "목", "금", "토"];
   let day = new Date();
 
-  const handleWeeklyCalendar = () => {
-    document.getElementById("weeklyFullCalendarWrap").classList.add("hidden");
-  };
+  // const handleWeeklyCalendar = () => {
+  //   document.getElementById("weeklyFullCalendarWrap").classList.add("hidden");
+  // };
 
   console.log(day.toLocaleString("ko", { day: "numeric" }) + "!!!");
   console.log(day.toLocaleString("en", { day: "numeric" }));
@@ -70,9 +73,7 @@ export default function Calendar() {
         />
         <button
           className="w-[48px] h-[3px] flex justify-center mx-auto bg-GreyScale-grey04 rounded-[100px]"
-          // onClick={() => {
-          //   handleWeeklyCalendar();
-          // }}
+          onClick={() => setDisplayMonthlyCalendar(!displayMonthlyCalendar)}
         />
       </div>
       {openDatePicker && (
