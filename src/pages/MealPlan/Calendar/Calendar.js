@@ -10,6 +10,20 @@ import events from "./events";
 import DatePickerWrap from "./DatePickerWrap";
 
 export default function Calendar({ displayWeeklyCalendar }) {
+  // 외부 화면 스크롤 방지
+  useEffect(() => {
+    document.body.style.cssText = `
+            position: fixed;
+            top: -${window.scrollY}px;
+            overflow-y: scroll;
+            width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
+
   const [openDatePicker, setOpenDatePicker] = useState(false);
 
   const handleDateClick = (arg) => {
@@ -28,7 +42,10 @@ export default function Calendar({ displayWeeklyCalendar }) {
 
   return (
     <>
-      <div id="monthlyFullCalendarWrap">
+      <div
+        id="monthlyFullCalendarWrap"
+        className="absolute top-0 left-0 right-0 z-10 bg-GreyScale-White"
+      >
         <FullCalendar
           timeZone="local"
           weekNumberCalculation="ISO"
