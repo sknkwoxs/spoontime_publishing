@@ -27,11 +27,11 @@ function TimerHook({ expiryTimestamp }) {
 
   return (
     <>
-      <div
+      {/* <div
         className="absolute top-0 bottom-0 left-0 right-0 z-10 h-full transition-all progress bg-BrandColor-green03"
         data-size="40"
-        // datasize={[hours + minutes + seconds]}
-      ></div>
+        datasize={[hours + minutes + seconds]}
+      ></div> */}
       <div className="absolute left-[50%] -translate-x-[50%] z-30">
         <div className="flex Font14sb text-GreyScale-grey01 whitespace-nowrap">
           <span>{hours}</span>시&nbsp;<span>{minutes}</span>분&nbsp;
