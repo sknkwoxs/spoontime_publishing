@@ -1,4 +1,12 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import DatePicker, { registerLocale } from "react-datepicker";
+import { format } from "date-fns";
+import { ko } from "date-fns/esm/locale";
+
+import "../../../react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 
 export default function AddMenu() {
   const colorPickerPalette = [
@@ -38,6 +46,40 @@ export default function AddMenu() {
       for: "D9DADC",
     },
   ];
+
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const handleChange = (e) => {
+    setIsOpen(!isOpen);
+    setStartDate(e);
+  };
+  const onChange = (dates) => {
+    const [start, end] = dates;
+    setStartDate(start);
+    setEndDate(end);
+  };
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  };
+
+  // 요일 반환
+  const getDayName = (date) => {
+    return date
+      .toLocaleDateString("ko-KR", {
+        weekday: "long",
+      })
+      .substr(0, 1);
+  };
+
+  // 날짜 비교시 년 월 일까지만 비교하게끔
+  const createDate = (date) => {
+    return new Date(
+      new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0)
+    );
+  };
+
   return (
     <>
       <section>
@@ -92,12 +134,36 @@ export default function AddMenu() {
             </form>
           </article>
           <article className="border-b">
-            <button className="flex items-center p-4">
+            <button className="flex items-center p-4" onClick={handleClick}>
               <img src="/images/svgIcons/diet.svg" alt="diet" />
-              <p className="px-2 Font14sb">7월 13일 - 7월 14일</p>
+              <p className="px-2 Font14sb">
+                {
+                  format(startDate, "MM월 dd일")
+                  // + " ~ " +
+                  //   format(endDate, "dd-MM-yyyy")
+                }
+              </p>
               <img src="/images/svgIcons/down20x20.svg" alt="down20x20" />
             </button>
           </article>
+          {isOpen && (
+            <DatePicker
+              selected={startDate}
+              onChange={onChange}
+              startDate={startDate}
+              endDate={endDate}
+              locale={ko}
+              selectsRange
+              inline
+              dayClassName={(date) =>
+                getDayName(createDate(date)) === "토"
+                  ? "saturday"
+                  : getDayName(createDate(date)) === "일"
+                  ? "sunday"
+                  : undefined
+              }
+            />
+          )}
           <button className="fixed bottom-0 w-full text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">
             <p className="py-3">식단 추가하기</p>
           </button>
