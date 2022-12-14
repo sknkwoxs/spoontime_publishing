@@ -38,39 +38,31 @@
   /* height: 100vh; */
   padding: 0 16px;
 }
-
 .fc .fc-header-toolbar {
-  /* display: none; */
   padding: 16px 0;
   margin-bottom: 0 !important;
 }
-
 .fc .fc-toolbar-chunk {
   display: flex;
 }
-
 .fc .fc-toolbar-chunk h2.fc-toolbar-title {
   font-style: normal;
   font-family: "Pretendard-SemiBold";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
     format("woff");
-  /* font-weight: 600; */
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
 }
-
 .fc-myCustomDatePickerButton-button.fc-button.fc-button-primary {
   margin-left: 4px !important;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%232A2A2A' strokeWidth='1.5' strokeLinecap='round' strokeLinejoin='round'/%3E%3C/svg%3E ") !important;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
   margin-left: 0px;
 }
-
 .fc-myCustomStepButton-button.fc-button.fc-button-primary {
   padding: 4px 8px !important;
   font-style: normal;
@@ -81,7 +73,6 @@
   radius: 4px;
   background-color: #e6efe0 !important;
 }
-
 .fc-myCustomStepButton-button.fc-button.fc-button-primary:focus:active {
   padding: 4px 8px !important;
   font-style: normal;
@@ -92,7 +83,7 @@
   radius: 4px;
   background-color: #e6efe0 !important;
 }
-
+/* DatePicker scg icon */
 .fc-myCustomSettingsButton-button.fc-button.fc-button-primary {
   width: 24px;
   height: 24px;
@@ -101,7 +92,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .fc .fc-button-primary {
   background-color: #fff !important;
   background-image: inherit !important;
@@ -121,14 +111,12 @@
 .fc .fc-button:focus {
   box-shadow: unset !important;
 }
-
 .fc .fc-col-header-cell-cushion {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
-
 .fc .fc-daygrid-day-number {
   font-style: normal;
   font-family: "Pretendard-SemiBold";
@@ -139,52 +127,37 @@
   font-size: 14px;
   line-height: 24px;
 }
-
 .fc .fc-daygrid-body {
   z-index: 0;
 }
-
 .fc-theme-standard .fc-scrollgrid {
   border: 0;
 }
-
 .fc-theme-standard th {
   border: 0;
 }
-
 .fc-theme-standard td {
   border: 0;
 }
-
 .fc-theme-standard td,
 .fc-theme-standard th {
   border: 0;
 }
-
 .fc-scrollgrid {
   border: none !important;
 }
-
 .fc-scrollgrid td:last-of-type {
   border-right: none !important;
 }
-
 .fc .fc-day-sun {
   color: #f93232;
 }
-
 .fc .fc-day-sat {
   color: #0172cb;
 }
-
-.fc .fc-daygrid-event-harness {
-  /* padding: 0 0 4px 0; */
-}
-
 .fc .fc-daygrid-event {
   border-radius: 16px;
 }
-
 .fc .fc-daygrid-day-top {
   width: 32px;
   height: 32px;
@@ -193,27 +166,20 @@
   justify-content: center;
   align-items: center;
 }
-
 .fc .fc-daygrid-day-events {
   margin-top: 0;
 }
-
 .fc .fc-daygrid-day-number {
   margin: 0 auto;
   padding: 8px 0;
-
-  /* text-align: center; */
 }
-
 .fc .fc-event-main {
   display: flex;
   align-items: center;
 }
-
 .fc .fc-event-main b {
   visibility: hidden;
 }
-
 .fc .fc-event-main i {
   width: 100%;
   display: flex;
@@ -224,14 +190,14 @@
   line-height: 16px;
   color: #2a2a2a;
 }
-
+/* 이벤트 명  */
 .fc .fc-event-main i span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-break: break-all;
 }
-
+/* 이벤트 더보기 버튼 */
 .fc .fc-daygrid-more-link {
   display: flex;
   justify-content: center;
@@ -242,13 +208,12 @@
   color: #2a2a2a;
 }
 
-#monthlyFullCalendarWrap {
-  /* display: none; */
-}
+/* =====주간달력===== */
 #weeklyFullCalendarWrap {
   padding-bottom: 8px;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
 }
+/* today를 포함한 주 만 달력에 노출 */
 #weeklyFullCalendarWrap tbody tr:not(:has(.fc-day-today)) {
   display: none;
 }
