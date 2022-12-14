@@ -101,16 +101,20 @@ export default function Calendar({ displayWeeklyCalendar }) {
 
 function renderEventContent(eventInfo) {
   return (
+    // <>
+    //   <b>{eventInfo.timeText}</b>
+    //   <i>
+    //     <img src="/images/ingredients/onion.svg" alt="bean" />
+    //     <span>한우</span>
+    //     <img src="/images/ingredients/onion.svg" alt="bean" />
+    //     <span>가지</span>
+    //     <img src="/images/ingredients/onion.svg" alt="bean" />
+    //     <span>두부</span>
+    //   </i>
+    // </>
     <>
       <b>{eventInfo.timeText}</b>
       <i>
-        {/* <img src={eventInfo.event.url1} alt={eventInfo.event.alt1} />
-        <span>{eventInfo.event.title1}</span>
-        <img src={eventInfo.event.url2} alt={eventInfo.event.alt2} />
-        <span>{eventInfo.event.title2}</span>
-        <img src={eventInfo.event.url3} alt={eventInfo.event.alt3} />
-        <span>{eventInfo.event.title3}</span> */}
-        <img src={eventInfo.event.url} alt={eventInfo.event.alt} />
         <span>{eventInfo.event.title}</span>
       </i>
     </>

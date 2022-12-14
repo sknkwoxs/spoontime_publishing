@@ -1,17 +1,6 @@
 const events = [
   {
-    // title1: "한우",
-    // title2: "가지",
-    // title3: "두부",
-    // url1: "/images/ingredients/beans.svg",
-    // alt1: "beans",
-    // url2: "/images/ingredients/beet.svg",
-    // alt2: "beet",
-    // url3: "/images/ingredients/milk.svg",
-    // alt3: "milk",
     title: "한우 가지 두부",
-    url: "/images/ingredients/meat.svg",
-    alt: "meat",
     start: getDate("YEAR-MONTH-01"),
     end: getDate("YEAR-MONTH-08"),
     color: "#E3D0FB",
@@ -129,6 +118,7 @@ const events = [
     start: getDate("YEAR-MONTH-17"),
     color: "#F9EEAB",
   },
+
   // {
   //   groupId: "999",
   //   title: "Repeating Event",
