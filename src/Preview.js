@@ -768,7 +768,9 @@ export default function Preview() {
                 <div className="row-header-wrapper">85</div>
               </th>
               <td className="s4">My Page</td>
-              <td className="s5"></td>
+              <td className="s5">
+                https://spoontime-publishing-iq5v.vercel.app/MyPage
+              </td>
             </tr>
             <tr>
               <th id="0R85" className="row-headers-background">
