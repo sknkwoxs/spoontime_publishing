@@ -192,10 +192,16 @@
 }
 /* 이벤트 명  */
 .fc .fc-event-main i span {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-break: break-all;
+}
+.fc .fc-event-main i img {
+  width: 13px;
+  height: 13px;
 }
 /* 이벤트 더보기 버튼 */
 .fc .fc-daygrid-more-link {

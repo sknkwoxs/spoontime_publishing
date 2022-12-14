@@ -104,6 +104,13 @@ function renderEventContent(eventInfo) {
     <>
       <b>{eventInfo.timeText}</b>
       <i>
+        {/* <img src={eventInfo.event.url1} alt={eventInfo.event.alt1} />
+        <span>{eventInfo.event.title1}</span>
+        <img src={eventInfo.event.url2} alt={eventInfo.event.alt2} />
+        <span>{eventInfo.event.title2}</span>
+        <img src={eventInfo.event.url3} alt={eventInfo.event.alt3} />
+        <span>{eventInfo.event.title3}</span> */}
+        <img src={eventInfo.event.url} alt={eventInfo.event.alt} />
         <span>{eventInfo.event.title}</span>
       </i>
     </>
