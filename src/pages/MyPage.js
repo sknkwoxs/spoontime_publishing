@@ -42,12 +42,18 @@ export default function MyPage() {
           </section>
           <section className="px-4">
             <article className="flex gap-2">
-              <div className="w-full py-2 text-center border rounded Font14sb border-BrandColor-green01">
+              <a
+                className="w-full py-2 text-center border rounded Font14sb border-BrandColor-green01"
+                href="#!"
+              >
                 중기 이유식
-              </div>
-              <div className="w-full py-2 text-center border rounded Font14sb border-BrandColor-green01">
+              </a>
+              <a
+                className="w-full py-2 text-center border rounded Font14sb border-BrandColor-green01"
+                href="/MyPage/FamilyShareInfo"
+              >
                 가족 공유 1명
-              </div>
+              </a>
             </article>
           </section>
           {/* data */}

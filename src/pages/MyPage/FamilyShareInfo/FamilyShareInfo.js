@@ -49,7 +49,7 @@ export default function FamilyShareInfo() {
             </div>
           </div>
           <button className="flex items-center gap-2">
-            <img src="/images//symbolPlus.svg" alt="symbolPlus" />
+            <img src="/images/svgIcons/symbolPlus.svg" alt="symbolPlus" />
             <p className="Font14sb">가족 초대하기</p>
           </button>
         </article>
