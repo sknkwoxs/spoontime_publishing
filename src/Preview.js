@@ -769,7 +769,12 @@ export default function Preview() {
               </th>
               <td className="s4">My Page</td>
               <td className="s5">
-                https://spoontime-publishing-iq5v.vercel.app/MyPage
+                <a
+                  target="_blank"
+                  href="https://spoontime-publishing-iq5v.vercel.app/MyPage"
+                >
+                  https://spoontime-publishing-iq5v.vercel.app/MyPage
+                </a>
               </td>
             </tr>
             <tr>
