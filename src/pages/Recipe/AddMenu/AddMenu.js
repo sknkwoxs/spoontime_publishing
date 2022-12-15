@@ -162,6 +162,7 @@ export default function AddMenu() {
                   ? "sunday"
                   : undefined
               }
+              dateFromat="YYYY-MM-dd"
             />
           )}
           <button className="fixed bottom-0 w-full text-center Font16sb bg-BrandColor-green01 text-GreyScale-White">

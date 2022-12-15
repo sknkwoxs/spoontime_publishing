@@ -489,8 +489,8 @@
 .react-datepicker__quarter--selected,
 .react-datepicker__quarter--in-selecting-range,
 .react-datepicker__quarter--in-range {
-  border-radius: 43px;
-  border: 1px solid #2a2a2a;
+  /* border-radius: 43px; */
+  /* border: 1px solid #2a2a2a; */
   /* color: #fff; */
 }
 /* .react-datepicker__month--selected:hover,
@@ -867,3 +867,15 @@
 .react-datepicker__day.saturday {
   color: #0172cb;
 }
+
+/* .react-datepicker__day--range-start {
+  border: 1px solid red;
+}
+
+.react-datepicker__day--range-end {
+  border: 1px solid red;
+}
+.react-datepicker__day--in-range {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+} */
