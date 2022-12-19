@@ -220,6 +220,15 @@
   padding-bottom: 8px;
   box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.15);
 }
+#weeklyFullCalendarWrap .fc {
+  padding: 0;
+}
+#weeklyFullCalendarWrap .fc .fc-header-toolbar {
+  padding: 16px;
+}
+#weeklyFullCalendarWrap .fc .fc-daygrid {
+  padding: 0 6px;
+}
 /* today를 포함한 주 만 달력에 노출 */
 #weeklyFullCalendarWrap tbody tr:not(:has(.fc-day-today)) {
   display: none;
@@ -242,4 +251,7 @@
 }
 #weeklyFullCalendarWrap .fc table a div.fc-event-main i {
   margin-bottom: 4px;
+}
+#weeklyFullCalendarWrap .fc .fc-daygrid-day-top {
+  margin-bottom: 8px;
 }
