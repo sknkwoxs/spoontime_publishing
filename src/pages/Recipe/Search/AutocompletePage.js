@@ -504,7 +504,12 @@ export default function ComboBox() {
       id="combo-box-demo"
       options={data}
       sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="식단 검색" />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder="식단 검색" />
+      )}
+      // ArrowDropDownIcon 노출 하지 않음
+      forcePopupIcon={false}
+      noOptionsText="검색 결과가 없습니다."
     />
   );
 }

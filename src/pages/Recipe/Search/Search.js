@@ -126,6 +126,31 @@ export default function Search() {
               </button>
             </div>
           </div>
+          <div className="flex items-center gap-4 px-4 py-3">
+            <div>
+              <Link to="/Recipe">
+                <img
+                  src="/images/svgIcons/directionsLeft.svg"
+                  alt="directionsLeft"
+                />
+              </Link>
+            </div>
+            <div className="relative w-full">
+              <AutocompletePage />
+
+              {/* search 버튼 */}
+              <button className="absolute top-0 h-full left-2">
+                <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
+              </button>
+              {/* clear 버튼 */}
+              <button
+                className="absolute top-0 h-full right-2"
+                onClick={handleClearInputKeyword}
+              >
+                <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
+              </button>
+            </div>
+          </div>
           {/* default */}
           {/* recommend banner */}
           <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
@@ -213,7 +238,6 @@ export default function Search() {
                 [식재료] 본<span className="text-BrandColor-green03">죽</span>
               </li>
             </ul>
-            <AutocompletePage />
           </div>
         </div>
       </article>
