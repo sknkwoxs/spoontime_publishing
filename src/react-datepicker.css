@@ -183,7 +183,7 @@
 .react-datepicker__current-month,
 .react-datepicker-time__header,
 .react-datepicker-year-header {
-  margin-top: 24px;
+  margin-top: 0px;
   font-size: 0.944rem;
 }
 
@@ -212,9 +212,11 @@
 }
 .react-datepicker__navigation--previous {
   left: 2px;
+  padding-top: 10px;
 }
 .react-datepicker__navigation--next {
   right: 2px;
+  padding-top: 10px;
 }
 .react-datepicker__navigation--next--with-time:not(
     .react-datepicker__navigation--next--with-today-button
