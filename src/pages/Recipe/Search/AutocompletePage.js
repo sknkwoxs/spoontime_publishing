@@ -90,16 +90,9 @@ function ComboBox() {
       )}
       forcePopupIcon={false} // ArrowDropDownIcon 노출 하지 않음
       clearOnEscape={false} // esc 로 input창 clear 불가
+      handleHomeEndKeys={false}
+      disableCloseOnSelect={true}
       noOptionsText="검색 결과가 없습니다."
-      componentsProps={{
-        paper: {
-          sx: {
-            width: 500,
-            // position: "absolute",
-            // bottom: "0",
-          },
-        },
-      }}
     />
   );
 }
