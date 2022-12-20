@@ -23,15 +23,14 @@ function ComboBox() {
   const defaultProps = {
     options: data,
     getOptionLabel: (option) => option.name,
-    clearIcon: <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />,
   };
 
   return (
     <Autocomplete
       {...defaultProps}
       disablePortal
+      disableClearable
       id="autocomplete-combo-box"
-      options={data}
       fullWidth={true}
       sx={{
         "& fieldset": { border: "none" },
@@ -42,7 +41,6 @@ function ComboBox() {
       forcePopupIcon={false} // ArrowDropDownIcon 노출 하지 않음
       clearOnEscape={false} // esc 로 input창 clear 불가
       noOptionsText="검색 결과가 없습니다."
-      clearIcon={<img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />}
     />
   );
 }
