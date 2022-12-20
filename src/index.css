@@ -928,3 +928,9 @@ input[type="number"]:focus {
 .MuiAutocomplete-endAdornment {
   right: 8px !important;
 }
+
+.MuiAutocomplete-popperDisablePortal {
+  display: visible !important;
+  width: 100% !important;
+  position: absolute !important;
+}
