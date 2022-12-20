@@ -91,7 +91,7 @@ function ComboBox() {
       forcePopupIcon={false} // ArrowDropDownIcon 노출 하지 않음
       clearOnEscape={false} // esc 로 input창 clear 불가능
       handleHomeEndKeys={false} // home, end key 사용 불가
-      clearOnBlur={false} // focus시 입력 텍스지 지워지지 않음
+      clearOnBlur={false} // focus시 입력 텍스트가 지워지지 않음
       noOptionsText="검색 결과가 없습니다."
     />
   );
