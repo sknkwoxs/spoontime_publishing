@@ -917,3 +917,14 @@ input[type="number"]:focus {
 .MuiInputBase-input {
   padding: 4px 36px !important;
 }
+
+.MuiAutocomplete-clearIndicator {
+  background: red;
+}
+
+.MuiAutocomplete-hasClearIcon {
+  color: red;
+}
+.MuiAutocomplete-endAdornment {
+  right: 8px !important;
+}
