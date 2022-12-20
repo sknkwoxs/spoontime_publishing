@@ -501,6 +501,7 @@ export default function ComboBox() {
   return (
     <Autocomplete
       disablePortal
+      disableClearable
       id="autocomplete-combo-box"
       options={data}
       fullWidth={true}

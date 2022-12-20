@@ -48,8 +48,6 @@ export default function Search() {
     }
   };
 
-  // const check_input = document.querySelector("#search_input");
-
   // Enter로 검색어 추가
   const handleEnter = (event) => {
     if (keyword && event.keyCode === 13) {
@@ -94,7 +92,7 @@ export default function Search() {
     <>
       <article className="w-full">
         <div>
-          {/* <div className="flex items-center gap-4 px-4 py-3">
+          <div className="flex items-center gap-4 px-4 py-3">
             <div>
               <Link to="/Recipe">
                 <img
@@ -113,7 +111,7 @@ export default function Search() {
                 onKeyDown={handleEnter}
                 value={keyword}
               />
-        
+
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
@@ -125,7 +123,7 @@ export default function Search() {
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
               </button>
             </div>
-          </div> */}
+          </div>
           <div className="flex items-center gap-4 px-4 py-3">
             <div className="w-6 h-6">
               <Link to="/Recipe">
