@@ -501,14 +501,16 @@ export default function ComboBox() {
   return (
     <Autocomplete
       disablePortal
-      id="combo-box-demo"
+      id="autocomplete-combo-box"
       options={data}
-      sx={{ width: 300 }}
+      fullWidth={true}
+      sx={{
+        "& fieldset": { border: "none" },
+      }}
       renderInput={(params) => (
         <TextField {...params} placeholder="식단 검색" />
       )}
-      // ArrowDropDownIcon 노출 하지 않음
-      forcePopupIcon={false}
+      forcePopupIcon={false} // ArrowDropDownIcon 노출 하지 않음
       noOptionsText="검색 결과가 없습니다."
     />
   );

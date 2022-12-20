@@ -711,8 +711,6 @@ input[type="number"]:focus {
     outline: 2px solid #2a2a2a;
   }
 
-  /* Recipe Details */
-
   /* Search */
   .searchResultTab li {
     width: 100%;
@@ -834,9 +832,7 @@ input[type="number"]:focus {
     display: flex;
     flex-direction: column;
     padding-top: 14px;
-    /* margin-top: 6px !important; */
     gap: 8px;
-    /* transform: translateY(-184px) !important; */
   }
 
   .datepicker.default .datepicker-scroll > li {
@@ -896,4 +892,28 @@ input[type="number"]:focus {
     background-origin: border-box;
     background-clip: content-box, border-box;
   }
+}
+
+/* Autocomplete */
+.MuiAutocomplete-fullWidth {
+  padding: 0;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+.MuiInputBase-root {
+  padding: 0 !important;
+  background-color: #f5f5f5;
+  border-radius: 4px !important;
+  color: #2a2a2a !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+}
+.MuiInputBase-root::placeholder {
+  color: #b7b7b7 !important;
+}
+.MuiInputBase-input {
+  padding: 4px 36px !important;
 }

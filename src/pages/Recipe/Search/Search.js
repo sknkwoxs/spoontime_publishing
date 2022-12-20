@@ -94,7 +94,7 @@ export default function Search() {
     <>
       <article className="w-full">
         <div>
-          <div className="flex items-center gap-4 px-4 py-3">
+          {/* <div className="flex items-center gap-4 px-4 py-3">
             <div>
               <Link to="/Recipe">
                 <img
@@ -113,11 +113,11 @@ export default function Search() {
                 onKeyDown={handleEnter}
                 value={keyword}
               />
-              {/* search 버튼 */}
+        
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
-              {/* clear 버튼 */}
+
               <button
                 className="absolute top-0 h-full right-2"
                 onClick={handleClearInputKeyword}
@@ -125,11 +125,12 @@ export default function Search() {
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="flex items-center gap-4 px-4 py-3">
-            <div>
+            <div className="w-6 h-6">
               <Link to="/Recipe">
                 <img
+                  className="w-full h-full"
                   src="/images/svgIcons/directionsLeft.svg"
                   alt="directionsLeft"
                 />
