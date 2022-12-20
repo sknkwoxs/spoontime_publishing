@@ -68,6 +68,41 @@ function ComboBox() {
       name: "zzz",
       description: "I hate her",
     },
+    {
+      id: "14",
+      name: "test14",
+      description: "I hate her",
+    },
+    {
+      id: "15",
+      name: "test15",
+      description: "I hate her",
+    },
+    {
+      id: "16",
+      name: "test16",
+      description: "I hate her",
+    },
+    {
+      id: "17",
+      name: "test17",
+      description: "I hate her",
+    },
+    {
+      id: "18",
+      name: "test18",
+      description: "I hate her",
+    },
+    {
+      id: "19",
+      name: "test19",
+      description: "I hate her",
+    },
+    {
+      id: "20",
+      name: "test20",
+      description: "I hate her",
+    },
   ];
 
   const defaultProps = {
