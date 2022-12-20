@@ -78,7 +78,7 @@ function ComboBox() {
   return (
     <Autocomplete
       {...defaultProps}
-      disablePortal
+      disablePortal={false} // true인 경우 Popper콘텐츠는 상위 구성 요소의 DOM 계층 구조 아래에 있습니다.
       disableClearable
       id="autocomplete-combo-box"
       fullWidth={true}
