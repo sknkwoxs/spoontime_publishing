@@ -158,12 +158,12 @@ export default function Search() {
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
               {/* clear 버튼 */}
-              <button
+              {/* <button
                 className="absolute top-0 h-full right-2"
                 onClick={handleClearInputKeyword}
               >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
-              </button>
+              </button> */}
             </div>
           </div>
           {/* default */}

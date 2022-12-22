@@ -113,8 +113,8 @@ function ComboBox() {
   return (
     <Autocomplete
       {...defaultProps}
-      disablePortal={false} // true인 경우 Popper콘텐츠는 상위 구성 요소의 DOM 계층 구조 아래에 있습니다.
-      disableClearable
+      disablePortal={false} // true인 경우 포탈이 사용되지 않습니다.
+      disableClearable={false} // true인 경우 선택된 옵션을 지울 수 있는 x 버튼이 표시되지 않습니다.
       id="autocomplete-combo-box"
       fullWidth={true}
       sx={{
@@ -123,10 +123,10 @@ function ComboBox() {
       renderInput={(params) => (
         <TextField {...params} placeholder="식단 검색" />
       )}
-      forcePopupIcon={false} // ArrowDropDownIcon 노출 하지 않음
-      clearOnEscape={false} // esc 로 input창 clear 불가능
-      handleHomeEndKeys={false} // home, end key 사용 불가
-      clearOnBlur={false} // focus시 입력 텍스트가 지워지지 않음
+      forcePopupIcon={false} // true인 경우 항상 팝업 아이콘이 표시됩니다.
+      clearOnEscape={false} // true인 경우 escape 키를 누르면 선택이 지워집니다.
+      handleHomeEndKeys={false} // true인 경우 홈 및 엔드 키가 작동합니다.
+      clearOnBlur={false} // true인 경우 포커스를 잃어 버리면 선택이 지워집니다.
       noOptionsText="검색 결과가 없습니다."
     />
   );
