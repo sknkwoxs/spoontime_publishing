@@ -3,6 +3,20 @@ import { Link } from "react-router-dom";
 import AutocompletePage from "./AutocompletePage";
 
 export default function Search() {
+  // 외부 화면 스크롤 방지
+  // useEffect(() => {
+  //   document.body.style.cssText = `
+  //           position: fixed;
+  //           top: -${window.scrollY}px;
+  //           overflow-y: scroll;
+  //           width: 100%;`;
+  //   return () => {
+  //     const scrollY = document.body.style.top;
+  //     document.body.style.cssText = "";
+  //     window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+  //   };
+  // }, []);
+
   const [keywords, setKeywords] = useState(
     JSON.parse(localStorage.getItem("keywords") || "[]")
   );
@@ -154,7 +168,7 @@ export default function Search() {
           </div>
           {/* default */}
           {/* recommend banner */}
-          <div className="flex items-center justify-between px-4 py-3 mb-6 bg-BrandColor-green04 Font12sb">
+          <div className="flex items-center justify-between px-4 py-[10px] mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
             <button>
               <img
