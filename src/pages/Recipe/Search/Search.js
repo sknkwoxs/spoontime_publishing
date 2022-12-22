@@ -3,20 +3,6 @@ import { Link } from "react-router-dom";
 import AutocompletePage from "./AutocompletePage";
 
 export default function Search() {
-  // 외부 화면 스크롤 방지
-  // useEffect(() => {
-  //   document.body.style.cssText = `
-  //           position: fixed;
-  //           top: -${window.scrollY}px;
-  //           overflow-y: scroll;
-  //           width: 100%;`;
-  //   return () => {
-  //     const scrollY = document.body.style.top;
-  //     document.body.style.cssText = "";
-  //     window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
-  //   };
-  // }, []);
-
   const [keywords, setKeywords] = useState(
     JSON.parse(localStorage.getItem("keywords") || "[]")
   );

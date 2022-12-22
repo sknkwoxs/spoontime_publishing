@@ -1,7 +1,24 @@
+import { useEffect } from "react";
+
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import { Popper } from "@mui/material";
 
 function ComboBox() {
+  // 외부 화면 스크롤 방지
+  useEffect(() => {
+    document.body.style.cssText = `
+                      position: fixed;
+                      top: -${window.scrollY}px;
+                      overflow-y: scroll;
+                      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
+
   const data = [
     {
       id: "1",
@@ -128,6 +145,7 @@ function ComboBox() {
       handleHomeEndKeys={false} // true인 경우 홈 및 엔드 키가 작동합니다.
       clearOnBlur={false} // true인 경우 포커스를 잃어 버리면 선택이 지워집니다.
       noOptionsText="검색 결과가 없습니다."
+      PopperComponent={(props) => <Popper {...props}>{props.children}</Popper>}
     />
   );
 }
