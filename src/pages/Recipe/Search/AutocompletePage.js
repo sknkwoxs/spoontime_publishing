@@ -144,7 +144,7 @@ function ComboBox() {
     <Autocomplete
       {...defaultProps}
       disablePortal={false} // true인 경우 포탈이 사용되지 않습니다.
-      disableClearable={false} // true인 경우 선택된 옵션을 지울 수 있는 x 버튼이 표시되지 않습니다.
+      disableClearable={true} // true인 경우 선택된 옵션을 지울 수 있는 x 버튼이 표시되지 않습니다.
       id="autocomplete-combo-box"
       fullWidth={true}
       sx={{

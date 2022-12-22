@@ -137,7 +137,12 @@ export default function Search() {
               </Link>
             </div>
             <div className="relative w-full">
-              <AutocompletePage />
+              <AutocompletePage
+                handleKeyword={handleKeyword}
+                keyword={keyword}
+                handleEnter={handleEnter}
+                handleClearInputKeyword={handleClearInputKeyword}
+              />
               {/* search 버튼 */}
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
