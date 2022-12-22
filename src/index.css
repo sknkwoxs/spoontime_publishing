@@ -936,12 +936,15 @@ input[type="number"]:focus {
   margin: 0px;
   transform: translate3d(53px, 96px, 0px);
   z-index: 1300;
+  scroll-behavior: smooth;
+  background: red;
 }
 div.MuiPaper-root {
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: unset !important;
-  max-height: calc(100vh - 52px) !important;
+  height: calc(100vh - 52px) !important;
+  overflow: hidden !important;
 }
 ul.MuiAutocomplete-listbox {
   position: relative;
