@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
@@ -77,7 +77,7 @@ function ComboBox() {
     },
     {
       id: "12",
-      name: "x-data",
+      name: "x-daa",
       description: "I hate her",
     },
     {
@@ -127,6 +127,19 @@ function ComboBox() {
     getOptionLabel: (option) => option.name,
   };
 
+  const [hasText, setHasText] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    if (inputValue == "") {
+      setHasText(false);
+    }
+  }, [inputValue]);
+
+  console.log(!!hasText);
+
+  const [searchTerms, setSearchTerms] = useState([]);
+
   return (
     <Autocomplete
       {...defaultProps}
@@ -138,7 +151,20 @@ function ComboBox() {
         "& fieldset": { border: "none" },
       }}
       renderInput={(params) => (
-        <TextField {...params} placeholder="식단 검색" />
+        <TextField
+          {...params}
+          placeholder="식단 검색"
+          value={inputValue}
+          onChange={(event) => {
+            setInputValue(event.target.value);
+            setHasText(event.target.value !== "");
+          }}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              setSearchTerms([...searchTerms, inputValue]); // 검색어 추가
+            }
+          }}
+        />
       )}
       forcePopupIcon={false} // true인 경우 항상 팝업 아이콘이 표시됩니다.
       clearOnEscape={false} // true인 경우 escape 키를 누르면 선택이 지워집니다.

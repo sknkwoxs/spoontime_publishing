@@ -68,7 +68,7 @@ export default function Search() {
   };
 
   //keyword가 있으면 true, 없으면 false
-  console.log(!!keyword);
+  // console.log(!!keyword);
 
   useEffect(() => {
     //array 타입을 string 형태로 변환
@@ -138,21 +138,19 @@ export default function Search() {
             </div>
             <div className="relative w-full">
               <AutocompletePage />
-
               {/* search 버튼 */}
               <button className="absolute top-0 h-full left-2">
                 <img src="/images/svgIcons/mainSearch.svg" alt="mainSearch" />
               </button>
               {/* clear 버튼 */}
-              {/* <button
+              <button
                 className="absolute top-0 h-full right-2"
                 onClick={handleClearInputKeyword}
               >
                 <img src="/images/svgIcons/outlinedX.svg" alt="outlinedX" />
-              </button> */}
+              </button>
             </div>
           </div>
-          {/* default */}
           {/* recommend banner */}
           <div className="flex items-center justify-between px-4 py-[10px] mb-6 bg-BrandColor-green04 Font12sb">
             <p>식재료를 선택해서 레시피를 검색해보세요.</p>
