@@ -4,10 +4,7 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { Popper } from "@mui/material";
 
-function ComboBox(
-  { options, label, placeholder, onChange, value, ...props },
-  ref
-) {
+function ComboBox() {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
@@ -143,21 +140,12 @@ function ComboBox(
 
   const [searchTerms, setSearchTerms] = useState([]);
 
-  const handleRemoveKeyword = (keyword) => {
-    setSearchTerms(searchTerms.filter((item) => item !== keyword));
-  };
-
-  const handleClearKeywords = () => {
-    setSearchTerms([]);
-  };
-
   return (
     <Autocomplete
       {...defaultProps}
-      id="autocomplete-combo-box"
-      disableListWrap={true} // true인 경우 옵션 목록이 포탈을 벗어나지 않습니다.
       disablePortal={false} // true인 경우 포탈이 사용되지 않습니다.
       disableClearable={true} // true인 경우 선택된 옵션을 지울 수 있는 x 버튼이 표시되지 않습니다.
+      id="autocomplete-combo-box"
       fullWidth={true}
       sx={{
         "& fieldset": { border: "none" },
