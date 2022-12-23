@@ -140,6 +140,10 @@ function ComboBox() {
 
   const [searchTerms, setSearchTerms] = useState([]);
 
+  const handleRemoveKeyword = (keyword) => {
+    setSearchTerms(searchTerms.filter((item) => item !== keyword));
+  };
+
   return (
     <Autocomplete
       {...defaultProps}
