@@ -4,7 +4,10 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { Popper } from "@mui/material";
 
-function ComboBox() {
+function ComboBox(
+  { options, label, placeholder, onChange, value, ...props },
+  ref
+) {
   // 외부 화면 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
