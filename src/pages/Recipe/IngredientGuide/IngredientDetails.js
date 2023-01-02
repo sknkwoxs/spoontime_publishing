@@ -48,84 +48,106 @@ export default function IngredientDetails() {
               </div>
             </div>
           </article>
-          <article className="px-4 py-6 border-b">
+          <article className="px-4 pt-6 pb-7">
             <div className="flex justify-between pb-2 border-b border-GreyScale-grey01">
               <p className="flex items-center Font16sb">기본정보</p>
             </div>
-            <div className="py-2 border-b">
-              <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
-                  <p>물</p>
-                </div>
-                <div className="w-[7.25rem] flex justify-between">
-                  <p className="inline-block text-left">660ml</p>
-                  <button className="Font12 border border-GreyScale-grey01 rounded-[52px] px-4 py-1">
-                    대체
-                  </button>
-                </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>종류</p>
+              </div>
+              <div className="w-full">
+                <p>곡류</p>
               </div>
             </div>
-            <div className="py-2 border-b">
-              <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
-                  <p>쌀</p>
-                </div>
-                <div className="w-[7.25rem] flex justify-between">
-                  <p className="inline-block text-left">48g</p>
-                  <button className="Font12 border border-GreyScale-grey01 rounded-[52px] px-4 py-1">
-                    대체
-                  </button>
-                </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>알레르기 위험</p>
+              </div>
+              <div className="w-full">
+                <p>없음</p>
               </div>
             </div>
-            <div className="py-2 border-b">
-              <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
-                  <p>소고기 안심</p>
-                </div>
-                <div className="w-[7.25rem] flex justify-between">
-                  <p className="inline-block text-left">15g</p>
-                  <button className="Font12 border border-GreyScale-grey01 rounded-[52px] px-4 py-1">
-                    대체
-                  </button>
-                </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>변비 완화</p>
+              </div>
+              <div className="w-full">
+                <p>상</p>
               </div>
             </div>
-            <div className="py-2 border-b">
-              <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
-                  <p>가지</p>
-                </div>
-                <div className="w-[7.25rem] flex justify-between">
-                  <p className="inline-block text-left">15g</p>
-                  <button className="Font12 border border-GreyScale-grey01 rounded-[52px] px-4 py-1">
-                    대체
-                  </button>
-                </div>
+          </article>
+          <article className="px-4 pb-6 border-b">
+            <div className="flex justify-between pb-2 border-b border-GreyScale-grey01">
+              <p className="flex items-center Font16sb">영양정보</p>
+              <p className="flex items-center Font12">
+                <span className="Font12sb">100</span>g 기준&nbsp;
+                <span className="Font12sb">390</span>kcal
+              </p>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>나트륨</p>
+              </div>
+              <div className="w-full text-right">
+                <p>0mg</p>
               </div>
             </div>
-            <div className="py-2 border-b">
-              <div className="flex justify-between Font14">
-                <div className="flex gap-2">
-                  <div></div>
-                  <p>달걀</p>
-                </div>
-                <div className="w-[7.25rem] flex justify-between">
-                  <p className="inline-block text-left">15g</p>
-                  <button className="Font12 border border-GreyScale-grey01 rounded-[52px] px-4 py-1">
-                    대체
-                  </button>
-                </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>탄수화물</p>
+              </div>
+              <div className="w-full text-right">
+                <p>12g (13%)</p>
               </div>
             </div>
-            <div className="p-4 mt-4 rounded Font12 bg-GreyScale-grey05">
-              - 도구, 필요한 용량, 끼니를 입력하여 정확한 재료의 양을
-              확인하세요. - 가지고 있는 재료를 선택해 주세요. - 재료가 없는
-              경우, 다른 재료로 대체할 수 있어요.
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>당류</p>
+              </div>
+              <div className="w-full text-right">
+                <p>0g</p>
+              </div>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>지방</p>
+              </div>
+              <div className="w-full text-right">
+                <p>0g</p>
+              </div>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>트랜스지방</p>
+              </div>
+              <div className="w-full text-right">
+                <p>0g</p>
+              </div>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>포화지방</p>
+              </div>
+              <div className="w-full text-right">
+                <p>0g</p>
+              </div>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>콜레스테롤</p>
+              </div>
+              <div className="w-full text-right">
+                <p>10.4mg (3.5%)</p>
+              </div>
+            </div>
+            <div className="flex py-2 border-b">
+              <div className="w-full">
+                <p>단백질</p>
+              </div>
+              <div className="w-full text-right">
+                <p>6.1g (40.5%)</p>
+              </div>
             </div>
           </article>
           <article className="px-4 py-6 border-b">
@@ -162,7 +184,7 @@ export default function IngredientDetails() {
             </p>
             <div className="inline-block Font14">
               <button className="mr-2 mb-2 border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
-                #쌀영양소
+                #쌀
               </button>
               <button className="mr-2 mb-2 border bg-BrandColor-green04 border-BrandColor-green03 rounded-[25px] px-2">
                 #쌀보관
