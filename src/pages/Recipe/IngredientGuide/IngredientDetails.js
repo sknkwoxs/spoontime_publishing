@@ -51,7 +51,7 @@ export default function IngredientDetails() {
           </div>
         </div>
       </div>
-      <section className="z-[99999]">
+      <section>
         <div>
           <div className="absolute w-full">
             <div className="flex items-center justify-between px-4 pt-8 text-center">
