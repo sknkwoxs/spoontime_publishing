@@ -786,6 +786,20 @@ input[type="number"]:focus {
     background-color: #e6efe0;
   }
 
+  /* Ingredient Detail */
+  .original_header {
+    display: none;
+  }
+  .change_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    background: white;
+    padding: 16px;
+    z-index: 10000;
+  }
+
   /* MealPlan datepicker */
   .datepicker.default {
     position: fixed;

@@ -1,10 +1,57 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import RecipeItem from "../RecipeItem";
 
 export default function IngredientDetails() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScroll, setIsScroll] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+    setIsScroll(position > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [liked, setLiked] = useState(false);
+  const handleClick = () => {
+    setLiked(!liked);
+  };
+
   return (
     <>
-      <section>
+      <div className="bg-GreyScale-White">
+        <div
+          className={scrollPosition < 56 ? "original_header" : "change_header"}
+        >
+          <div className="z-50 flex items-center justify-between text-center">
+            <Link to="/Recipe/IngredientGuide">
+              <div>
+                <img src="/images/svgIcons/backBlack.svg" alt="back" />
+              </div>
+            </Link>
+            <p className="title Font16sb">쌀</p>
+            <button className="flex gap-3" onClick={handleClick}>
+              <img
+                src={
+                  liked
+                    ? "/images/svgIcons/heart.svg"
+                    : "/images/svgIcons/heartFill.svg"
+                }
+                alt="heart24"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <section className="z-[99999]">
         <div>
           <div className="absolute w-full">
             <div className="flex items-center justify-between px-4 pt-8 text-center">
@@ -13,8 +60,15 @@ export default function IngredientDetails() {
                   <img src="/images/svgIcons/back.svg" alt="back" />
                 </div>
               </Link>
-              <button className="flex gap-3">
-                <img src="/images/svgIcons/heart24.svg" alt="heart24" />
+              <button className="flex gap-3" onClick={handleClick}>
+                <img
+                  src={
+                    liked
+                      ? "/images/svgIcons/heart.svg"
+                      : "/images/svgIcons/heartFill.svg"
+                  }
+                  alt="heart24"
+                />
               </button>
             </div>
           </div>
@@ -207,7 +261,7 @@ export default function IngredientDetails() {
             <div>
               <p className="px-4 mb-4 Font16sb">제공 방법</p>
               <div>
-                <div className="h-0 pb-[100%] overflow-hidden relative z-0">
+                <div className="h-0 pb-[100%] overflow-hidden relative">
                   <img
                     className="absolute object-cover w-full h-full"
                     src="/images/RecipeDetails4.jpg"
