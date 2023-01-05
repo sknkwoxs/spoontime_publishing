@@ -60,29 +60,6 @@ export default function Feedback() {
             </button>
           </div>
         </article>
-        {/* <article className="px-4 mt-6 border-b">
-          <p className="mb-2 Font16sb">얼마나 먹었나요?</p>
-          <div className="mb-4 Font14">
-            <input
-              className="px-3 py-2 mx-1 border rounded border-GreyScale-grey04 w-14"
-              type="text"
-            />
-            g
-          </div>
-          <div className="w-full mb-11">
-            <input
-              className="rangeSlider"
-              id="feedbackRangeSlider"
-              type="range"
-              min="80"
-              max="200"
-              defaultValue="140"
-              name="amount"
-              oninput="document.getElementById('amount_output').innerHTML=this.value"
-            />
-            <span id="amount_range_value"></span>
-          </div>
-        </article> */}
         <article className="px-4 mt-6 border-b">
           <RangeSlider />
         </article>
